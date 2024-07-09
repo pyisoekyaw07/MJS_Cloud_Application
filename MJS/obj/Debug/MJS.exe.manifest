@@ -942,14 +942,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MJS.exe" size="1135576">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MJS.exe" size="1135064">
       <assemblyIdentity name="MJS" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Rs1VfOCAn8/Iy5FDNDTJJJRy1XEXoS2tO8PTVGY0Utc=</dsig:DigestValue>
+        <dsig:DigestValue>WB5MGe9Tmr5WJOKXJxXwTXj4Y5xyj2YQ4fwmngogJQs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

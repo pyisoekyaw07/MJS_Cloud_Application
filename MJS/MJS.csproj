@@ -16,7 +16,7 @@
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
     <IsWebBootstrapper>true</IsWebBootstrapper>
-    <PublishUrl>D:\Update_My_Application\Installer\</PublishUrl>
+    <PublishUrl>D:\MJS_Cloud_Application\published\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
@@ -26,10 +26,10 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>true</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>https://raw.githubusercontent.com/pyisoekyaw07/Update_My_Application/main/Installer/</InstallUrl>
-    <UpdateUrl>https://raw.githubusercontent.com/pyisoekyaw07/Update_My_Application/main/Installer/</UpdateUrl>
+    <InstallUrl>https://raw.githubusercontent.com/pyisoekyaw07/MJS_Cloud_Application/main/published/</InstallUrl>
+    <UpdateUrl>https://raw.githubusercontent.com/pyisoekyaw07/MJS_Cloud_Application/main/published/</UpdateUrl>
     <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
-    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationRevision>7</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
