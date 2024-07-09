@@ -519,6 +519,7 @@ namespace MJS
             this.Name = "Form2";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.pan_rep.ResumeLayout(false);

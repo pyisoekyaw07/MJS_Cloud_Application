@@ -33,11 +33,11 @@ namespace MJS
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(gform));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_add_photo = new System.Windows.Forms.Button();
             this.cmb_itemname = new System.Windows.Forms.ComboBox();
             this.cmb_item = new System.Windows.Forms.ComboBox();
@@ -205,7 +205,7 @@ namespace MJS
             this.cmb_itemname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_itemname.Name = "cmb_itemname";
             this.cmb_itemname.Size = new System.Drawing.Size(330, 30);
-            this.cmb_itemname.TabIndex = 5;
+            this.cmb_itemname.TabIndex = 6;
             this.cmb_itemname.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
             // 
             // cmb_item
@@ -219,7 +219,7 @@ namespace MJS
             this.cmb_item.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_item.Name = "cmb_item";
             this.cmb_item.Size = new System.Drawing.Size(330, 30);
-            this.cmb_item.TabIndex = 4;
+            this.cmb_item.TabIndex = 5;
             this.cmb_item.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             this.cmb_item.Click += new System.EventHandler(this.comboBox3_Click);
             this.cmb_item.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox3_KeyPress);
@@ -233,7 +233,7 @@ namespace MJS
             this.cmb_gt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_gt.Name = "cmb_gt";
             this.cmb_gt.Size = new System.Drawing.Size(131, 30);
-            this.cmb_gt.TabIndex = 3;
+            this.cmb_gt.TabIndex = 4;
             this.cmb_gt.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             this.cmb_gt.Click += new System.EventHandler(this.comboBox2_Click);
             this.cmb_gt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox2_KeyPress);
@@ -503,7 +503,7 @@ namespace MJS
             this.txt_rep.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_rep.Name = "txt_rep";
             this.txt_rep.Size = new System.Drawing.Size(189, 30);
-            this.txt_rep.TabIndex = 12;
+            this.txt_rep.TabIndex = 13;
             this.txt_rep.TextChanged += new System.EventHandler(this.txt_rep_TextChanged);
             this.txt_rep.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_rep_KeyPress);
             this.txt_rep.Leave += new System.EventHandler(this.txt_rep_Leave);
@@ -515,7 +515,7 @@ namespace MJS
             this.txt_mcost.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_mcost.Name = "txt_mcost";
             this.txt_mcost.Size = new System.Drawing.Size(189, 30);
-            this.txt_mcost.TabIndex = 11;
+            this.txt_mcost.TabIndex = 12;
             this.txt_mcost.TextChanged += new System.EventHandler(this.txt_mcost_TextChanged);
             this.txt_mcost.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_mcost_KeyPress);
             this.txt_mcost.Leave += new System.EventHandler(this.txt_mcost_Leave);
@@ -583,7 +583,7 @@ namespace MJS
             this.txt_WC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_WC.Name = "txt_WC";
             this.txt_WC.Size = new System.Drawing.Size(59, 30);
-            this.txt_WC.TabIndex = 10;
+            this.txt_WC.TabIndex = 11;
             this.txt_WC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_WC.TextChanged += new System.EventHandler(this.txt_YC_TextChanged);
             this.txt_WC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_YC_KeyPress);
@@ -596,7 +596,7 @@ namespace MJS
             this.txt_WY.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_WY.Name = "txt_WY";
             this.txt_WY.Size = new System.Drawing.Size(59, 30);
-            this.txt_WY.TabIndex = 9;
+            this.txt_WY.TabIndex = 10;
             this.txt_WY.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_WY.TextChanged += new System.EventHandler(this.txt_YY_TextChanged);
             this.txt_WY.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_YY_KeyPress);
@@ -609,7 +609,7 @@ namespace MJS
             this.txt_WP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_WP.Name = "txt_WP";
             this.txt_WP.Size = new System.Drawing.Size(59, 30);
-            this.txt_WP.TabIndex = 8;
+            this.txt_WP.TabIndex = 9;
             this.txt_WP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_WP.TextChanged += new System.EventHandler(this.txt_YP_TextChanged);
             this.txt_WP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_YP_KeyPress);
@@ -622,7 +622,7 @@ namespace MJS
             this.txt_WK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_WK.Name = "txt_WK";
             this.txt_WK.Size = new System.Drawing.Size(59, 30);
-            this.txt_WK.TabIndex = 7;
+            this.txt_WK.TabIndex = 8;
             this.txt_WK.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_WK.TextChanged += new System.EventHandler(this.txt_YK_TextChanged);
             this.txt_WK.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_YK_KeyPress);
@@ -689,7 +689,7 @@ namespace MJS
             this.txt_goldprice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_goldprice.Name = "txt_goldprice";
             this.txt_goldprice.Size = new System.Drawing.Size(126, 30);
-            this.txt_goldprice.TabIndex = 200;
+            this.txt_goldprice.TabIndex = 3;
             this.txt_goldprice.TabStop = false;
             // 
             // label8
@@ -745,7 +745,7 @@ namespace MJS
             this.txt_gm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_gm.Name = "txt_gm";
             this.txt_gm.Size = new System.Drawing.Size(125, 30);
-            this.txt_gm.TabIndex = 6;
+            this.txt_gm.TabIndex = 7;
             this.txt_gm.TextChanged += new System.EventHandler(this.txt_gm_TextChanged);
             this.txt_gm.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_gm_KeyPress);
             this.txt_gm.Leave += new System.EventHandler(this.txt_gm_Leave);
@@ -999,23 +999,23 @@ namespace MJS
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(122)))), ((int)(((byte)(173)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Pyidaungsu", 9F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(47)))), ((int)(((byte)(81)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Pyidaungsu", 9F);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(47)))), ((int)(((byte)(81)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.image,
@@ -1051,26 +1051,26 @@ namespace MJS
             this.Form,
             this.type,
             this.coledit});
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridView1.Location = new System.Drawing.Point(565, 232);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Pyidaungsu", 9F);
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Pyidaungsu", 9F);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dataGridView1.RowTemplate.Height = 30;
@@ -1307,10 +1307,10 @@ namespace MJS
             // coledit
             // 
             this.coledit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle13.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle13.NullValue")));
-            this.coledit.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle8.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle8.NullValue")));
+            this.coledit.DefaultCellStyle = dataGridViewCellStyle8;
             this.coledit.Description = "Edit";
             this.coledit.HeaderText = "";
             this.coledit.Image = ((System.Drawing.Image)(resources.GetObject("coledit.Image")));
@@ -1467,7 +1467,7 @@ namespace MJS
             this.txt_remark.Multiline = true;
             this.txt_remark.Name = "txt_remark";
             this.txt_remark.Size = new System.Drawing.Size(193, 56);
-            this.txt_remark.TabIndex = 14;
+            this.txt_remark.TabIndex = 15;
             // 
             // groupBox2
             // 
@@ -1478,7 +1478,7 @@ namespace MJS
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Size = new System.Drawing.Size(191, 82);
-            this.groupBox2.TabIndex = 55;
+            this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Image";
             // 
@@ -1556,7 +1556,7 @@ namespace MJS
             this.btn_cart.Location = new System.Drawing.Point(156, 788);
             this.btn_cart.Name = "btn_cart";
             this.btn_cart.Size = new System.Drawing.Size(193, 40);
-            this.btn_cart.TabIndex = 293;
+            this.btn_cart.TabIndex = 16;
             this.btn_cart.Values.Text = "Add To Cart";
             this.btn_cart.Click += new System.EventHandler(this.btn_cart_Click);
             // 
@@ -1566,7 +1566,7 @@ namespace MJS
             this.btn_reg_save.Location = new System.Drawing.Point(762, 563);
             this.btn_reg_save.Name = "btn_reg_save";
             this.btn_reg_save.Size = new System.Drawing.Size(170, 35);
-            this.btn_reg_save.TabIndex = 294;
+            this.btn_reg_save.TabIndex = 17;
             this.btn_reg_save.Values.Text = "&Save";
             this.btn_reg_save.Click += new System.EventHandler(this.btn_reg_save_Click);
             // 
@@ -1576,7 +1576,7 @@ namespace MJS
             this.btn_reg_cancel.Location = new System.Drawing.Point(955, 563);
             this.btn_reg_cancel.Name = "btn_reg_cancel";
             this.btn_reg_cancel.Size = new System.Drawing.Size(170, 35);
-            this.btn_reg_cancel.TabIndex = 295;
+            this.btn_reg_cancel.TabIndex = 18;
             this.btn_reg_cancel.Values.Text = "&Cancel";
             this.btn_reg_cancel.Click += new System.EventHandler(this.btn_reg_cancel_Click);
             // 
@@ -1586,7 +1586,7 @@ namespace MJS
             this.btn_reg_preview.Location = new System.Drawing.Point(1146, 563);
             this.btn_reg_preview.Name = "btn_reg_preview";
             this.btn_reg_preview.Size = new System.Drawing.Size(170, 35);
-            this.btn_reg_preview.TabIndex = 296;
+            this.btn_reg_preview.TabIndex = 19;
             this.btn_reg_preview.Values.Text = "&Preview";
             this.btn_reg_preview.Click += new System.EventHandler(this.btn_reg_preview_Click);
             // 
@@ -1649,7 +1649,7 @@ namespace MJS
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1428, 784);
+            this.ClientSize = new System.Drawing.Size(1428, 857);
             this.Controls.Add(this.label41);
             this.Controls.Add(this.label40);
             this.Controls.Add(this.label39);
