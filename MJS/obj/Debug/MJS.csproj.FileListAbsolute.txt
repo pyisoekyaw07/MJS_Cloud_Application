@@ -1,0 +1,832 @@
+E:\Desktop Folder\My Software\MJS\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\MJS.exe.config
+E:\Desktop Folder\My Software\MJS\bin\Debug\MJS.exe
+E:\Desktop Folder\My Software\MJS\bin\Debug\MJS.pdb
+E:\Desktop Folder\My Software\MJS\bin\Debug\Azure.Core.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\Azure.Identity.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\Microsoft.Data.SqlClient.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\Microsoft.Identity.Client.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\Microsoft.IdentityModel.Logging.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\Microsoft.ReportViewer.Common.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\Microsoft.SqlServer.Types.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.Buffers.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.ClientModel.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.Configuration.ConfigurationManager.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.IO.FileSystem.AccessControl.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.Memory.Data.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.Memory.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.Numerics.Vectors.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.Security.AccessControl.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.Security.Cryptography.ProtectedData.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.Security.Permissions.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.Security.Principal.Windows.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.Text.Encodings.Web.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.Text.Json.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.ValueTuple.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\stdole.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\Azure.Core.xml
+E:\Desktop Folder\My Software\MJS\bin\Debug\Azure.Identity.xml
+E:\Desktop Folder\My Software\MJS\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\Desktop Folder\My Software\MJS\bin\Debug\Microsoft.Data.SqlClient.xml
+E:\Desktop Folder\My Software\MJS\bin\Debug\Microsoft.Identity.Client.xml
+E:\Desktop Folder\My Software\MJS\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.xml
+E:\Desktop Folder\My Software\MJS\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
+E:\Desktop Folder\My Software\MJS\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+E:\Desktop Folder\My Software\MJS\bin\Debug\Microsoft.IdentityModel.Logging.xml
+E:\Desktop Folder\My Software\MJS\bin\Debug\Microsoft.IdentityModel.Protocols.xml
+E:\Desktop Folder\My Software\MJS\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+E:\Desktop Folder\My Software\MJS\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.Buffers.xml
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.ClientModel.xml
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.Configuration.ConfigurationManager.xml
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.IO.FileSystem.AccessControl.xml
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.Memory.xml
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.Memory.Data.xml
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.Numerics.Vectors.xml
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.Security.AccessControl.xml
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.Security.Cryptography.ProtectedData.xml
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.Security.Permissions.xml
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.Security.Principal.Windows.xml
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.Text.Encodings.Web.xml
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.Text.Json.xml
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\Desktop Folder\My Software\MJS\bin\Debug\System.ValueTuple.xml
+E:\Desktop Folder\My Software\MJS\bin\Debug\de\Microsoft.Data.SqlClient.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\es\Microsoft.Data.SqlClient.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\fr\Microsoft.Data.SqlClient.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\it\Microsoft.Data.SqlClient.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\ja\Microsoft.Data.SqlClient.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\ko\Microsoft.Data.SqlClient.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\pt-BR\Microsoft.Data.SqlClient.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Desktop Folder\My Software\MJS\obj\Debug\MJS.csproj.AssemblyReference.cache
+E:\Desktop Folder\My Software\MJS\obj\Debug\MJS.Properties.Resources.resources
+E:\Desktop Folder\My Software\MJS\obj\Debug\MJS.csproj.GenerateResource.cache
+E:\Desktop Folder\My Software\MJS\obj\Debug\MJS.csproj.CoreCompileInputs.cache
+E:\Desktop Folder\My Software\MJS\obj\Debug\MJS.csproj.Up2Date
+E:\Desktop Folder\My Software\MJS\obj\Debug\MJS.exe
+E:\Desktop Folder\My Software\MJS\obj\Debug\MJS.pdb
+E:\Desktop Folder\My Software\MJS\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\CrystalDecisions.ReportSource.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\CrystalDecisions.Shared.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\CrystalDecisions.Windows.Forms.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\Microsoft.ReportViewer.Design.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\EnvDTE.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\Microsoft.MSXML.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\obj\Debug\MJS.csproj.AssemblyReference.cache
+E:\Desktop Folder\My Software\MJS - Copy\obj\Debug\MJS.BB_Form.resources
+E:\Desktop Folder\My Software\MJS - Copy\obj\Debug\MJS.closing_stock.resources
+E:\Desktop Folder\My Software\MJS - Copy\obj\Debug\MJS.g_otherout.resources
+E:\Desktop Folder\My Software\MJS - Copy\obj\Debug\MJS.g_sale.resources
+E:\Desktop Folder\My Software\MJS - Copy\obj\Debug\MJS.login.resources
+E:\Desktop Folder\My Software\MJS - Copy\obj\Debug\MJS.payment_form.resources
+E:\Desktop Folder\My Software\MJS - Copy\obj\Debug\MJS.Properties.Resources.resources
+E:\Desktop Folder\My Software\MJS - Copy\obj\Debug\MJS.csproj.GenerateResource.cache
+E:\Desktop Folder\My Software\MJS - Copy\obj\Debug\MJS.csproj.CoreCompileInputs.cache
+E:\Desktop Folder\My Software\MJS - Copy\obj\Debug\MJS.exe
+E:\Desktop Folder\My Software\MJS - Copy\obj\Debug\MJS.pdb
+E:\Desktop Folder\My Software\MJS - Copy\obj\Debug\MJS.gform.resources
+E:\Desktop Folder\My Software\MJS - Copy\obj\Debug\MJS.Form2.resources
+E:\Desktop Folder\My Software\MJS - Copy\obj\Debug\MJS.preview.resources
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\MJS.exe.config
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\MJS.exe
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\MJS.pdb
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\Azure.Core.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\Azure.Identity.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\CrystalDecisions.ReportSource.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\CrystalDecisions.Shared.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\CrystalDecisions.Windows.Forms.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\EPPlusFree.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\FontAwesome.Sharp.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\Krypton.Toolkit.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\Microsoft.Data.SqlClient.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\Microsoft.Identity.Client.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\Microsoft.IdentityModel.Logging.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\Microsoft.ReportViewer.Common.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\Microsoft.ReportViewer.Design.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\Microsoft.SqlServer.Types.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.Buffers.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.ClientModel.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.Configuration.ConfigurationManager.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.IO.FileSystem.AccessControl.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.Memory.Data.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.Memory.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.Numerics.Vectors.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.Security.AccessControl.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.Security.Cryptography.ProtectedData.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.Security.Permissions.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.Security.Principal.Windows.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.Text.Encodings.Web.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.Text.Json.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.ValueTuple.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\EnvDTE.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\stdole.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\Microsoft.MSXML.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\Azure.Core.xml
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\Azure.Identity.xml
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\EPPlusFree.xml
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\Krypton.Toolkit.xml
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\Microsoft.Data.SqlClient.xml
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\Microsoft.Identity.Client.xml
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.xml
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\Microsoft.IdentityModel.Logging.xml
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\Microsoft.IdentityModel.Protocols.xml
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.Buffers.xml
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.ClientModel.xml
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.Configuration.ConfigurationManager.xml
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.IO.FileSystem.AccessControl.xml
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.Memory.xml
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.Memory.Data.xml
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.Numerics.Vectors.xml
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.Security.AccessControl.xml
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.Security.Cryptography.ProtectedData.xml
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.Security.Permissions.xml
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.Security.Principal.Windows.xml
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.Text.Encodings.Web.xml
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.Text.Json.xml
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\System.ValueTuple.xml
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\de\Microsoft.Data.SqlClient.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\es\Microsoft.Data.SqlClient.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\fr\Microsoft.Data.SqlClient.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\it\Microsoft.Data.SqlClient.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\ja\Microsoft.Data.SqlClient.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\ko\Microsoft.Data.SqlClient.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\pt-BR\Microsoft.Data.SqlClient.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Desktop Folder\My Software\MJS - Copy\obj\Debug\MJS.master2.resources
+E:\Desktop Folder\My Software\MJS - Copy\obj\Debug\GHF.shop_login.resources
+E:\Desktop Folder\My Software\MJS - Copy\obj\Debug\MJS.wallpaper.resources
+E:\Desktop Folder\My Software\MJS - Copy\obj\Debug\MJS.csproj.Up2Date
+E:\Desktop Folder\My Software\MJS - Copy\obj\Debug\MJS.outvoucher.resources
+E:\Desktop Folder\My Software\MJS\bin\Debug\EPPlusFree.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\FontAwesome.Sharp.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\Krypton.Toolkit.dll
+E:\Desktop Folder\My Software\MJS\bin\Debug\EPPlusFree.xml
+E:\Desktop Folder\My Software\MJS\bin\Debug\Krypton.Toolkit.xml
+E:\Desktop Folder\My Software\MJS\obj\Debug\MJS.BB_Form.resources
+E:\Desktop Folder\My Software\MJS\obj\Debug\MJS.closing_stock.resources
+E:\Desktop Folder\My Software\MJS\obj\Debug\MJS.login.resources
+E:\Desktop Folder\My Software\MJS\obj\Debug\MJS.outvoucher.resources
+E:\Desktop Folder\My Software\MJS\obj\Debug\MJS.gform.resources
+E:\Desktop Folder\My Software\MJS\obj\Debug\MJS.g_otherout.resources
+E:\Desktop Folder\My Software\MJS\obj\Debug\MJS.g_sale.resources
+E:\Desktop Folder\My Software\MJS\obj\Debug\MJS.Form2.resources
+E:\Desktop Folder\My Software\MJS\obj\Debug\MJS.master2.resources
+E:\Desktop Folder\My Software\MJS\obj\Debug\MJS.payment_form.resources
+E:\Desktop Folder\My Software\MJS\obj\Debug\MJS.preview.resources
+E:\Desktop Folder\My Software\MJS\obj\Debug\GHF.shop_login.resources
+E:\Desktop Folder\My Software\MJS\obj\Debug\MJS.wallpaper.resources
+E:\Update_My_App\MJS\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+E:\Update_My_App\MJS\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+E:\Update_My_App\MJS\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+E:\Update_My_App\MJS\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+E:\Update_My_App\MJS\bin\Debug\MJS.exe.config
+E:\Update_My_App\MJS\bin\Debug\MJS.exe.manifest
+E:\Update_My_App\MJS\bin\Debug\MJS.application
+E:\Update_My_App\MJS\bin\Debug\MJS.exe
+E:\Update_My_App\MJS\bin\Debug\MJS.pdb
+E:\Update_My_App\MJS\bin\Debug\Azure.Core.dll
+E:\Update_My_App\MJS\bin\Debug\Azure.Identity.dll
+E:\Update_My_App\MJS\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+E:\Update_My_App\MJS\bin\Debug\CrystalDecisions.ReportSource.dll
+E:\Update_My_App\MJS\bin\Debug\CrystalDecisions.Shared.dll
+E:\Update_My_App\MJS\bin\Debug\CrystalDecisions.Windows.Forms.dll
+E:\Update_My_App\MJS\bin\Debug\EPPlusFree.dll
+E:\Update_My_App\MJS\bin\Debug\FontAwesome.Sharp.dll
+E:\Update_My_App\MJS\bin\Debug\Krypton.Toolkit.dll
+E:\Update_My_App\MJS\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Update_My_App\MJS\bin\Debug\Microsoft.Data.SqlClient.dll
+E:\Update_My_App\MJS\bin\Debug\Microsoft.Identity.Client.dll
+E:\Update_My_App\MJS\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\Update_My_App\MJS\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+E:\Update_My_App\MJS\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Update_My_App\MJS\bin\Debug\Microsoft.IdentityModel.Logging.dll
+E:\Update_My_App\MJS\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+E:\Update_My_App\MJS\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Update_My_App\MJS\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+E:\Update_My_App\MJS\bin\Debug\Microsoft.ReportViewer.Common.dll
+E:\Update_My_App\MJS\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+E:\Update_My_App\MJS\bin\Debug\Microsoft.ReportViewer.Design.dll
+E:\Update_My_App\MJS\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+E:\Update_My_App\MJS\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+E:\Update_My_App\MJS\bin\Debug\Microsoft.SqlServer.Types.dll
+E:\Update_My_App\MJS\bin\Debug\System.Buffers.dll
+E:\Update_My_App\MJS\bin\Debug\System.ClientModel.dll
+E:\Update_My_App\MJS\bin\Debug\System.Configuration.ConfigurationManager.dll
+E:\Update_My_App\MJS\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+E:\Update_My_App\MJS\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+E:\Update_My_App\MJS\bin\Debug\System.IO.FileSystem.AccessControl.dll
+E:\Update_My_App\MJS\bin\Debug\System.Memory.Data.dll
+E:\Update_My_App\MJS\bin\Debug\System.Memory.dll
+E:\Update_My_App\MJS\bin\Debug\System.Numerics.Vectors.dll
+E:\Update_My_App\MJS\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\Update_My_App\MJS\bin\Debug\System.Security.AccessControl.dll
+E:\Update_My_App\MJS\bin\Debug\System.Security.Cryptography.ProtectedData.dll
+E:\Update_My_App\MJS\bin\Debug\System.Security.Permissions.dll
+E:\Update_My_App\MJS\bin\Debug\System.Security.Principal.Windows.dll
+E:\Update_My_App\MJS\bin\Debug\System.Text.Encodings.Web.dll
+E:\Update_My_App\MJS\bin\Debug\System.Text.Json.dll
+E:\Update_My_App\MJS\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\Update_My_App\MJS\bin\Debug\System.ValueTuple.dll
+E:\Update_My_App\MJS\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+E:\Update_My_App\MJS\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+E:\Update_My_App\MJS\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+E:\Update_My_App\MJS\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+E:\Update_My_App\MJS\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+E:\Update_My_App\MJS\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+E:\Update_My_App\MJS\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+E:\Update_My_App\MJS\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+E:\Update_My_App\MJS\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+E:\Update_My_App\MJS\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+E:\Update_My_App\MJS\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+E:\Update_My_App\MJS\bin\Debug\EnvDTE.dll
+E:\Update_My_App\MJS\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+E:\Update_My_App\MJS\bin\Debug\stdole.dll
+E:\Update_My_App\MJS\bin\Debug\Microsoft.MSXML.dll
+E:\Update_My_App\MJS\bin\Debug\Azure.Core.xml
+E:\Update_My_App\MJS\bin\Debug\Azure.Identity.xml
+E:\Update_My_App\MJS\bin\Debug\EPPlusFree.xml
+E:\Update_My_App\MJS\bin\Debug\Krypton.Toolkit.xml
+E:\Update_My_App\MJS\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\Update_My_App\MJS\bin\Debug\Microsoft.Data.SqlClient.xml
+E:\Update_My_App\MJS\bin\Debug\Microsoft.Identity.Client.xml
+E:\Update_My_App\MJS\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.xml
+E:\Update_My_App\MJS\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
+E:\Update_My_App\MJS\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+E:\Update_My_App\MJS\bin\Debug\Microsoft.IdentityModel.Logging.xml
+E:\Update_My_App\MJS\bin\Debug\Microsoft.IdentityModel.Protocols.xml
+E:\Update_My_App\MJS\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+E:\Update_My_App\MJS\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+E:\Update_My_App\MJS\bin\Debug\System.Buffers.xml
+E:\Update_My_App\MJS\bin\Debug\System.ClientModel.xml
+E:\Update_My_App\MJS\bin\Debug\System.Configuration.ConfigurationManager.xml
+E:\Update_My_App\MJS\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+E:\Update_My_App\MJS\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+E:\Update_My_App\MJS\bin\Debug\System.IO.FileSystem.AccessControl.xml
+E:\Update_My_App\MJS\bin\Debug\System.Memory.xml
+E:\Update_My_App\MJS\bin\Debug\System.Memory.Data.xml
+E:\Update_My_App\MJS\bin\Debug\System.Numerics.Vectors.xml
+E:\Update_My_App\MJS\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\Update_My_App\MJS\bin\Debug\System.Security.AccessControl.xml
+E:\Update_My_App\MJS\bin\Debug\System.Security.Cryptography.ProtectedData.xml
+E:\Update_My_App\MJS\bin\Debug\System.Security.Permissions.xml
+E:\Update_My_App\MJS\bin\Debug\System.Security.Principal.Windows.xml
+E:\Update_My_App\MJS\bin\Debug\System.Text.Encodings.Web.xml
+E:\Update_My_App\MJS\bin\Debug\System.Text.Json.xml
+E:\Update_My_App\MJS\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\Update_My_App\MJS\bin\Debug\System.ValueTuple.xml
+E:\Update_My_App\MJS\bin\Debug\de\Microsoft.Data.SqlClient.resources.dll
+E:\Update_My_App\MJS\bin\Debug\es\Microsoft.Data.SqlClient.resources.dll
+E:\Update_My_App\MJS\bin\Debug\fr\Microsoft.Data.SqlClient.resources.dll
+E:\Update_My_App\MJS\bin\Debug\it\Microsoft.Data.SqlClient.resources.dll
+E:\Update_My_App\MJS\bin\Debug\ja\Microsoft.Data.SqlClient.resources.dll
+E:\Update_My_App\MJS\bin\Debug\ko\Microsoft.Data.SqlClient.resources.dll
+E:\Update_My_App\MJS\bin\Debug\pt-BR\Microsoft.Data.SqlClient.resources.dll
+E:\Update_My_App\MJS\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
+E:\Update_My_App\MJS\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+E:\Update_My_App\MJS\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+E:\Update_My_App\MJS\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+E:\Update_My_App\MJS\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+E:\Update_My_App\MJS\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+E:\Update_My_App\MJS\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+E:\Update_My_App\MJS\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+E:\Update_My_App\MJS\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+E:\Update_My_App\MJS\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+E:\Update_My_App\MJS\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+E:\Update_My_App\MJS\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+E:\Update_My_App\MJS\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+E:\Update_My_App\MJS\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Update_My_App\MJS\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Update_My_App\MJS\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Update_My_App\MJS\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Update_My_App\MJS\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Update_My_App\MJS\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Update_My_App\MJS\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Update_My_App\MJS\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Update_My_App\MJS\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Update_My_App\MJS\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+E:\Update_My_App\MJS\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+E:\Update_My_App\MJS\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+E:\Update_My_App\MJS\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+E:\Update_My_App\MJS\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+E:\Update_My_App\MJS\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+E:\Update_My_App\MJS\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+E:\Update_My_App\MJS\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+E:\Update_My_App\MJS\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+E:\Update_My_App\MJS\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+E:\Update_My_App\MJS\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+E:\Update_My_App\MJS\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Update_My_App\MJS\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Update_My_App\MJS\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Update_My_App\MJS\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Update_My_App\MJS\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Update_My_App\MJS\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Update_My_App\MJS\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Update_My_App\MJS\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Update_My_App\MJS\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Update_My_App\MJS\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+E:\Update_My_App\MJS\obj\Debug\MJS.csproj.AssemblyReference.cache
+E:\Update_My_App\MJS\obj\Debug\MJS.BB_Form.resources
+E:\Update_My_App\MJS\obj\Debug\MJS.closing_stock.resources
+E:\Update_My_App\MJS\obj\Debug\MJS.login.resources
+E:\Update_My_App\MJS\obj\Debug\MJS.outvoucher.resources
+E:\Update_My_App\MJS\obj\Debug\MJS.gform.resources
+E:\Update_My_App\MJS\obj\Debug\MJS.g_otherout.resources
+E:\Update_My_App\MJS\obj\Debug\MJS.g_sale.resources
+E:\Update_My_App\MJS\obj\Debug\MJS.Form2.resources
+E:\Update_My_App\MJS\obj\Debug\MJS.master2.resources
+E:\Update_My_App\MJS\obj\Debug\MJS.payment_form.resources
+E:\Update_My_App\MJS\obj\Debug\MJS.preview.resources
+E:\Update_My_App\MJS\obj\Debug\MJS.Properties.Resources.resources
+E:\Update_My_App\MJS\obj\Debug\GHF.shop_login.resources
+E:\Update_My_App\MJS\obj\Debug\MJS.wallpaper.resources
+E:\Update_My_App\MJS\obj\Debug\MJS.csproj.GenerateResource.cache
+E:\Update_My_App\MJS\obj\Debug\MJS.csproj.CoreCompileInputs.cache
+E:\Update_My_App\MJS\obj\Debug\MJS.exe.manifest
+E:\Update_My_App\MJS\obj\Debug\MJS.application
+E:\Update_My_App\MJS\obj\Debug\MJS.csproj.Up2Date
+E:\Update_My_App\MJS\obj\Debug\MJS.exe
+E:\Update_My_App\MJS\obj\Debug\MJS.pdb
+E:\Update_My_App\MJS\bin\Debug\MetroFramework.dll
+E:\Update_My_App\MJS\bin\Debug\MetroFramework.Fonts.dll
+D:\Update_My_App\MJS\obj\Debug\MJS.csproj.AssemblyReference.cache
+D:\Update_My_App\MJS\obj\Debug\MJS.BB_Form.resources
+D:\Update_My_App\MJS\obj\Debug\MJS.closing_stock.resources
+D:\Update_My_App\MJS\obj\Debug\MJS.login.resources
+D:\Update_My_App\MJS\obj\Debug\MJS.outvoucher.resources
+D:\Update_My_App\MJS\obj\Debug\MJS.gform.resources
+D:\Update_My_App\MJS\obj\Debug\MJS.g_otherout.resources
+D:\Update_My_App\MJS\obj\Debug\MJS.g_sale.resources
+D:\Update_My_App\MJS\obj\Debug\MJS.Form2.resources
+D:\Update_My_App\MJS\obj\Debug\MJS.master2.resources
+D:\Update_My_App\MJS\obj\Debug\MJS.payment_form.resources
+D:\Update_My_App\MJS\obj\Debug\MJS.preview.resources
+D:\Update_My_App\MJS\obj\Debug\MJS.Properties.Resources.resources
+D:\Update_My_App\MJS\obj\Debug\GHF.shop_login.resources
+D:\Update_My_App\MJS\obj\Debug\MJS.wallpaper.resources
+D:\Update_My_App\MJS\obj\Debug\MJS.csproj.GenerateResource.cache
+D:\Update_My_App\MJS\obj\Debug\MJS.csproj.CoreCompileInputs.cache
+D:\Update_My_App\MJS\obj\Debug\MJS.exe
+D:\Update_My_App\MJS\obj\Debug\MJS.pdb
+D:\Update_My_App\MJS\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\Update_My_App\MJS\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\Update_My_App\MJS\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\Update_My_App\MJS\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\Update_My_App\MJS\bin\Debug\MJS.exe.config
+D:\Update_My_App\MJS\bin\Debug\MJS.exe.manifest
+D:\Update_My_App\MJS\bin\Debug\MJS.application
+D:\Update_My_App\MJS\bin\Debug\MJS.exe
+D:\Update_My_App\MJS\bin\Debug\MJS.pdb
+D:\Update_My_App\MJS\bin\Debug\Azure.Core.dll
+D:\Update_My_App\MJS\bin\Debug\Azure.Identity.dll
+D:\Update_My_App\MJS\bin\Debug\EPPlusFree.dll
+D:\Update_My_App\MJS\bin\Debug\FontAwesome.Sharp.dll
+D:\Update_My_App\MJS\bin\Debug\Krypton.Toolkit.dll
+D:\Update_My_App\MJS\bin\Debug\MetroFramework.dll
+D:\Update_My_App\MJS\bin\Debug\MetroFramework.Fonts.dll
+D:\Update_My_App\MJS\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Update_My_App\MJS\bin\Debug\Microsoft.Data.SqlClient.dll
+D:\Update_My_App\MJS\bin\Debug\Microsoft.Identity.Client.dll
+D:\Update_My_App\MJS\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Update_My_App\MJS\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+D:\Update_My_App\MJS\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Update_My_App\MJS\bin\Debug\Microsoft.IdentityModel.Logging.dll
+D:\Update_My_App\MJS\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+D:\Update_My_App\MJS\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Update_My_App\MJS\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+D:\Update_My_App\MJS\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\Update_My_App\MJS\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\Update_My_App\MJS\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\Update_My_App\MJS\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Update_My_App\MJS\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\Update_My_App\MJS\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\Update_My_App\MJS\bin\Debug\System.Buffers.dll
+D:\Update_My_App\MJS\bin\Debug\System.ClientModel.dll
+D:\Update_My_App\MJS\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\Update_My_App\MJS\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\Update_My_App\MJS\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+D:\Update_My_App\MJS\bin\Debug\System.IO.FileSystem.AccessControl.dll
+D:\Update_My_App\MJS\bin\Debug\System.Memory.Data.dll
+D:\Update_My_App\MJS\bin\Debug\System.Memory.dll
+D:\Update_My_App\MJS\bin\Debug\System.Numerics.Vectors.dll
+D:\Update_My_App\MJS\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Update_My_App\MJS\bin\Debug\System.Security.AccessControl.dll
+D:\Update_My_App\MJS\bin\Debug\System.Security.Cryptography.ProtectedData.dll
+D:\Update_My_App\MJS\bin\Debug\System.Security.Permissions.dll
+D:\Update_My_App\MJS\bin\Debug\System.Security.Principal.Windows.dll
+D:\Update_My_App\MJS\bin\Debug\System.Text.Encodings.Web.dll
+D:\Update_My_App\MJS\bin\Debug\System.Text.Json.dll
+D:\Update_My_App\MJS\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Update_My_App\MJS\bin\Debug\System.ValueTuple.dll
+D:\Update_My_App\MJS\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\Update_My_App\MJS\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\Update_My_App\MJS\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\Update_My_App\MJS\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\Update_My_App\MJS\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\Update_My_App\MJS\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\Update_My_App\MJS\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\Update_My_App\MJS\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\Update_My_App\MJS\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\Update_My_App\MJS\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\Update_My_App\MJS\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\Update_My_App\MJS\bin\Debug\EnvDTE.dll
+D:\Update_My_App\MJS\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\Update_My_App\MJS\bin\Debug\stdole.dll
+D:\Update_My_App\MJS\bin\Debug\Azure.Core.xml
+D:\Update_My_App\MJS\bin\Debug\Azure.Identity.xml
+D:\Update_My_App\MJS\bin\Debug\EPPlusFree.xml
+D:\Update_My_App\MJS\bin\Debug\Krypton.Toolkit.xml
+D:\Update_My_App\MJS\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Update_My_App\MJS\bin\Debug\Microsoft.Data.SqlClient.xml
+D:\Update_My_App\MJS\bin\Debug\Microsoft.Identity.Client.xml
+D:\Update_My_App\MJS\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.xml
+D:\Update_My_App\MJS\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
+D:\Update_My_App\MJS\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\Update_My_App\MJS\bin\Debug\Microsoft.IdentityModel.Logging.xml
+D:\Update_My_App\MJS\bin\Debug\Microsoft.IdentityModel.Protocols.xml
+D:\Update_My_App\MJS\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+D:\Update_My_App\MJS\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+D:\Update_My_App\MJS\bin\Debug\System.Buffers.xml
+D:\Update_My_App\MJS\bin\Debug\System.ClientModel.xml
+D:\Update_My_App\MJS\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\Update_My_App\MJS\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\Update_My_App\MJS\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+D:\Update_My_App\MJS\bin\Debug\System.IO.FileSystem.AccessControl.xml
+D:\Update_My_App\MJS\bin\Debug\System.Memory.xml
+D:\Update_My_App\MJS\bin\Debug\System.Memory.Data.xml
+D:\Update_My_App\MJS\bin\Debug\System.Numerics.Vectors.xml
+D:\Update_My_App\MJS\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Update_My_App\MJS\bin\Debug\System.Security.AccessControl.xml
+D:\Update_My_App\MJS\bin\Debug\System.Security.Cryptography.ProtectedData.xml
+D:\Update_My_App\MJS\bin\Debug\System.Security.Permissions.xml
+D:\Update_My_App\MJS\bin\Debug\System.Security.Principal.Windows.xml
+D:\Update_My_App\MJS\bin\Debug\System.Text.Encodings.Web.xml
+D:\Update_My_App\MJS\bin\Debug\System.Text.Json.xml
+D:\Update_My_App\MJS\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Update_My_App\MJS\bin\Debug\System.ValueTuple.xml
+D:\Update_My_App\MJS\bin\Debug\de\Microsoft.Data.SqlClient.resources.dll
+D:\Update_My_App\MJS\bin\Debug\es\Microsoft.Data.SqlClient.resources.dll
+D:\Update_My_App\MJS\bin\Debug\fr\Microsoft.Data.SqlClient.resources.dll
+D:\Update_My_App\MJS\bin\Debug\it\Microsoft.Data.SqlClient.resources.dll
+D:\Update_My_App\MJS\bin\Debug\ja\Microsoft.Data.SqlClient.resources.dll
+D:\Update_My_App\MJS\bin\Debug\ko\Microsoft.Data.SqlClient.resources.dll
+D:\Update_My_App\MJS\bin\Debug\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\Update_My_App\MJS\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
+D:\Update_My_App\MJS\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\Update_My_App\MJS\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\Update_My_App\MJS\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\Update_My_App\MJS\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\Update_My_App\MJS\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\Update_My_App\MJS\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\Update_My_App\MJS\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\Update_My_App\MJS\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\Update_My_App\MJS\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\Update_My_App\MJS\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\Update_My_App\MJS\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\Update_My_App\MJS\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\Update_My_App\MJS\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Update_My_App\MJS\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Update_My_App\MJS\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Update_My_App\MJS\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Update_My_App\MJS\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Update_My_App\MJS\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Update_My_App\MJS\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Update_My_App\MJS\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Update_My_App\MJS\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Update_My_App\MJS\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Update_My_App\MJS\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\Update_My_App\MJS\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\Update_My_App\MJS\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\Update_My_App\MJS\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\Update_My_App\MJS\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\Update_My_App\MJS\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\Update_My_App\MJS\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\Update_My_App\MJS\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\Update_My_App\MJS\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\Update_My_App\MJS\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\Update_My_App\MJS\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Update_My_App\MJS\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Update_My_App\MJS\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Update_My_App\MJS\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Update_My_App\MJS\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Update_My_App\MJS\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Update_My_App\MJS\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Update_My_App\MJS\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Update_My_App\MJS\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Update_My_App\MJS\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Update_My_App\MJS\obj\Debug\MJS.exe.manifest
+D:\Update_My_App\MJS\obj\Debug\MJS.application
+D:\Update_My_App\MJS\obj\Debug\MJS.csproj.Up2Date
+D:\Update_My_Application\MJS\obj\Debug\MJS.csproj.AssemblyReference.cache
+D:\Update_My_Application\MJS\obj\Debug\MJS.BB_Form.resources
+D:\Update_My_Application\MJS\obj\Debug\MJS.closing_stock.resources
+D:\Update_My_Application\MJS\obj\Debug\MJS.login.resources
+D:\Update_My_Application\MJS\obj\Debug\MJS.outvoucher.resources
+D:\Update_My_Application\MJS\obj\Debug\MJS.gform.resources
+D:\Update_My_Application\MJS\obj\Debug\MJS.g_otherout.resources
+D:\Update_My_Application\MJS\obj\Debug\MJS.g_sale.resources
+D:\Update_My_Application\MJS\obj\Debug\MJS.Form2.resources
+D:\Update_My_Application\MJS\obj\Debug\MJS.master2.resources
+D:\Update_My_Application\MJS\obj\Debug\MJS.payment_form.resources
+D:\Update_My_Application\MJS\obj\Debug\MJS.preview.resources
+D:\Update_My_Application\MJS\obj\Debug\MJS.Properties.Resources.resources
+D:\Update_My_Application\MJS\obj\Debug\GHF.shop_login.resources
+D:\Update_My_Application\MJS\obj\Debug\MJS.wallpaper.resources
+D:\Update_My_Application\MJS\obj\Debug\MJS.csproj.GenerateResource.cache
+D:\Update_My_Application\MJS\obj\Debug\MJS.csproj.CoreCompileInputs.cache
+D:\Update_My_Application\MJS\obj\Debug\MJS.exe
+D:\Update_My_Application\MJS\obj\Debug\MJS.pdb
+D:\Update_My_Application\MJS\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\Update_My_Application\MJS\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\Update_My_Application\MJS\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\Update_My_Application\MJS\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\Update_My_Application\MJS\bin\Debug\MJS.exe.config
+D:\Update_My_Application\MJS\bin\Debug\MJS.exe.manifest
+D:\Update_My_Application\MJS\bin\Debug\MJS.application
+D:\Update_My_Application\MJS\bin\Debug\MJS.exe
+D:\Update_My_Application\MJS\bin\Debug\MJS.pdb
+D:\Update_My_Application\MJS\bin\Debug\Azure.Core.dll
+D:\Update_My_Application\MJS\bin\Debug\Azure.Identity.dll
+D:\Update_My_Application\MJS\bin\Debug\EPPlusFree.dll
+D:\Update_My_Application\MJS\bin\Debug\FontAwesome.Sharp.dll
+D:\Update_My_Application\MJS\bin\Debug\Krypton.Toolkit.dll
+D:\Update_My_Application\MJS\bin\Debug\MetroFramework.dll
+D:\Update_My_Application\MJS\bin\Debug\MetroFramework.Fonts.dll
+D:\Update_My_Application\MJS\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Update_My_Application\MJS\bin\Debug\Microsoft.Data.SqlClient.dll
+D:\Update_My_Application\MJS\bin\Debug\Microsoft.Identity.Client.dll
+D:\Update_My_Application\MJS\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Update_My_Application\MJS\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+D:\Update_My_Application\MJS\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Update_My_Application\MJS\bin\Debug\Microsoft.IdentityModel.Logging.dll
+D:\Update_My_Application\MJS\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+D:\Update_My_Application\MJS\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Update_My_Application\MJS\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+D:\Update_My_Application\MJS\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\Update_My_Application\MJS\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\Update_My_Application\MJS\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\Update_My_Application\MJS\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Update_My_Application\MJS\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\Update_My_Application\MJS\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\Update_My_Application\MJS\bin\Debug\System.Buffers.dll
+D:\Update_My_Application\MJS\bin\Debug\System.ClientModel.dll
+D:\Update_My_Application\MJS\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\Update_My_Application\MJS\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\Update_My_Application\MJS\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+D:\Update_My_Application\MJS\bin\Debug\System.IO.FileSystem.AccessControl.dll
+D:\Update_My_Application\MJS\bin\Debug\System.Memory.Data.dll
+D:\Update_My_Application\MJS\bin\Debug\System.Memory.dll
+D:\Update_My_Application\MJS\bin\Debug\System.Numerics.Vectors.dll
+D:\Update_My_Application\MJS\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Update_My_Application\MJS\bin\Debug\System.Security.AccessControl.dll
+D:\Update_My_Application\MJS\bin\Debug\System.Security.Cryptography.ProtectedData.dll
+D:\Update_My_Application\MJS\bin\Debug\System.Security.Permissions.dll
+D:\Update_My_Application\MJS\bin\Debug\System.Security.Principal.Windows.dll
+D:\Update_My_Application\MJS\bin\Debug\System.Text.Encodings.Web.dll
+D:\Update_My_Application\MJS\bin\Debug\System.Text.Json.dll
+D:\Update_My_Application\MJS\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Update_My_Application\MJS\bin\Debug\System.ValueTuple.dll
+D:\Update_My_Application\MJS\bin\Debug\EnvDTE.dll
+D:\Update_My_Application\MJS\bin\Debug\stdole.dll
+D:\Update_My_Application\MJS\bin\Debug\Azure.Core.xml
+D:\Update_My_Application\MJS\bin\Debug\Azure.Identity.xml
+D:\Update_My_Application\MJS\bin\Debug\EPPlusFree.xml
+D:\Update_My_Application\MJS\bin\Debug\Krypton.Toolkit.xml
+D:\Update_My_Application\MJS\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Update_My_Application\MJS\bin\Debug\Microsoft.Data.SqlClient.xml
+D:\Update_My_Application\MJS\bin\Debug\Microsoft.Identity.Client.xml
+D:\Update_My_Application\MJS\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.xml
+D:\Update_My_Application\MJS\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
+D:\Update_My_Application\MJS\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\Update_My_Application\MJS\bin\Debug\Microsoft.IdentityModel.Logging.xml
+D:\Update_My_Application\MJS\bin\Debug\Microsoft.IdentityModel.Protocols.xml
+D:\Update_My_Application\MJS\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+D:\Update_My_Application\MJS\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+D:\Update_My_Application\MJS\bin\Debug\System.Buffers.xml
+D:\Update_My_Application\MJS\bin\Debug\System.ClientModel.xml
+D:\Update_My_Application\MJS\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\Update_My_Application\MJS\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\Update_My_Application\MJS\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+D:\Update_My_Application\MJS\bin\Debug\System.IO.FileSystem.AccessControl.xml
+D:\Update_My_Application\MJS\bin\Debug\System.Memory.xml
+D:\Update_My_Application\MJS\bin\Debug\System.Memory.Data.xml
+D:\Update_My_Application\MJS\bin\Debug\System.Numerics.Vectors.xml
+D:\Update_My_Application\MJS\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Update_My_Application\MJS\bin\Debug\System.Security.AccessControl.xml
+D:\Update_My_Application\MJS\bin\Debug\System.Security.Cryptography.ProtectedData.xml
+D:\Update_My_Application\MJS\bin\Debug\System.Security.Permissions.xml
+D:\Update_My_Application\MJS\bin\Debug\System.Security.Principal.Windows.xml
+D:\Update_My_Application\MJS\bin\Debug\System.Text.Encodings.Web.xml
+D:\Update_My_Application\MJS\bin\Debug\System.Text.Json.xml
+D:\Update_My_Application\MJS\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Update_My_Application\MJS\bin\Debug\System.ValueTuple.xml
+D:\Update_My_Application\MJS\bin\Debug\de\Microsoft.Data.SqlClient.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\es\Microsoft.Data.SqlClient.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\fr\Microsoft.Data.SqlClient.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\it\Microsoft.Data.SqlClient.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\ja\Microsoft.Data.SqlClient.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\ko\Microsoft.Data.SqlClient.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Update_My_Application\MJS\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Update_My_Application\MJS\obj\Debug\MJS.exe.manifest
+D:\Update_My_Application\MJS\obj\Debug\MJS.application
+D:\Update_My_Application\MJS\obj\Debug\MJS.csproj.Up2Date
+D:\Update_My_Application\MJS\bin\Debug\Microsoft.MSXML.dll
