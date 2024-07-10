@@ -3,19 +3,23 @@
   "WorkspaceRootPath": "D:\\MJS_Cloud_Application\\MJS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|d:\\mjs_cloud_application\\mjs\\wallpaper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|solutionrelative:wallpaper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|D:\\MJS_Cloud_Application\\MJS\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|solutionrelative:home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|MJS||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|d:\\mjs_cloud_application\\mjs\\gform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|D:\\MJS_Cloud_Application\\MJS\\gform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|solutionrelative:gform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|D:\\MJS_Cloud_Application\\MJS\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|solutionrelative:home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|D:\\MJS_Cloud_Application\\MJS\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|solutionrelative:home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|D:\\MJS_Cloud_Application\\MJS\\home.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -76,9 +80,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|D:\\MJS_Cloud_Application\\MJS\\bb form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|solutionrelative:bb form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D721BF30-A1A8-478C-BD00-C6E648B0EFEE}|MJS.csproj|d:\\mjs_cloud_application\\mjs\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|cc4014f5-b18d-439c-9352-f99d984cca85"
     }
   ],
   "DocumentGroupContainers": [
@@ -93,18 +94,29 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "wallpaper.cs [Design]",
+              "DocumentMoniker": "D:\\MJS_Cloud_Application\\MJS\\wallpaper.cs",
+              "RelativeDocumentMoniker": "wallpaper.cs",
+              "ToolTip": "D:\\MJS_Cloud_Application\\MJS\\wallpaper.cs [Design]",
+              "RelativeToolTip": "wallpaper.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T17:34:13.711Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "MJS",
               "DocumentMoniker": "D:\\MJS_Cloud_Application\\MJS\\MJS.csproj",
               "RelativeDocumentMoniker": "MJS.csproj",
               "ToolTip": "D:\\MJS_Cloud_Application\\MJS\\MJS.csproj",
               "RelativeToolTip": "MJS.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-07-09T23:38:59.132Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-09T23:38:59.132Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Home.cs [Design]",
               "DocumentMoniker": "D:\\MJS_Cloud_Application\\MJS\\Home.cs",
               "RelativeDocumentMoniker": "Home.cs",
@@ -115,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "shop_login.cs [Design]",
               "DocumentMoniker": "D:\\MJS_Cloud_Application\\MJS\\shop_login.cs",
               "RelativeDocumentMoniker": "shop_login.cs",
@@ -126,7 +138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "preview.cs [Design]",
               "DocumentMoniker": "D:\\MJS_Cloud_Application\\MJS\\preview.cs",
               "RelativeDocumentMoniker": "preview.cs",
@@ -137,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "payment_form.cs [Design]",
               "DocumentMoniker": "D:\\MJS_Cloud_Application\\MJS\\payment_form.cs",
               "RelativeDocumentMoniker": "payment_form.cs",
@@ -148,7 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "g_sale.cs [Design]",
               "DocumentMoniker": "D:\\MJS_Cloud_Application\\MJS\\g_sale.cs",
               "RelativeDocumentMoniker": "g_sale.cs",
@@ -159,19 +171,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "gform.cs [Design]",
               "DocumentMoniker": "D:\\MJS_Cloud_Application\\MJS\\gform.cs",
               "RelativeDocumentMoniker": "gform.cs",
               "ToolTip": "D:\\MJS_Cloud_Application\\MJS\\gform.cs [Design]",
               "RelativeToolTip": "gform.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T20:35:33.74Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-07-09T20:35:33.74Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Home.cs",
               "DocumentMoniker": "D:\\MJS_Cloud_Application\\MJS\\Home.cs",
               "RelativeDocumentMoniker": "Home.cs",
@@ -183,7 +194,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "g_sale.cs",
               "DocumentMoniker": "D:\\MJS_Cloud_Application\\MJS\\g_sale.cs",
               "RelativeDocumentMoniker": "g_sale.cs",
@@ -195,7 +206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Home.Designer.cs",
               "DocumentMoniker": "D:\\MJS_Cloud_Application\\MJS\\Home.Designer.cs",
               "RelativeDocumentMoniker": "Home.Designer.cs",
@@ -207,7 +218,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "master2.cs [Design]",
               "DocumentMoniker": "D:\\MJS_Cloud_Application\\MJS\\master2.cs",
               "RelativeDocumentMoniker": "master2.cs",
@@ -218,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "master2.cs",
               "DocumentMoniker": "D:\\MJS_Cloud_Application\\MJS\\master2.cs",
               "RelativeDocumentMoniker": "master2.cs",
@@ -230,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\MJS_Cloud_Application\\MJS\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -242,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "gform.cs",
               "DocumentMoniker": "D:\\MJS_Cloud_Application\\MJS\\gform.cs",
               "RelativeDocumentMoniker": "gform.cs",
@@ -254,7 +265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "preview.cs",
               "DocumentMoniker": "D:\\MJS_Cloud_Application\\MJS\\preview.cs",
               "RelativeDocumentMoniker": "preview.cs",
@@ -266,7 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "master2.Designer.cs",
               "DocumentMoniker": "D:\\MJS_Cloud_Application\\MJS\\master2.Designer.cs",
               "RelativeDocumentMoniker": "master2.Designer.cs",
@@ -278,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "payment_form.cs",
               "DocumentMoniker": "D:\\MJS_Cloud_Application\\MJS\\payment_form.cs",
               "RelativeDocumentMoniker": "payment_form.cs",
@@ -290,7 +301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "payment_form.Designer.cs",
               "DocumentMoniker": "D:\\MJS_Cloud_Application\\MJS\\payment_form.Designer.cs",
               "RelativeDocumentMoniker": "payment_form.Designer.cs",
@@ -302,7 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "BB Form.cs [Design]",
               "DocumentMoniker": "D:\\MJS_Cloud_Application\\MJS\\BB Form.cs",
               "RelativeDocumentMoniker": "BB Form.cs",
