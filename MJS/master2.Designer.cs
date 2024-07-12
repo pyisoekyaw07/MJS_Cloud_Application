@@ -39,14 +39,6 @@ namespace MJS
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.pen_counter = new System.Windows.Forms.Panel();
-            this.btn_counter_save = new System.Windows.Forms.Button();
-            this.txt_Gem_counter = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txt_WG_counter = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txt_G_counter = new System.Windows.Forms.TextBox();
             this.Pan_item = new System.Windows.Forms.Panel();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
@@ -57,6 +49,14 @@ namespace MJS
             this.itemtype_combo = new System.Windows.Forms.ComboBox();
             this.txt_master_item = new System.Windows.Forms.TextBox();
             this.Parentitem_combo = new System.Windows.Forms.ComboBox();
+            this.pen_counter = new System.Windows.Forms.Panel();
+            this.btn_counter_save = new System.Windows.Forms.Button();
+            this.txt_Gem_counter = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txt_WG_counter = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txt_G_counter = new System.Windows.Forms.TextBox();
             this.txt_item = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -75,11 +75,12 @@ namespace MJS
             this.txt_Date = new System.Windows.Forms.Label();
             this.btn_product = new FontAwesome.Sharp.IconButton();
             this.btn_shop = new FontAwesome.Sharp.IconButton();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.pen_counter.SuspendLayout();
             this.Pan_item.SuspendLayout();
+            this.pen_counter.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage2.SuspendLayout();
@@ -90,21 +91,19 @@ namespace MJS
             // tabControl1
             // 
             this.tabControl1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.tabControl1.Alignment = System.Windows.Forms.TabAlignment.Left;
             this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.tabControl1.ItemSize = new System.Drawing.Size(1, 4);
-            this.tabControl1.Location = new System.Drawing.Point(135, 11);
+            this.tabControl1.Location = new System.Drawing.Point(207, 25);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1272, 464);
-            this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.tabControl1.Size = new System.Drawing.Size(1007, 400);
             this.tabControl1.TabIndex = 5;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
@@ -115,11 +114,11 @@ namespace MJS
             this.tabPage1.Controls.Add(this.txt_item);
             this.tabPage1.Controls.Add(this.panel1);
             this.tabPage1.Controls.Add(this.txt_update);
-            this.tabPage1.Location = new System.Drawing.Point(8, 4);
+            this.tabPage1.Location = new System.Drawing.Point(4, 8);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage1.Size = new System.Drawing.Size(1260, 456);
+            this.tabPage1.Size = new System.Drawing.Size(999, 388);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Product Master";
             // 
@@ -154,86 +153,6 @@ namespace MJS
             this.comboBox1.Size = new System.Drawing.Size(205, 30);
             this.comboBox1.TabIndex = 26;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
-            // 
-            // pen_counter
-            // 
-            this.pen_counter.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.pen_counter.Controls.Add(this.btn_counter_save);
-            this.pen_counter.Controls.Add(this.txt_Gem_counter);
-            this.pen_counter.Controls.Add(this.label6);
-            this.pen_counter.Controls.Add(this.label5);
-            this.pen_counter.Controls.Add(this.txt_WG_counter);
-            this.pen_counter.Controls.Add(this.label4);
-            this.pen_counter.Controls.Add(this.txt_G_counter);
-            this.pen_counter.Location = new System.Drawing.Point(19, 79);
-            this.pen_counter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pen_counter.Name = "pen_counter";
-            this.pen_counter.Size = new System.Drawing.Size(436, 228);
-            this.pen_counter.TabIndex = 23;
-            // 
-            // btn_counter_save
-            // 
-            this.btn_counter_save.Location = new System.Drawing.Point(112, 165);
-            this.btn_counter_save.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_counter_save.Name = "btn_counter_save";
-            this.btn_counter_save.Size = new System.Drawing.Size(193, 36);
-            this.btn_counter_save.TabIndex = 6;
-            this.btn_counter_save.Text = "Save";
-            this.btn_counter_save.UseVisualStyleBackColor = true;
-            // 
-            // txt_Gem_counter
-            // 
-            this.txt_Gem_counter.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_Gem_counter.Location = new System.Drawing.Point(112, 122);
-            this.txt_Gem_counter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_Gem_counter.Name = "txt_Gem_counter";
-            this.txt_Gem_counter.Size = new System.Drawing.Size(193, 30);
-            this.txt_Gem_counter.TabIndex = 5;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(13, 123);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(40, 22);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Gems";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 77);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 22);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Whitegold";
-            // 
-            // txt_WG_counter
-            // 
-            this.txt_WG_counter.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_WG_counter.Location = new System.Drawing.Point(112, 76);
-            this.txt_WG_counter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_WG_counter.Name = "txt_WG_counter";
-            this.txt_WG_counter.Size = new System.Drawing.Size(193, 30);
-            this.txt_WG_counter.TabIndex = 2;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 30);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 22);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Gold";
-            // 
-            // txt_G_counter
-            // 
-            this.txt_G_counter.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_G_counter.Location = new System.Drawing.Point(112, 30);
-            this.txt_G_counter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_G_counter.Name = "txt_G_counter";
-            this.txt_G_counter.Size = new System.Drawing.Size(193, 30);
-            this.txt_G_counter.TabIndex = 0;
             // 
             // Pan_item
             // 
@@ -358,8 +277,87 @@ namespace MJS
             this.Parentitem_combo.Name = "Parentitem_combo";
             this.Parentitem_combo.Size = new System.Drawing.Size(283, 30);
             this.Parentitem_combo.TabIndex = 16;
-            
             this.Parentitem_combo.Click += new System.EventHandler(this.Parentitem_combo_Click_2);
+            // 
+            // pen_counter
+            // 
+            this.pen_counter.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.pen_counter.Controls.Add(this.btn_counter_save);
+            this.pen_counter.Controls.Add(this.txt_Gem_counter);
+            this.pen_counter.Controls.Add(this.label6);
+            this.pen_counter.Controls.Add(this.label5);
+            this.pen_counter.Controls.Add(this.txt_WG_counter);
+            this.pen_counter.Controls.Add(this.label4);
+            this.pen_counter.Controls.Add(this.txt_G_counter);
+            this.pen_counter.Location = new System.Drawing.Point(19, 79);
+            this.pen_counter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pen_counter.Name = "pen_counter";
+            this.pen_counter.Size = new System.Drawing.Size(436, 228);
+            this.pen_counter.TabIndex = 23;
+            // 
+            // btn_counter_save
+            // 
+            this.btn_counter_save.Location = new System.Drawing.Point(112, 165);
+            this.btn_counter_save.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_counter_save.Name = "btn_counter_save";
+            this.btn_counter_save.Size = new System.Drawing.Size(193, 36);
+            this.btn_counter_save.TabIndex = 6;
+            this.btn_counter_save.Text = "Save";
+            this.btn_counter_save.UseVisualStyleBackColor = true;
+            // 
+            // txt_Gem_counter
+            // 
+            this.txt_Gem_counter.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.txt_Gem_counter.Location = new System.Drawing.Point(112, 122);
+            this.txt_Gem_counter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_Gem_counter.Name = "txt_Gem_counter";
+            this.txt_Gem_counter.Size = new System.Drawing.Size(193, 30);
+            this.txt_Gem_counter.TabIndex = 5;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(13, 123);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(40, 22);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Gems";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(13, 77);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(64, 22);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Whitegold";
+            // 
+            // txt_WG_counter
+            // 
+            this.txt_WG_counter.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.txt_WG_counter.Location = new System.Drawing.Point(112, 76);
+            this.txt_WG_counter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_WG_counter.Name = "txt_WG_counter";
+            this.txt_WG_counter.Size = new System.Drawing.Size(193, 30);
+            this.txt_WG_counter.TabIndex = 2;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(13, 30);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(35, 22);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Gold";
+            // 
+            // txt_G_counter
+            // 
+            this.txt_G_counter.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.txt_G_counter.Location = new System.Drawing.Point(112, 30);
+            this.txt_G_counter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_G_counter.Name = "txt_G_counter";
+            this.txt_G_counter.Size = new System.Drawing.Size(193, 30);
+            this.txt_G_counter.TabIndex = 0;
             // 
             // txt_item
             // 
@@ -423,11 +421,11 @@ namespace MJS
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.groupBox2);
-            this.tabPage2.Location = new System.Drawing.Point(8, 4);
+            this.tabPage2.Location = new System.Drawing.Point(4, 8);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Size = new System.Drawing.Size(1260, 632);
+            this.tabPage2.Size = new System.Drawing.Size(999, 388);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Shop";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -441,21 +439,21 @@ namespace MJS
             this.groupBox2.Controls.Add(this.dataGridView2);
             this.groupBox2.Controls.Add(this.txt_branch_name);
             this.groupBox2.Controls.Add(this.btn_shop_save);
-            this.groupBox2.Location = new System.Drawing.Point(266, 63);
+            this.groupBox2.Location = new System.Drawing.Point(55, 84);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(756, 171);
+            this.groupBox2.Size = new System.Drawing.Size(756, 211);
             this.groupBox2.TabIndex = 30;
             this.groupBox2.TabStop = false;
             this.groupBox2.Visible = false;
             // 
             // btn_View
             // 
-            this.btn_View.Location = new System.Drawing.Point(127, 109);
+            this.btn_View.Location = new System.Drawing.Point(127, 134);
             this.btn_View.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_View.Name = "btn_View";
-            this.btn_View.Size = new System.Drawing.Size(166, 21);
+            this.btn_View.Size = new System.Drawing.Size(166, 32);
             this.btn_View.TabIndex = 33;
             this.btn_View.Text = "View";
             this.btn_View.UseVisualStyleBackColor = true;
@@ -495,12 +493,12 @@ namespace MJS
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 30;
-            this.dataGridView2.Size = new System.Drawing.Size(402, 93);
+            this.dataGridView2.Size = new System.Drawing.Size(402, 134);
             this.dataGridView2.TabIndex = 30;
             // 
             // txt_branch_name
             // 
-            this.txt_branch_name.Location = new System.Drawing.Point(127, 51);
+            this.txt_branch_name.Location = new System.Drawing.Point(127, 60);
             this.txt_branch_name.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_branch_name.Name = "txt_branch_name";
             this.txt_branch_name.Size = new System.Drawing.Size(166, 30);
@@ -508,10 +506,10 @@ namespace MJS
             // 
             // btn_shop_save
             // 
-            this.btn_shop_save.Location = new System.Drawing.Point(127, 81);
+            this.btn_shop_save.Location = new System.Drawing.Point(127, 97);
             this.btn_shop_save.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_shop_save.Name = "btn_shop_save";
-            this.btn_shop_save.Size = new System.Drawing.Size(166, 21);
+            this.btn_shop_save.Size = new System.Drawing.Size(166, 32);
             this.btn_shop_save.TabIndex = 30;
             this.btn_shop_save.Text = "Save";
             this.btn_shop_save.UseVisualStyleBackColor = true;
@@ -575,6 +573,15 @@ namespace MJS
             this.btn_shop.UseVisualStyleBackColor = true;
             this.btn_shop.Click += new System.EventHandler(this.btn_shop_Click);
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 8);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(999, 388);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "setting";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
             // master2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -596,10 +603,10 @@ namespace MJS
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
-            this.pen_counter.ResumeLayout(false);
-            this.pen_counter.PerformLayout();
             this.Pan_item.ResumeLayout(false);
             this.Pan_item.PerformLayout();
+            this.pen_counter.ResumeLayout(false);
+            this.pen_counter.PerformLayout();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage2.ResumeLayout(false);
@@ -612,8 +619,6 @@ namespace MJS
         }
 
         #endregion
-
-        private TabControl tabControl1;
         private TabPage tabPage1;
         private ComboBox comboBox1;
         private Panel Pan_item;
@@ -653,5 +658,7 @@ namespace MJS
         private GroupBox groupBox1;
         private FontAwesome.Sharp.IconButton btn_product;
         private FontAwesome.Sharp.IconButton btn_shop;
+        private TabPage tabPage3;
+        private TabControl tabControl1;
     }
 }

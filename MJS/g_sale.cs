@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.IO;
 using System.Globalization;
+using OfficeOpenXml.FormulaParsing.Excel.Functions.Math;
+using System.Runtime.InteropServices;
 
 
 
@@ -18,7 +20,16 @@ namespace MJS
 
     public partial class g_sale : Form
     {
+        [DllImport("wininet.dll")]
+        private extern static bool InternetGetConnectedState(out int Description, int ReservedValue);
+
         SqlConnection con = new SqlConnection("Data Source=sql.bsite.net\\MSSQL2016;User ID=pyisoekyaw_;Password=pyisoe@#101215");
+
+        SqlCommand cmd, cmd2, cmd3;
+        SqlDataAdapter adpt;
+        DataTable dt;
+        DataSet ds;
+        string sql, sql2, sql3;
         public g_sale()
         {
             InitializeComponent();
@@ -27,6 +38,8 @@ namespace MJS
         private void g_sale_Load(object sender, EventArgs e)
         {
             txt_shop.Text = login.shopvalue;
+            timer2.Interval = 200;
+            timer2.Start();
             if (txt_goldprice.Text == "")
             {
                 txt_goldprice.Text = "0";
@@ -36,6 +49,29 @@ namespace MJS
             }
             /*getgoldprice();*/
 
+        }
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            if (true)//check new order
+            {
+                timer2.Stop();
+                int Desc;
+                string check = "";
+                check = (InternetGetConnectedState(out Desc, 0).ToString());
+                if (check == "True")
+                {
+                    invoiceid();
+                    resetpid();
+                    counter();
+
+                }
+                else
+                {
+                    MessageBox.Show("Check Your Internet Connection");
+                    this.Enabled = false;
+                    this.BackColor = System.Drawing.Color.GhostWhite;
+                }
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -109,50 +145,26 @@ namespace MJS
             }
             finally { formbackground.Dispose(); }
         }
-
-        private void txt_out_no_TextChanged(object sender, EventArgs e)
+        private int sumqty = 0;
+        private void totalqty()
         {
-            try 
+            if (int.TryParse(label_qty.Text, out int value)) 
             {
-
-                if (txt_out_no.Text != "")
-                {
-                    con.Open();
-                    SqlCommand cmd = new SqlCommand("Select Image,Item,Itemname,Gm,GoldType from closing_stock where ProductID=@ProductID", con);
-                    cmd.Parameters.AddWithValue("@ProductID", txt_out_no.Text);
-                    using (SqlDataReader da = cmd.ExecuteReader())
-                    {
-                        byte[] imagedata = null;
-                        if (da.Read())
-                        {
-                            imagedata = (byte[])da.GetValue(0);
-                            label_Item.Text = da.GetValue(1).ToString();
-                            label_itemname.Text = da.GetValue(2).ToString();
-                            label_gm.Text = da.GetValue(3).ToString();
-                            label_goldtype.Text = da.GetValue(4).ToString();
-
-
-                        }
-                        if (imagedata != null)
-                        {
-                            using (MemoryStream ms = new MemoryStream(imagedata))
-                            {
-                                Image image = Image.FromStream(ms);
-
-                                PictureBox pictureBox = new PictureBox();
-                                pit_show.Image = image;
-                            }
-                        }
-                        con.Close();
-                    }
-
-                }
-
-            } catch (Exception ex) { MessageBox.Show("An error occurred:"+ex.Message); }
-               
+                sumqty += value;
+                txt_total_qty.Text = sumqty.ToString();
             
+            }
         }
+        private decimal sumgm = 0;
+        private void totalgm() 
+        {
+            if (decimal.TryParse(label_gm.Text, out decimal gm))
+            {
+                sumgm += gm;
+                txt_total_gm.Text = sumgm.ToString();
 
+            }
+        }
 
         public void getgoldprice()
         {
@@ -224,7 +236,142 @@ namespace MJS
             mygraphics.ReleaseHdc(dc1);
             memoryGraphics.ReleaseHdc(dc2);
         }
+        public void invoiceid()/*function Invoice Number*/
+        {
 
+            try
+            {
+                /*if (Con1.State == ConnectionState.Closed)
+                {
+                    Con1.Open();
+                }*/
+                string shopvalue = txt_shop.Text;
+                con.Open();
+                sql = $"SELECT Sale_Voucher_No FROM g_sale WHERE Shop = @shoped ORDER BY ID DESC";
+                cmd = new SqlCommand(sql, con);
+                cmd.Parameters.AddWithValue("@shoped", shopvalue);
+                var maxid = cmd.ExecuteScalar() as string;
+
+                if (maxid == null)
+
+                {
+                    string form = "GS";
+                    /*string shop = login.shoptext;*/
+                    string shop = login.shopvalue;
+                    string date = DateTime.Now.ToString("ddMMyy");
+                    string id = "0001";
+                    txt_salevoc_number.Text = form + shop + date + "-" + id;
+
+                }
+                else
+                {
+
+                    SqlCommand cmd = new SqlCommand();
+                    SqlDataReader sr = null;
+                    cmd.Connection = con;
+                    cmd.CommandText = $"SELECT Sale_Voucher_No FROM g_sale WHERE Shop = @shoped ORDER BY ID DESC";
+                    cmd.Parameters.AddWithValue("@shoped", shopvalue);
+                    sr = cmd.ExecuteReader();
+                    if (sr.Read())
+
+                    {
+                        string form = "GS";
+                        /*string num = txt_barcode.Text;*/
+                        string shop = login.shopvalue;
+                        string date = DateTime.Now.ToString("ddMMyy");
+                        string pid = sr.GetValue(0).ToString();
+                        txt_result_id.Text = pid;
+                        string[] temparray = txt_result_id.Text.Split('-');
+                        txt_temparay.Text = form + shop + date;
+                        txt_Dece.Text = temparray[1];
+                        int i = Convert.ToInt32(txt_Dece.Text);
+                        i++;
+                        txt_Dece.Text = i.ToString();
+                        string autoid = txt_temparay.Text + "-" + String.Format("{0:0000}", i);
+                        /* txt_Dece.Text = autoid;*/
+                        txt_salevoc_number.Text = autoid;
+
+                    }
+
+                }
+
+                con.Close();
+
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+        public void counter()/*function counter */
+        {
+            string sqlquery = "select * from counter";
+            SqlCommand cmd = new SqlCommand(sqlquery, con);
+
+            try
+            {
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    txt_counter.Text = reader["Gold"].ToString();
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+        public void resetpid()/*function Reset Code Invoice and Product ID*/
+        {
+            string date = DateTime.Now.ToString("dd/MMM/yyyy");
+            string serverdate = "0";
+            string shopvalue = txt_shop.Text;
+            string datevalue = "";
+            con.Open();
+            /*sql = "SELECT Date FROM reg_gold WHERE Shop = @shoped ORDER BY DAY(Date),MONTH(Date),YEAR(Date)";*/
+            sql = $"SELECT Date FROM g_sale WHERE Shop = @shoped ORDER BY ID DESC";
+            /*sql = $"SELECT Date FROM reg_gold WHERE Shop = @shoped And Date=@Date ";*/
+
+            cmd = new SqlCommand(sql, con);
+            cmd.Parameters.AddWithValue("@shoped", shopvalue);
+            cmd.Parameters.AddWithValue("@Date", date);
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            if (dr.HasRows && dr.Read())
+            {
+                serverdate = dr.GetValue(0).ToString();
+                datevalue = serverdate.ToString();
+
+
+            }
+            con.Close();
+            if (datevalue == "" || DateTime.Parse(date, CultureInfo.InvariantCulture) != DateTime.Parse(serverdate, CultureInfo.InvariantCulture))
+            {
+               
+                string form = "GR";
+                string ivshop = login.shopvalue;
+                string ivdate = DateTime.Now.ToString("ddMMyy");
+                string ivid = "0001";
+                txt_salevoc_number.Text = form + ivshop + ivdate + "-" + ivid;
+
+                MessageBox.Show("Code Is Reset");
+
+            }
+
+            else
+
+            {
+               /* pid();*/
+
+            }
+
+        }
         private void iconButton1_Click(object sender, EventArgs e)
         {
             PrintScreen();
@@ -715,6 +862,8 @@ namespace MJS
             txt_pro_amt.Text = string.Format("{0:n0}", double.Parse(txt_pro_amt.Text));
         }
 
+        
+
         private void txt_pro_famt_Leave(object sender, EventArgs e)
         {
             txt_pro_famt.Text = string.Format("{0:n0}", double.Parse(txt_pro_famt.Text));
@@ -728,6 +877,74 @@ namespace MJS
         private void label_goldtype_TextChanged(object sender, EventArgs e)
         {
             getgoldprice();
+        }
+
+        private void txt_out_no_Leave(object sender, EventArgs e)
+        {
+            try
+            {
+
+                if (txt_out_no.Text != "")
+                {
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand("Select Image,Item,Itemname,Gm,GoldType from closing_stock where ProductID=@ProductID", con);
+                    cmd.Parameters.AddWithValue("@ProductID", txt_out_no.Text);
+                    using (SqlDataReader da = cmd.ExecuteReader())
+                    {
+                        byte[] imagedata = null;
+
+                        if (da.Read())
+                        {
+
+                            imagedata = (byte[])da.GetValue(0);
+                            label_Item.Text = da.GetValue(1).ToString();
+                            label_itemname.Text = da.GetValue(2).ToString();
+                            label_gm.Text = da.GetValue(3).ToString();
+                            label_goldtype.Text = da.GetValue(4).ToString();
+                            label_qty.Text = "1";
+                            totalqty();
+                            totalgm();
+
+
+                        }
+                        else
+                        {
+                            MessageBox.Show("No Data Found.");
+                            pit_show.Image = null;
+                            label_Item.Text = "";
+                            label_itemname.Text = "";
+                            label_gm.Text = "";
+                            label_goldtype.Text = "";
+                            label_qty.Text = "0";
+                        }
+
+
+                        if (imagedata != null)
+                        {
+                            using (MemoryStream ms = new MemoryStream(imagedata))
+                            {
+                                Image image = Image.FromStream(ms);
+
+                                PictureBox pictureBox = new PictureBox();
+                                pit_show.Image = image;
+                            }
+                        }
+                        con.Close();
+                    }
+
+                }
+                else
+                {
+                    pit_show.Image = null;
+                    label_Item.Text = "";
+                    label_itemname.Text = "";
+                    label_gm.Text = "";
+                    label_goldtype.Text = "";
+                    label_qty.Text = "0";
+                }
+
+            }
+            catch (Exception ex) { MessageBox.Show("An error occurred:" + ex.Message); }
         }
     }
 }

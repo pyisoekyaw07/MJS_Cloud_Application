@@ -86,7 +86,7 @@ namespace MJS
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(91)))), ((int)(((byte)(184)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(47)))), ((int)(((byte)(81)))));
             this.panel2.Controls.Add(this.pan_rep);
             this.panel2.Controls.Add(this.pan_master);
             this.panel2.Controls.Add(this.radioButton1);
@@ -117,7 +117,7 @@ namespace MJS
             // 
             // ico_rep
             // 
-            this.ico_rep.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(91)))), ((int)(((byte)(184)))));
+            this.ico_rep.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(47)))), ((int)(((byte)(81)))));
             this.ico_rep.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(167)))), ((int)(((byte)(167)))));
             this.ico_rep.IconChar = FontAwesome.Sharp.IconChar.File;
             this.ico_rep.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(167)))), ((int)(((byte)(167)))));
@@ -166,7 +166,7 @@ namespace MJS
             // 
             // ico_master
             // 
-            this.ico_master.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(91)))), ((int)(((byte)(184)))));
+            this.ico_master.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(47)))), ((int)(((byte)(81)))));
             this.ico_master.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(167)))), ((int)(((byte)(167)))));
             this.ico_master.IconChar = FontAwesome.Sharp.IconChar.Database;
             this.ico_master.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(167)))), ((int)(((byte)(167)))));
@@ -229,7 +229,7 @@ namespace MJS
             // 
             // ico_home
             // 
-            this.ico_home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(91)))), ((int)(((byte)(184)))));
+            this.ico_home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(47)))), ((int)(((byte)(81)))));
             this.ico_home.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ico_home.IconChar = FontAwesome.Sharp.IconChar.HomeLg;
             this.ico_home.IconColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -282,7 +282,7 @@ namespace MJS
             // 
             // iconPictureBox5
             // 
-            this.iconPictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(91)))), ((int)(((byte)(184)))));
+            this.iconPictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(47)))), ((int)(((byte)(81)))));
             this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
             this.iconPictureBox5.IconColor = System.Drawing.Color.White;
             this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -297,7 +297,7 @@ namespace MJS
             // 
             // iconPictureBox1
             // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(91)))), ((int)(((byte)(184)))));
+            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(47)))), ((int)(((byte)(81)))));
             this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ButtonHighlight;

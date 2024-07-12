@@ -515,7 +515,7 @@ namespace MJS
             }
             catch (SqlException ex)
             {
-                /* MessageBox.Show(ex.Message);*/
+                MessageBox.Show(ex.Message);
             }
         }
         public void resetpid()/*function Reset Code Invoice and Product ID*/
@@ -851,7 +851,7 @@ namespace MJS
             /*---------------------- Gm To KPY Method------------------------*/
             if (txt_gm.Text == "")
             {
-                txt_s.Text = "0";
+               /* txt_s.Text = "0";*/
                 txt_gm.Text = "0";
                 txt_gm.SelectionStart = 0;
                 txt_gm.SelectionLength = txt_gm.Text.Length;
