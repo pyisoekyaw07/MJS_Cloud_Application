@@ -109,39 +109,6 @@ namespace MJS
             this.txt_result_pid = new System.Windows.Forms.TextBox();
             this.txt_Dece_pid = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.image = new System.Windows.Forms.DataGridViewImageColumn();
-            this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.time = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Voucher = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.enter_remark = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.purvoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.barcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.goldtype = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gold_price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Items = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.item_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gm = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.K = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.P = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Y = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.S = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.wk = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.wp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.wy = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ws = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tk = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ty = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ts = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mcost = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.repamt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.total_amt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.remark = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.employee = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shop = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Form = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coledit = new System.Windows.Forms.DataGridViewImageColumn();
             this.label13 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
@@ -174,6 +141,48 @@ namespace MJS
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.txt_sk = new System.Windows.Forms.TextBox();
+            this.txt_sp = new System.Windows.Forms.TextBox();
+            this.txt_sy = new System.Windows.Forms.TextBox();
+            this.txt_ss = new System.Windows.Forms.TextBox();
+            this.image = new System.Windows.Forms.DataGridViewImageColumn();
+            this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.time = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Voucher = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.enter_remark = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.purvoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.barcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.goldtype = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gold_price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Items = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.item_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gm = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.K = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.P = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Y = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.S = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.wk = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.wp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.wy = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ws = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tk = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ts = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sk = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sy = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ss = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mcost = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.repamt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.total_amt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.remark = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.employee = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.shop = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Form = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coledit = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -272,7 +281,7 @@ namespace MJS
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label19.Location = new System.Drawing.Point(27, 566);
+            this.label19.Location = new System.Drawing.Point(27, 613);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(90, 22);
             this.label19.TabIndex = 115;
@@ -282,7 +291,7 @@ namespace MJS
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label18.Location = new System.Drawing.Point(28, 521);
+            this.label18.Location = new System.Drawing.Point(28, 568);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(100, 22);
             this.label18.TabIndex = 114;
@@ -292,7 +301,7 @@ namespace MJS
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label17.Location = new System.Drawing.Point(27, 479);
+            this.label17.Location = new System.Drawing.Point(27, 526);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(46, 22);
             this.label17.TabIndex = 113;
@@ -302,7 +311,7 @@ namespace MJS
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label16.Location = new System.Drawing.Point(27, 430);
+            this.label16.Location = new System.Drawing.Point(27, 477);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(90, 22);
             this.label16.TabIndex = 112;
@@ -356,7 +365,7 @@ namespace MJS
             this.btn_review.ForeColor = System.Drawing.Color.White;
             this.btn_review.Image = ((System.Drawing.Image)(resources.GetObject("btn_review.Image")));
             this.btn_review.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_review.Location = new System.Drawing.Point(780, 781);
+            this.btn_review.Location = new System.Drawing.Point(882, 781);
             this.btn_review.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_review.Name = "btn_review";
             this.btn_review.Size = new System.Drawing.Size(156, 47);
@@ -392,7 +401,7 @@ namespace MJS
             this.btn_cancel.ForeColor = System.Drawing.Color.White;
             this.btn_cancel.Image = ((System.Drawing.Image)(resources.GetObject("btn_cancel.Image")));
             this.btn_cancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_cancel.Location = new System.Drawing.Point(618, 781);
+            this.btn_cancel.Location = new System.Drawing.Point(720, 781);
             this.btn_cancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(156, 47);
@@ -410,7 +419,7 @@ namespace MJS
             this.btn_save.ForeColor = System.Drawing.Color.White;
             this.btn_save.Image = ((System.Drawing.Image)(resources.GetObject("btn_save.Image")));
             this.btn_save.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_save.Location = new System.Drawing.Point(456, 781);
+            this.btn_save.Location = new System.Drawing.Point(558, 781);
             this.btn_save.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(156, 47);
@@ -488,7 +497,7 @@ namespace MJS
             this.txt_totalamt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
             this.txt_totalamt.Enabled = false;
             this.txt_totalamt.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_totalamt.Location = new System.Drawing.Point(157, 563);
+            this.txt_totalamt.Location = new System.Drawing.Point(157, 610);
             this.txt_totalamt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_totalamt.Multiline = true;
             this.txt_totalamt.Name = "txt_totalamt";
@@ -499,11 +508,11 @@ namespace MJS
             // txt_rep
             // 
             this.txt_rep.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_rep.Location = new System.Drawing.Point(158, 518);
+            this.txt_rep.Location = new System.Drawing.Point(158, 565);
             this.txt_rep.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_rep.Name = "txt_rep";
             this.txt_rep.Size = new System.Drawing.Size(189, 30);
-            this.txt_rep.TabIndex = 13;
+            this.txt_rep.TabIndex = 17;
             this.txt_rep.TextChanged += new System.EventHandler(this.txt_rep_TextChanged);
             this.txt_rep.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_rep_KeyPress);
             this.txt_rep.Leave += new System.EventHandler(this.txt_rep_Leave);
@@ -511,11 +520,11 @@ namespace MJS
             // txt_mcost
             // 
             this.txt_mcost.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_mcost.Location = new System.Drawing.Point(158, 474);
+            this.txt_mcost.Location = new System.Drawing.Point(158, 521);
             this.txt_mcost.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_mcost.Name = "txt_mcost";
             this.txt_mcost.Size = new System.Drawing.Size(189, 30);
-            this.txt_mcost.TabIndex = 12;
+            this.txt_mcost.TabIndex = 16;
             this.txt_mcost.TextChanged += new System.EventHandler(this.txt_mcost_TextChanged);
             this.txt_mcost.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_mcost_KeyPress);
             this.txt_mcost.Leave += new System.EventHandler(this.txt_mcost_Leave);
@@ -524,7 +533,7 @@ namespace MJS
             // 
             this.total_S.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
             this.total_S.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.total_S.Location = new System.Drawing.Point(355, 429);
+            this.total_S.Location = new System.Drawing.Point(355, 476);
             this.total_S.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.total_S.Multiline = true;
             this.total_S.Name = "total_S";
@@ -538,7 +547,7 @@ namespace MJS
             // 
             this.total_Y.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
             this.total_Y.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.total_Y.Location = new System.Drawing.Point(290, 428);
+            this.total_Y.Location = new System.Drawing.Point(290, 475);
             this.total_Y.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.total_Y.Multiline = true;
             this.total_Y.Name = "total_Y";
@@ -552,7 +561,7 @@ namespace MJS
             // 
             this.total_P.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
             this.total_P.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.total_P.Location = new System.Drawing.Point(224, 428);
+            this.total_P.Location = new System.Drawing.Point(224, 475);
             this.total_P.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.total_P.Multiline = true;
             this.total_P.Name = "total_P";
@@ -566,7 +575,7 @@ namespace MJS
             // 
             this.total_K.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
             this.total_K.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.total_K.Location = new System.Drawing.Point(158, 428);
+            this.total_K.Location = new System.Drawing.Point(158, 475);
             this.total_K.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.total_K.Multiline = true;
             this.total_K.Name = "total_K";
@@ -732,11 +741,11 @@ namespace MJS
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label7.Location = new System.Drawing.Point(27, 391);
+            this.label7.Location = new System.Drawing.Point(26, 391);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(80, 22);
+            this.label7.Size = new System.Drawing.Size(112, 22);
             this.label7.TabIndex = 77;
-            this.label7.Text = "အလျော့တွက်";
+            this.label7.Text = "အရင်းအလျော့တွက်";
             // 
             // txt_gm
             // 
@@ -1042,6 +1051,10 @@ namespace MJS
             this.tp,
             this.ty,
             this.ts,
+            this.sk,
+            this.sp,
+            this.sy,
+            this.ss,
             this.mcost,
             this.repamt,
             this.total_amt,
@@ -1078,6 +1091,379 @@ namespace MJS
             this.dataGridView1.TabIndex = 201;
             this.dataGridView1.TabStop = false;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.label13.Location = new System.Drawing.Point(169, 314);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(34, 22);
+            this.label13.TabIndex = 202;
+            this.label13.Text = "ကျပ်";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.BackColor = System.Drawing.Color.Transparent;
+            this.label29.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.label29.Location = new System.Drawing.Point(242, 314);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(18, 22);
+            this.label29.TabIndex = 203;
+            this.label29.Text = "ပဲ";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.BackColor = System.Drawing.Color.Transparent;
+            this.label30.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.label30.Location = new System.Drawing.Point(301, 314);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(30, 22);
+            this.label30.TabIndex = 204;
+            this.label30.Text = "ရွေး";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.BackColor = System.Drawing.Color.Transparent;
+            this.label31.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.label31.Location = new System.Drawing.Point(365, 315);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(32, 22);
+            this.label31.TabIndex = 205;
+            this.label31.Text = "စိတ်";
+            // 
+            // lbl_totalgm
+            // 
+            this.lbl_totalgm.BackColor = System.Drawing.Color.White;
+            this.lbl_totalgm.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lbl_totalgm.ForeColor = System.Drawing.Color.Black;
+            this.lbl_totalgm.Location = new System.Drawing.Point(137, 54);
+            this.lbl_totalgm.Name = "lbl_totalgm";
+            this.lbl_totalgm.Size = new System.Drawing.Size(118, 17);
+            this.lbl_totalgm.TabIndex = 124;
+            this.lbl_totalgm.Text = "0";
+            this.lbl_totalgm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_totalamt
+            // 
+            this.lbl_totalamt.BackColor = System.Drawing.Color.White;
+            this.lbl_totalamt.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lbl_totalamt.ForeColor = System.Drawing.Color.Black;
+            this.lbl_totalamt.Location = new System.Drawing.Point(137, 20);
+            this.lbl_totalamt.Name = "lbl_totalamt";
+            this.lbl_totalamt.Size = new System.Drawing.Size(118, 18);
+            this.lbl_totalamt.TabIndex = 124;
+            this.lbl_totalamt.Text = "0";
+            this.lbl_totalamt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.BlinkRate = 400;
+            this.errorProvider1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
+            this.errorProvider1.ContainerControl = this;
+            this.errorProvider1.Icon = ((System.Drawing.Icon)(resources.GetObject("errorProvider1.Icon")));
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.White;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.textBox2.ForeColor = System.Drawing.Color.Black;
+            this.textBox2.Location = new System.Drawing.Point(711, 95);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(183, 30);
+            this.textBox2.TabIndex = 214;
+            this.textBox2.TabStop = false;
+            this.textBox2.Text = "Gold Register";
+            // 
+            // txt_shop
+            // 
+            this.txt_shop.BackColor = System.Drawing.Color.White;
+            this.txt_shop.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_shop.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.txt_shop.ForeColor = System.Drawing.Color.Black;
+            this.txt_shop.Location = new System.Drawing.Point(711, 175);
+            this.txt_shop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_shop.Multiline = true;
+            this.txt_shop.Name = "txt_shop";
+            this.txt_shop.ReadOnly = true;
+            this.txt_shop.Size = new System.Drawing.Size(183, 30);
+            this.txt_shop.TabIndex = 213;
+            this.txt_shop.TabStop = false;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.label32.Location = new System.Drawing.Point(561, 94);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(108, 22);
+            this.label32.TabIndex = 212;
+            this.label32.Text = "အသုံးပြုသည့်ဖောင်";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.label22.Location = new System.Drawing.Point(561, 178);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(65, 22);
+            this.label22.TabIndex = 211;
+            this.label22.Text = "ဆိုင်အမှတ်";
+            // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.label20.Location = new System.Drawing.Point(27, 784);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(56, 22);
+            this.label20.TabIndex = 212;
+            this.label20.Text = "မှတ်ချက်";
+            // 
+            // txt_remark
+            // 
+            this.txt_remark.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.txt_remark.Location = new System.Drawing.Point(156, 759);
+            this.txt_remark.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_remark.Multiline = true;
+            this.txt_remark.Name = "txt_remark";
+            this.txt_remark.Size = new System.Drawing.Size(193, 56);
+            this.txt_remark.TabIndex = 18;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.pictureBox);
+            this.groupBox2.ForeColor = System.Drawing.Color.Black;
+            this.groupBox2.Location = new System.Drawing.Point(157, 657);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Size = new System.Drawing.Size(191, 82);
+            this.groupBox2.TabIndex = 200;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Image";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.label34.Location = new System.Drawing.Point(25, 679);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(42, 22);
+            this.label34.TabIndex = 217;
+            this.label34.Text = "ဓါတ်ပုံ";
+            // 
+            // lbl_qty
+            // 
+            this.lbl_qty.BackColor = System.Drawing.Color.White;
+            this.lbl_qty.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lbl_qty.ForeColor = System.Drawing.Color.Black;
+            this.lbl_qty.Location = new System.Drawing.Point(137, 89);
+            this.lbl_qty.Name = "lbl_qty";
+            this.lbl_qty.Size = new System.Drawing.Size(118, 17);
+            this.lbl_qty.TabIndex = 220;
+            this.lbl_qty.Text = "0";
+            this.lbl_qty.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label35);
+            this.groupBox3.Controls.Add(this.lbl_qty);
+            this.groupBox3.Controls.Add(this.label37);
+            this.groupBox3.Controls.Add(this.label38);
+            this.groupBox3.Controls.Add(this.lbl_totalgm);
+            this.groupBox3.Controls.Add(this.lbl_totalamt);
+            this.groupBox3.Location = new System.Drawing.Point(1016, 36);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox3.Size = new System.Drawing.Size(271, 120);
+            this.groupBox3.TabIndex = 290;
+            this.groupBox3.TabStop = false;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label35.Location = new System.Drawing.Point(33, 22);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(92, 13);
+            this.label35.TabIndex = 286;
+            this.label35.Text = "TOTAL AMOUNT";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label37.Location = new System.Drawing.Point(33, 91);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(64, 13);
+            this.label37.TabIndex = 288;
+            this.label37.Text = "TOTALQTY";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label38.Location = new System.Drawing.Point(33, 56);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(62, 13);
+            this.label38.TabIndex = 287;
+            this.label38.Text = "TOTAL GM";
+            // 
+            // btn_cart
+            // 
+            this.btn_cart.ButtonStyle = Krypton.Toolkit.ButtonStyle.Alternate;
+            this.btn_cart.Location = new System.Drawing.Point(156, 835);
+            this.btn_cart.Name = "btn_cart";
+            this.btn_cart.Size = new System.Drawing.Size(193, 40);
+            this.btn_cart.TabIndex = 19;
+            this.btn_cart.Values.Text = "Add To Cart";
+            this.btn_cart.Click += new System.EventHandler(this.btn_cart_Click);
+            // 
+            // btn_reg_save
+            // 
+            this.btn_reg_save.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_reg_save.Location = new System.Drawing.Point(762, 563);
+            this.btn_reg_save.Name = "btn_reg_save";
+            this.btn_reg_save.Size = new System.Drawing.Size(170, 35);
+            this.btn_reg_save.TabIndex = 20;
+            this.btn_reg_save.Values.Text = "&Save";
+            this.btn_reg_save.Click += new System.EventHandler(this.btn_reg_save_Click);
+            // 
+            // btn_reg_cancel
+            // 
+            this.btn_reg_cancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_reg_cancel.Location = new System.Drawing.Point(955, 563);
+            this.btn_reg_cancel.Name = "btn_reg_cancel";
+            this.btn_reg_cancel.Size = new System.Drawing.Size(170, 35);
+            this.btn_reg_cancel.TabIndex = 21;
+            this.btn_reg_cancel.Values.Text = "&Cancel";
+            this.btn_reg_cancel.Click += new System.EventHandler(this.btn_reg_cancel_Click);
+            // 
+            // btn_reg_preview
+            // 
+            this.btn_reg_preview.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_reg_preview.Location = new System.Drawing.Point(1146, 563);
+            this.btn_reg_preview.Name = "btn_reg_preview";
+            this.btn_reg_preview.Size = new System.Drawing.Size(170, 35);
+            this.btn_reg_preview.TabIndex = 22;
+            this.btn_reg_preview.Values.Text = "&Preview";
+            this.btn_reg_preview.Click += new System.EventHandler(this.btn_reg_preview_Click);
+            // 
+            // label21
+            // 
+            this.label21.Location = new System.Drawing.Point(1095, 704);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(100, 20);
+            this.label21.TabIndex = 297;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(687, 21);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(10, 13);
+            this.label33.TabIndex = 298;
+            this.label33.Text = "-";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(687, 58);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(10, 13);
+            this.label36.TabIndex = 299;
+            this.label36.Text = "-";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(687, 98);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(10, 13);
+            this.label39.TabIndex = 300;
+            this.label39.Text = "-";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(687, 138);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(10, 13);
+            this.label40.TabIndex = 301;
+            this.label40.Text = "-";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(687, 179);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(10, 13);
+            this.label41.TabIndex = 302;
+            this.label41.Text = "-";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.label42.Location = new System.Drawing.Point(26, 434);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(126, 22);
+            this.label42.TabIndex = 307;
+            this.label42.Text = "အရောင်းအလျော့တွက်";
+            // 
+            // txt_sk
+            // 
+            this.txt_sk.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.txt_sk.Location = new System.Drawing.Point(157, 431);
+            this.txt_sk.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_sk.Name = "txt_sk";
+            this.txt_sk.Size = new System.Drawing.Size(59, 30);
+            this.txt_sk.TabIndex = 12;
+            this.txt_sk.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txt_sp
+            // 
+            this.txt_sp.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.txt_sp.Location = new System.Drawing.Point(223, 431);
+            this.txt_sp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_sp.Name = "txt_sp";
+            this.txt_sp.Size = new System.Drawing.Size(59, 30);
+            this.txt_sp.TabIndex = 13;
+            this.txt_sp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txt_sy
+            // 
+            this.txt_sy.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.txt_sy.Location = new System.Drawing.Point(289, 431);
+            this.txt_sy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_sy.Name = "txt_sy";
+            this.txt_sy.Size = new System.Drawing.Size(59, 30);
+            this.txt_sy.TabIndex = 14;
+            this.txt_sy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txt_ss
+            // 
+            this.txt_ss.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.txt_ss.Location = new System.Drawing.Point(354, 431);
+            this.txt_ss.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_ss.Name = "txt_ss";
+            this.txt_ss.Size = new System.Drawing.Size(59, 30);
+            this.txt_ss.TabIndex = 15;
+            this.txt_ss.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // image
             // 
@@ -1248,6 +1634,34 @@ namespace MJS
             this.ts.Name = "ts";
             this.ts.Width = 57;
             // 
+            // sk
+            // 
+            this.sk.HeaderText = "ကျပ်";
+            this.sk.MinimumWidth = 6;
+            this.sk.Name = "sk";
+            this.sk.Width = 57;
+            // 
+            // sp
+            // 
+            this.sp.HeaderText = "ပဲ";
+            this.sp.MinimumWidth = 6;
+            this.sp.Name = "sp";
+            this.sp.Width = 57;
+            // 
+            // sy
+            // 
+            this.sy.HeaderText = "ရွေး";
+            this.sy.MinimumWidth = 6;
+            this.sy.Name = "sy";
+            this.sy.Width = 57;
+            // 
+            // ss
+            // 
+            this.ss.HeaderText = "စိတ်";
+            this.ss.MinimumWidth = 6;
+            this.ss.Name = "ss";
+            this.ss.Width = 57;
+            // 
             // mcost
             // 
             this.mcost.HeaderText = "လက်ခ";
@@ -1319,329 +1733,6 @@ namespace MJS
             this.coledit.Name = "coledit";
             this.coledit.Width = 6;
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label13.Location = new System.Drawing.Point(169, 314);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(34, 22);
-            this.label13.TabIndex = 202;
-            this.label13.Text = "ကျပ်";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.BackColor = System.Drawing.Color.Transparent;
-            this.label29.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label29.Location = new System.Drawing.Point(242, 314);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(18, 22);
-            this.label29.TabIndex = 203;
-            this.label29.Text = "ပဲ";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.BackColor = System.Drawing.Color.Transparent;
-            this.label30.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label30.Location = new System.Drawing.Point(301, 314);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(30, 22);
-            this.label30.TabIndex = 204;
-            this.label30.Text = "ရွေး";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.BackColor = System.Drawing.Color.Transparent;
-            this.label31.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label31.Location = new System.Drawing.Point(365, 315);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(32, 22);
-            this.label31.TabIndex = 205;
-            this.label31.Text = "စိတ်";
-            // 
-            // lbl_totalgm
-            // 
-            this.lbl_totalgm.BackColor = System.Drawing.Color.White;
-            this.lbl_totalgm.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lbl_totalgm.ForeColor = System.Drawing.Color.Black;
-            this.lbl_totalgm.Location = new System.Drawing.Point(137, 54);
-            this.lbl_totalgm.Name = "lbl_totalgm";
-            this.lbl_totalgm.Size = new System.Drawing.Size(118, 17);
-            this.lbl_totalgm.TabIndex = 124;
-            this.lbl_totalgm.Text = "0";
-            this.lbl_totalgm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl_totalamt
-            // 
-            this.lbl_totalamt.BackColor = System.Drawing.Color.White;
-            this.lbl_totalamt.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lbl_totalamt.ForeColor = System.Drawing.Color.Black;
-            this.lbl_totalamt.Location = new System.Drawing.Point(137, 20);
-            this.lbl_totalamt.Name = "lbl_totalamt";
-            this.lbl_totalamt.Size = new System.Drawing.Size(118, 18);
-            this.lbl_totalamt.TabIndex = 124;
-            this.lbl_totalamt.Text = "0";
-            this.lbl_totalamt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.BlinkRate = 400;
-            this.errorProvider1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
-            this.errorProvider1.ContainerControl = this;
-            this.errorProvider1.Icon = ((System.Drawing.Icon)(resources.GetObject("errorProvider1.Icon")));
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.textBox2.ForeColor = System.Drawing.Color.Black;
-            this.textBox2.Location = new System.Drawing.Point(711, 95);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(183, 30);
-            this.textBox2.TabIndex = 214;
-            this.textBox2.TabStop = false;
-            this.textBox2.Text = "Gold Register";
-            // 
-            // txt_shop
-            // 
-            this.txt_shop.BackColor = System.Drawing.Color.White;
-            this.txt_shop.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_shop.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_shop.ForeColor = System.Drawing.Color.Black;
-            this.txt_shop.Location = new System.Drawing.Point(711, 175);
-            this.txt_shop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_shop.Multiline = true;
-            this.txt_shop.Name = "txt_shop";
-            this.txt_shop.ReadOnly = true;
-            this.txt_shop.Size = new System.Drawing.Size(183, 30);
-            this.txt_shop.TabIndex = 213;
-            this.txt_shop.TabStop = false;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label32.Location = new System.Drawing.Point(561, 94);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(108, 22);
-            this.label32.TabIndex = 212;
-            this.label32.Text = "အသုံးပြုသည့်ဖောင်";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label22.Location = new System.Drawing.Point(561, 178);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(65, 22);
-            this.label22.TabIndex = 211;
-            this.label22.Text = "ဆိုင်အမှတ်";
-            // 
-            // timer2
-            // 
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label20.Location = new System.Drawing.Point(27, 737);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(56, 22);
-            this.label20.TabIndex = 212;
-            this.label20.Text = "မှတ်ချက်";
-            // 
-            // txt_remark
-            // 
-            this.txt_remark.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_remark.Location = new System.Drawing.Point(156, 712);
-            this.txt_remark.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_remark.Multiline = true;
-            this.txt_remark.Name = "txt_remark";
-            this.txt_remark.Size = new System.Drawing.Size(193, 56);
-            this.txt_remark.TabIndex = 15;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.pictureBox);
-            this.groupBox2.ForeColor = System.Drawing.Color.Black;
-            this.groupBox2.Location = new System.Drawing.Point(157, 610);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(191, 82);
-            this.groupBox2.TabIndex = 14;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Image";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label34.Location = new System.Drawing.Point(25, 632);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(42, 22);
-            this.label34.TabIndex = 217;
-            this.label34.Text = "ဓါတ်ပုံ";
-            // 
-            // lbl_qty
-            // 
-            this.lbl_qty.BackColor = System.Drawing.Color.White;
-            this.lbl_qty.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lbl_qty.ForeColor = System.Drawing.Color.Black;
-            this.lbl_qty.Location = new System.Drawing.Point(137, 89);
-            this.lbl_qty.Name = "lbl_qty";
-            this.lbl_qty.Size = new System.Drawing.Size(118, 17);
-            this.lbl_qty.TabIndex = 220;
-            this.lbl_qty.Text = "0";
-            this.lbl_qty.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.label35);
-            this.groupBox3.Controls.Add(this.lbl_qty);
-            this.groupBox3.Controls.Add(this.label37);
-            this.groupBox3.Controls.Add(this.label38);
-            this.groupBox3.Controls.Add(this.lbl_totalgm);
-            this.groupBox3.Controls.Add(this.lbl_totalamt);
-            this.groupBox3.Location = new System.Drawing.Point(1016, 36);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox3.Size = new System.Drawing.Size(271, 120);
-            this.groupBox3.TabIndex = 290;
-            this.groupBox3.TabStop = false;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label35.Location = new System.Drawing.Point(33, 22);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(92, 13);
-            this.label35.TabIndex = 286;
-            this.label35.Text = "TOTAL AMOUNT";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label37.Location = new System.Drawing.Point(33, 91);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(64, 13);
-            this.label37.TabIndex = 288;
-            this.label37.Text = "TOTALQTY";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label38.Location = new System.Drawing.Point(33, 56);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(62, 13);
-            this.label38.TabIndex = 287;
-            this.label38.Text = "TOTAL GM";
-            // 
-            // btn_cart
-            // 
-            this.btn_cart.ButtonStyle = Krypton.Toolkit.ButtonStyle.Alternate;
-            this.btn_cart.Location = new System.Drawing.Point(156, 788);
-            this.btn_cart.Name = "btn_cart";
-            this.btn_cart.Size = new System.Drawing.Size(193, 40);
-            this.btn_cart.TabIndex = 16;
-            this.btn_cart.Values.Text = "Add To Cart";
-            this.btn_cart.Click += new System.EventHandler(this.btn_cart_Click);
-            // 
-            // btn_reg_save
-            // 
-            this.btn_reg_save.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_reg_save.Location = new System.Drawing.Point(762, 563);
-            this.btn_reg_save.Name = "btn_reg_save";
-            this.btn_reg_save.Size = new System.Drawing.Size(170, 35);
-            this.btn_reg_save.TabIndex = 17;
-            this.btn_reg_save.Values.Text = "&Save";
-            this.btn_reg_save.Click += new System.EventHandler(this.btn_reg_save_Click);
-            // 
-            // btn_reg_cancel
-            // 
-            this.btn_reg_cancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_reg_cancel.Location = new System.Drawing.Point(955, 563);
-            this.btn_reg_cancel.Name = "btn_reg_cancel";
-            this.btn_reg_cancel.Size = new System.Drawing.Size(170, 35);
-            this.btn_reg_cancel.TabIndex = 18;
-            this.btn_reg_cancel.Values.Text = "&Cancel";
-            this.btn_reg_cancel.Click += new System.EventHandler(this.btn_reg_cancel_Click);
-            // 
-            // btn_reg_preview
-            // 
-            this.btn_reg_preview.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_reg_preview.Location = new System.Drawing.Point(1146, 563);
-            this.btn_reg_preview.Name = "btn_reg_preview";
-            this.btn_reg_preview.Size = new System.Drawing.Size(170, 35);
-            this.btn_reg_preview.TabIndex = 19;
-            this.btn_reg_preview.Values.Text = "&Preview";
-            this.btn_reg_preview.Click += new System.EventHandler(this.btn_reg_preview_Click);
-            // 
-            // label21
-            // 
-            this.label21.Location = new System.Drawing.Point(160, 834);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(100, 20);
-            this.label21.TabIndex = 297;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(687, 21);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(10, 13);
-            this.label33.TabIndex = 298;
-            this.label33.Text = "-";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(687, 58);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(10, 13);
-            this.label36.TabIndex = 299;
-            this.label36.Text = "-";
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(687, 98);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(10, 13);
-            this.label39.TabIndex = 300;
-            this.label39.Text = "-";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(687, 138);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(10, 13);
-            this.label40.TabIndex = 301;
-            this.label40.Text = "-";
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(687, 179);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(10, 13);
-            this.label41.TabIndex = 302;
-            this.label41.Text = "-";
-            // 
             // gform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -1649,7 +1740,12 @@ namespace MJS
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1428, 857);
+            this.ClientSize = new System.Drawing.Size(1428, 929);
+            this.Controls.Add(this.label42);
+            this.Controls.Add(this.txt_sk);
+            this.Controls.Add(this.txt_sp);
+            this.Controls.Add(this.txt_sy);
+            this.Controls.Add(this.txt_ss);
             this.Controls.Add(this.label41);
             this.Controls.Add(this.label40);
             this.Controls.Add(this.label39);
@@ -1829,6 +1925,32 @@ namespace MJS
         private TextBox txt_shop;
         private Label label32;
         private Label label22;
+        private TextBox txt_edit_check;
+        private Label label20;
+        private TextBox txt_remark;
+        private GroupBox groupBox2;
+        private Label label34;
+        private Label lbl_qty;
+        private System.Windows.Forms.Timer timer3;
+        private GroupBox groupBox3;
+        private Label label35;
+        private Label label37;
+        private Label label38;
+        private Krypton.Toolkit.KryptonButton btn_cart;
+        private Krypton.Toolkit.KryptonButton btn_reg_preview;
+        private Krypton.Toolkit.KryptonButton btn_reg_cancel;
+        private Krypton.Toolkit.KryptonButton btn_reg_save;
+        private Label label21;
+        private Label label33;
+        private Label label41;
+        private Label label40;
+        private Label label39;
+        private Label label36;
+        private Label label42;
+        private TextBox txt_sk;
+        private TextBox txt_sp;
+        private TextBox txt_sy;
+        private TextBox txt_ss;
         private DataGridViewImageColumn image;
         private DataGridViewTextBoxColumn date;
         private DataGridViewTextBoxColumn time;
@@ -1853,6 +1975,10 @@ namespace MJS
         private DataGridViewTextBoxColumn tp;
         private DataGridViewTextBoxColumn ty;
         private DataGridViewTextBoxColumn ts;
+        private DataGridViewTextBoxColumn sk;
+        private DataGridViewTextBoxColumn sp;
+        private DataGridViewTextBoxColumn sy;
+        private DataGridViewTextBoxColumn ss;
         private DataGridViewTextBoxColumn mcost;
         private DataGridViewTextBoxColumn repamt;
         private DataGridViewTextBoxColumn total_amt;
@@ -1862,26 +1988,5 @@ namespace MJS
         private DataGridViewTextBoxColumn Form;
         private DataGridViewTextBoxColumn type;
         private DataGridViewImageColumn coledit;
-        private TextBox txt_edit_check;
-        private Label label20;
-        private TextBox txt_remark;
-        private GroupBox groupBox2;
-        private Label label34;
-        private Label lbl_qty;
-        private System.Windows.Forms.Timer timer3;
-        private GroupBox groupBox3;
-        private Label label35;
-        private Label label37;
-        private Label label38;
-        private Krypton.Toolkit.KryptonButton btn_cart;
-        private Krypton.Toolkit.KryptonButton btn_reg_preview;
-        private Krypton.Toolkit.KryptonButton btn_reg_cancel;
-        private Krypton.Toolkit.KryptonButton btn_reg_save;
-        private Label label21;
-        private Label label33;
-        private Label label41;
-        private Label label40;
-        private Label label39;
-        private Label label36;
     }
 }

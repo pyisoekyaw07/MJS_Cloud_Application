@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Runtime.InteropServices;
+using System.Net;
+using System.Net.Sockets;
 
 namespace MJS
 {
@@ -44,7 +46,7 @@ namespace MJS
                 if (check == "True")
                 {
 
-                    MessageBox.Show("Connect !");
+                   /* MessageBox.Show("Connect !");*/
                     branch();
                 }
                 else
@@ -67,7 +69,9 @@ namespace MJS
                 while (reader.Read())
                 {
                     combo_shop.Items.Add(reader["Branchname"].ToString());
+                   
                 }
+                MessageBox.Show("Connect !");
             }
             catch
             {
@@ -127,6 +131,46 @@ namespace MJS
                 hide_pass.BringToFront();
                 txt_password.PasswordChar = '#';
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            IPAddress[] ip=Dns.GetHostAddresses(Dns.GetHostName());
+            foreach (IPAddress address in ip) 
+            { 
+                if(address.AddressFamily == AddressFamily.InterNetwork) 
+                { 
+                    textBox1.Text=address.ToString();
+                    MessageBox.Show("Ipaddress"+address.ToString(),"IP Address",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {// Assume textBox1 contains the IP address and textBox2 is where you want to display the last two digits
+            string ipAddress = textBox1.Text;
+
+            // Split the IP address by the '.' character
+            string[] parts = ipAddress.Split('.');
+
+            // Check if the IP address is valid (contains 4 parts)
+            if (parts.Length == 4)
+            {
+                // Get the last part and extract the last two digits
+                string lastPart = parts[3];
+                string lastTwoDigits = lastPart.Length >= 2 ? lastPart.Substring(lastPart.Length - 2) : lastPart;
+
+                // Display the last two digits in textBox2
+                textBox2.Text = lastTwoDigits;
+            }
+            else
+            {
+                // Handle invalid IP address
+                textBox2.Text = "Invalid IP";
+               
+
+            }
+            
         }
     }
 }

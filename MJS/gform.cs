@@ -103,6 +103,7 @@ namespace MJS
                 this.dataGridView1.Paint += new PaintEventHandler(dataGridView1_Paint);
                 this.dataGridView1.Paint += new PaintEventHandler(dataGridView1_Paint2);
                 this.dataGridView1.Paint += new PaintEventHandler(dataGridView1_Paint3);
+                this.dataGridView1.Paint += new PaintEventHandler(dataGridView1_Paint4);
                 this.dataGridView1.Scroll += new ScrollEventHandler(dataGridView1_Scroll);
                 this.dataGridView1.ColumnWidthChanged += new DataGridViewColumnEventHandler(dataGridView1_ColumnWidthChanged);
             }
@@ -182,6 +183,26 @@ namespace MJS
             format.LineAlignment = StringAlignment.Center;
             e.Graphics.DrawString("စုစုပေါင်းရွှေချိန်", dataGridView1.ColumnHeadersDefaultCellStyle.Font,
                 new SolidBrush(dataGridView1.ColumnHeadersDefaultCellStyle.BackColor), r1, format);
+        }
+
+        private void dataGridView1_Paint4(object sender, PaintEventArgs e)
+        {
+            Rectangle r1 = dataGridView1.GetCellDisplayRectangle(24, -1, true);
+            int w2 = dataGridView1.GetCellDisplayRectangle(24, -1, true).Width;
+            int w3 = dataGridView1.GetCellDisplayRectangle(24, -1, true).Width;
+            int w4 = dataGridView1.GetCellDisplayRectangle(24, -1, true).Width;
+            r1.X += 1;
+            r1.Y += 1;
+            r1.Width = r1.Width + w2 + w3 + w4;
+            r1.Height = r1.Height / 2 - 2;
+            e.Graphics.FillRectangle(new SolidBrush(dataGridView1.ColumnHeadersDefaultCellStyle.BackColor), r1);
+
+            StringFormat format = new StringFormat();
+
+            format.Alignment = StringAlignment.Center;
+            format.LineAlignment = StringAlignment.Center;
+            e.Graphics.DrawString("အရောင်းအလျော့တွက်", dataGridView1.ColumnHeadersDefaultCellStyle.Font,
+                new SolidBrush(dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor), r1, format);
         }
 
         private void dataGridView1_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
@@ -592,12 +613,12 @@ namespace MJS
                     {
 
                         cmd = new SqlCommand("insert into reg_gold (Image,Date,Time,SaleVoucher,Enter_Remark,PurVoucher,ProductID,GoldType,GoldPrice,Item," +
-                         "ItemName,Gm,K,P,Y,S,WK,WP,WY,WS,TK,TP,TY,TS,Mcost,Repamt,Totalamt,Remark,Employee,Shop,Form,Counter) values(@Image,@Date,@Time,@SaleVoucher,@Enter_Remark,@PurVoucher,@ProductID,@GoldType,@GoldPrice,@Item," +
-                         "@ItemName,@Gm,@K,@P,@Y,@S,@WK,@WP,@WY,@WS,@TK,@TP,@TY,@TS,@Mcost,@Repamt,@Totalamt,@Remark,@Employee,@Shop,@Form,@Counter)", con);
+                         "ItemName,Gm,K,P,Y,S,WK,WP,WY,WS,TK,TP,TY,TS,SK,SP,SY,SS,Mcost,Repamt,Totalamt,Remark,Employee,Shop,Form,Counter) values(@Image,@Date,@Time,@SaleVoucher,@Enter_Remark,@PurVoucher,@ProductID,@GoldType,@GoldPrice,@Item," +
+                         "@ItemName,@Gm,@K,@P,@Y,@S,@WK,@WP,@WY,@WS,@TK,@TP,@TY,@TS,@SK,@SP,@SY,@SS,@Mcost,@Repamt,@Totalamt,@Remark,@Employee,@Shop,@Form,@Counter)", con);
 
                         cmd2 = new SqlCommand("insert into closing_stock (Image,Date,Time,SaleVoucher,Enter_Remark,PurVoucher,ProductID,GoldType,GoldPrice,Item," +
-                        "ItemName,Gm,K,P,Y,S,WK,WP,WY,WS,TK,TP,TY,TS,Mcost,Repamt,Totalamt,Remark,Employee,Shop,Form,Counter) values(@Image,@Date,@Time,@SaleVoucher,@Enter_Remark,@PurVoucher,@ProductID,@GoldType,@GoldPrice,@Item," +
-                        "@ItemName,@Gm,@K,@P,@Y,@S,@WK,@WP,@WY,@WS,@TK,@TP,@TY,@TS,@Mcost,@Repamt,@Totalamt,@Remark,@Employee,@Shop,@Form,@Counter)", con);
+                        "ItemName,Gm,K,P,Y,S,WK,WP,WY,WS,TK,TP,TY,TS,SK,SP,SY,SS,Mcost,Repamt,Totalamt,Remark,Employee,Shop,Form,Counter) values(@Image,@Date,@Time,@SaleVoucher,@Enter_Remark,@PurVoucher,@ProductID,@GoldType,@GoldPrice,@Item," +
+                        "@ItemName,@Gm,@K,@P,@Y,@S,@WK,@WP,@WY,@WS,@TK,@TP,@TY,@TS,@SK,@SP,@SY,@SS,@Mcost,@Repamt,@Totalamt,@Remark,@Employee,@Shop,@Form,@Counter)", con);
 
                         cmd3 = new SqlCommand("insert into all_stocks (Image,Date,Time,SaleVoucher,Enter_Remark,PurVoucher,ProductID,GoldType,GoldPrice,Item," +
                         "ItemName,Gm,K,P,Y,S,WK,WP,WY,WS,TK,TP,TY,TS,Mcost,Repamt,Totalamt,Remark,Employee,Shop,Form,Counter) values(@Image,@Date,@Time,@SaleVoucher,@Enter_Remark,@PurVoucher,@ProductID,@GoldType,@GoldPrice,@Item," +
@@ -628,14 +649,18 @@ namespace MJS
                         cmd.Parameters.AddWithValue("@TP", dataGridView1.Rows[i].Cells[21].Value);
                         cmd.Parameters.AddWithValue("@TY", dataGridView1.Rows[i].Cells[22].Value);
                         cmd.Parameters.AddWithValue("@TS", dataGridView1.Rows[i].Cells[23].Value);
-                        cmd.Parameters.AddWithValue("@Mcost", dataGridView1.Rows[i].Cells[24].Value);
-                        cmd.Parameters.AddWithValue("@Repamt", dataGridView1.Rows[i].Cells[25].Value);
-                        cmd.Parameters.AddWithValue("@Totalamt", dataGridView1.Rows[i].Cells[26].Value);
-                        cmd.Parameters.AddWithValue("@Remark", dataGridView1.Rows[i].Cells[27].Value);
-                        cmd.Parameters.AddWithValue("@Employee", dataGridView1.Rows[i].Cells[28].Value);
-                        cmd.Parameters.AddWithValue("@Shop", dataGridView1.Rows[i].Cells[29].Value);
-                        cmd.Parameters.AddWithValue("@Form", dataGridView1.Rows[i].Cells[30].Value);
-                        cmd.Parameters.AddWithValue("@Counter", dataGridView1.Rows[i].Cells[31].Value);
+                        cmd.Parameters.AddWithValue("@SK", dataGridView1.Rows[i].Cells[24].Value);
+                        cmd.Parameters.AddWithValue("@SP", dataGridView1.Rows[i].Cells[25].Value);
+                        cmd.Parameters.AddWithValue("@SY", dataGridView1.Rows[i].Cells[26].Value);
+                        cmd.Parameters.AddWithValue("@SS", dataGridView1.Rows[i].Cells[27].Value);
+                        cmd.Parameters.AddWithValue("@Mcost", dataGridView1.Rows[i].Cells[28].Value);
+                        cmd.Parameters.AddWithValue("@Repamt", dataGridView1.Rows[i].Cells[29].Value);
+                        cmd.Parameters.AddWithValue("@Totalamt", dataGridView1.Rows[i].Cells[30].Value);
+                        cmd.Parameters.AddWithValue("@Remark", dataGridView1.Rows[i].Cells[31].Value);
+                        cmd.Parameters.AddWithValue("@Employee", dataGridView1.Rows[i].Cells[32].Value);
+                        cmd.Parameters.AddWithValue("@Shop", dataGridView1.Rows[i].Cells[33].Value);
+                        cmd.Parameters.AddWithValue("@Form", dataGridView1.Rows[i].Cells[34].Value);
+                        cmd.Parameters.AddWithValue("@Counter", dataGridView1.Rows[i].Cells[35].Value);
 
                         cmd2.Parameters.AddWithValue("@Image", img);
                         cmd2.Parameters.AddWithValue("@Date", dataGridView1.Rows[i].Cells[1].Value);
@@ -661,14 +686,18 @@ namespace MJS
                         cmd2.Parameters.AddWithValue("@TP", dataGridView1.Rows[i].Cells[21].Value);
                         cmd2.Parameters.AddWithValue("@TY", dataGridView1.Rows[i].Cells[22].Value);
                         cmd2.Parameters.AddWithValue("@TS", dataGridView1.Rows[i].Cells[23].Value);
-                        cmd2.Parameters.AddWithValue("@Mcost", dataGridView1.Rows[i].Cells[24].Value);
-                        cmd2.Parameters.AddWithValue("@Repamt", dataGridView1.Rows[i].Cells[25].Value);
-                        cmd2.Parameters.AddWithValue("@Totalamt", dataGridView1.Rows[i].Cells[26].Value);
-                        cmd2.Parameters.AddWithValue("@Remark", dataGridView1.Rows[i].Cells[27].Value);
-                        cmd2.Parameters.AddWithValue("@Employee", dataGridView1.Rows[i].Cells[28].Value);
-                        cmd2.Parameters.AddWithValue("@Shop", dataGridView1.Rows[i].Cells[29].Value);
-                        cmd2.Parameters.AddWithValue("@Form", dataGridView1.Rows[i].Cells[30].Value);
-                        cmd2.Parameters.AddWithValue("@Counter", dataGridView1.Rows[i].Cells[31].Value);
+                        cmd2.Parameters.AddWithValue("@SK", dataGridView1.Rows[i].Cells[24].Value);
+                        cmd2.Parameters.AddWithValue("@SP", dataGridView1.Rows[i].Cells[25].Value);
+                        cmd2.Parameters.AddWithValue("@SY", dataGridView1.Rows[i].Cells[26].Value);
+                        cmd2.Parameters.AddWithValue("@SS", dataGridView1.Rows[i].Cells[27].Value);
+                        cmd2.Parameters.AddWithValue("@Mcost", dataGridView1.Rows[i].Cells[28].Value);
+                        cmd2.Parameters.AddWithValue("@Repamt", dataGridView1.Rows[i].Cells[29].Value);
+                        cmd2.Parameters.AddWithValue("@Totalamt", dataGridView1.Rows[i].Cells[30].Value);
+                        cmd2.Parameters.AddWithValue("@Remark", dataGridView1.Rows[i].Cells[31].Value);
+                        cmd2.Parameters.AddWithValue("@Employee", dataGridView1.Rows[i].Cells[32].Value);
+                        cmd2.Parameters.AddWithValue("@Shop", dataGridView1.Rows[i].Cells[33].Value);
+                        cmd2.Parameters.AddWithValue("@Form", dataGridView1.Rows[i].Cells[34].Value);
+                        cmd2.Parameters.AddWithValue("@Counter", dataGridView1.Rows[i].Cells[35].Value);
 
                         cmd3.Parameters.AddWithValue("@Image", img);
                         cmd3.Parameters.AddWithValue("@Date", dataGridView1.Rows[i].Cells[1].Value.ToString());
@@ -694,14 +723,14 @@ namespace MJS
                         cmd3.Parameters.AddWithValue("@TP", dataGridView1.Rows[i].Cells[21].Value);
                         cmd3.Parameters.AddWithValue("@TY", dataGridView1.Rows[i].Cells[22].Value);
                         cmd3.Parameters.AddWithValue("@TS", dataGridView1.Rows[i].Cells[23].Value);
-                        cmd3.Parameters.AddWithValue("@Mcost", dataGridView1.Rows[i].Cells[24].Value);
-                        cmd3.Parameters.AddWithValue("@Repamt", dataGridView1.Rows[i].Cells[25].Value);
-                        cmd3.Parameters.AddWithValue("@Totalamt", dataGridView1.Rows[i].Cells[26].Value);
-                        cmd3.Parameters.AddWithValue("@Remark", dataGridView1.Rows[i].Cells[27].Value);
-                        cmd3.Parameters.AddWithValue("@Employee", dataGridView1.Rows[i].Cells[28].Value);
-                        cmd3.Parameters.AddWithValue("@Shop", dataGridView1.Rows[i].Cells[29].Value);
-                        cmd3.Parameters.AddWithValue("@Form", dataGridView1.Rows[i].Cells[30].Value);
-                        cmd3.Parameters.AddWithValue("@Counter", dataGridView1.Rows[i].Cells[31].Value);
+                        cmd3.Parameters.AddWithValue("@Mcost", dataGridView1.Rows[i].Cells[28].Value);
+                        cmd3.Parameters.AddWithValue("@Repamt", dataGridView1.Rows[i].Cells[29].Value);
+                        cmd3.Parameters.AddWithValue("@Totalamt", dataGridView1.Rows[i].Cells[30].Value);
+                        cmd3.Parameters.AddWithValue("@Remark", dataGridView1.Rows[i].Cells[31].Value);
+                        cmd3.Parameters.AddWithValue("@Employee", dataGridView1.Rows[i].Cells[32].Value);
+                        cmd3.Parameters.AddWithValue("@Shop", dataGridView1.Rows[i].Cells[33].Value);
+                        cmd3.Parameters.AddWithValue("@Form", dataGridView1.Rows[i].Cells[34].Value);
+                        cmd3.Parameters.AddWithValue("@Counter", dataGridView1.Rows[i].Cells[35].Value);
 
                         primarykey = Convert.ToInt32(cmd.ExecuteScalar());
                         primarykey = Convert.ToInt32(cmd2.ExecuteScalar());
@@ -837,6 +866,10 @@ namespace MJS
             lbl_totalgm.Text = "0";
             lbl_totalamt.Text = "0";
             lbl_qty.Text= "0";
+            txt_sk.Text = "0";
+            txt_sp.Text = "0";
+            txt_sy.Text = "0";
+            txt_ss.Text = "0";
 
 
         }
@@ -891,6 +924,30 @@ namespace MJS
                 txt_WC.Text = "0";
                 txt_WC.SelectionStart = 0;
                 txt_WC.SelectionLength = txt_WC.Text.Length;
+            }
+            if (txt_sk.Text == "")
+            {
+                txt_sk.Text = "0";
+                txt_sk.SelectionStart = 0;
+                txt_sk.SelectionLength = txt_sk.Text.Length;
+            }
+            if (txt_sp.Text == "")
+            {
+                txt_sp.Text = "0";
+                txt_sp.SelectionStart = 0;
+                txt_sp.SelectionLength = txt_sp.Text.Length;
+            }
+            if (txt_sy.Text == "")
+            {
+                txt_sy.Text = "0";
+                txt_sy.SelectionStart = 0;
+                txt_sy.SelectionLength = txt_sy.Text.Length;
+            }
+            if (txt_ss.Text == "")
+            {
+                txt_ss.Text = "0";
+                txt_ss.SelectionStart = 0;
+                txt_ss.SelectionLength = txt_ss.Text.Length;
             }
             intk = Math.Floor(double.Parse(txt_gm.Text) / double.Parse("16.6"));
             tk = double.Parse(txt_gm.Text) / double.Parse("16.6");
@@ -1200,7 +1257,7 @@ namespace MJS
 
         private void History_addGrid(string date, string time, string Voucher, string enter_remark, string purvoc, string barcode,
             string goldtype, string gold_price, string items, string itemname, string gm, string k, string p, string y, string s,
-            string wk, string wp, string wy, string ws, string totalk, string totalp, string totaly, string totals, string mcost,
+            string wk, string wp, string wy, string ws, string totalk, string totalp, string totaly, string totals,string sk,string sp,string sy,string ss, string mcost,
             string repamt, string totalamt, string remark, string employee, string shop, string form, string type)
         {
             try
@@ -1213,9 +1270,11 @@ namespace MJS
                 newRow.Cells[9].Value = items; newRow.Cells[10].Value = itemname; newRow.Cells[11].Value = gm; newRow.Cells[12].Value = k;
                 newRow.Cells[13].Value = p; newRow.Cells[14].Value = y; newRow.Cells[15].Value = s; newRow.Cells[16].Value = wk;
                 newRow.Cells[17].Value = wp; newRow.Cells[18].Value = wy; newRow.Cells[19].Value = ws; newRow.Cells[20].Value = totalk;
-                newRow.Cells[21].Value = totalp; newRow.Cells[22].Value = totaly; newRow.Cells[23].Value = totals; newRow.Cells[24].Value = mcost;
-                newRow.Cells[25].Value = repamt; newRow.Cells[26].Value = totalamt; newRow.Cells[27].Value = remark; newRow.Cells[28].Value = employee;
-                newRow.Cells[29].Value = shop; newRow.Cells[30].Value = form; newRow.Cells[31].Value = type;
+                newRow.Cells[21].Value = totalp; newRow.Cells[22].Value = totaly; newRow.Cells[23].Value = totals; newRow.Cells[24].Value = sk;
+                newRow.Cells[25].Value = sp; newRow.Cells[26].Value = sy; newRow.Cells[27].Value = ss;
+                newRow.Cells[28].Value = mcost;
+                newRow.Cells[29].Value = repamt; newRow.Cells[30].Value = totalamt; newRow.Cells[31].Value = remark; newRow.Cells[32].Value = employee;
+                newRow.Cells[33].Value = shop; newRow.Cells[34].Value = form; newRow.Cells[35].Value = type;
 
                 dataGridView1.Rows.Add(newRow);
                 MemoryStream mmst = new MemoryStream();
@@ -1456,7 +1515,7 @@ namespace MJS
 
                     History_addGrid(txt_date.Text, txt_time.Text, txt_voucher.Text, cmb_remark.Text, txt_pur_no.Text, txt_barcode.Text, cmb_gt.Text, txt_goldprice.Text,
                         cmb_item.Text, cmb_itemname.Text, txt_gm.Text, txt_k.Text, txt_p.Text, txt_y.Text, txt_s.Text, txt_WK.Text, txt_WP.Text, txt_WY.Text, txt_WC.Text,
-                        total_K.Text, total_P.Text, total_Y.Text, total_S.Text, txt_mcost.Text, txt_rep.Text, txt_totalamt.Text, txt_remark.Text, empolyee, txt_shop.Text, textBox2.Text, txt_counter.Text);
+                        total_K.Text, total_P.Text, total_Y.Text, total_S.Text,txt_sk.Text,txt_sp.Text,txt_sy.Text,txt_ss.Text, txt_mcost.Text, txt_rep.Text, txt_totalamt.Text, txt_remark.Text, empolyee, txt_shop.Text, textBox2.Text, txt_counter.Text);
 
                     cmb_item.Focus();
                     clearform();
@@ -1525,10 +1584,15 @@ namespace MJS
                     dataGridView1.Rows[selectedRowIndex].Cells[21].Value = total_P.Text;
                     dataGridView1.Rows[selectedRowIndex].Cells[22].Value = total_Y.Text;
                     dataGridView1.Rows[selectedRowIndex].Cells[23].Value = total_S.Text;
-                    dataGridView1.Rows[selectedRowIndex].Cells[24].Value = txt_mcost.Text;
-                    dataGridView1.Rows[selectedRowIndex].Cells[25].Value = txt_rep.Text;
-                    dataGridView1.Rows[selectedRowIndex].Cells[26].Value = txt_totalamt.Text;
-                    dataGridView1.Rows[selectedRowIndex].Cells[27].Value = txt_remark.Text;
+                    dataGridView1.Rows[selectedRowIndex].Cells[24].Value = txt_sk.Text;
+                    dataGridView1.Rows[selectedRowIndex].Cells[25].Value = txt_sp.Text;
+                    dataGridView1.Rows[selectedRowIndex].Cells[26].Value = txt_sy.Text;
+                    dataGridView1.Rows[selectedRowIndex].Cells[27].Value = txt_ss.Text;
+
+                    dataGridView1.Rows[selectedRowIndex].Cells[28].Value = txt_mcost.Text;
+                    dataGridView1.Rows[selectedRowIndex].Cells[29].Value = txt_rep.Text;
+                    dataGridView1.Rows[selectedRowIndex].Cells[30].Value = txt_totalamt.Text;
+                    dataGridView1.Rows[selectedRowIndex].Cells[31].Value = txt_remark.Text;
 
                     selectedRowIndex = -1;
 
@@ -1572,9 +1636,9 @@ namespace MJS
                 txt_WP.Text = dataGridView1.Rows[selectedRowIndex].Cells[17].Value.ToString();
                 txt_WY.Text = dataGridView1.Rows[selectedRowIndex].Cells[18].Value.ToString();
                 txt_WC.Text = dataGridView1.Rows[selectedRowIndex].Cells[19].Value.ToString();
-                txt_mcost.Text = dataGridView1.Rows[selectedRowIndex].Cells[24].Value.ToString();
-                txt_rep.Text = dataGridView1.Rows[selectedRowIndex].Cells[25].Value.ToString();
-                txt_remark.Text = dataGridView1.Rows[selectedRowIndex].Cells[27].Value.ToString();
+                txt_mcost.Text = dataGridView1.Rows[selectedRowIndex].Cells[28].Value.ToString();
+                txt_rep.Text = dataGridView1.Rows[selectedRowIndex].Cells[29].Value.ToString();
+                txt_remark.Text = dataGridView1.Rows[selectedRowIndex].Cells[31].Value.ToString();
 
             }
            

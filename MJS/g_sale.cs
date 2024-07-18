@@ -12,6 +12,9 @@ using System.IO;
 using System.Globalization;
 using OfficeOpenXml.FormulaParsing.Excel.Functions.Math;
 using System.Runtime.InteropServices;
+using System.Drawing.Imaging;
+using System.Windows.Documents;
+using OfficeOpenXml.FormulaParsing.Excel.Functions.Database;
 
 
 
@@ -25,7 +28,7 @@ namespace MJS
 
         SqlConnection con = new SqlConnection("Data Source=sql.bsite.net\\MSSQL2016;User ID=pyisoekyaw_;Password=pyisoe@#101215");
 
-        SqlCommand cmd, cmd2, cmd3;
+        SqlCommand cmd, cmd2, cmd3,cmd4;
         SqlDataAdapter adpt;
         DataTable dt;
         DataSet ds;
@@ -38,8 +41,7 @@ namespace MJS
         private void g_sale_Load(object sender, EventArgs e)
         {
             txt_shop.Text = login.shopvalue;
-            timer2.Interval = 200;
-            timer2.Start();
+            counter();
             if (txt_goldprice.Text == "")
             {
                 txt_goldprice.Text = "0";
@@ -62,8 +64,7 @@ namespace MJS
                 {
                     invoiceid();
                     resetpid();
-                    counter();
-
+                    
                 }
                 else
                 {
@@ -145,7 +146,7 @@ namespace MJS
             }
             finally { formbackground.Dispose(); }
         }
-        private int sumqty = 0;
+       /* private int sumqty = 0;
         private void totalqty()
         {
             if (int.TryParse(label_qty.Text, out int value)) 
@@ -156,7 +157,7 @@ namespace MJS
             }
         }
         private decimal sumgm = 0;
-        private void totalgm() 
+        private void totalgm()
         {
             if (decimal.TryParse(label_gm.Text, out decimal gm))
             {
@@ -164,6 +165,35 @@ namespace MJS
                 txt_total_gm.Text = sumgm.ToString();
 
             }
+        }*/
+        public void TotalGm()
+        {
+            /* decimal gm = 0;
+             for (int i = 0; i < dgv_showdata.Rows.Count; ++i)
+             {
+                 gm += Convert.ToDecimal(dgv_showdata.Rows[i].Cells[3].Value);
+                 txt_total_gm.Text = gm.ToString();
+             }*/
+
+            decimal sum = 0;
+
+            foreach (DataGridViewRow row in dgv_showdata.Rows)
+            {
+                if (row.Cells[4].Value != null && row.Cells[4].Value != DBNull.Value)
+                {
+                    if (decimal.TryParse(row.Cells[4].Value.ToString(), out decimal value))
+                    {
+                        sum += value;
+                    }
+                }
+            }
+
+            txt_total_gm.Text =  sum.ToString();
+        }
+
+        public void TotalQty()
+        {
+            txt_total_qty.Text = dgv_showdata.Rows.Count.ToString();
         }
 
         public void getgoldprice()
@@ -374,8 +404,10 @@ namespace MJS
         }
         private void iconButton1_Click(object sender, EventArgs e)
         {
-            PrintScreen();
-            printPreviewDialog1.ShowDialog();
+           /* PrintScreen();
+            printPreviewDialog1.ShowDialog();*/
+            timer2.Interval = 200;
+            timer2.Start();
         }
 
         private void iconButton2_Click_1(object sender, EventArgs e)
@@ -861,14 +893,105 @@ namespace MJS
         {
             txt_pro_amt.Text = string.Format("{0:n0}", double.Parse(txt_pro_amt.Text));
         }
+        int pic = 1;
+        private void button2_Click(object sender, EventArgs e)
+        {
+            pic *= -1;
+            if (pic == -1)
+            {
+                Bitmap a= new Bitmap(@"D:\MJS_Cloud_Application\MJS\Properties\down_arrow.png");
+                button2.BackgroundImage = a;
+            }
+            else
+            {
+                Bitmap b = new Bitmap(@"D:\MJS_Cloud_Application\MJS\Properties\up-arrow.png");
+                button2.BackgroundImage = b;
+            }
+            TogglePanelVisibility();
+        }
 
-        
+        private void TogglePanelVisibility()
+        {
+            panel2.Visible = !panel2.Visible;
 
+            // Optionally adjust the layout of other controls
+            if (panel2.Visible)
+            {
+                // Make space for the panel
+                panel3.Top = panel2.Bottom+10; // Adjust as necessary
+            }
+            else
+            {
+                // Remove the space occupied by the panel
+                panel3.Top = panel2.Top; // Adjust as necessary
+            }
+        }
         private void txt_pro_famt_Leave(object sender, EventArgs e)
         {
             txt_pro_famt.Text = string.Format("{0:n0}", double.Parse(txt_pro_famt.Text));
         }
+        private double value = 0;
+        private void minimum_price_check() 
+        {
+            double txtsk, txtsp, txtsy, txtss, txt_minimum_per, txt_result_gm, result2 = 0;
+            double gm = 16.6;
 
+            txtsk =double.Parse(txt_sk.Text);txtsp=double.Parse(txt_sp.Text);txtsy=double.Parse(txt_sy.Text);txtss=double.Parse(txt_ss.Text);
+            txt_minimum_per=double.Parse(txt_mini_percent.Text);
+
+            result2 =  Math.Round((((((txtss / 4) + txtsy) / 8 + txtsp) / 16 + txtsk) * gm)*txt_minimum_per);
+            value += result2;
+            result_gm.Text = result2.ToString();
+            txt_result_sum.Text = value.ToString();
+                      
+        }
+        
+
+        private void txt_sk_TextChanged(object sender, EventArgs e)
+        {
+            minimum_price_check();
+           
+        }
+
+        private void txt_sp_TextChanged(object sender, EventArgs e)
+        {
+            minimum_price_check();
+            
+        }
+
+        private void txt_sy_TextChanged(object sender, EventArgs e)
+        {
+            minimum_price_check();
+            
+        }
+
+        private void txt_ss_TextChanged(object sender, EventArgs e)
+        {
+            minimum_price_check();
+           
+        }
+
+        private void result_gm_TextChanged(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void dgv_showdata_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            if (e.ColumnIndex == 4 && e.RowIndex > -1)
+            {
+                var result = MessageBox.Show("Are you sure you want to delete this row?", "Delete Row", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    dgv_showdata.Rows.RemoveAt(e.RowIndex);
+                    TotalQty();
+                    TotalGm();
+                }
+            }
+        }
+
+       
         private void txt_discount_Leave(object sender, EventArgs e)
         {
             txt_discount.Text = string.Format("{0:n0}", double.Parse(txt_discount.Text));
@@ -879,15 +1002,33 @@ namespace MJS
             getgoldprice();
         }
 
+        
+
+        private void addRow(string productid,string item, string itemname, string qty, string gm)
+        {
+            string[] row = {productid,item,itemname,qty,gm };
+            dgv_showdata.Rows.Add(row);
+
+           
+        }
         private void txt_out_no_Leave(object sender, EventArgs e)
         {
+            for (int i = 0; i < dgv_showdata.Rows.Count; i++)
+            {
+                if (txt_out_no.Text == dgv_showdata.Rows[i].Cells[0].Value.ToString())
+                {
+                    MessageBox.Show("Already have ProductID insert!");
+                    return;
+                }
+            }
+
             try
             {
 
                 if (txt_out_no.Text != "")
                 {
                     con.Open();
-                    SqlCommand cmd = new SqlCommand("Select Image,Item,Itemname,Gm,GoldType from closing_stock where ProductID=@ProductID", con);
+                    SqlCommand cmd = new SqlCommand("Select Image,SK,SP,SY,SS,Item,Itemname,Gm,GoldType from closing_stock where ProductID=@ProductID", con);
                     cmd.Parameters.AddWithValue("@ProductID", txt_out_no.Text);
                     using (SqlDataReader da = cmd.ExecuteReader())
                     {
@@ -897,13 +1038,20 @@ namespace MJS
                         {
 
                             imagedata = (byte[])da.GetValue(0);
-                            label_Item.Text = da.GetValue(1).ToString();
-                            label_itemname.Text = da.GetValue(2).ToString();
-                            label_gm.Text = da.GetValue(3).ToString();
-                            label_goldtype.Text = da.GetValue(4).ToString();
+                            txt_sk.Text = da.GetValue(1).ToString();
+                            txt_sp.Text = da.GetValue(2).ToString();
+                            txt_sy.Text = da.GetValue(3).ToString();
+                            txt_ss.Text = da.GetValue(4).ToString();
+                            label_Item.Text = da.GetValue(5).ToString();
+                            label_itemname.Text = da.GetValue(6).ToString();
+                            label_gm.Text = da.GetValue(7).ToString();
+                            label_goldtype.Text = da.GetValue(8).ToString();
                             label_qty.Text = "1";
-                            totalqty();
-                            totalgm();
+                            addRow(txt_out_no.Text, label_Item.Text, label_itemname.Text, label_qty.Text, label_gm.Text);
+                            /*totalqty();
+                            totalgm();*/
+                            TotalGm();
+                            TotalQty();
 
 
                         }
@@ -945,6 +1093,7 @@ namespace MJS
 
             }
             catch (Exception ex) { MessageBox.Show("An error occurred:" + ex.Message); }
+
         }
     }
 }
