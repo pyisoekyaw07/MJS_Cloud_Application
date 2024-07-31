@@ -33,7 +33,12 @@ namespace MJS
         /// </summary>
         private void InitializeComponent()
         {
-            this.txt_payment_amt = new System.Windows.Forms.Label();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.txt_sale_amt = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cash_rdo_btn = new System.Windows.Forms.RadioButton();
             this.foreign_rdo_btn = new System.Windows.Forms.RadioButton();
@@ -48,67 +53,79 @@ namespace MJS
             this.label8 = new System.Windows.Forms.Label();
             this.bank_rdo_btn = new System.Windows.Forms.RadioButton();
             this.MB_rdo_btn = new System.Windows.Forms.RadioButton();
-            this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
+            this.btn_payment = new Krypton.Toolkit.KryptonButton();
             this.foreign_group = new System.Windows.Forms.GroupBox();
-            this.txt_dollar_rate = new System.Windows.Forms.TextBox();
-            this.kryptonComboBox1 = new Krypton.Toolkit.KryptonComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txt_exchange_amt = new Krypton.Toolkit.KryptonTextBox();
+            this.txt_currency_rate = new System.Windows.Forms.TextBox();
+            this.cmb_currenty_type = new Krypton.Toolkit.KryptonComboBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.kryptonTextBox6 = new Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox7 = new Krypton.Toolkit.KryptonTextBox();
+            this.txt_currency_amt = new Krypton.Toolkit.KryptonTextBox();
             this.Mobile_group = new System.Windows.Forms.GroupBox();
-            this.kryptonComboBox2 = new Krypton.Toolkit.KryptonComboBox();
+            this.cmb_bankname = new Krypton.Toolkit.KryptonComboBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.kryptonTextBox8 = new Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox9 = new Krypton.Toolkit.KryptonTextBox();
+            this.txt_mobilebanking_amt = new Krypton.Toolkit.KryptonTextBox();
             this.Bank_group = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.kryptonComboBox3 = new Krypton.Toolkit.KryptonComboBox();
+            this.txt_POS = new System.Windows.Forms.TextBox();
+            this.cmb_cardtype = new Krypton.Toolkit.KryptonComboBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.kryptonTextBox10 = new Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox11 = new Krypton.Toolkit.KryptonTextBox();
+            this.txt_bankcard_amt = new Krypton.Toolkit.KryptonTextBox();
             this.Cash_group = new System.Windows.Forms.GroupBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.kryptonTextBox12 = new Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox13 = new Krypton.Toolkit.KryptonTextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txt_cash_amt = new Krypton.Toolkit.KryptonTextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_outstanding_amt = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.lbl_payment_amt = new System.Windows.Forms.Label();
+            this.txt_show = new System.Windows.Forms.TextBox();
+            this.btn_payment_save = new Krypton.Toolkit.KryptonButton();
+            this.dgv_show_paymethod = new System.Windows.Forms.DataGridView();
+            this.payment = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lbl_show_saleamt = new System.Windows.Forms.Label();
+            this.lbl_show_payment = new System.Windows.Forms.Label();
+            this.lbl_show_outstanding = new System.Windows.Forms.Label();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.foreign_group.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmb_currenty_type)).BeginInit();
             this.Mobile_group.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmb_bankname)).BeginInit();
             this.Bank_group.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmb_cardtype)).BeginInit();
             this.Cash_group.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_show_paymethod)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
-            // txt_payment_amt
+            // txt_sale_amt
             // 
-            this.txt_payment_amt.Font = new System.Drawing.Font("Pyidaungsu", 24F, System.Drawing.FontStyle.Bold);
-            this.txt_payment_amt.Location = new System.Drawing.Point(124, 198);
-            this.txt_payment_amt.Name = "txt_payment_amt";
-            this.txt_payment_amt.Size = new System.Drawing.Size(168, 48);
-            this.txt_payment_amt.TabIndex = 0;
-            this.txt_payment_amt.Text = "0";
-            this.txt_payment_amt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txt_sale_amt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_sale_amt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_sale_amt.Location = new System.Drawing.Point(561, 21);
+            this.txt_sale_amt.Name = "txt_sale_amt";
+            this.txt_sale_amt.Size = new System.Drawing.Size(33, 21);
+            this.txt_sale_amt.TabIndex = 0;
+            this.txt_sale_amt.Text = "0";
+            this.txt_sale_amt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txt_sale_amt.Visible = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label2.Location = new System.Drawing.Point(26, 210);
+            this.label2.Location = new System.Drawing.Point(15, 183);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 22);
+            this.label2.Size = new System.Drawing.Size(80, 22);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Total Amount";
+            this.label2.Text = "Sale Amount";
             // 
             // cash_rdo_btn
             // 
             this.cash_rdo_btn.AutoSize = true;
-            this.cash_rdo_btn.Location = new System.Drawing.Point(30, 337);
+            this.cash_rdo_btn.Location = new System.Drawing.Point(19, 428);
             this.cash_rdo_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cash_rdo_btn.Name = "cash_rdo_btn";
             this.cash_rdo_btn.Size = new System.Drawing.Size(49, 17);
@@ -121,7 +138,7 @@ namespace MJS
             // foreign_rdo_btn
             // 
             this.foreign_rdo_btn.AutoSize = true;
-            this.foreign_rdo_btn.Location = new System.Drawing.Point(128, 337);
+            this.foreign_rdo_btn.Location = new System.Drawing.Point(117, 428);
             this.foreign_rdo_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.foreign_rdo_btn.Name = "foreign_rdo_btn";
             this.foreign_rdo_btn.Size = new System.Drawing.Size(105, 17);
@@ -228,7 +245,7 @@ namespace MJS
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Bold);
-            this.label8.Location = new System.Drawing.Point(12, 299);
+            this.label8.Location = new System.Drawing.Point(14, 391);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(172, 27);
             this.label8.TabIndex = 14;
@@ -237,7 +254,7 @@ namespace MJS
             // bank_rdo_btn
             // 
             this.bank_rdo_btn.AutoSize = true;
-            this.bank_rdo_btn.Location = new System.Drawing.Point(282, 337);
+            this.bank_rdo_btn.Location = new System.Drawing.Point(261, 428);
             this.bank_rdo_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bank_rdo_btn.Name = "bank_rdo_btn";
             this.bank_rdo_btn.Size = new System.Drawing.Size(75, 17);
@@ -250,7 +267,7 @@ namespace MJS
             // MB_rdo_btn
             // 
             this.MB_rdo_btn.AutoSize = true;
-            this.MB_rdo_btn.Location = new System.Drawing.Point(397, 337);
+            this.MB_rdo_btn.Location = new System.Drawing.Point(386, 428);
             this.MB_rdo_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MB_rdo_btn.Name = "MB_rdo_btn";
             this.MB_rdo_btn.Size = new System.Drawing.Size(98, 17);
@@ -260,68 +277,93 @@ namespace MJS
             this.MB_rdo_btn.UseVisualStyleBackColor = true;
             this.MB_rdo_btn.Click += new System.EventHandler(this.MB_rdo_btn_Click);
             // 
-            // kryptonButton1
+            // btn_payment
             // 
-            this.kryptonButton1.CornerRoundingRadius = 10F;
-            this.kryptonButton1.Location = new System.Drawing.Point(782, 319);
-            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(310, 44);
-            this.kryptonButton1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btn_payment.CornerRoundingRadius = 10F;
+            this.btn_payment.Location = new System.Drawing.Point(764, 396);
+            this.btn_payment.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_payment.Name = "btn_payment";
+            this.btn_payment.Size = new System.Drawing.Size(225, 44);
+            this.btn_payment.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton1.StateCommon.Border.Rounding = 2F;
-            this.kryptonButton1.TabIndex = 0;
-            this.kryptonButton1.Values.Text = "Payment";
+            this.btn_payment.StateCommon.Border.Rounding = 2F;
+            this.btn_payment.TabIndex = 0;
+            this.btn_payment.Values.Text = "Payment";
+            this.btn_payment.Click += new System.EventHandler(this.btn_payment_Click);
             // 
             // foreign_group
             // 
-            this.foreign_group.Controls.Add(this.txt_dollar_rate);
-            this.foreign_group.Controls.Add(this.kryptonComboBox1);
+            this.foreign_group.Controls.Add(this.label10);
+            this.foreign_group.Controls.Add(this.txt_exchange_amt);
+            this.foreign_group.Controls.Add(this.txt_currency_rate);
+            this.foreign_group.Controls.Add(this.cmb_currenty_type);
             this.foreign_group.Controls.Add(this.label11);
-            this.foreign_group.Controls.Add(this.label12);
-            this.foreign_group.Controls.Add(this.kryptonTextBox6);
-            this.foreign_group.Controls.Add(this.kryptonTextBox7);
-            this.foreign_group.Location = new System.Drawing.Point(782, 89);
+            this.foreign_group.Controls.Add(this.txt_currency_amt);
+            this.foreign_group.Location = new System.Drawing.Point(716, 163);
             this.foreign_group.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.foreign_group.Name = "foreign_group";
             this.foreign_group.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.foreign_group.Size = new System.Drawing.Size(310, 215);
+            this.foreign_group.Size = new System.Drawing.Size(310, 217);
             this.foreign_group.TabIndex = 22;
             this.foreign_group.TabStop = false;
             this.foreign_group.Visible = false;
             // 
-            // txt_dollar_rate
+            // label10
             // 
-            this.txt_dollar_rate.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_dollar_rate.Location = new System.Drawing.Point(185, 17);
-            this.txt_dollar_rate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_dollar_rate.Name = "txt_dollar_rate";
-            this.txt_dollar_rate.Size = new System.Drawing.Size(105, 35);
-            this.txt_dollar_rate.TabIndex = 25;
-            this.txt_dollar_rate.Enter += new System.EventHandler(this.txt_dollar_rate_Enter);
-            this.txt_dollar_rate.Leave += new System.EventHandler(this.txt_dollar_rate_Leave);
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Bold);
+            this.label10.Location = new System.Drawing.Point(25, 136);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(110, 22);
+            this.label10.TabIndex = 27;
+            this.label10.Text = "Exchange Amount";
             // 
-            // kryptonComboBox1
+            // txt_exchange_amt
             // 
-            this.kryptonComboBox1.CornerRoundingRadius = 10F;
-            this.kryptonComboBox1.DropDownWidth = 115;
-            this.kryptonComboBox1.IntegralHeight = false;
-            this.kryptonComboBox1.Items.AddRange(new object[] {
+            this.txt_exchange_amt.CornerRoundingRadius = 10F;
+            this.txt_exchange_amt.Location = new System.Drawing.Point(20, 163);
+            this.txt_exchange_amt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_exchange_amt.Name = "txt_exchange_amt";
+            this.txt_exchange_amt.Size = new System.Drawing.Size(225, 37);
+            this.txt_exchange_amt.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txt_exchange_amt.StateCommon.Border.Rounding = 3F;
+            this.txt_exchange_amt.StateCommon.Content.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_exchange_amt.TabIndex = 26;
+            // 
+            // txt_currency_rate
+            // 
+            this.txt_currency_rate.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_currency_rate.Location = new System.Drawing.Point(185, 17);
+            this.txt_currency_rate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_currency_rate.Name = "txt_currency_rate";
+            this.txt_currency_rate.Size = new System.Drawing.Size(105, 35);
+            this.txt_currency_rate.TabIndex = 25;
+            this.txt_currency_rate.Enter += new System.EventHandler(this.txt_dollar_rate_Enter);
+            this.txt_currency_rate.Leave += new System.EventHandler(this.txt_dollar_rate_Leave);
+            // 
+            // cmb_currenty_type
+            // 
+            this.cmb_currenty_type.CornerRoundingRadius = 10F;
+            this.cmb_currenty_type.DropDownWidth = 115;
+            this.cmb_currenty_type.IntegralHeight = false;
+            this.cmb_currenty_type.Items.AddRange(new object[] {
             "USD",
             "SGD",
             "Batt"});
-            this.kryptonComboBox1.Location = new System.Drawing.Point(20, 17);
-            this.kryptonComboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonComboBox1.Name = "kryptonComboBox1";
-            this.kryptonComboBox1.Size = new System.Drawing.Size(147, 35);
-            this.kryptonComboBox1.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.cmb_currenty_type.Location = new System.Drawing.Point(20, 17);
+            this.cmb_currenty_type.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmb_currenty_type.Name = "cmb_currenty_type";
+            this.cmb_currenty_type.Size = new System.Drawing.Size(147, 35);
+            this.cmb_currenty_type.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonComboBox1.StateCommon.ComboBox.Border.Rounding = 3F;
-            this.kryptonComboBox1.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonComboBox1.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.kryptonComboBox1.TabIndex = 25;
+            this.cmb_currenty_type.StateCommon.ComboBox.Border.Rounding = 3F;
+            this.cmb_currenty_type.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_currenty_type.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.cmb_currenty_type.TabIndex = 25;
             // 
             // label11
             // 
@@ -333,312 +375,395 @@ namespace MJS
             this.label11.TabIndex = 18;
             this.label11.Text = "Currency Amount";
             // 
-            // label12
+            // txt_currency_amt
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label12.Location = new System.Drawing.Point(25, 134);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(124, 22);
-            this.label12.TabIndex = 20;
-            this.label12.Text = "Outstanding Amount";
-            // 
-            // kryptonTextBox6
-            // 
-            this.kryptonTextBox6.CornerRoundingRadius = 10F;
-            this.kryptonTextBox6.Location = new System.Drawing.Point(20, 93);
-            this.kryptonTextBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonTextBox6.Name = "kryptonTextBox6";
-            this.kryptonTextBox6.Size = new System.Drawing.Size(225, 37);
-            this.kryptonTextBox6.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txt_currency_amt.CornerRoundingRadius = 10F;
+            this.txt_currency_amt.Location = new System.Drawing.Point(20, 93);
+            this.txt_currency_amt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_currency_amt.Name = "txt_currency_amt";
+            this.txt_currency_amt.Size = new System.Drawing.Size(225, 37);
+            this.txt_currency_amt.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox6.StateCommon.Border.Rounding = 3F;
-            this.kryptonTextBox6.StateCommon.Content.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox6.TabIndex = 17;
-            // 
-            // kryptonTextBox7
-            // 
-            this.kryptonTextBox7.CornerRoundingRadius = 10F;
-            this.kryptonTextBox7.Location = new System.Drawing.Point(20, 164);
-            this.kryptonTextBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonTextBox7.Name = "kryptonTextBox7";
-            this.kryptonTextBox7.Size = new System.Drawing.Size(225, 37);
-            this.kryptonTextBox7.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox7.StateCommon.Border.Rounding = 3F;
-            this.kryptonTextBox7.StateCommon.Content.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox7.TabIndex = 19;
+            this.txt_currency_amt.StateCommon.Border.Rounding = 3F;
+            this.txt_currency_amt.StateCommon.Content.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_currency_amt.TabIndex = 17;
+            this.txt_currency_amt.TextChanged += new System.EventHandler(this.txt_currency_amt_TextChanged);
             // 
             // Mobile_group
             // 
-            this.Mobile_group.Controls.Add(this.kryptonComboBox2);
+            this.Mobile_group.Controls.Add(this.cmb_bankname);
             this.Mobile_group.Controls.Add(this.label15);
-            this.Mobile_group.Controls.Add(this.label16);
-            this.Mobile_group.Controls.Add(this.kryptonTextBox8);
-            this.Mobile_group.Controls.Add(this.kryptonTextBox9);
-            this.Mobile_group.Location = new System.Drawing.Point(783, 90);
+            this.Mobile_group.Controls.Add(this.txt_mobilebanking_amt);
+            this.Mobile_group.Location = new System.Drawing.Point(716, 163);
             this.Mobile_group.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Mobile_group.Name = "Mobile_group";
             this.Mobile_group.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Mobile_group.Size = new System.Drawing.Size(310, 213);
+            this.Mobile_group.Size = new System.Drawing.Size(310, 217);
             this.Mobile_group.TabIndex = 25;
             this.Mobile_group.TabStop = false;
             this.Mobile_group.Visible = false;
             // 
-            // kryptonComboBox2
+            // cmb_bankname
             // 
-            this.kryptonComboBox2.CornerRoundingRadius = 10F;
-            this.kryptonComboBox2.DropDownWidth = 115;
-            this.kryptonComboBox2.IntegralHeight = false;
-            this.kryptonComboBox2.Items.AddRange(new object[] {
+            this.cmb_bankname.CornerRoundingRadius = 10F;
+            this.cmb_bankname.DropDownWidth = 115;
+            this.cmb_bankname.IntegralHeight = false;
+            this.cmb_bankname.Items.AddRange(new object[] {
             "AYA",
             "CB",
             "KBZ",
             "UAB"});
-            this.kryptonComboBox2.Location = new System.Drawing.Point(35, 20);
-            this.kryptonComboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonComboBox2.Name = "kryptonComboBox2";
-            this.kryptonComboBox2.Size = new System.Drawing.Size(223, 35);
-            this.kryptonComboBox2.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.cmb_bankname.Location = new System.Drawing.Point(48, 31);
+            this.cmb_bankname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmb_bankname.Name = "cmb_bankname";
+            this.cmb_bankname.Size = new System.Drawing.Size(223, 35);
+            this.cmb_bankname.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonComboBox2.StateCommon.ComboBox.Border.Rounding = 3F;
-            this.kryptonComboBox2.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonComboBox2.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.kryptonComboBox2.TabIndex = 23;
+            this.cmb_bankname.StateCommon.ComboBox.Border.Rounding = 3F;
+            this.cmb_bankname.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_bankname.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.cmb_bankname.TabIndex = 23;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label15.Location = new System.Drawing.Point(35, 66);
+            this.label15.Location = new System.Drawing.Point(44, 78);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(141, 22);
             this.label15.TabIndex = 18;
             this.label15.Text = "Mobile Banking Amount";
             // 
-            // label16
+            // txt_mobilebanking_amt
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label16.Location = new System.Drawing.Point(35, 138);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(124, 22);
-            this.label16.TabIndex = 20;
-            this.label16.Text = "Outstanding Amount";
-            // 
-            // kryptonTextBox8
-            // 
-            this.kryptonTextBox8.CornerRoundingRadius = 10F;
-            this.kryptonTextBox8.Location = new System.Drawing.Point(35, 89);
-            this.kryptonTextBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonTextBox8.Name = "kryptonTextBox8";
-            this.kryptonTextBox8.Size = new System.Drawing.Size(225, 37);
-            this.kryptonTextBox8.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txt_mobilebanking_amt.CornerRoundingRadius = 10F;
+            this.txt_mobilebanking_amt.Location = new System.Drawing.Point(48, 111);
+            this.txt_mobilebanking_amt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_mobilebanking_amt.Name = "txt_mobilebanking_amt";
+            this.txt_mobilebanking_amt.Size = new System.Drawing.Size(225, 37);
+            this.txt_mobilebanking_amt.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox8.StateCommon.Border.Rounding = 3F;
-            this.kryptonTextBox8.StateCommon.Content.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox8.TabIndex = 17;
-            // 
-            // kryptonTextBox9
-            // 
-            this.kryptonTextBox9.CornerRoundingRadius = 10F;
-            this.kryptonTextBox9.Location = new System.Drawing.Point(35, 162);
-            this.kryptonTextBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonTextBox9.Name = "kryptonTextBox9";
-            this.kryptonTextBox9.Size = new System.Drawing.Size(225, 37);
-            this.kryptonTextBox9.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox9.StateCommon.Border.Rounding = 3F;
-            this.kryptonTextBox9.StateCommon.Content.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox9.TabIndex = 19;
+            this.txt_mobilebanking_amt.StateCommon.Border.Rounding = 3F;
+            this.txt_mobilebanking_amt.StateCommon.Content.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_mobilebanking_amt.TabIndex = 17;
             // 
             // Bank_group
             // 
-            this.Bank_group.Controls.Add(this.textBox1);
-            this.Bank_group.Controls.Add(this.kryptonComboBox3);
+            this.Bank_group.Controls.Add(this.txt_POS);
+            this.Bank_group.Controls.Add(this.cmb_cardtype);
             this.Bank_group.Controls.Add(this.label17);
-            this.Bank_group.Controls.Add(this.label18);
-            this.Bank_group.Controls.Add(this.kryptonTextBox10);
-            this.Bank_group.Controls.Add(this.kryptonTextBox11);
-            this.Bank_group.Location = new System.Drawing.Point(783, 90);
+            this.Bank_group.Controls.Add(this.txt_bankcard_amt);
+            this.Bank_group.Location = new System.Drawing.Point(716, 163);
             this.Bank_group.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Bank_group.Name = "Bank_group";
             this.Bank_group.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Bank_group.Size = new System.Drawing.Size(310, 215);
+            this.Bank_group.Size = new System.Drawing.Size(310, 217);
             this.Bank_group.TabIndex = 25;
             this.Bank_group.TabStop = false;
             this.Bank_group.Visible = false;
             // 
-            // textBox1
+            // txt_POS
             // 
-            this.textBox1.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(183, 17);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(86, 35);
-            this.textBox1.TabIndex = 24;
+            this.txt_POS.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_POS.Location = new System.Drawing.Point(178, 31);
+            this.txt_POS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_POS.Name = "txt_POS";
+            this.txt_POS.Size = new System.Drawing.Size(86, 35);
+            this.txt_POS.TabIndex = 24;
             // 
-            // kryptonComboBox3
+            // cmb_cardtype
             // 
-            this.kryptonComboBox3.CornerRoundingRadius = 10F;
-            this.kryptonComboBox3.DropDownWidth = 115;
-            this.kryptonComboBox3.IntegralHeight = false;
-            this.kryptonComboBox3.Items.AddRange(new object[] {
+            this.cmb_cardtype.CornerRoundingRadius = 10F;
+            this.cmb_cardtype.DropDownWidth = 115;
+            this.cmb_cardtype.IntegralHeight = false;
+            this.cmb_cardtype.Items.AddRange(new object[] {
             "AYA",
             "CB",
             "KBZ",
             "UAB"});
-            this.kryptonComboBox3.Location = new System.Drawing.Point(44, 15);
-            this.kryptonComboBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonComboBox3.Name = "kryptonComboBox3";
-            this.kryptonComboBox3.Size = new System.Drawing.Size(124, 35);
-            this.kryptonComboBox3.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.cmb_cardtype.Location = new System.Drawing.Point(39, 29);
+            this.cmb_cardtype.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmb_cardtype.Name = "cmb_cardtype";
+            this.cmb_cardtype.Size = new System.Drawing.Size(124, 35);
+            this.cmb_cardtype.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonComboBox3.StateCommon.ComboBox.Border.Rounding = 3F;
-            this.kryptonComboBox3.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonComboBox3.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.kryptonComboBox3.TabIndex = 23;
+            this.cmb_cardtype.StateCommon.ComboBox.Border.Rounding = 3F;
+            this.cmb_cardtype.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_cardtype.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.cmb_cardtype.TabIndex = 23;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label17.Location = new System.Drawing.Point(44, 62);
+            this.label17.Location = new System.Drawing.Point(35, 78);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(115, 22);
             this.label17.TabIndex = 18;
             this.label17.Text = "Bank Card Amount";
             // 
-            // label18
+            // txt_bankcard_amt
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label18.Location = new System.Drawing.Point(44, 134);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(124, 22);
-            this.label18.TabIndex = 20;
-            this.label18.Text = "Outstanding Amount";
-            // 
-            // kryptonTextBox10
-            // 
-            this.kryptonTextBox10.CornerRoundingRadius = 10F;
-            this.kryptonTextBox10.Location = new System.Drawing.Point(44, 86);
-            this.kryptonTextBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonTextBox10.Name = "kryptonTextBox10";
-            this.kryptonTextBox10.Size = new System.Drawing.Size(225, 37);
-            this.kryptonTextBox10.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txt_bankcard_amt.CornerRoundingRadius = 10F;
+            this.txt_bankcard_amt.Location = new System.Drawing.Point(35, 111);
+            this.txt_bankcard_amt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_bankcard_amt.Name = "txt_bankcard_amt";
+            this.txt_bankcard_amt.Size = new System.Drawing.Size(225, 37);
+            this.txt_bankcard_amt.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox10.StateCommon.Border.Rounding = 3F;
-            this.kryptonTextBox10.StateCommon.Content.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox10.TabIndex = 17;
-            // 
-            // kryptonTextBox11
-            // 
-            this.kryptonTextBox11.CornerRoundingRadius = 10F;
-            this.kryptonTextBox11.Location = new System.Drawing.Point(44, 163);
-            this.kryptonTextBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonTextBox11.Name = "kryptonTextBox11";
-            this.kryptonTextBox11.Size = new System.Drawing.Size(225, 37);
-            this.kryptonTextBox11.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox11.StateCommon.Border.Rounding = 2F;
-            this.kryptonTextBox11.StateCommon.Content.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox11.TabIndex = 19;
+            this.txt_bankcard_amt.StateCommon.Border.Rounding = 3F;
+            this.txt_bankcard_amt.StateCommon.Content.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_bankcard_amt.TabIndex = 17;
             // 
             // Cash_group
             // 
             this.Cash_group.Controls.Add(this.label13);
-            this.Cash_group.Controls.Add(this.label19);
-            this.Cash_group.Controls.Add(this.kryptonTextBox12);
-            this.Cash_group.Controls.Add(this.kryptonTextBox13);
-            this.Cash_group.Location = new System.Drawing.Point(783, 91);
+            this.Cash_group.Controls.Add(this.txt_cash_amt);
+            this.Cash_group.Location = new System.Drawing.Point(716, 163);
             this.Cash_group.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Cash_group.Name = "Cash_group";
             this.Cash_group.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Cash_group.Size = new System.Drawing.Size(310, 213);
-            this.Cash_group.TabIndex = 26;
+            this.Cash_group.Size = new System.Drawing.Size(310, 217);
+            this.Cash_group.TabIndex = 30;
             this.Cash_group.TabStop = false;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label13.Location = new System.Drawing.Point(43, 43);
+            this.label13.Location = new System.Drawing.Point(44, 77);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(83, 22);
             this.label13.TabIndex = 18;
             this.label13.Text = "Cash Amount";
             // 
-            // label19
+            // txt_cash_amt
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label19.Location = new System.Drawing.Point(43, 118);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(124, 22);
-            this.label19.TabIndex = 20;
-            this.label19.Text = "Outstanding Amount";
-            // 
-            // kryptonTextBox12
-            // 
-            this.kryptonTextBox12.CornerRoundingRadius = 10F;
-            this.kryptonTextBox12.Location = new System.Drawing.Point(43, 76);
-            this.kryptonTextBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonTextBox12.Name = "kryptonTextBox12";
-            this.kryptonTextBox12.Size = new System.Drawing.Size(225, 37);
-            this.kryptonTextBox12.StateActive.Content.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox12.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txt_cash_amt.CornerRoundingRadius = 10F;
+            this.txt_cash_amt.Location = new System.Drawing.Point(44, 110);
+            this.txt_cash_amt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_cash_amt.Name = "txt_cash_amt";
+            this.txt_cash_amt.Size = new System.Drawing.Size(225, 37);
+            this.txt_cash_amt.StateActive.Content.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_cash_amt.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox12.StateCommon.Border.Rounding = 2F;
-            this.kryptonTextBox12.StateCommon.Content.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox12.StateNormal.Content.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox12.TabIndex = 17;
+            this.txt_cash_amt.StateCommon.Border.Rounding = 2F;
+            this.txt_cash_amt.StateCommon.Content.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_cash_amt.StateNormal.Content.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_cash_amt.TabIndex = 17;
+            this.txt_cash_amt.Text = "0";
             // 
-            // kryptonTextBox13
+            // label1
             // 
-            this.kryptonTextBox13.CornerRoundingRadius = 10F;
-            this.kryptonTextBox13.Location = new System.Drawing.Point(43, 147);
-            this.kryptonTextBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonTextBox13.Name = "kryptonTextBox13";
-            this.kryptonTextBox13.Size = new System.Drawing.Size(225, 37);
-            this.kryptonTextBox13.StateActive.Content.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox13.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.label1.Location = new System.Drawing.Point(15, 295);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(124, 22);
+            this.label1.TabIndex = 29;
+            this.label1.Text = "Outstanding Amount";
+            // 
+            // lbl_outstanding_amt
+            // 
+            this.lbl_outstanding_amt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbl_outstanding_amt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_outstanding_amt.Location = new System.Drawing.Point(637, 21);
+            this.lbl_outstanding_amt.Name = "lbl_outstanding_amt";
+            this.lbl_outstanding_amt.Size = new System.Drawing.Size(34, 21);
+            this.lbl_outstanding_amt.TabIndex = 28;
+            this.lbl_outstanding_amt.Text = "0";
+            this.lbl_outstanding_amt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_outstanding_amt.Visible = false;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.label12.Location = new System.Drawing.Point(15, 238);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(105, 22);
+            this.label12.TabIndex = 31;
+            this.label12.Text = "Payment Amount";
+            // 
+            // lbl_payment_amt
+            // 
+            this.lbl_payment_amt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbl_payment_amt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_payment_amt.Location = new System.Drawing.Point(600, 21);
+            this.lbl_payment_amt.Name = "lbl_payment_amt";
+            this.lbl_payment_amt.Size = new System.Drawing.Size(34, 21);
+            this.lbl_payment_amt.TabIndex = 30;
+            this.lbl_payment_amt.Text = "0";
+            this.lbl_payment_amt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_payment_amt.Visible = false;
+            // 
+            // txt_show
+            // 
+            this.txt_show.Location = new System.Drawing.Point(445, 22);
+            this.txt_show.Name = "txt_show";
+            this.txt_show.Size = new System.Drawing.Size(100, 20);
+            this.txt_show.TabIndex = 32;
+            this.txt_show.Visible = false;
+            // 
+            // btn_payment_save
+            // 
+            this.btn_payment_save.CornerRoundingRadius = 10F;
+            this.btn_payment_save.Location = new System.Drawing.Point(764, 460);
+            this.btn_payment_save.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_payment_save.Name = "btn_payment_save";
+            this.btn_payment_save.Size = new System.Drawing.Size(225, 44);
+            this.btn_payment_save.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox13.StateCommon.Border.Rounding = 2F;
-            this.kryptonTextBox13.StateCommon.Content.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox13.StateNormal.Content.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox13.TabIndex = 19;
+            this.btn_payment_save.StateCommon.Border.Rounding = 2F;
+            this.btn_payment_save.TabIndex = 33;
+            this.btn_payment_save.Values.Text = "Save";
             // 
-            // dataGridView1
+            // dgv_show_paymethod
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(315, 143);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(451, 160);
-            this.dataGridView1.TabIndex = 27;
+            this.dgv_show_paymethod.AllowUserToAddRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_show_paymethod.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_show_paymethod.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_show_paymethod.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.payment,
+            this.type,
+            this.amount,
+            this.rate,
+            this.pos});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_show_paymethod.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_show_paymethod.Location = new System.Drawing.Point(19, 460);
+            this.dgv_show_paymethod.Name = "dgv_show_paymethod";
+            this.dgv_show_paymethod.Size = new System.Drawing.Size(563, 153);
+            this.dgv_show_paymethod.TabIndex = 34;
+            // 
+            // payment
+            // 
+            this.payment.HeaderText = "Payment Method";
+            this.payment.Name = "payment";
+            // 
+            // type
+            // 
+            this.type.HeaderText = "Payment Type";
+            this.type.Name = "type";
+            // 
+            // amount
+            // 
+            this.amount.HeaderText = "Amount";
+            this.amount.Name = "amount";
+            // 
+            // rate
+            // 
+            this.rate.HeaderText = "Curreny Rate";
+            this.rate.Name = "rate";
+            // 
+            // pos
+            // 
+            this.pos.HeaderText = "POS";
+            this.pos.Name = "pos";
+            // 
+            // lbl_show_saleamt
+            // 
+            this.lbl_show_saleamt.AutoSize = true;
+            this.lbl_show_saleamt.Font = new System.Drawing.Font("Pyidaungsu", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_show_saleamt.Location = new System.Drawing.Point(165, 163);
+            this.lbl_show_saleamt.Name = "lbl_show_saleamt";
+            this.lbl_show_saleamt.Size = new System.Drawing.Size(36, 50);
+            this.lbl_show_saleamt.TabIndex = 35;
+            this.lbl_show_saleamt.Text = "0";
+            // 
+            // lbl_show_payment
+            // 
+            this.lbl_show_payment.AutoSize = true;
+            this.lbl_show_payment.Font = new System.Drawing.Font("Pyidaungsu", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_show_payment.Location = new System.Drawing.Point(165, 222);
+            this.lbl_show_payment.Name = "lbl_show_payment";
+            this.lbl_show_payment.Size = new System.Drawing.Size(0, 50);
+            this.lbl_show_payment.TabIndex = 36;
+            // 
+            // lbl_show_outstanding
+            // 
+            this.lbl_show_outstanding.AutoSize = true;
+            this.lbl_show_outstanding.Font = new System.Drawing.Font("Pyidaungsu", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_show_outstanding.Location = new System.Drawing.Point(165, 281);
+            this.lbl_show_outstanding.Name = "lbl_show_outstanding";
+            this.lbl_show_outstanding.Size = new System.Drawing.Size(0, 50);
+            this.lbl_show_outstanding.TabIndex = 37;
+            // 
+            // dataGridView2
+            // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView2.Location = new System.Drawing.Point(736, 8);
+            this.dataGridView2.Name = "dataGridView2";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridView2.Size = new System.Drawing.Size(491, 150);
+            this.dataGridView2.TabIndex = 38;
+            this.dataGridView2.Visible = false;
             // 
             // payment_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1174, 388);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.Cash_group);
-            this.Controls.Add(this.Bank_group);
+            this.ClientSize = new System.Drawing.Size(1276, 625);
+            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.lbl_show_outstanding);
+            this.Controls.Add(this.lbl_show_payment);
+            this.Controls.Add(this.lbl_show_saleamt);
+            this.Controls.Add(this.btn_payment);
+            this.Controls.Add(this.dgv_show_paymethod);
             this.Controls.Add(this.Mobile_group);
+            this.Controls.Add(this.btn_payment_save);
+            this.Controls.Add(this.txt_show);
+            this.Controls.Add(this.Bank_group);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.Cash_group);
+            this.Controls.Add(this.lbl_payment_amt);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbl_outstanding_amt);
             this.Controls.Add(this.foreign_group);
-            this.Controls.Add(this.kryptonButton1);
             this.Controls.Add(this.MB_rdo_btn);
             this.Controls.Add(this.bank_rdo_btn);
             this.Controls.Add(this.label8);
@@ -653,7 +778,8 @@ namespace MJS
             this.Controls.Add(this.foreign_rdo_btn);
             this.Controls.Add(this.cash_rdo_btn);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txt_payment_amt);
+            this.Controls.Add(this.txt_sale_amt);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "payment_form";
@@ -663,16 +789,17 @@ namespace MJS
             this.Load += new System.EventHandler(this.payment_form_Load);
             this.foreign_group.ResumeLayout(false);
             this.foreign_group.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmb_currenty_type)).EndInit();
             this.Mobile_group.ResumeLayout(false);
             this.Mobile_group.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmb_bankname)).EndInit();
             this.Bank_group.ResumeLayout(false);
             this.Bank_group.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmb_cardtype)).EndInit();
             this.Cash_group.ResumeLayout(false);
             this.Cash_group.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_show_paymethod)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -680,7 +807,7 @@ namespace MJS
 
         #endregion
 
-        private Label txt_payment_amt;
+        private Label txt_sale_amt;
         private Label label2;
         private RadioButton cash_rdo_btn;
         private RadioButton foreign_rdo_btn;
@@ -695,32 +822,41 @@ namespace MJS
         private Label label8;
         private RadioButton bank_rdo_btn;
         private RadioButton MB_rdo_btn;
-        private Krypton.Toolkit.KryptonButton kryptonButton1;
+        private Krypton.Toolkit.KryptonButton btn_payment;
         private GroupBox foreign_group;
         private Label label11;
-        private Label label12;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox6;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox7;
+        private Krypton.Toolkit.KryptonTextBox txt_currency_amt;
         private GroupBox Mobile_group;
-        private Krypton.Toolkit.KryptonComboBox kryptonComboBox2;
+        private Krypton.Toolkit.KryptonComboBox cmb_bankname;
         private Label label15;
-        private Label label16;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox8;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox9;
+        private Krypton.Toolkit.KryptonTextBox txt_mobilebanking_amt;
         private GroupBox Bank_group;
-        private Krypton.Toolkit.KryptonComboBox kryptonComboBox3;
+        private Krypton.Toolkit.KryptonComboBox cmb_cardtype;
         private Label label17;
-        private Label label18;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox10;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox11;
-        private TextBox textBox1;
+        private Krypton.Toolkit.KryptonTextBox txt_bankcard_amt;
+        private TextBox txt_POS;
         private GroupBox Cash_group;
         private Label label13;
-        private Label label19;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox12;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox13;
-        private TextBox txt_dollar_rate;
-        private Krypton.Toolkit.KryptonComboBox kryptonComboBox1;
-        private DataGridView dataGridView1;
+        private Krypton.Toolkit.KryptonTextBox txt_cash_amt;
+        private TextBox txt_currency_rate;
+        private Krypton.Toolkit.KryptonComboBox cmb_currenty_type;
+        private Label label1;
+        private Label lbl_outstanding_amt;
+        private Label label10;
+        private Krypton.Toolkit.KryptonTextBox txt_exchange_amt;
+        private Label label12;
+        private Label lbl_payment_amt;
+        private TextBox txt_show;
+        private Krypton.Toolkit.KryptonButton btn_payment_save;
+        private DataGridView dgv_show_paymethod;
+        private Label lbl_show_saleamt;
+        private Label lbl_show_payment;
+        private Label lbl_show_outstanding;
+        private DataGridViewTextBoxColumn payment;
+        private DataGridViewTextBoxColumn type;
+        private DataGridViewTextBoxColumn amount;
+        private DataGridViewTextBoxColumn rate;
+        private DataGridViewTextBoxColumn pos;
+        private DataGridView dataGridView2;
     }
 }

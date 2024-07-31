@@ -33,11 +33,11 @@ namespace MJS
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(gform));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_add_photo = new System.Windows.Forms.Button();
             this.cmb_itemname = new System.Windows.Forms.ComboBox();
             this.cmb_item = new System.Windows.Forms.ComboBox();
@@ -109,43 +109,6 @@ namespace MJS
             this.txt_result_pid = new System.Windows.Forms.TextBox();
             this.txt_Dece_pid = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.lbl_totalgm = new System.Windows.Forms.Label();
-            this.lbl_totalamt = new System.Windows.Forms.Label();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.txt_shop = new System.Windows.Forms.TextBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.label20 = new System.Windows.Forms.Label();
-            this.txt_remark = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label34 = new System.Windows.Forms.Label();
-            this.lbl_qty = new System.Windows.Forms.Label();
-            this.timer3 = new System.Windows.Forms.Timer(this.components);
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.btn_cart = new Krypton.Toolkit.KryptonButton();
-            this.btn_reg_save = new Krypton.Toolkit.KryptonButton();
-            this.btn_reg_cancel = new Krypton.Toolkit.KryptonButton();
-            this.btn_reg_preview = new Krypton.Toolkit.KryptonButton();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.txt_sk = new System.Windows.Forms.TextBox();
-            this.txt_sp = new System.Windows.Forms.TextBox();
-            this.txt_sy = new System.Windows.Forms.TextBox();
-            this.txt_ss = new System.Windows.Forms.TextBox();
             this.image = new System.Windows.Forms.DataGridViewImageColumn();
             this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.time = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -183,6 +146,43 @@ namespace MJS
             this.Form = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.coledit = new System.Windows.Forms.DataGridViewImageColumn();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.lbl_totalgm = new System.Windows.Forms.Label();
+            this.lbl_totalamt = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_shop = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.label20 = new System.Windows.Forms.Label();
+            this.txt_remark = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.lbl_qty = new System.Windows.Forms.Label();
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.btn_cart = new Krypton.Toolkit.KryptonButton();
+            this.btn_reg_save = new Krypton.Toolkit.KryptonButton();
+            this.btn_reg_cancel = new Krypton.Toolkit.KryptonButton();
+            this.btn_reg_preview = new Krypton.Toolkit.KryptonButton();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.txt_sk = new System.Windows.Forms.TextBox();
+            this.txt_sp = new System.Windows.Forms.TextBox();
+            this.txt_sy = new System.Windows.Forms.TextBox();
+            this.txt_ss = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -700,6 +700,7 @@ namespace MJS
             this.txt_goldprice.Size = new System.Drawing.Size(126, 30);
             this.txt_goldprice.TabIndex = 3;
             this.txt_goldprice.TabStop = false;
+            this.txt_goldprice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_goldprice_KeyPress);
             // 
             // label8
             // 
@@ -1008,23 +1009,23 @@ namespace MJS
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.Black;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle21;
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(122)))), ((int)(((byte)(173)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Pyidaungsu", 9F);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(47)))), ((int)(((byte)(81)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Pyidaungsu", 9F);
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(47)))), ((int)(((byte)(81)))));
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.image,
@@ -1064,26 +1065,26 @@ namespace MJS
             this.Form,
             this.type,
             this.coledit});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle24;
             this.dataGridView1.Location = new System.Drawing.Point(565, 232);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Pyidaungsu", 9F);
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Pyidaungsu", 9F);
+            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle25;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dataGridView1.RowTemplate.Height = 30;
@@ -1091,6 +1092,274 @@ namespace MJS
             this.dataGridView1.TabIndex = 201;
             this.dataGridView1.TabStop = false;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // image
+            // 
+            this.image.HeaderText = "ဓါတ်ပုံ";
+            this.image.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.image.MinimumWidth = 6;
+            this.image.Name = "image";
+            this.image.Width = 125;
+            // 
+            // date
+            // 
+            this.date.HeaderText = "ရက်စွဲ";
+            this.date.MinimumWidth = 6;
+            this.date.Name = "date";
+            this.date.Width = 125;
+            // 
+            // time
+            // 
+            this.time.HeaderText = "အချိန်";
+            this.time.MinimumWidth = 6;
+            this.time.Name = "time";
+            this.time.Width = 125;
+            // 
+            // Voucher
+            // 
+            this.Voucher.HeaderText = "ဘောက်ချာနံပါတ်";
+            this.Voucher.MinimumWidth = 6;
+            this.Voucher.Name = "Voucher";
+            this.Voucher.Width = 150;
+            // 
+            // enter_remark
+            // 
+            this.enter_remark.HeaderText = "အ၀င်စာရင်းမှတ်ချက်";
+            this.enter_remark.MinimumWidth = 6;
+            this.enter_remark.Name = "enter_remark";
+            this.enter_remark.Width = 132;
+            // 
+            // purvoc
+            // 
+            this.purvoc.HeaderText = "အ၀ယ်ဘောက်ချာနံပါတ်";
+            this.purvoc.MinimumWidth = 6;
+            this.purvoc.Name = "purvoc";
+            this.purvoc.Width = 148;
+            // 
+            // barcode
+            // 
+            this.barcode.HeaderText = "ဘားကုဒ်နံပါတ်";
+            this.barcode.MinimumWidth = 6;
+            this.barcode.Name = "barcode";
+            this.barcode.Width = 105;
+            // 
+            // goldtype
+            // 
+            this.goldtype.HeaderText = "ရွှေရည်";
+            this.goldtype.MinimumWidth = 6;
+            this.goldtype.Name = "goldtype";
+            this.goldtype.Width = 68;
+            // 
+            // gold_price
+            // 
+            this.gold_price.HeaderText = "ရွှေစျေး";
+            this.gold_price.MinimumWidth = 6;
+            this.gold_price.Name = "gold_price";
+            this.gold_price.Width = 68;
+            // 
+            // Items
+            // 
+            this.Items.HeaderText = "ပစ္စည်းအမျိုးအစား";
+            this.Items.MinimumWidth = 6;
+            this.Items.Name = "Items";
+            this.Items.Width = 119;
+            // 
+            // item_name
+            // 
+            this.item_name.HeaderText = "ပစ္စည်းအမျိုးအမည်";
+            this.item_name.MinimumWidth = 6;
+            this.item_name.Name = "item_name";
+            this.item_name.Width = 122;
+            // 
+            // gm
+            // 
+            this.gm.HeaderText = "ဂရမ်ချိန်";
+            this.gm.MinimumWidth = 6;
+            this.gm.Name = "gm";
+            this.gm.Width = 72;
+            // 
+            // K
+            // 
+            this.K.HeaderText = "ကျပ်";
+            this.K.MinimumWidth = 6;
+            this.K.Name = "K";
+            this.K.Width = 57;
+            // 
+            // P
+            // 
+            this.P.HeaderText = "ပဲ";
+            this.P.MinimumWidth = 6;
+            this.P.Name = "P";
+            this.P.Width = 57;
+            // 
+            // Y
+            // 
+            this.Y.HeaderText = "ရွေး";
+            this.Y.MinimumWidth = 6;
+            this.Y.Name = "Y";
+            this.Y.Width = 57;
+            // 
+            // S
+            // 
+            this.S.HeaderText = "စိတ်";
+            this.S.MinimumWidth = 6;
+            this.S.Name = "S";
+            this.S.Width = 57;
+            // 
+            // wk
+            // 
+            this.wk.HeaderText = "ကျပ်";
+            this.wk.MinimumWidth = 6;
+            this.wk.Name = "wk";
+            this.wk.Width = 57;
+            // 
+            // wp
+            // 
+            this.wp.HeaderText = "ပဲ";
+            this.wp.MinimumWidth = 6;
+            this.wp.Name = "wp";
+            this.wp.Width = 57;
+            // 
+            // wy
+            // 
+            this.wy.HeaderText = "ရွေး";
+            this.wy.MinimumWidth = 6;
+            this.wy.Name = "wy";
+            this.wy.Width = 57;
+            // 
+            // ws
+            // 
+            this.ws.HeaderText = "စိတ်";
+            this.ws.MinimumWidth = 6;
+            this.ws.Name = "ws";
+            this.ws.Width = 57;
+            // 
+            // tk
+            // 
+            this.tk.HeaderText = "ကျပ်";
+            this.tk.MinimumWidth = 6;
+            this.tk.Name = "tk";
+            this.tk.Width = 57;
+            // 
+            // tp
+            // 
+            this.tp.HeaderText = "ပဲ";
+            this.tp.MinimumWidth = 6;
+            this.tp.Name = "tp";
+            this.tp.Width = 57;
+            // 
+            // ty
+            // 
+            this.ty.HeaderText = "ရွေး";
+            this.ty.MinimumWidth = 6;
+            this.ty.Name = "ty";
+            this.ty.Width = 57;
+            // 
+            // ts
+            // 
+            this.ts.HeaderText = "စိတ်";
+            this.ts.MinimumWidth = 6;
+            this.ts.Name = "ts";
+            this.ts.Width = 57;
+            // 
+            // sk
+            // 
+            this.sk.HeaderText = "ကျပ်";
+            this.sk.MinimumWidth = 6;
+            this.sk.Name = "sk";
+            this.sk.Width = 57;
+            // 
+            // sp
+            // 
+            this.sp.HeaderText = "ပဲ";
+            this.sp.MinimumWidth = 6;
+            this.sp.Name = "sp";
+            this.sp.Width = 57;
+            // 
+            // sy
+            // 
+            this.sy.HeaderText = "ရွေး";
+            this.sy.MinimumWidth = 6;
+            this.sy.Name = "sy";
+            this.sy.Width = 57;
+            // 
+            // ss
+            // 
+            this.ss.HeaderText = "စိတ်";
+            this.ss.MinimumWidth = 6;
+            this.ss.Name = "ss";
+            this.ss.Width = 57;
+            // 
+            // mcost
+            // 
+            this.mcost.HeaderText = "လက်ခ";
+            this.mcost.MinimumWidth = 6;
+            this.mcost.Name = "mcost";
+            this.mcost.Width = 125;
+            // 
+            // repamt
+            // 
+            this.repamt.HeaderText = "ပြန်လဲအရှုံးတန်ဖိုး";
+            this.repamt.MinimumWidth = 6;
+            this.repamt.Name = "repamt";
+            this.repamt.Width = 125;
+            // 
+            // total_amt
+            // 
+            this.total_amt.HeaderText = "စုစုပေါင်းတန်ဖိုး";
+            this.total_amt.MinimumWidth = 6;
+            this.total_amt.Name = "total_amt";
+            this.total_amt.Width = 125;
+            // 
+            // remark
+            // 
+            this.remark.HeaderText = "မှတ်ချက်";
+            this.remark.MinimumWidth = 6;
+            this.remark.Name = "remark";
+            this.remark.Width = 200;
+            // 
+            // employee
+            // 
+            this.employee.HeaderText = "စာရင်းသွင်းသူအမည်";
+            this.employee.MinimumWidth = 6;
+            this.employee.Name = "employee";
+            this.employee.Width = 150;
+            // 
+            // shop
+            // 
+            this.shop.HeaderText = "ဆိုင်အမှတ်";
+            this.shop.MinimumWidth = 6;
+            this.shop.Name = "shop";
+            this.shop.Width = 125;
+            // 
+            // Form
+            // 
+            this.Form.HeaderText = "အသုံးပြုသည့်ဖောင်";
+            this.Form.MinimumWidth = 6;
+            this.Form.Name = "Form";
+            this.Form.Width = 125;
+            // 
+            // type
+            // 
+            this.type.HeaderText = "အရောင်းကောင်တာ";
+            this.type.MinimumWidth = 6;
+            this.type.Name = "type";
+            this.type.Width = 125;
+            // 
+            // coledit
+            // 
+            this.coledit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle23.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle23.NullValue")));
+            this.coledit.DefaultCellStyle = dataGridViewCellStyle23;
+            this.coledit.Description = "Edit";
+            this.coledit.HeaderText = "";
+            this.coledit.Image = ((System.Drawing.Image)(resources.GetObject("coledit.Image")));
+            this.coledit.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.coledit.MinimumWidth = 6;
+            this.coledit.Name = "coledit";
+            this.coledit.Width = 6;
             // 
             // label13
             // 
@@ -1434,6 +1703,7 @@ namespace MJS
             this.txt_sk.Size = new System.Drawing.Size(59, 30);
             this.txt_sk.TabIndex = 12;
             this.txt_sk.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_sk.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_sk_KeyPress);
             // 
             // txt_sp
             // 
@@ -1444,6 +1714,7 @@ namespace MJS
             this.txt_sp.Size = new System.Drawing.Size(59, 30);
             this.txt_sp.TabIndex = 13;
             this.txt_sp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_sp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_sp_KeyPress);
             // 
             // txt_sy
             // 
@@ -1454,6 +1725,7 @@ namespace MJS
             this.txt_sy.Size = new System.Drawing.Size(59, 30);
             this.txt_sy.TabIndex = 14;
             this.txt_sy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_sy.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_sy_KeyPress);
             // 
             // txt_ss
             // 
@@ -1464,274 +1736,7 @@ namespace MJS
             this.txt_ss.Size = new System.Drawing.Size(59, 30);
             this.txt_ss.TabIndex = 15;
             this.txt_ss.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // image
-            // 
-            this.image.HeaderText = "ဓါတ်ပုံ";
-            this.image.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.image.MinimumWidth = 6;
-            this.image.Name = "image";
-            this.image.Width = 125;
-            // 
-            // date
-            // 
-            this.date.HeaderText = "ရက်စွဲ";
-            this.date.MinimumWidth = 6;
-            this.date.Name = "date";
-            this.date.Width = 125;
-            // 
-            // time
-            // 
-            this.time.HeaderText = "အချိန်";
-            this.time.MinimumWidth = 6;
-            this.time.Name = "time";
-            this.time.Width = 125;
-            // 
-            // Voucher
-            // 
-            this.Voucher.HeaderText = "ဘောက်ချာနံပါတ်";
-            this.Voucher.MinimumWidth = 6;
-            this.Voucher.Name = "Voucher";
-            this.Voucher.Width = 150;
-            // 
-            // enter_remark
-            // 
-            this.enter_remark.HeaderText = "အ၀င်စာရင်းမှတ်ချက်";
-            this.enter_remark.MinimumWidth = 6;
-            this.enter_remark.Name = "enter_remark";
-            this.enter_remark.Width = 132;
-            // 
-            // purvoc
-            // 
-            this.purvoc.HeaderText = "အ၀ယ်ဘောက်ချာနံပါတ်";
-            this.purvoc.MinimumWidth = 6;
-            this.purvoc.Name = "purvoc";
-            this.purvoc.Width = 148;
-            // 
-            // barcode
-            // 
-            this.barcode.HeaderText = "ဘားကုဒ်နံပါတ်";
-            this.barcode.MinimumWidth = 6;
-            this.barcode.Name = "barcode";
-            this.barcode.Width = 105;
-            // 
-            // goldtype
-            // 
-            this.goldtype.HeaderText = "ရွှေရည်";
-            this.goldtype.MinimumWidth = 6;
-            this.goldtype.Name = "goldtype";
-            this.goldtype.Width = 68;
-            // 
-            // gold_price
-            // 
-            this.gold_price.HeaderText = "ရွှေစျေး";
-            this.gold_price.MinimumWidth = 6;
-            this.gold_price.Name = "gold_price";
-            this.gold_price.Width = 68;
-            // 
-            // Items
-            // 
-            this.Items.HeaderText = "ပစ္စည်းအမျိုးအစား";
-            this.Items.MinimumWidth = 6;
-            this.Items.Name = "Items";
-            this.Items.Width = 119;
-            // 
-            // item_name
-            // 
-            this.item_name.HeaderText = "ပစ္စည်းအမျိုးအမည်";
-            this.item_name.MinimumWidth = 6;
-            this.item_name.Name = "item_name";
-            this.item_name.Width = 122;
-            // 
-            // gm
-            // 
-            this.gm.HeaderText = "ဂရမ်ချိန်";
-            this.gm.MinimumWidth = 6;
-            this.gm.Name = "gm";
-            this.gm.Width = 72;
-            // 
-            // K
-            // 
-            this.K.HeaderText = "ကျပ်";
-            this.K.MinimumWidth = 6;
-            this.K.Name = "K";
-            this.K.Width = 57;
-            // 
-            // P
-            // 
-            this.P.HeaderText = "ပဲ";
-            this.P.MinimumWidth = 6;
-            this.P.Name = "P";
-            this.P.Width = 57;
-            // 
-            // Y
-            // 
-            this.Y.HeaderText = "ရွေး";
-            this.Y.MinimumWidth = 6;
-            this.Y.Name = "Y";
-            this.Y.Width = 57;
-            // 
-            // S
-            // 
-            this.S.HeaderText = "စိတ်";
-            this.S.MinimumWidth = 6;
-            this.S.Name = "S";
-            this.S.Width = 57;
-            // 
-            // wk
-            // 
-            this.wk.HeaderText = "ကျပ်";
-            this.wk.MinimumWidth = 6;
-            this.wk.Name = "wk";
-            this.wk.Width = 57;
-            // 
-            // wp
-            // 
-            this.wp.HeaderText = "ပဲ";
-            this.wp.MinimumWidth = 6;
-            this.wp.Name = "wp";
-            this.wp.Width = 57;
-            // 
-            // wy
-            // 
-            this.wy.HeaderText = "ရွေး";
-            this.wy.MinimumWidth = 6;
-            this.wy.Name = "wy";
-            this.wy.Width = 57;
-            // 
-            // ws
-            // 
-            this.ws.HeaderText = "စိတ်";
-            this.ws.MinimumWidth = 6;
-            this.ws.Name = "ws";
-            this.ws.Width = 57;
-            // 
-            // tk
-            // 
-            this.tk.HeaderText = "ကျပ်";
-            this.tk.MinimumWidth = 6;
-            this.tk.Name = "tk";
-            this.tk.Width = 57;
-            // 
-            // tp
-            // 
-            this.tp.HeaderText = "ပဲ";
-            this.tp.MinimumWidth = 6;
-            this.tp.Name = "tp";
-            this.tp.Width = 57;
-            // 
-            // ty
-            // 
-            this.ty.HeaderText = "ရွေး";
-            this.ty.MinimumWidth = 6;
-            this.ty.Name = "ty";
-            this.ty.Width = 57;
-            // 
-            // ts
-            // 
-            this.ts.HeaderText = "စိတ်";
-            this.ts.MinimumWidth = 6;
-            this.ts.Name = "ts";
-            this.ts.Width = 57;
-            // 
-            // sk
-            // 
-            this.sk.HeaderText = "ကျပ်";
-            this.sk.MinimumWidth = 6;
-            this.sk.Name = "sk";
-            this.sk.Width = 57;
-            // 
-            // sp
-            // 
-            this.sp.HeaderText = "ပဲ";
-            this.sp.MinimumWidth = 6;
-            this.sp.Name = "sp";
-            this.sp.Width = 57;
-            // 
-            // sy
-            // 
-            this.sy.HeaderText = "ရွေး";
-            this.sy.MinimumWidth = 6;
-            this.sy.Name = "sy";
-            this.sy.Width = 57;
-            // 
-            // ss
-            // 
-            this.ss.HeaderText = "စိတ်";
-            this.ss.MinimumWidth = 6;
-            this.ss.Name = "ss";
-            this.ss.Width = 57;
-            // 
-            // mcost
-            // 
-            this.mcost.HeaderText = "လက်ခ";
-            this.mcost.MinimumWidth = 6;
-            this.mcost.Name = "mcost";
-            this.mcost.Width = 125;
-            // 
-            // repamt
-            // 
-            this.repamt.HeaderText = "ပြန်လဲအရှုံးတန်ဖိုး";
-            this.repamt.MinimumWidth = 6;
-            this.repamt.Name = "repamt";
-            this.repamt.Width = 125;
-            // 
-            // total_amt
-            // 
-            this.total_amt.HeaderText = "စုစုပေါင်းတန်ဖိုး";
-            this.total_amt.MinimumWidth = 6;
-            this.total_amt.Name = "total_amt";
-            this.total_amt.Width = 125;
-            // 
-            // remark
-            // 
-            this.remark.HeaderText = "မှတ်ချက်";
-            this.remark.MinimumWidth = 6;
-            this.remark.Name = "remark";
-            this.remark.Width = 200;
-            // 
-            // employee
-            // 
-            this.employee.HeaderText = "စာရင်းသွင်းသူအမည်";
-            this.employee.MinimumWidth = 6;
-            this.employee.Name = "employee";
-            this.employee.Width = 150;
-            // 
-            // shop
-            // 
-            this.shop.HeaderText = "ဆိုင်အမှတ်";
-            this.shop.MinimumWidth = 6;
-            this.shop.Name = "shop";
-            this.shop.Width = 125;
-            // 
-            // Form
-            // 
-            this.Form.HeaderText = "အသုံးပြုသည့်ဖောင်";
-            this.Form.MinimumWidth = 6;
-            this.Form.Name = "Form";
-            this.Form.Width = 125;
-            // 
-            // type
-            // 
-            this.type.HeaderText = "အရောင်းကောင်တာ";
-            this.type.MinimumWidth = 6;
-            this.type.Name = "type";
-            this.type.Width = 125;
-            // 
-            // coledit
-            // 
-            this.coledit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle8.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle8.NullValue")));
-            this.coledit.DefaultCellStyle = dataGridViewCellStyle8;
-            this.coledit.Description = "Edit";
-            this.coledit.HeaderText = "";
-            this.coledit.Image = ((System.Drawing.Image)(resources.GetObject("coledit.Image")));
-            this.coledit.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
-            this.coledit.MinimumWidth = 6;
-            this.coledit.Name = "coledit";
-            this.coledit.Width = 6;
+            this.txt_ss.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_ss_KeyPress);
             // 
             // gform
             // 

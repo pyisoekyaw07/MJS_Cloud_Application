@@ -42,6 +42,7 @@ namespace MJS
         {
             txt_shop.Text = login.shopvalue;
             counter();
+            getselling_percent();
             if (txt_goldprice.Text == "")
             {
                 txt_goldprice.Text = "0";
@@ -115,36 +116,123 @@ namespace MJS
 
 
         }
-     
-        private void btn_cash_Click(object sender, EventArgs e)
+        private void adddata_datagriview() 
         {
-            Form formbackground = new Form();
-            try
+            if (double.Parse(txt_salegm.Text) < double.Parse(result_gm.Text)) 
             {
-                using (payment_form pay_Form = new payment_form())
-                {
-                    formbackground.StartPosition = FormStartPosition.Manual;
-                    formbackground.FormBorderStyle = FormBorderStyle.None;
-                    formbackground.Opacity = .70d;
-                    formbackground.BackColor = Color.Black;
-                    formbackground.WindowState = FormWindowState.Maximized;
-                    formbackground.TopMost = true;
-                    formbackground.Location = this.Location;
-                    formbackground.ShowInTaskbar = false;
-                    formbackground.Show();
-                    pay_Form.payment=txt_showamt.Text;
-                    pay_Form.Owner = formbackground;
-                    pay_Form.ShowDialog();
+                MessageBox.Show("Please Check Selling Price");
+            }
+            else 
+            {
+                MemoryStream mmst = new MemoryStream();
+                pit_show.Image.Save(mmst, pit_show.Image.RawFormat);
+                byte[] img = mmst.ToArray();
 
-                    formbackground.Dispose();
+                string shop = login.shopvalue;
+                string empolyee = "";
+                empolyee = Form2.setvalueemployee;
+                dgv_show_saledata.Rows.Add(img, txt_date.Text, txt_time.Text, txt_out_no.Text, label_Item.Text, label_itemname.Text, txt_total_qty.Text, txt_total_gm.Text,
+                    txt_goldprice.Text, label_goldtype.Text, txt_k.Text, txt_p.Text, txt_y.Text, txt_s.Text, txt_WK.Text, txt_WP.Text, txt_WY.Text, txt_WS.Text, total_K.Text, total_P.Text, total_Y.Text, total_S.Text,
+                    txt_mcost.Text, txt_gpd.Text, txt_totalamt.Text, txt_bbamt.Text, txt_include_bbamt.Text, txt_pernumber.Text, txt_percent_amt.Text, txt_include_percent.Text, txt_pro_number.Text,
+                    txt_pro_amt.Text, txt_pro_famt.Text, txt_alltotal_amt.Text, txt_discount.Text, txt_totalcost.Text, txt_saleremark.Text, empolyee, shop, txt_form.Text, txt_counter.Text);
+            }
+            
+        }
+
+        private DataTable GetDataTableFromDataGridView(DataGridView dgv)
+        {
+                DataTable dt = new DataTable();
+
+                // Add columns to DataTable.
+                foreach (DataGridViewColumn column in dgv.Columns)
+                {
+                Type columnType = column.ValueType ?? typeof(string); // Use string as the default type if ValueType is null
+
+                // Handle image columns
+                if (columnType == typeof(Image))
+                {
+                    columnType = typeof(byte[]);
                 }
 
+                dt.Columns.Add(column.HeaderText, columnType);
+                }
+
+                // Add rows to DataTable.
+                foreach (DataGridViewRow row in dgv.Rows)
+                {
+                    if (!row.IsNewRow)
+                    {
+                        DataRow dr = dt.NewRow();
+                        for (int i = 0; i < dgv.Columns.Count; i++)
+                        {
+                        object value = row.Cells[i].Value;
+
+                        // Convert images to byte arrays
+                        if (value is Image img)
+                        {
+                            value = ImageToByteArray(img);
+                        }
+
+                        dr[i] = row.Cells[i].Value ?? DBNull.Value;
+                        }
+                        dt.Rows.Add(dr);
+                    }
+                }
+
+                return dt;
             }
-            catch (Exception ex)
+        // Convert Image to byte array
+        private byte[] ImageToByteArray(Image img)
+        {
+            using (MemoryStream ms = new MemoryStream())
             {
-                MessageBox.Show(ex.Message);
+                img.Save(ms, img.RawFormat);
+                return ms.ToArray();
             }
-            finally { formbackground.Dispose(); }
+        }
+
+        private void btn_cash_Click(object sender, EventArgs e)
+        {
+            DataTable dt = GetDataTableFromDataGridView(dgv_show_saledata);
+            if (double.TryParse(txt_totalcost.Text, out double number))
+            {
+
+
+                Form formbackground = new Form();
+                try
+                {
+                    using (payment_form pay_Form = new payment_form(dt))
+                    {
+                        formbackground.StartPosition = FormStartPosition.Manual;
+                        formbackground.FormBorderStyle = FormBorderStyle.None;
+                        formbackground.Opacity = .70d;
+                        formbackground.BackColor = Color.Black;
+                        formbackground.WindowState = FormWindowState.Maximized;
+                        formbackground.TopMost = true;
+                        formbackground.Location = this.Location;
+                        formbackground.ShowInTaskbar = false;
+                        formbackground.Show();
+                       /* DataTable dt = GetDataTableFromDataGridView(dgv_show_saledata);*/
+                        pay_Form.SetValue(number);
+                        pay_Form.Owner = formbackground;
+                        pay_Form.ShowDialog();
+
+                        formbackground.Dispose();
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally { formbackground.Dispose(); }
+            }
+            else
+            {
+                MessageBox.Show("မှားယွင်းနေပါသည်။");
+            }
+
+           
         }
        /* private int sumqty = 0;
         private void totalqty()
@@ -205,7 +293,7 @@ namespace MJS
                 {
                     con.Open();
                     string goldpricevalue = label_goldtype.Text;
-                    string query = "SELECT Top(1) Gold_Price FROM goldprice where Gold_Type=@goldtype ORDER BY ID DESC";
+                    string query = "SELECT Top(1) Purchase_Gold_Price FROM goldprice where Gold_Type=@goldtype ORDER BY ID DESC";
                     SqlCommand cmd = new SqlCommand(query, con);
 
                     cmd.Parameters.AddWithValue("@goldtype", goldpricevalue);
@@ -437,11 +525,11 @@ namespace MJS
                 txt_mcost.SelectionStart = 0;
                 txt_mcost.SelectionLength = txt_mcost.Text.Length;
             }
-            if (txt_rep.Text == "")
+            if (txt_gpd.Text == "")
             {
-                txt_rep.Text = "0";
-                txt_rep.SelectionStart = 0;
-                txt_rep.SelectionLength = txt_rep.Text.Length;
+                txt_gpd.Text = "0";
+                txt_gpd.SelectionStart = 0;
+                txt_gpd.SelectionLength = txt_gpd.Text.Length;
             }
             if (txt_WK.Text == "")
             {
@@ -461,11 +549,11 @@ namespace MJS
                 txt_WY.SelectionStart = 0;
                 txt_WY.SelectionLength = txt_WY.Text.Length;
             }
-            if (txt_WC.Text == "")
+            if (txt_WS.Text == "")
             {
-                txt_WC.Text = "0";
-                txt_WC.SelectionStart = 0;
-                txt_WC.SelectionLength = txt_WC.Text.Length;
+                txt_WS.Text = "0";
+                txt_WS.SelectionStart = 0;
+                txt_WS.SelectionLength = txt_WS.Text.Length;
             }
             if (txt_percent_amt.Text == "")
             {
@@ -531,7 +619,7 @@ namespace MJS
             }
             /*---------------------- Total KPYS Method------------------------*/
 
-            if (txt_WK.Text != "" || txt_WK.Text != "0" || txt_WP.Text != "" || txt_WP.Text != "0" || txt_WY.Text != "" || txt_WY.Text != "0" || txt_WC.Text != "" || txt_WC.Text != "0")
+            if (txt_WK.Text != "" || txt_WK.Text != "0" || txt_WP.Text != "" || txt_WP.Text != "0" || txt_WY.Text != "" || txt_WY.Text != "0" || txt_WS.Text != "" || txt_WS.Text != "0")
             {
                 if (txt_WK.Text != "")
                 {
@@ -584,9 +672,9 @@ namespace MJS
                     }
                 }
 
-                if (txt_WC.Text != "")
+                if (txt_WS.Text != "")
                 {
-                    totalS = double.Parse(txt_s.Text) + double.Parse(txt_WC.Text);
+                    totalS = double.Parse(txt_s.Text) + double.Parse(txt_WS.Text);
                     if (totalS >= 4)
                     {
                         resultS = Math.Floor(totalS / 4);
@@ -611,7 +699,7 @@ namespace MJS
 
                 T_wastageK = double.Parse(total_K.Text); T_wastageP = double.Parse(total_P.Text);
                 T_wastageY = double.Parse(total_Y.Text); T_wastageS = double.Parse(total_S.Text);
-                mcost = double.Parse(txt_mcost.Text); reploss = double.Parse(txt_rep.Text);
+                mcost = double.Parse(txt_mcost.Text); reploss = double.Parse(txt_gpd.Text);
                 bbamt= double.Parse(txt_bbamt.Text);include_bbamt=double.Parse(txt_include_bbamt.Text);
                 percentamt=double.Parse(txt_percent_amt.Text);include_percentamt=double.Parse(txt_include_percent.Text);
                 dicountamt = double.Parse(txt_discount.Text);totalcost= double.Parse(txt_alltotal_amt.Text);
@@ -645,6 +733,7 @@ namespace MJS
         private void txt_WK_TextChanged(object sender, EventArgs e)
         {
             calculategm();
+           
         }
 
         private void txt_WP_TextChanged(object sender, EventArgs e)
@@ -663,6 +752,7 @@ namespace MJS
                 txt_WP.SelectionLength = txt_WP.Text.Length;
             }
             calculategm();
+          
         }
 
         private void txt_WY_TextChanged(object sender, EventArgs e)
@@ -681,24 +771,26 @@ namespace MJS
                 txt_WY.SelectionLength = txt_WY.Text.Length;
             }
             calculategm();
+            
         }
 
         private void txt_WC_TextChanged(object sender, EventArgs e)
         {
             double p = 4;
-            if (txt_WC.Text == "")
+            if (txt_WS.Text == "")
             {
-                txt_WC.Text = "";
+                txt_WS.Text = "";
 
             }
-            else if (double.Parse(txt_WC.Text) > p)
+            else if (double.Parse(txt_WS.Text) > p)
             {
                 MessageBox.Show("အလျော့တွက် 4 \"စိတ်\" နှင့်အထက် ဖြစ်နေပါသည်");
-                txt_WC.Text = "0";
-                txt_WC.SelectionStart = 0;
-                txt_WC.SelectionLength = txt_WC.Text.Length;
+                txt_WS.Text = "0";
+                txt_WS.SelectionStart = 0;
+                txt_WS.SelectionLength = txt_WS.Text.Length;
             }
             calculategm();
+            
         }
 
         private void txt_mcost_TextChanged(object sender, EventArgs e)
@@ -726,8 +818,8 @@ namespace MJS
             discamt=double.Parse(txt_discount.Text);
             minus = double.Parse(txt_totalcost.Text);
             minus = txttotalamt - discamt;
-            txt_totalcost.Text=minus.ToString();
-            
+            txt_totalcost.Text = string.Format("{0:n0}", minus);
+
         }
 
         private void txt_pernumber_TextChanged(object sender, EventArgs e)
@@ -881,7 +973,7 @@ namespace MJS
 
         private void txt_rep_Leave(object sender, EventArgs e)
         {
-            txt_rep.Text = string.Format("{0:n0}", double.Parse(txt_rep.Text));
+            txt_gpd.Text = string.Format("{0:n0}", double.Parse(txt_gpd.Text));
         }
 
         private void txt_percent_amt_Leave(object sender, EventArgs e)
@@ -930,50 +1022,98 @@ namespace MJS
         {
             txt_pro_famt.Text = string.Format("{0:n0}", double.Parse(txt_pro_famt.Text));
         }
-        private double value = 0;
-        private void minimum_price_check() 
+       
+        private void minimum_price_calculate() 
         {
-            double txtsk, txtsp, txtsy, txtss, txt_minimum_per, txt_result_gm, result2 = 0;
+            double txtsk, txtsp, txtsy, txtss, txt_minimum_per, txt_result_gm, result = 0;
             double gm = 16.6;
 
             txtsk =double.Parse(txt_sk.Text);txtsp=double.Parse(txt_sp.Text);txtsy=double.Parse(txt_sy.Text);txtss=double.Parse(txt_ss.Text);
             txt_minimum_per=double.Parse(txt_mini_percent.Text);
+           
+           
+            result =  Math.Round((((((txtss / 4) + txtsy) / 8 + txtsp) / 16 + txtsk) * gm)*txt_minimum_per);
+           
+            txt_result_sum.Text = result.ToString();
 
-            result2 =  Math.Round((((((txtss / 4) + txtsy) / 8 + txtsp) / 16 + txtsk) * gm)*txt_minimum_per);
-            value += result2;
-            result_gm.Text = result2.ToString();
-            txt_result_sum.Text = value.ToString();
-                      
+
         }
-        
+
+
+        private void minimum_price_check()
+        {
+            double txtWK, txtWP, txtWY, txtWC, txt_minimum_per, txt_result_gm, result2 = 0;
+            double gm = 16.6;
+
+            txtWK = double.Parse(txt_WK.Text); txtWP = double.Parse(txt_WP.Text); txtWY = double.Parse(txt_WY.Text); txtWC = double.Parse(txt_WS.Text);
+            txt_minimum_per = double.Parse(txt_mini_percent.Text);
+
+            result2 = Math.Round(((((txtWC / 4) + txtWY) / 8 + txtWP) / 16 + txtWK) * gm);      
+            txt_salegm.Text = result2.ToString();
+            if (double.Parse(txt_salegm.Text) < double.Parse(result_gm.Text))
+            {
+                txt_mcost.Enabled = false;
+                txt_gpd.Enabled = false;
+                txt_pernumber.Enabled = false;
+                txt_percent_amt.Enabled = false;
+                txt_pro_number.Enabled = false;
+                txt_pro_amt.Enabled = false;
+                txt_pro_famt.Enabled = false;
+                txt_discount.Enabled = false;
+                txt_saleremark.Enabled = false;
+                btn_gsale_save.Enabled = false;
+                btn_review.Enabled = false;
+                Btn_BB.Enabled = false;
+                btn_cash.Enabled = false;
+
+
+                MessageBox.Show("‌ေရောင်းစျေးလျော့နည်းနေပါသည်။ခွင့်ပြုချက်လိုအပ်ပါသည်။");
+
+                
+            }
+            else
+            {
+                txt_mcost.Enabled = true;
+                txt_gpd.Enabled =true;
+                txt_pernumber.Enabled = true;
+                txt_percent_amt.Enabled = true;
+                txt_pro_number.Enabled = true;
+                txt_pro_amt.Enabled = true;
+                txt_pro_famt.Enabled = true;
+                txt_discount.Enabled = true;
+                txt_saleremark.Enabled = true;
+                btn_gsale_save.Enabled = true;
+                btn_review.Enabled = true;
+                Btn_BB.Enabled = true;
+                btn_cash.Enabled = true;
+
+            }
+
+        }
+
 
         private void txt_sk_TextChanged(object sender, EventArgs e)
         {
-            minimum_price_check();
+            minimum_price_calculate();
            
         }
 
         private void txt_sp_TextChanged(object sender, EventArgs e)
         {
-            minimum_price_check();
-            
+            minimum_price_calculate();
+
         }
 
         private void txt_sy_TextChanged(object sender, EventArgs e)
         {
-            minimum_price_check();
-            
+            minimum_price_calculate();
+
         }
 
         private void txt_ss_TextChanged(object sender, EventArgs e)
         {
-            minimum_price_check();
-           
-        }
+            minimum_price_calculate();
 
-        private void result_gm_TextChanged(object sender, EventArgs e)
-        {
-          
         }
 
         private void dgv_showdata_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -991,7 +1131,33 @@ namespace MJS
             }
         }
 
-       
+
+
+        private void wastage_panel_Leave(object sender, EventArgs e)
+        {
+            minimum_price_check();
+        }
+
+        private void btn_cancel_Click(object sender, EventArgs e)
+        {
+        
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void txt_saleremark_Leave(object sender, EventArgs e)
+        {
+            adddata_datagriview();
+        }
+
+        private void txt_result_sum_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
         private void txt_discount_Leave(object sender, EventArgs e)
         {
             txt_discount.Text = string.Format("{0:n0}", double.Parse(txt_discount.Text));
@@ -1002,8 +1168,22 @@ namespace MJS
             getgoldprice();
         }
 
-        
-
+        private void getselling_percent()
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand("SELECT Selling_Price FROM setting ORDER BY ID DESC", con);
+   
+            using (SqlDataReader da = cmd.ExecuteReader())
+            {
+               
+               if (da.Read())
+                {
+                    txt_mini_percent.Text = da.GetValue(0).ToString();
+                  
+                }
+               con.Close();
+            }
+        }
         private void addRow(string productid,string item, string itemname, string qty, string gm)
         {
             string[] row = {productid,item,itemname,qty,gm };
@@ -1052,6 +1232,15 @@ namespace MJS
                             totalgm();*/
                             TotalGm();
                             TotalQty();
+
+
+                            dataGridView2.Rows.Add(txt_result_sum.Text);
+                            decimal amt = 0;
+                            for (int i = 0; i < dataGridView2.Rows.Count; ++i)
+                            {
+                                amt += Convert.ToDecimal(dataGridView2.Rows[i].Cells[0].Value);
+                                result_gm.Text = amt.ToString();
+                            }
 
 
                         }

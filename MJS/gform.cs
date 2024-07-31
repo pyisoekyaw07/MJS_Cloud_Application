@@ -421,7 +421,7 @@ namespace MJS
                 }*/
                 string shopvalue = txt_shop.Text;
                 con.Open();
-                sql = $"SELECT SaleVoucher FROM reg_gold WHERE Shop = @shoped ORDER BY ID DESC";
+                sql = $"SELECT RegisterVoucher FROM reg_gold WHERE Shop = @shoped ORDER BY ID DESC";
                 cmd = new SqlCommand(sql, con);
                 cmd.Parameters.AddWithValue("@shoped", shopvalue);
                 var maxid = cmd.ExecuteScalar() as string;
@@ -443,7 +443,7 @@ namespace MJS
                     SqlCommand cmd = new SqlCommand();
                     SqlDataReader sr = null;
                     cmd.Connection = con;
-                    cmd.CommandText = $"SELECT SaleVoucher FROM reg_gold WHERE Shop = @shoped ORDER BY ID DESC";
+                    cmd.CommandText = $"SELECT RegisterVoucher FROM reg_gold WHERE Shop = @shoped ORDER BY ID DESC";
                     cmd.Parameters.AddWithValue("@shoped", shopvalue);
                     sr = cmd.ExecuteReader();
                     if (sr.Read())
@@ -612,15 +612,15 @@ namespace MJS
                     else
                     {
 
-                        cmd = new SqlCommand("insert into reg_gold (Image,Date,Time,SaleVoucher,Enter_Remark,PurVoucher,ProductID,GoldType,GoldPrice,Item," +
+                        cmd = new SqlCommand("insert into reg_gold (Image,Date,Time,RegisterVoucher,Enter_Remark,PurVoucher,ProductID,GoldType,GoldPrice,Item," +
                          "ItemName,Gm,K,P,Y,S,WK,WP,WY,WS,TK,TP,TY,TS,SK,SP,SY,SS,Mcost,Repamt,Totalamt,Remark,Employee,Shop,Form,Counter) values(@Image,@Date,@Time,@SaleVoucher,@Enter_Remark,@PurVoucher,@ProductID,@GoldType,@GoldPrice,@Item," +
                          "@ItemName,@Gm,@K,@P,@Y,@S,@WK,@WP,@WY,@WS,@TK,@TP,@TY,@TS,@SK,@SP,@SY,@SS,@Mcost,@Repamt,@Totalamt,@Remark,@Employee,@Shop,@Form,@Counter)", con);
 
-                        cmd2 = new SqlCommand("insert into closing_stock (Image,Date,Time,SaleVoucher,Enter_Remark,PurVoucher,ProductID,GoldType,GoldPrice,Item," +
+                        cmd2 = new SqlCommand("insert into closing_stock (Image,Date,Time,RegisterVoucher,Enter_Remark,PurVoucher,ProductID,GoldType,GoldPrice,Item," +
                         "ItemName,Gm,K,P,Y,S,WK,WP,WY,WS,TK,TP,TY,TS,SK,SP,SY,SS,Mcost,Repamt,Totalamt,Remark,Employee,Shop,Form,Counter) values(@Image,@Date,@Time,@SaleVoucher,@Enter_Remark,@PurVoucher,@ProductID,@GoldType,@GoldPrice,@Item," +
                         "@ItemName,@Gm,@K,@P,@Y,@S,@WK,@WP,@WY,@WS,@TK,@TP,@TY,@TS,@SK,@SP,@SY,@SS,@Mcost,@Repamt,@Totalamt,@Remark,@Employee,@Shop,@Form,@Counter)", con);
 
-                        cmd3 = new SqlCommand("insert into all_stocks (Image,Date,Time,SaleVoucher,Enter_Remark,PurVoucher,ProductID,GoldType,GoldPrice,Item," +
+                        cmd3 = new SqlCommand("insert into all_stocks (Image,Date,Time,RegisterVoucher,Enter_Remark,PurVoucher,ProductID,GoldType,GoldPrice,Item," +
                         "ItemName,Gm,K,P,Y,S,WK,WP,WY,WS,TK,TP,TY,TS,Mcost,Repamt,Totalamt,Remark,Employee,Shop,Form,Counter) values(@Image,@Date,@Time,@SaleVoucher,@Enter_Remark,@PurVoucher,@ProductID,@GoldType,@GoldPrice,@Item," +
                         "@ItemName,@Gm,@K,@P,@Y,@S,@WK,@WP,@WY,@WS,@TK,@TP,@TY,@TS,@Mcost,@Repamt,@Totalamt,@Remark,@Employee,@Shop,@Form,@Counter)", con);
 
@@ -1467,6 +1467,45 @@ namespace MJS
             cmb_gt.Enabled = true;
         }
 
+        private void txt_goldprice_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_sk_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_sp_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_sy_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_ss_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
 
         private void btn_reg_preview_Click(object sender, EventArgs e)
         {
@@ -1509,6 +1548,7 @@ namespace MJS
                 }
                 else
                 {
+                    calculategm();
                     string empolyee = "";
                     empolyee = Form2.setvalueemployee;
 

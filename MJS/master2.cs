@@ -15,6 +15,7 @@ using static System.Net.WebRequestMethods;
 using GHF;
 using OfficeOpenXml.FormulaParsing.Excel.Functions.Information;
 
+
 namespace MJS
 {
     public partial class master2 : Form
@@ -63,8 +64,12 @@ namespace MJS
             {
                 /* groupBox1.Show();*/
                 Pan_item.Show();
+                Parentitem_combo.Hide();
+               
                 label1.Text = "Item";
+                txt_master_item.Text = null;
                 chk_parent.Show();
+                chk_parent.Text = "Parent Item";
                 chk_parent.Enabled = true;
                 chk_parent.Checked = false;
                 itemtype_combo.Show();
@@ -74,6 +79,8 @@ namespace MJS
                 pen_counter.Hide();
                 itemtype_combo.SelectedIndex = -1;
                 txt_update.Text = "";
+                Gb_gp.Hide();
+                txt_master_item.Show();
             }
             else if (comboBox1.SelectedIndex == 1)
             {
@@ -88,6 +95,8 @@ namespace MJS
                 pen_counter.Hide();
                 itemtype_combo.SelectedIndex = -1;
                 txt_update.Text = "";
+                Gb_gp.Hide();
+                txt_master_item.Show();
 
             }
             else if (comboBox1.SelectedIndex == 2)
@@ -104,7 +113,10 @@ namespace MJS
                 itemtype_combo.Enabled = true;
                 pen_counter.Hide();
                 itemtype_combo.SelectedIndex = -1;
+                Parentitem_combo.SelectedIndex = -1;
                 txt_update.Text = "";
+                Gb_gp.Show();
+                txt_master_item.Hide();
 
             }
             else if (comboBox1.SelectedIndex == 3)
@@ -120,6 +132,8 @@ namespace MJS
                 itemtype_combo.SelectedIndex = -1;
                 showsourceremark();
                 txt_update.Text = "";
+                Gb_gp.Hide();
+                txt_master_item.Show();
 
             }
             else if (comboBox1.SelectedIndex == 4)
@@ -131,6 +145,8 @@ namespace MJS
                 itemtype_combo.SelectedIndex = -1;
                 showcounter();
                 txt_update.Text = "";
+                Gb_gp.Hide();
+                txt_master_item.Show();
 
             }
         }
@@ -450,31 +466,39 @@ namespace MJS
 
                         if (count > 0)
                         {
-                            SqlCommand itemcmd = new SqlCommand("update goldprice set Date=@Date,Time=@Time,Gold_Type=@Goldtype,Gold_price=@Goldprice where Gold_Type=N'" + txt_master_item + "'", con);
+                           /* SqlCommand itemcmd = new SqlCommand("update goldprice set Date=@Date,Time=@Time,Gold_Type=@Goldtype,Purchase_Gold_price=@Goldprice where Gold_Type=N'" + txt_master_item + "'", con);
                             itemcmd.Parameters.AddWithValue("@Date", txt_Date.Text);
                             itemcmd.Parameters.AddWithValue("@Time", txt_Time.Text);
                             itemcmd.Parameters.AddWithValue("@Goldtype", Parentitem_combo.Text);
                             itemcmd.Parameters.AddWithValue("@Goldprice", txt_master_item.Text);
-                            /*con.Open();*/
-                            itemcmd.ExecuteNonQuery();
+                            *//*con.Open();*//*
+                            itemcmd.ExecuteNonQuery();*/
                             /*con.Close();*/
-                            SqlCommand itemnamecmd = new SqlCommand("update goldprice set Gold_price=@Goldprice where Gold_Type=N'" + Parentitem_combo.Text + "'", con);
-                            itemnamecmd.Parameters.AddWithValue("@Goldprice", txt_master_item.Text);
-                           /* con.Open();*/
+                            SqlCommand itemnamecmd = new SqlCommand("update goldprice set Date=@Date,Time=@Time,Gold_Type=@Goldtype,Purchase_Gold_Price=@Goldprice,Sale_Gold_Price=@salegp where Gold_Type=N'" + Parentitem_combo.Text + "'", con);
+                            itemnamecmd.Parameters.AddWithValue("@Date", txt_Date.Text);
+                            itemnamecmd.Parameters.AddWithValue("@Time", txt_Time.Text);
+                            itemnamecmd.Parameters.AddWithValue("@Goldtype", Parentitem_combo.Text);
+                            itemnamecmd.Parameters.AddWithValue("@Goldprice", txt_purgp.Text);
+                            itemnamecmd.Parameters.AddWithValue("@salegp", txt_salegp.Text);
+                            /* con.Open();*/
                             itemnamecmd.ExecuteNonQuery();
                             showgoldprice();
-                           
+                            MessageBox.Show("Success");
+                            txt_purgp.Text = "";
+                            txt_salegp.Text = "";
+
                         }
                         else
                         {
-                            string qur = "INSERT INTO goldprice([Date],[Time],[Gold_Type],[Gold_Price])VALUES('" + txt_Date.Text + "','" + txt_Time.Text + "',N'" + Parentitem_combo.Text + "',N'" + txt_master_item.Text + "')";
+                            string qur = "INSERT INTO goldprice([Date],[Time],[Gold_Type],[Purchase_Gold_Price],[Sale_Gold_Price])VALUES('" + txt_Date.Text + "','" + txt_Time.Text + "',N'" + Parentitem_combo.Text + "',N'" + txt_purgp.Text + "',N'" + txt_salegp.Text + "')";
                             SqlCommand goldcmd = new SqlCommand(qur, con);
                             /*con.Open();*/
                             goldcmd.ExecuteNonQuery();
 
                             {
                                 MessageBox.Show("Success");
-                                txt_master_item.Text = "";
+                                txt_purgp.Text = "";
+                                txt_salegp.Text = "";
                             }
                             /*con.Close();*/
                             showgoldprice();
@@ -699,23 +723,39 @@ namespace MJS
         /*-----------------------------------------------------------Choose Item For Itemname----------------------------------------------------*/
         private void Parentitem_combo_Click_2(object sender, EventArgs e)
         {
+            if (itemtype_combo.Text == "") 
+            {
+                MessageBox.Show("Please Select Type First");
+            }
             if (comboBox1.SelectedIndex==0 && itemtype_combo.SelectedIndex == 0)/*Gold itmename*/
             {
-                con.Open();
-                SqlCommand itemcmd = new SqlCommand("Select Golditem from golditem", con);
-                SqlDataAdapter da = new SqlDataAdapter();
-                da.SelectCommand = itemcmd;
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                Parentitem_combo.DataSource = dt;
-                Parentitem_combo.DisplayMember = "golditem";
-                Parentitem_combo.ValueMember = "";
-                if (Parentitem_combo.Items.Count > 0)
+                try 
+                
                 {
-                    Parentitem_combo.SelectedIndex = -1;
-                    Parentitem_combo.SelectedText = "---Select Item---";
+                    con.Open();
+                    SqlCommand itemcmd = new SqlCommand("Select Golditem from golditem", con);
+                    SqlDataAdapter da = new SqlDataAdapter();
+                    da.SelectCommand = itemcmd;
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    Parentitem_combo.DataSource = dt;
+                    Parentitem_combo.DisplayMember = "golditem";
+                    Parentitem_combo.ValueMember = "";
+                    if (Parentitem_combo.Items.Count > 0)
+                    {
+                        Parentitem_combo.SelectedIndex = -1;
+                        Parentitem_combo.SelectedText = "---Select Item---";
+                    }
+                    con.Close();
+
+                } 
+                
+                catch (Exception ex)
+                
+                {
+                    MessageBox.Show(ex.Message);
                 }
-                con.Close();
+                
 
             }
            
@@ -880,10 +920,13 @@ namespace MJS
         {
             tabControl1.SelectedIndex = 0;
         }
-
         private void btn_shop_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedIndex = 1;
+        }
+        private void btn_setting_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 2;
         }
 
         private void chk_parent_CheckedChanged(object sender, EventArgs e)
@@ -893,17 +936,56 @@ namespace MJS
                 showitemname();
                 Parentitem_combo.Show();
                 label1.Text = "Item Name";
+                Parentitem_combo.SelectedIndex = -1;
             }
             else
             {
                 showitem();
                 Parentitem_combo.Hide();
                 label1.Text = "Item";
+                Parentitem_combo.SelectedIndex = -1;
             }
  
         }
 
- 
+        private void btn_sellingprice_Click(object sender, EventArgs e)
+        {
+           
+            if (txt_sellingPrice.Text != "") 
+            {
+                try
+                {
+                    con.Open();
+                    SqlCommand goldcmd = new SqlCommand("insert into setting values(@Date,@Time,@Selling_Price)", con);
+                    goldcmd.Parameters.AddWithValue("@Date", txt_Date.Text);
+                    goldcmd.Parameters.AddWithValue("@Time", txt_Time.Text);
+                    goldcmd.Parameters.AddWithValue("@Selling_Price", txt_sellingPrice.Text);
+
+                    goldcmd.ExecuteNonQuery();
+                    {
+                        MessageBox.Show("success");
+                        txt_sellingPrice.Text = "";
+                    }
+                    con.Close();
+                }
+                catch (Exception ex) { MessageBox.Show(ex.Message); }
+            }
+            else 
+            {
+                MessageBox.Show("Please Insert Selling Price");
+            }
+                     
+        }
+
+        private void txt_sellingPrice_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
+
+
         /*---------------------------------------------------------------------------------------------------------------------*/
     }
 }

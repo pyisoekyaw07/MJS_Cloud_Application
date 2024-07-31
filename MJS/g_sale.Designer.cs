@@ -33,16 +33,55 @@ namespace MJS
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(g_sale));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle220 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle221 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle222 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle223 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle224 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle225 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle181 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle182 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle183 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle184 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle185 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle186 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle187 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle188 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle189 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle190 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle191 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle192 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle193 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle194 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle195 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle196 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle197 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle198 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle199 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle200 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle201 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle202 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle203 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle204 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle205 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle206 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle207 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle208 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle209 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle210 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle211 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle212 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle213 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle214 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle215 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle216 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle217 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle218 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle219 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txt_date = new System.Windows.Forms.TextBox();
             this.txt_time = new System.Windows.Forms.TextBox();
             this.txt_salevoc_number = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txt_form = new System.Windows.Forms.TextBox();
             this.txt_counter = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label12 = new System.Windows.Forms.Label();
@@ -52,7 +91,7 @@ namespace MJS
             this.txt_WK = new System.Windows.Forms.TextBox();
             this.txt_WP = new System.Windows.Forms.TextBox();
             this.txt_WY = new System.Windows.Forms.TextBox();
-            this.txt_WC = new System.Windows.Forms.TextBox();
+            this.txt_WS = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
@@ -65,6 +104,9 @@ namespace MJS
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.wastage_panel = new System.Windows.Forms.Panel();
+            this.txt_salegm = new System.Windows.Forms.TextBox();
             this.txt_result_sum = new System.Windows.Forms.TextBox();
             this.result_gm = new System.Windows.Forms.TextBox();
             this.txt_mini_percent = new System.Windows.Forms.TextBox();
@@ -80,9 +122,9 @@ namespace MJS
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
+            this.btn_review = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.btn_cancel = new FontAwesome.Sharp.IconButton();
             this.btn_gsale_save = new FontAwesome.Sharp.IconButton();
             this.button2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -124,7 +166,7 @@ namespace MJS
             this.txt_pro_number = new System.Windows.Forms.TextBox();
             this.txt_pernumber = new System.Windows.Forms.TextBox();
             this.txt_percent_amt = new System.Windows.Forms.TextBox();
-            this.txt_rep = new System.Windows.Forms.TextBox();
+            this.txt_gpd = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.txt_gm = new System.Windows.Forms.TextBox();
@@ -160,7 +202,48 @@ namespace MJS
             this.txt_include_bbamt = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_show_saledata = new System.Windows.Forms.DataGridView();
+            this.image = new System.Windows.Forms.DataGridViewImageColumn();
+            this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.time = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtitem = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtitemname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtqty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtgm = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtgoldprice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtgoldtype = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtk = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txts = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtwk = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtwp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtwy = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtws = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txttk = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txttp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtts = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtmcost = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtrep = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtsaleamt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtbb = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtincludebb = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txttax = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txttaxamt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtinludetax = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtproper = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtproperamt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtproflat = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txttotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtdis = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtfinalamt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtrmk = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtemp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtshop = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtform = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtcounter = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label11 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -170,13 +253,16 @@ namespace MJS
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.wastage_panel.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pit_show)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_showdata)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_show_saledata)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_date
@@ -224,20 +310,20 @@ namespace MJS
             this.txt_salevoc_number.TabStop = false;
             this.txt_salevoc_number.Text = "Voucher-No";
             // 
-            // textBox5
+            // txt_form
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.textBox5.Location = new System.Drawing.Point(299, 11);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(92, 23);
-            this.textBox5.TabIndex = 300;
-            this.textBox5.TabStop = false;
-            this.textBox5.Text = "Gold Sale";
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_form.BackColor = System.Drawing.SystemColors.Window;
+            this.txt_form.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_form.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_form.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.txt_form.Location = new System.Drawing.Point(299, 11);
+            this.txt_form.Name = "txt_form";
+            this.txt_form.ReadOnly = true;
+            this.txt_form.Size = new System.Drawing.Size(92, 23);
+            this.txt_form.TabIndex = 300;
+            this.txt_form.TabStop = false;
+            this.txt_form.Text = "Gold Sale";
+            this.txt_form.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txt_counter
             // 
@@ -301,7 +387,7 @@ namespace MJS
             // txt_WK
             // 
             this.txt_WK.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_WK.Location = new System.Drawing.Point(694, 418);
+            this.txt_WK.Location = new System.Drawing.Point(3, 4);
             this.txt_WK.Name = "txt_WK";
             this.txt_WK.Size = new System.Drawing.Size(59, 35);
             this.txt_WK.TabIndex = 3;
@@ -312,7 +398,7 @@ namespace MJS
             // txt_WP
             // 
             this.txt_WP.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_WP.Location = new System.Drawing.Point(759, 418);
+            this.txt_WP.Location = new System.Drawing.Point(67, 4);
             this.txt_WP.Name = "txt_WP";
             this.txt_WP.Size = new System.Drawing.Size(59, 35);
             this.txt_WP.TabIndex = 4;
@@ -323,7 +409,7 @@ namespace MJS
             // txt_WY
             // 
             this.txt_WY.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_WY.Location = new System.Drawing.Point(822, 418);
+            this.txt_WY.Location = new System.Drawing.Point(130, 4);
             this.txt_WY.Name = "txt_WY";
             this.txt_WY.Size = new System.Drawing.Size(59, 35);
             this.txt_WY.TabIndex = 5;
@@ -331,16 +417,16 @@ namespace MJS
             this.txt_WY.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_WY.TextChanged += new System.EventHandler(this.txt_WY_TextChanged);
             // 
-            // txt_WC
+            // txt_WS
             // 
-            this.txt_WC.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_WC.Location = new System.Drawing.Point(884, 418);
-            this.txt_WC.Name = "txt_WC";
-            this.txt_WC.Size = new System.Drawing.Size(59, 35);
-            this.txt_WC.TabIndex = 6;
-            this.txt_WC.Text = "0";
-            this.txt_WC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt_WC.TextChanged += new System.EventHandler(this.txt_WC_TextChanged);
+            this.txt_WS.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_WS.Location = new System.Drawing.Point(193, 4);
+            this.txt_WS.Name = "txt_WS";
+            this.txt_WS.Size = new System.Drawing.Size(59, 35);
+            this.txt_WS.TabIndex = 6;
+            this.txt_WS.Text = "0";
+            this.txt_WS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_WS.TextChanged += new System.EventHandler(this.txt_WC_TextChanged);
             // 
             // label13
             // 
@@ -410,7 +496,7 @@ namespace MJS
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label17.Location = new System.Drawing.Point(546, 518);
+            this.label17.Location = new System.Drawing.Point(546, 516);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(46, 22);
             this.label17.TabIndex = 338;
@@ -427,7 +513,7 @@ namespace MJS
             this.Btn_BB.Location = new System.Drawing.Point(550, 697);
             this.Btn_BB.Name = "Btn_BB";
             this.Btn_BB.Size = new System.Drawing.Size(209, 47);
-            this.Btn_BB.TabIndex = 9;
+            this.Btn_BB.TabIndex = 10;
             this.Btn_BB.Text = "Add BB";
             this.Btn_BB.UseVisualStyleBackColor = true;
             this.Btn_BB.Click += new System.EventHandler(this.Btn_BB_Click);
@@ -443,7 +529,7 @@ namespace MJS
             this.btn_cash.Location = new System.Drawing.Point(777, 697);
             this.btn_cash.Name = "btn_cash";
             this.btn_cash.Size = new System.Drawing.Size(209, 47);
-            this.btn_cash.TabIndex = 17;
+            this.btn_cash.TabIndex = 18;
             this.btn_cash.Text = "Payment";
             this.btn_cash.UseVisualStyleBackColor = true;
             this.btn_cash.Click += new System.EventHandler(this.btn_cash_Click);
@@ -452,7 +538,7 @@ namespace MJS
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label1.Location = new System.Drawing.Point(545, 466);
+            this.label1.Location = new System.Drawing.Point(545, 464);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(121, 22);
             this.label1.TabIndex = 334;
@@ -475,6 +561,8 @@ namespace MJS
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.SystemColors.Window;
+            this.panel1.Controls.Add(this.wastage_panel);
+            this.panel1.Controls.Add(this.txt_salegm);
             this.panel1.Controls.Add(this.txt_result_sum);
             this.panel1.Controls.Add(this.result_gm);
             this.panel1.Controls.Add(this.txt_mini_percent);
@@ -499,7 +587,7 @@ namespace MJS
             this.panel1.Controls.Add(this.txt_pro_number);
             this.panel1.Controls.Add(this.txt_pernumber);
             this.panel1.Controls.Add(this.txt_percent_amt);
-            this.panel1.Controls.Add(this.txt_rep);
+            this.panel1.Controls.Add(this.txt_gpd);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.txt_gm);
@@ -508,7 +596,7 @@ namespace MJS
             this.panel1.Controls.Add(this.txt_saleremark);
             this.panel1.Controls.Add(this.txt_mcost);
             this.panel1.Controls.Add(this.txt_counter);
-            this.panel1.Controls.Add(this.textBox5);
+            this.panel1.Controls.Add(this.txt_form);
             this.panel1.Controls.Add(this.txt_salevoc_number);
             this.panel1.Controls.Add(this.txt_time);
             this.panel1.Controls.Add(this.txt_date);
@@ -540,7 +628,7 @@ namespace MJS
             this.panel1.Controls.Add(this.txt_include_bbamt);
             this.panel1.Controls.Add(this.label22);
             this.panel1.Controls.Add(this.label21);
-            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.dgv_show_saledata);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.label10);
@@ -559,49 +647,77 @@ namespace MJS
             this.panel1.Controls.Add(this.Btn_BB);
             this.panel1.Controls.Add(this.label18);
             this.panel1.Controls.Add(this.label17);
-            this.panel1.Controls.Add(this.txt_WC);
-            this.panel1.Controls.Add(this.txt_WY);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.txt_WP);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.txt_WK);
             this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(47)))), ((int)(((byte)(78)))));
-            this.panel1.Location = new System.Drawing.Point(12, 1);
+            this.panel1.Location = new System.Drawing.Point(11, 1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1466, 763);
             this.panel1.TabIndex = 348;
             // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.total});
+            this.dataGridView2.Location = new System.Drawing.Point(362, 60);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(130, 88);
+            this.dataGridView2.TabIndex = 458;
+            this.dataGridView2.Visible = false;
+            // 
+            // wastage_panel
+            // 
+            this.wastage_panel.Controls.Add(this.txt_WK);
+            this.wastage_panel.Controls.Add(this.txt_WP);
+            this.wastage_panel.Controls.Add(this.txt_WS);
+            this.wastage_panel.Controls.Add(this.txt_WY);
+            this.wastage_panel.Location = new System.Drawing.Point(692, 413);
+            this.wastage_panel.Name = "wastage_panel";
+            this.wastage_panel.Size = new System.Drawing.Size(258, 44);
+            this.wastage_panel.TabIndex = 7;
+            this.wastage_panel.Leave += new System.EventHandler(this.wastage_panel_Leave);
+            // 
+            // txt_salegm
+            // 
+            this.txt_salegm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_salegm.Location = new System.Drawing.Point(955, 418);
+            this.txt_salegm.Name = "txt_salegm";
+            this.txt_salegm.Size = new System.Drawing.Size(66, 22);
+            this.txt_salegm.TabIndex = 457;
+            // 
             // txt_result_sum
             // 
-            this.txt_result_sum.Location = new System.Drawing.Point(375, 288);
+            this.txt_result_sum.Location = new System.Drawing.Point(295, 311);
             this.txt_result_sum.Name = "txt_result_sum";
-            this.txt_result_sum.Size = new System.Drawing.Size(100, 20);
-            this.txt_result_sum.TabIndex = 456;
+            this.txt_result_sum.Size = new System.Drawing.Size(64, 20);
+            this.txt_result_sum.TabIndex = 29;
             this.txt_result_sum.Text = "0";
+            this.txt_result_sum.TextChanged += new System.EventHandler(this.txt_result_sum_TextChanged);
             // 
             // result_gm
             // 
-            this.result_gm.Location = new System.Drawing.Point(288, 311);
+            this.result_gm.Location = new System.Drawing.Point(375, 311);
             this.result_gm.Name = "result_gm";
-            this.result_gm.Size = new System.Drawing.Size(123, 20);
-            this.result_gm.TabIndex = 455;
+            this.result_gm.Size = new System.Drawing.Size(70, 20);
+            this.result_gm.TabIndex = 31;
             this.result_gm.Text = "0";
-            this.result_gm.TextChanged += new System.EventHandler(this.result_gm_TextChanged);
             // 
             // txt_mini_percent
             // 
-            this.txt_mini_percent.Location = new System.Drawing.Point(223, 311);
+            this.txt_mini_percent.Location = new System.Drawing.Point(220, 311);
             this.txt_mini_percent.Name = "txt_mini_percent";
-            this.txt_mini_percent.Size = new System.Drawing.Size(59, 20);
-            this.txt_mini_percent.TabIndex = 454;
-            this.txt_mini_percent.Text = "20";
+            this.txt_mini_percent.Size = new System.Drawing.Size(69, 20);
+            this.txt_mini_percent.TabIndex = 30;
+            this.txt_mini_percent.Text = "0";
             // 
             // txt_ss
             // 
             this.txt_ss.Location = new System.Drawing.Point(335, 285);
             this.txt_ss.Name = "txt_ss";
             this.txt_ss.Size = new System.Drawing.Size(30, 20);
-            this.txt_ss.TabIndex = 453;
+            this.txt_ss.TabIndex = 28;
             this.txt_ss.Text = "0";
             this.txt_ss.TextChanged += new System.EventHandler(this.txt_ss_TextChanged);
             // 
@@ -610,7 +726,7 @@ namespace MJS
             this.txt_sy.Location = new System.Drawing.Point(295, 285);
             this.txt_sy.Name = "txt_sy";
             this.txt_sy.Size = new System.Drawing.Size(30, 20);
-            this.txt_sy.TabIndex = 452;
+            this.txt_sy.TabIndex = 27;
             this.txt_sy.Text = "0";
             this.txt_sy.TextChanged += new System.EventHandler(this.txt_sy_TextChanged);
             // 
@@ -619,7 +735,7 @@ namespace MJS
             this.txt_sp.Location = new System.Drawing.Point(259, 285);
             this.txt_sp.Name = "txt_sp";
             this.txt_sp.Size = new System.Drawing.Size(30, 20);
-            this.txt_sp.TabIndex = 451;
+            this.txt_sp.TabIndex = 26;
             this.txt_sp.Text = "0";
             this.txt_sp.TextChanged += new System.EventHandler(this.txt_sp_TextChanged);
             // 
@@ -628,12 +744,13 @@ namespace MJS
             this.txt_sk.Location = new System.Drawing.Point(220, 285);
             this.txt_sk.Name = "txt_sk";
             this.txt_sk.Size = new System.Drawing.Size(30, 20);
-            this.txt_sk.TabIndex = 450;
+            this.txt_sk.TabIndex = 25;
             this.txt_sk.Text = "0";
             this.txt_sk.TextChanged += new System.EventHandler(this.txt_sk_TextChanged);
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.dataGridView2);
             this.panel3.Controls.Add(this.pit_show);
             this.panel3.Controls.Add(this.label19);
             this.panel3.Controls.Add(this.txt_showamt);
@@ -642,9 +759,9 @@ namespace MJS
             this.panel3.Controls.Add(this.label36);
             this.panel3.Controls.Add(this.label37);
             this.panel3.Controls.Add(this.label38);
-            this.panel3.Controls.Add(this.iconButton4);
+            this.panel3.Controls.Add(this.btn_review);
             this.panel3.Controls.Add(this.iconButton2);
-            this.panel3.Controls.Add(this.iconButton3);
+            this.panel3.Controls.Add(this.btn_cancel);
             this.panel3.Controls.Add(this.btn_gsale_save);
             this.panel3.Location = new System.Drawing.Point(13, 372);
             this.panel3.Name = "panel3";
@@ -718,20 +835,20 @@ namespace MJS
             this.label38.TabIndex = 439;
             this.label38.Text = "0";
             // 
-            // iconButton4
+            // btn_review
             // 
-            this.iconButton4.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Eye;
-            this.iconButton4.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(47)))), ((int)(((byte)(78)))));
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.IconSize = 40;
-            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.Location = new System.Drawing.Point(159, 327);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(161, 44);
-            this.iconButton4.TabIndex = 435;
-            this.iconButton4.Text = "Review";
-            this.iconButton4.UseVisualStyleBackColor = true;
+            this.btn_review.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_review.IconChar = FontAwesome.Sharp.IconChar.Eye;
+            this.btn_review.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(47)))), ((int)(((byte)(78)))));
+            this.btn_review.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_review.IconSize = 40;
+            this.btn_review.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_review.Location = new System.Drawing.Point(159, 327);
+            this.btn_review.Name = "btn_review";
+            this.btn_review.Size = new System.Drawing.Size(161, 44);
+            this.btn_review.TabIndex = 20;
+            this.btn_review.Text = "Review";
+            this.btn_review.UseVisualStyleBackColor = true;
             // 
             // iconButton2
             // 
@@ -749,21 +866,22 @@ namespace MJS
             this.iconButton2.Visible = false;
             this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click_1);
             // 
-            // iconButton3
+            // btn_cancel
             // 
-            this.iconButton3.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Cancel;
-            this.iconButton3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(47)))), ((int)(((byte)(78)))));
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.IconSize = 40;
-            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(325, 326);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(167, 44);
-            this.iconButton3.TabIndex = 434;
-            this.iconButton3.Text = "Cancel";
-            this.iconButton3.UseVisualStyleBackColor = true;
+            this.btn_cancel.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_cancel.IconChar = FontAwesome.Sharp.IconChar.Cancel;
+            this.btn_cancel.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(47)))), ((int)(((byte)(78)))));
+            this.btn_cancel.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_cancel.IconSize = 40;
+            this.btn_cancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_cancel.Location = new System.Drawing.Point(325, 326);
+            this.btn_cancel.Name = "btn_cancel";
+            this.btn_cancel.Size = new System.Drawing.Size(167, 44);
+            this.btn_cancel.TabIndex = 21;
+            this.btn_cancel.Text = "Cancel";
+            this.btn_cancel.UseVisualStyleBackColor = true;
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
             // btn_gsale_save
             // 
@@ -776,7 +894,7 @@ namespace MJS
             this.btn_gsale_save.Location = new System.Drawing.Point(4, 326);
             this.btn_gsale_save.Name = "btn_gsale_save";
             this.btn_gsale_save.Size = new System.Drawing.Size(151, 44);
-            this.btn_gsale_save.TabIndex = 419;
+            this.btn_gsale_save.TabIndex = 19;
             this.btn_gsale_save.Text = "Save";
             this.btn_gsale_save.UseVisualStyleBackColor = true;
             this.btn_gsale_save.Click += new System.EventHandler(this.iconButton1_Click);
@@ -793,7 +911,7 @@ namespace MJS
             this.button2.Location = new System.Drawing.Point(476, 335);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(30, 24);
-            this.button2.TabIndex = 448;
+            this.button2.TabIndex = 32;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -825,47 +943,47 @@ namespace MJS
             // 
             // Pid
             // 
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Pid.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle220.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pid.DefaultCellStyle = dataGridViewCellStyle220;
             this.Pid.HeaderText = "Product ID";
             this.Pid.Name = "Pid";
             // 
             // Item
             // 
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Item.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle221.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Item.DefaultCellStyle = dataGridViewCellStyle221;
             this.Item.HeaderText = "Item";
             this.Item.Name = "Item";
             // 
             // Itemname
             // 
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Itemname.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle222.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Itemname.DefaultCellStyle = dataGridViewCellStyle222;
             this.Itemname.HeaderText = "Itemname";
             this.Itemname.Name = "Itemname";
             // 
             // qty
             // 
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.qty.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle223.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.qty.DefaultCellStyle = dataGridViewCellStyle223;
             this.qty.HeaderText = "Quantity";
             this.qty.Name = "qty";
             // 
             // gm
             // 
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gm.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle224.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gm.DefaultCellStyle = dataGridViewCellStyle224;
             this.gm.HeaderText = "Gm";
             this.gm.Name = "gm";
             // 
             // delete
             // 
             this.delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle6.NullValue")));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            this.delete.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle225.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle225.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle225.NullValue")));
+            dataGridViewCellStyle225.SelectionBackColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle225.SelectionForeColor = System.Drawing.Color.Black;
+            this.delete.DefaultCellStyle = dataGridViewCellStyle225;
             this.delete.HeaderText = "";
             this.delete.Image = ((System.Drawing.Image)(resources.GetObject("delete.Image")));
             this.delete.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
@@ -891,11 +1009,11 @@ namespace MJS
             this.groupBox1.Controls.Add(this.txt_temparay_pid);
             this.groupBox1.Controls.Add(this.txt_result_pid);
             this.groupBox1.Controls.Add(this.txt_Dece_pid);
-            this.groupBox1.Location = new System.Drawing.Point(1179, 669);
+            this.groupBox1.Location = new System.Drawing.Point(1064, 669);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(168, 64);
+            this.groupBox1.Size = new System.Drawing.Size(283, 75);
             this.groupBox1.TabIndex = 446;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "requirment for calculation";
@@ -993,7 +1111,7 @@ namespace MJS
             // 
             this.btn_add_photo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_add_photo.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.btn_add_photo.Location = new System.Drawing.Point(29, 72);
+            this.btn_add_photo.Location = new System.Drawing.Point(144, 72);
             this.btn_add_photo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_add_photo.Name = "btn_add_photo";
             this.btn_add_photo.Size = new System.Drawing.Size(107, 29);
@@ -1132,7 +1250,7 @@ namespace MJS
             this.txt_pro_famt.Margin = new System.Windows.Forms.Padding(2);
             this.txt_pro_famt.Name = "txt_pro_famt";
             this.txt_pro_famt.Size = new System.Drawing.Size(191, 35);
-            this.txt_pro_famt.TabIndex = 14;
+            this.txt_pro_famt.TabIndex = 15;
             this.txt_pro_famt.Text = "0";
             this.txt_pro_famt.TextChanged += new System.EventHandler(this.txt_pro_famt_TextChanged);
             this.txt_pro_famt.Leave += new System.EventHandler(this.txt_pro_famt_Leave);
@@ -1144,7 +1262,7 @@ namespace MJS
             this.txt_pro_amt.Margin = new System.Windows.Forms.Padding(2);
             this.txt_pro_amt.Name = "txt_pro_amt";
             this.txt_pro_amt.Size = new System.Drawing.Size(117, 35);
-            this.txt_pro_amt.TabIndex = 13;
+            this.txt_pro_amt.TabIndex = 14;
             this.txt_pro_amt.Text = "0";
             this.txt_pro_amt.TextChanged += new System.EventHandler(this.txt_pro_amt_TextChanged);
             this.txt_pro_amt.Leave += new System.EventHandler(this.txt_pro_amt_Leave);
@@ -1165,7 +1283,7 @@ namespace MJS
             this.txt_pro_number.Location = new System.Drawing.Point(1180, 374);
             this.txt_pro_number.Name = "txt_pro_number";
             this.txt_pro_number.Size = new System.Drawing.Size(55, 35);
-            this.txt_pro_number.TabIndex = 12;
+            this.txt_pro_number.TabIndex = 13;
             this.txt_pro_number.Text = "0";
             this.txt_pro_number.TextChanged += new System.EventHandler(this.txt_pro_number_TextChanged);
             // 
@@ -1176,7 +1294,7 @@ namespace MJS
             this.txt_pernumber.Margin = new System.Windows.Forms.Padding(2);
             this.txt_pernumber.Name = "txt_pernumber";
             this.txt_pernumber.Size = new System.Drawing.Size(55, 35);
-            this.txt_pernumber.TabIndex = 10;
+            this.txt_pernumber.TabIndex = 11;
             this.txt_pernumber.Text = "0";
             this.txt_pernumber.TextChanged += new System.EventHandler(this.txt_pernumber_TextChanged);
             // 
@@ -1186,27 +1304,27 @@ namespace MJS
             this.txt_percent_amt.Location = new System.Drawing.Point(1252, 285);
             this.txt_percent_amt.Name = "txt_percent_amt";
             this.txt_percent_amt.Size = new System.Drawing.Size(117, 35);
-            this.txt_percent_amt.TabIndex = 11;
+            this.txt_percent_amt.TabIndex = 12;
             this.txt_percent_amt.Text = "0";
             this.txt_percent_amt.TextChanged += new System.EventHandler(this.txt_percent_amt_TextChanged);
             this.txt_percent_amt.Leave += new System.EventHandler(this.txt_percent_amt_Leave);
             // 
-            // txt_rep
+            // txt_gpd
             // 
-            this.txt_rep.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_rep.Location = new System.Drawing.Point(694, 563);
-            this.txt_rep.Name = "txt_rep";
-            this.txt_rep.Size = new System.Drawing.Size(185, 35);
-            this.txt_rep.TabIndex = 8;
-            this.txt_rep.Text = "0";
-            this.txt_rep.TextChanged += new System.EventHandler(this.txt_rep_TextChanged);
-            this.txt_rep.Leave += new System.EventHandler(this.txt_rep_Leave);
+            this.txt_gpd.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_gpd.Location = new System.Drawing.Point(694, 561);
+            this.txt_gpd.Name = "txt_gpd";
+            this.txt_gpd.Size = new System.Drawing.Size(185, 35);
+            this.txt_gpd.TabIndex = 9;
+            this.txt_gpd.Text = "0";
+            this.txt_gpd.TextChanged += new System.EventHandler(this.txt_rep_TextChanged);
+            this.txt_gpd.Leave += new System.EventHandler(this.txt_rep_Leave);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label2.Location = new System.Drawing.Point(546, 566);
+            this.label2.Location = new System.Drawing.Point(546, 564);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 22);
             this.label2.TabIndex = 421;
@@ -1219,7 +1337,7 @@ namespace MJS
             this.button1.Location = new System.Drawing.Point(854, 294);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(29, 23);
-            this.button1.TabIndex = 418;
+            this.button1.TabIndex = 23;
             this.button1.UseVisualStyleBackColor = true;
             // 
             // txt_gm
@@ -1238,7 +1356,7 @@ namespace MJS
             this.edit_goldprice_btn.Location = new System.Drawing.Point(375, 104);
             this.edit_goldprice_btn.Name = "edit_goldprice_btn";
             this.edit_goldprice_btn.Size = new System.Drawing.Size(29, 23);
-            this.edit_goldprice_btn.TabIndex = 416;
+            this.edit_goldprice_btn.TabIndex = 22;
             this.edit_goldprice_btn.UseVisualStyleBackColor = true;
             this.edit_goldprice_btn.Click += new System.EventHandler(this.edit_goldprice_btn_Click);
             // 
@@ -1258,15 +1376,16 @@ namespace MJS
             this.txt_saleremark.Multiline = true;
             this.txt_saleremark.Name = "txt_saleremark";
             this.txt_saleremark.Size = new System.Drawing.Size(240, 71);
-            this.txt_saleremark.TabIndex = 16;
+            this.txt_saleremark.TabIndex = 17;
+            this.txt_saleremark.Leave += new System.EventHandler(this.txt_saleremark_Leave);
             // 
             // txt_mcost
             // 
             this.txt_mcost.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_mcost.Location = new System.Drawing.Point(694, 515);
+            this.txt_mcost.Location = new System.Drawing.Point(694, 513);
             this.txt_mcost.Name = "txt_mcost";
             this.txt_mcost.Size = new System.Drawing.Size(185, 35);
-            this.txt_mcost.TabIndex = 7;
+            this.txt_mcost.TabIndex = 8;
             this.txt_mcost.Text = "0";
             this.txt_mcost.TextChanged += new System.EventHandler(this.txt_mcost_TextChanged);
             this.txt_mcost.Leave += new System.EventHandler(this.txt_mcost_Leave);
@@ -1334,7 +1453,7 @@ namespace MJS
             this.total_S.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.total_S.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.total_S.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.total_S.Location = new System.Drawing.Point(885, 468);
+            this.total_S.Location = new System.Drawing.Point(885, 466);
             this.total_S.Name = "total_S";
             this.total_S.Size = new System.Drawing.Size(57, 33);
             this.total_S.TabIndex = 404;
@@ -1346,7 +1465,7 @@ namespace MJS
             this.total_Y.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.total_Y.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.total_Y.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.total_Y.Location = new System.Drawing.Point(822, 468);
+            this.total_Y.Location = new System.Drawing.Point(822, 466);
             this.total_Y.Name = "total_Y";
             this.total_Y.Size = new System.Drawing.Size(57, 33);
             this.total_Y.TabIndex = 403;
@@ -1358,7 +1477,7 @@ namespace MJS
             this.total_P.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.total_P.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.total_P.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.total_P.Location = new System.Drawing.Point(759, 468);
+            this.total_P.Location = new System.Drawing.Point(759, 466);
             this.total_P.Name = "total_P";
             this.total_P.Size = new System.Drawing.Size(57, 33);
             this.total_P.TabIndex = 402;
@@ -1370,7 +1489,7 @@ namespace MJS
             this.total_K.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.total_K.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.total_K.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.total_K.Location = new System.Drawing.Point(696, 468);
+            this.total_K.Location = new System.Drawing.Point(696, 466);
             this.total_K.Name = "total_K";
             this.total_K.Size = new System.Drawing.Size(57, 33);
             this.total_K.TabIndex = 401;
@@ -1439,7 +1558,7 @@ namespace MJS
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label28.Location = new System.Drawing.Point(545, 614);
+            this.label28.Location = new System.Drawing.Point(545, 612);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(134, 22);
             this.label28.TabIndex = 374;
@@ -1451,7 +1570,7 @@ namespace MJS
             this.txt_totalamt.Enabled = false;
             this.txt_totalamt.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_totalamt.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.txt_totalamt.Location = new System.Drawing.Point(694, 611);
+            this.txt_totalamt.Location = new System.Drawing.Point(694, 609);
             this.txt_totalamt.Name = "txt_totalamt";
             this.txt_totalamt.Size = new System.Drawing.Size(185, 35);
             this.txt_totalamt.TabIndex = 373;
@@ -1533,7 +1652,7 @@ namespace MJS
             this.txt_discount.Location = new System.Drawing.Point(1180, 505);
             this.txt_discount.Name = "txt_discount";
             this.txt_discount.Size = new System.Drawing.Size(189, 35);
-            this.txt_discount.TabIndex = 15;
+            this.txt_discount.TabIndex = 16;
             this.txt_discount.Text = "0";
             this.txt_discount.TextChanged += new System.EventHandler(this.txt_discount_TextChanged);
             this.txt_discount.Leave += new System.EventHandler(this.txt_discount_Leave);
@@ -1596,19 +1715,347 @@ namespace MJS
             this.label21.Size = new System.Drawing.Size(2, 763);
             this.label21.TabIndex = 361;
             // 
-            // dataGridView1
+            // dgv_show_saledata
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dgv_show_saledata.AllowUserToAddRows = false;
+            this.dgv_show_saledata.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(545, 42);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 30;
-            this.dataGridView1.Size = new System.Drawing.Size(908, 123);
-            this.dataGridView1.TabIndex = 359;
+            this.dgv_show_saledata.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            this.dgv_show_saledata.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgv_show_saledata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_show_saledata.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.image,
+            this.date,
+            this.time,
+            this.productid,
+            this.txtitem,
+            this.txtitemname,
+            this.txtqty,
+            this.txtgm,
+            this.txtgoldprice,
+            this.txtgoldtype,
+            this.txtk,
+            this.txtP,
+            this.txty,
+            this.txts,
+            this.txtwk,
+            this.txtwp,
+            this.txtwy,
+            this.txtws,
+            this.txttk,
+            this.txttp,
+            this.txtty,
+            this.txtts,
+            this.txtmcost,
+            this.txtrep,
+            this.txtsaleamt,
+            this.txtbb,
+            this.txtincludebb,
+            this.txttax,
+            this.txttaxamt,
+            this.txtinludetax,
+            this.txtproper,
+            this.txtproperamt,
+            this.txtproflat,
+            this.txttotal,
+            this.txtdis,
+            this.txtfinalamt,
+            this.txtrmk,
+            this.txtemp,
+            this.txtshop,
+            this.txtform,
+            this.txtcounter});
+            this.dgv_show_saledata.Location = new System.Drawing.Point(545, 30);
+            this.dgv_show_saledata.Name = "dgv_show_saledata";
+            this.dgv_show_saledata.RowHeadersWidth = 51;
+            this.dgv_show_saledata.RowTemplate.Height = 30;
+            this.dgv_show_saledata.Size = new System.Drawing.Size(908, 123);
+            this.dgv_show_saledata.TabIndex = 33;
+            // 
+            // image
+            // 
+            this.image.HeaderText = "Image";
+            this.image.Name = "image";
+            this.image.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.image.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // date
+            // 
+            dataGridViewCellStyle181.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date.DefaultCellStyle = dataGridViewCellStyle181;
+            this.date.HeaderText = "Date";
+            this.date.Name = "date";
+            // 
+            // time
+            // 
+            dataGridViewCellStyle182.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.time.DefaultCellStyle = dataGridViewCellStyle182;
+            this.time.HeaderText = "Time";
+            this.time.Name = "time";
+            // 
+            // productid
+            // 
+            dataGridViewCellStyle183.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productid.DefaultCellStyle = dataGridViewCellStyle183;
+            this.productid.HeaderText = "Product ID";
+            this.productid.Name = "productid";
+            // 
+            // txtitem
+            // 
+            dataGridViewCellStyle184.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtitem.DefaultCellStyle = dataGridViewCellStyle184;
+            this.txtitem.HeaderText = "Item";
+            this.txtitem.Name = "txtitem";
+            // 
+            // txtitemname
+            // 
+            dataGridViewCellStyle185.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtitemname.DefaultCellStyle = dataGridViewCellStyle185;
+            this.txtitemname.HeaderText = "Itemname";
+            this.txtitemname.Name = "txtitemname";
+            // 
+            // txtqty
+            // 
+            dataGridViewCellStyle186.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtqty.DefaultCellStyle = dataGridViewCellStyle186;
+            this.txtqty.HeaderText = "Quantity";
+            this.txtqty.Name = "txtqty";
+            // 
+            // txtgm
+            // 
+            dataGridViewCellStyle187.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtgm.DefaultCellStyle = dataGridViewCellStyle187;
+            this.txtgm.HeaderText = "Gm";
+            this.txtgm.Name = "txtgm";
+            // 
+            // txtgoldprice
+            // 
+            dataGridViewCellStyle188.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtgoldprice.DefaultCellStyle = dataGridViewCellStyle188;
+            this.txtgoldprice.HeaderText = "GoldPrice";
+            this.txtgoldprice.Name = "txtgoldprice";
+            // 
+            // txtgoldtype
+            // 
+            dataGridViewCellStyle189.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtgoldtype.DefaultCellStyle = dataGridViewCellStyle189;
+            this.txtgoldtype.HeaderText = "GoldType";
+            this.txtgoldtype.Name = "txtgoldtype";
+            // 
+            // txtk
+            // 
+            dataGridViewCellStyle190.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtk.DefaultCellStyle = dataGridViewCellStyle190;
+            this.txtk.HeaderText = "K";
+            this.txtk.Name = "txtk";
+            // 
+            // txtP
+            // 
+            dataGridViewCellStyle191.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtP.DefaultCellStyle = dataGridViewCellStyle191;
+            this.txtP.HeaderText = "P";
+            this.txtP.Name = "txtP";
+            // 
+            // txty
+            // 
+            dataGridViewCellStyle192.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txty.DefaultCellStyle = dataGridViewCellStyle192;
+            this.txty.HeaderText = "Y";
+            this.txty.Name = "txty";
+            // 
+            // txts
+            // 
+            dataGridViewCellStyle193.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txts.DefaultCellStyle = dataGridViewCellStyle193;
+            this.txts.HeaderText = "S";
+            this.txts.Name = "txts";
+            // 
+            // txtwk
+            // 
+            dataGridViewCellStyle194.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtwk.DefaultCellStyle = dataGridViewCellStyle194;
+            this.txtwk.HeaderText = "WK";
+            this.txtwk.Name = "txtwk";
+            // 
+            // txtwp
+            // 
+            this.txtwp.HeaderText = "WP";
+            this.txtwp.Name = "txtwp";
+            // 
+            // txtwy
+            // 
+            dataGridViewCellStyle195.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtwy.DefaultCellStyle = dataGridViewCellStyle195;
+            this.txtwy.HeaderText = "WY";
+            this.txtwy.Name = "txtwy";
+            // 
+            // txtws
+            // 
+            dataGridViewCellStyle196.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtws.DefaultCellStyle = dataGridViewCellStyle196;
+            this.txtws.HeaderText = "WS";
+            this.txtws.Name = "txtws";
+            // 
+            // txttk
+            // 
+            dataGridViewCellStyle197.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttk.DefaultCellStyle = dataGridViewCellStyle197;
+            this.txttk.HeaderText = "TK";
+            this.txttk.Name = "txttk";
+            // 
+            // txttp
+            // 
+            dataGridViewCellStyle198.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttp.DefaultCellStyle = dataGridViewCellStyle198;
+            this.txttp.HeaderText = "TP";
+            this.txttp.Name = "txttp";
+            // 
+            // txtty
+            // 
+            dataGridViewCellStyle199.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtty.DefaultCellStyle = dataGridViewCellStyle199;
+            this.txtty.HeaderText = "TY";
+            this.txtty.Name = "txtty";
+            // 
+            // txtts
+            // 
+            dataGridViewCellStyle200.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtts.DefaultCellStyle = dataGridViewCellStyle200;
+            this.txtts.HeaderText = "TS";
+            this.txtts.Name = "txtts";
+            // 
+            // txtmcost
+            // 
+            dataGridViewCellStyle201.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtmcost.DefaultCellStyle = dataGridViewCellStyle201;
+            this.txtmcost.HeaderText = "Making Charges";
+            this.txtmcost.Name = "txtmcost";
+            // 
+            // txtrep
+            // 
+            dataGridViewCellStyle202.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtrep.DefaultCellStyle = dataGridViewCellStyle202;
+            this.txtrep.HeaderText = "GPD Amount";
+            this.txtrep.Name = "txtrep";
+            // 
+            // txtsaleamt
+            // 
+            dataGridViewCellStyle203.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtsaleamt.DefaultCellStyle = dataGridViewCellStyle203;
+            this.txtsaleamt.HeaderText = "Sale Amount";
+            this.txtsaleamt.Name = "txtsaleamt";
+            // 
+            // txtbb
+            // 
+            dataGridViewCellStyle204.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbb.DefaultCellStyle = dataGridViewCellStyle204;
+            this.txtbb.HeaderText = "BB Amount";
+            this.txtbb.Name = "txtbb";
+            // 
+            // txtincludebb
+            // 
+            dataGridViewCellStyle205.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtincludebb.DefaultCellStyle = dataGridViewCellStyle205;
+            this.txtincludebb.HeaderText = "In BB Amount";
+            this.txtincludebb.Name = "txtincludebb";
+            // 
+            // txttax
+            // 
+            dataGridViewCellStyle206.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttax.DefaultCellStyle = dataGridViewCellStyle206;
+            this.txttax.HeaderText = "Tax";
+            this.txttax.Name = "txttax";
+            // 
+            // txttaxamt
+            // 
+            dataGridViewCellStyle207.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttaxamt.DefaultCellStyle = dataGridViewCellStyle207;
+            this.txttaxamt.HeaderText = "Tax Amount";
+            this.txttaxamt.Name = "txttaxamt";
+            // 
+            // txtinludetax
+            // 
+            dataGridViewCellStyle208.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtinludetax.DefaultCellStyle = dataGridViewCellStyle208;
+            this.txtinludetax.HeaderText = "In Tax Amount";
+            this.txtinludetax.Name = "txtinludetax";
+            // 
+            // txtproper
+            // 
+            dataGridViewCellStyle209.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtproper.DefaultCellStyle = dataGridViewCellStyle209;
+            this.txtproper.HeaderText = "Promotion %";
+            this.txtproper.Name = "txtproper";
+            // 
+            // txtproperamt
+            // 
+            dataGridViewCellStyle210.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtproperamt.DefaultCellStyle = dataGridViewCellStyle210;
+            this.txtproperamt.HeaderText = "Promotion Amount (%)";
+            this.txtproperamt.Name = "txtproperamt";
+            // 
+            // txtproflat
+            // 
+            dataGridViewCellStyle211.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtproflat.DefaultCellStyle = dataGridViewCellStyle211;
+            this.txtproflat.HeaderText = "Promotion Amount (Flat)";
+            this.txtproflat.Name = "txtproflat";
+            // 
+            // txttotal
+            // 
+            dataGridViewCellStyle212.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttotal.DefaultCellStyle = dataGridViewCellStyle212;
+            this.txttotal.HeaderText = "Total Amount";
+            this.txttotal.Name = "txttotal";
+            // 
+            // txtdis
+            // 
+            dataGridViewCellStyle213.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtdis.DefaultCellStyle = dataGridViewCellStyle213;
+            this.txtdis.HeaderText = "Discount Amount";
+            this.txtdis.Name = "txtdis";
+            // 
+            // txtfinalamt
+            // 
+            dataGridViewCellStyle214.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtfinalamt.DefaultCellStyle = dataGridViewCellStyle214;
+            this.txtfinalamt.HeaderText = "Final Amount";
+            this.txtfinalamt.Name = "txtfinalamt";
+            // 
+            // txtrmk
+            // 
+            dataGridViewCellStyle215.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtrmk.DefaultCellStyle = dataGridViewCellStyle215;
+            this.txtrmk.HeaderText = "Remark";
+            this.txtrmk.Name = "txtrmk";
+            // 
+            // txtemp
+            // 
+            dataGridViewCellStyle216.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtemp.DefaultCellStyle = dataGridViewCellStyle216;
+            this.txtemp.HeaderText = "Empolyee";
+            this.txtemp.Name = "txtemp";
+            // 
+            // txtshop
+            // 
+            dataGridViewCellStyle217.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtshop.DefaultCellStyle = dataGridViewCellStyle217;
+            this.txtshop.HeaderText = "Shop";
+            this.txtshop.Name = "txtshop";
+            // 
+            // txtform
+            // 
+            dataGridViewCellStyle218.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtform.DefaultCellStyle = dataGridViewCellStyle218;
+            this.txtform.HeaderText = "Form";
+            this.txtform.Name = "txtform";
+            // 
+            // txtcounter
+            // 
+            dataGridViewCellStyle219.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcounter.DefaultCellStyle = dataGridViewCellStyle219;
+            this.txtcounter.HeaderText = "Counter";
+            this.txtcounter.Name = "txtcounter";
             // 
             // label11
             // 
@@ -1685,6 +2132,11 @@ namespace MJS
             // 
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
+            // total
+            // 
+            this.total.HeaderText = "total";
+            this.total.Name = "total";
+            // 
             // g_sale
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -1698,9 +2150,12 @@ namespace MJS
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "g_sale";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.label_goldtype_TextChanged);
+            this.Load += new System.EventHandler(this.g_sale_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.wastage_panel.ResumeLayout(false);
+            this.wastage_panel.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pit_show)).EndInit();
@@ -1708,7 +2163,7 @@ namespace MJS
             ((System.ComponentModel.ISupportInitialize)(this.dgv_showdata)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_show_saledata)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1717,7 +2172,7 @@ namespace MJS
         private TextBox txt_date;
         private TextBox txt_time;
         private TextBox txt_salevoc_number;
-        private TextBox textBox5;
+        private TextBox txt_form;
         private TextBox txt_counter;
         private System.Windows.Forms.Timer timer1;
         private Label label12;
@@ -1727,7 +2182,7 @@ namespace MJS
         private TextBox txt_WK;
         private TextBox txt_WP;
         private TextBox txt_WY;
-        private TextBox txt_WC;
+        private TextBox txt_WS;
         private Label label13;
         private Label label29;
         private Label label30;
@@ -1746,7 +2201,7 @@ namespace MJS
         private Label label10;
         private Label label11;
         private Label label15;
-        private DataGridView dataGridView1;
+        private DataGridView dgv_show_saledata;
         private Label label21;
         private TextBox txt_totalcost;
         private TextBox txt_include_percent;
@@ -1786,7 +2241,7 @@ namespace MJS
         private System.Drawing.Printing.PrintDocument printDocument1;
         private PrintPreviewDialog printPreviewDialog1;
         private FontAwesome.Sharp.IconButton iconButton2;
-        private TextBox txt_rep;
+        private TextBox txt_gpd;
         private Label label2;
         private TextBox txt_percent_amt;
         private TextBox txt_pernumber;
@@ -1797,8 +2252,8 @@ namespace MJS
         private TextBox txt_pro_famt;
         private Label label35;
         private TextBox txt_alltotal_amt;
-        private FontAwesome.Sharp.IconButton iconButton4;
-        private FontAwesome.Sharp.IconButton iconButton3;
+        private FontAwesome.Sharp.IconButton btn_review;
+        private FontAwesome.Sharp.IconButton btn_cancel;
         private Label label36;
         private Label label33;
         private TextBox txt_total_gm;
@@ -1845,5 +2300,50 @@ namespace MJS
         private TextBox txt_mini_percent;
         private TextBox result_gm;
         private TextBox txt_result_sum;
+        private TextBox txt_salegm;
+        private Panel wastage_panel;
+        private DataGridView dataGridView2;
+        private DataGridViewImageColumn image;
+        private DataGridViewTextBoxColumn date;
+        private DataGridViewTextBoxColumn time;
+        private DataGridViewTextBoxColumn productid;
+        private DataGridViewTextBoxColumn txtitem;
+        private DataGridViewTextBoxColumn txtitemname;
+        private DataGridViewTextBoxColumn txtqty;
+        private DataGridViewTextBoxColumn txtgm;
+        private DataGridViewTextBoxColumn txtgoldprice;
+        private DataGridViewTextBoxColumn txtgoldtype;
+        private DataGridViewTextBoxColumn txtk;
+        private DataGridViewTextBoxColumn txtP;
+        private DataGridViewTextBoxColumn txty;
+        private DataGridViewTextBoxColumn txts;
+        private DataGridViewTextBoxColumn txtwk;
+        private DataGridViewTextBoxColumn txtwp;
+        private DataGridViewTextBoxColumn txtwy;
+        private DataGridViewTextBoxColumn txtws;
+        private DataGridViewTextBoxColumn txttk;
+        private DataGridViewTextBoxColumn txttp;
+        private DataGridViewTextBoxColumn txtty;
+        private DataGridViewTextBoxColumn txtts;
+        private DataGridViewTextBoxColumn txtmcost;
+        private DataGridViewTextBoxColumn txtrep;
+        private DataGridViewTextBoxColumn txtsaleamt;
+        private DataGridViewTextBoxColumn txtbb;
+        private DataGridViewTextBoxColumn txtincludebb;
+        private DataGridViewTextBoxColumn txttax;
+        private DataGridViewTextBoxColumn txttaxamt;
+        private DataGridViewTextBoxColumn txtinludetax;
+        private DataGridViewTextBoxColumn txtproper;
+        private DataGridViewTextBoxColumn txtproperamt;
+        private DataGridViewTextBoxColumn txtproflat;
+        private DataGridViewTextBoxColumn txttotal;
+        private DataGridViewTextBoxColumn txtdis;
+        private DataGridViewTextBoxColumn txtfinalamt;
+        private DataGridViewTextBoxColumn txtrmk;
+        private DataGridViewTextBoxColumn txtemp;
+        private DataGridViewTextBoxColumn txtshop;
+        private DataGridViewTextBoxColumn txtform;
+        private DataGridViewTextBoxColumn txtcounter;
+        private DataGridViewTextBoxColumn total;
     }
 }

@@ -71,7 +71,7 @@ namespace MJS
                     combo_shop.Items.Add(reader["Branchname"].ToString());
                    
                 }
-                MessageBox.Show("Connect !");
+                MessageBox.Show("Connect"+" "+"(Ver:0.0.0.2)");
             }
             catch
             {
