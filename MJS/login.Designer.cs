@@ -54,6 +54,7 @@ namespace MJS
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hide_pass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.unhide_pass)).BeginInit();
@@ -299,6 +300,16 @@ namespace MJS
             this.groupBox2.Text = "groupBox2";
             this.groupBox2.Visible = false;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(343, 215);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 18;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Visible = false;
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -306,6 +317,7 @@ namespace MJS
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1386, 441);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
@@ -352,5 +364,6 @@ namespace MJS
         private TextBox textBox1;
         private TextBox textBox2;
         private GroupBox groupBox2;
+        private Button button3;
     }
 }

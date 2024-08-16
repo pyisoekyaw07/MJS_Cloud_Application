@@ -21,7 +21,7 @@ namespace MJS
     public partial class master2 : Form
     {
 
-        SqlConnection con = new SqlConnection("Data Source=sql.bsite.net\\MSSQL2016;User ID=pyisoekyaw_;Password=pyisoe@#101215");
+        SqlConnection con = new SqlConnection("Data Source=150.95.88.172;Initial Catalog=MJS;User ID=sa;Password=Modernjewellery@5");
         SqlDataAdapter adpt;
         DataTable dt;
         SqlDataAdapter adpt1;
@@ -875,6 +875,31 @@ namespace MJS
         private void btn_shop_save_Click(object sender, EventArgs e)/*Shop Save Button*/
         {
 
+            if (txt_branch_name.Text != "")
+            {
+                try
+                {
+                    con.Open();
+                    SqlCommand shopcmd = new SqlCommand("insert into shop values(@Date,@Time,@Shopname,@Branchname)", con);
+                    shopcmd.Parameters.AddWithValue("@Date", txt_Date.Text);
+                    shopcmd.Parameters.AddWithValue("@Time", txt_Time.Text);
+                    shopcmd.Parameters.AddWithValue("@Shopname", txt_shop_name.Text);
+                    shopcmd.Parameters.AddWithValue("@Branchname", txt_branch_name.Text);
+
+                    shopcmd.ExecuteNonQuery();
+                    {
+                        MessageBox.Show("success");
+                        txt_sellingPrice.Text = "";
+                        shop();
+                    }
+                    con.Close();
+                }
+                catch (Exception ex) { MessageBox.Show(ex.Message); }
+            }
+            else
+            {
+                MessageBox.Show("ဆိုင်အမည်ထည့်ပေးရန် လိုအပ်ပါသည်။");
+            }
         }
         private void btn_View_Click(object sender, EventArgs e)
         {
@@ -984,6 +1009,7 @@ namespace MJS
                 e.Handled = true;
             }
         }
+
 
 
         /*---------------------------------------------------------------------------------------------------------------------*/

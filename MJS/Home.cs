@@ -19,6 +19,26 @@ namespace MJS
         public Form2()
         {
             InitializeComponent();
+            GlobalEventManager.OnSaveButtonClicked += HandleSaveButtonClicked;
+        }
+
+        public static class GlobalEventManager
+        {
+            public static event Action OnSaveButtonClicked;
+
+            public static void TriggerSaveButtonClicked()
+            {
+                OnSaveButtonClicked?.Invoke();
+            }
+        }
+        private void HandleSaveButtonClicked()
+        {
+            ExecuteSaleMenuItem();  // This will handle the Sale menu item click
+        }
+
+        public void ExecuteSaleMenuItem()
+        {
+            saleToolStripMenuItem.PerformClick();  // Simulates a click on the Sale menu item
         }
         private void movepanel(Control pan)
         {
@@ -71,10 +91,11 @@ namespace MJS
             formload(new g_otherout());
         }
 
-        private void saleToolStripMenuItem_Click_1(object sender, EventArgs e)
+        private void saleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             formload(new g_sale());
         }
+      
 
 
         /*-----------------Change language----------------------------------*/

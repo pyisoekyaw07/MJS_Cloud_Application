@@ -28,6 +28,7 @@ using Color = System.Drawing.Color;
 using System.Windows.Controls;
 using System.IO;
 using OfficeOpenXml.FormulaParsing.Excel.Functions.DateTime;
+using Microsoft.ReportingServices.Diagnostics.Internal;
 
 
 namespace MJS
@@ -38,14 +39,14 @@ namespace MJS
         [DllImport("wininet.dll")]
         private extern static bool InternetGetConnectedState(out int Description, int ReservedValue);
 
-        SqlConnection con = new SqlConnection("Data Source=sql.bsite.net\\MSSQL2016;User ID=pyisoekyaw_;Password=pyisoe@#101215");
+        SqlConnection con = new SqlConnection("Data Source=150.95.88.172;Initial Catalog=MJS;User ID=sa;Password=Modernjewellery@5");
 
 
-        SqlCommand cmd, cmd2, cmd3;
+        SqlCommand cmd, cmd2, cmd3,cmd4;
         SqlDataAdapter adpt;
         DataTable dt;
-        DataSet ds;
-        string sql, sql2, sql3;
+        System.Data.DataSet ds;
+        string sql, sql2, sql3,sql4;
 
         public gform()
         {
@@ -480,7 +481,7 @@ namespace MJS
         }
         public void pid()/*function Product Number*/
         {
-
+            con.Close();
             try
             {
                 /* if (Con1.State == ConnectionState.Closed)
@@ -599,9 +600,11 @@ namespace MJS
                     sql = "SELECT ProductID FROM reg_gold";
                     sql2 = "SELECT ProductID FROM closing_stock";
                     sql3 = "SELECT ProductID FROM all_stocks";
+                    sql4= "SELECT ProductID FROM Image_TB";
                     cmd = new SqlCommand(sql, con);
                     cmd2 = new SqlCommand(sql2, con);
                     cmd3 = new SqlCommand(sql3, con);
+                    cmd4= new SqlCommand(sql4, con);
                     var maxid = cmd.ExecuteScalar() as string;
 
 
@@ -612,20 +615,22 @@ namespace MJS
                     else
                     {
 
-                        cmd = new SqlCommand("insert into reg_gold (Image,Date,Time,RegisterVoucher,Enter_Remark,PurVoucher,ProductID,GoldType,GoldPrice,Item," +
-                         "ItemName,Gm,K,P,Y,S,WK,WP,WY,WS,TK,TP,TY,TS,SK,SP,SY,SS,Mcost,Repamt,Totalamt,Remark,Employee,Shop,Form,Counter) values(@Image,@Date,@Time,@SaleVoucher,@Enter_Remark,@PurVoucher,@ProductID,@GoldType,@GoldPrice,@Item," +
+                        cmd = new SqlCommand("insert into reg_gold (Date,Time,RegisterVoucher,Enter_Remark,PurVoucher,ProductID,GoldType,GoldPrice,Item," +
+                         "ItemName,Gm,K,P,Y,S,WK,WP,WY,WS,TK,TP,TY,TS,SK,SP,SY,SS,Mcost,Repamt,Totalamt,Remark,Employee,Shop,Form,Counter) values(@Date,@Time,@SaleVoucher,@Enter_Remark,@PurVoucher,@ProductID,@GoldType,@GoldPrice,@Item," +
                          "@ItemName,@Gm,@K,@P,@Y,@S,@WK,@WP,@WY,@WS,@TK,@TP,@TY,@TS,@SK,@SP,@SY,@SS,@Mcost,@Repamt,@Totalamt,@Remark,@Employee,@Shop,@Form,@Counter)", con);
 
-                        cmd2 = new SqlCommand("insert into closing_stock (Image,Date,Time,RegisterVoucher,Enter_Remark,PurVoucher,ProductID,GoldType,GoldPrice,Item," +
-                        "ItemName,Gm,K,P,Y,S,WK,WP,WY,WS,TK,TP,TY,TS,SK,SP,SY,SS,Mcost,Repamt,Totalamt,Remark,Employee,Shop,Form,Counter) values(@Image,@Date,@Time,@SaleVoucher,@Enter_Remark,@PurVoucher,@ProductID,@GoldType,@GoldPrice,@Item," +
+                        cmd2 = new SqlCommand("insert into closing_stock (Date,Time,RegisterVoucher,Enter_Remark,PurVoucher,ProductID,GoldType,GoldPrice,Item," +
+                        "ItemName,Gm,K,P,Y,S,WK,WP,WY,WS,TK,TP,TY,TS,SK,SP,SY,SS,Mcost,Repamt,Totalamt,Remark,Employee,Shop,Form,Counter) values(@Date,@Time,@SaleVoucher,@Enter_Remark,@PurVoucher,@ProductID,@GoldType,@GoldPrice,@Item," +
                         "@ItemName,@Gm,@K,@P,@Y,@S,@WK,@WP,@WY,@WS,@TK,@TP,@TY,@TS,@SK,@SP,@SY,@SS,@Mcost,@Repamt,@Totalamt,@Remark,@Employee,@Shop,@Form,@Counter)", con);
 
-                        cmd3 = new SqlCommand("insert into all_stocks (Image,Date,Time,RegisterVoucher,Enter_Remark,PurVoucher,ProductID,GoldType,GoldPrice,Item," +
-                        "ItemName,Gm,K,P,Y,S,WK,WP,WY,WS,TK,TP,TY,TS,Mcost,Repamt,Totalamt,Remark,Employee,Shop,Form,Counter) values(@Image,@Date,@Time,@SaleVoucher,@Enter_Remark,@PurVoucher,@ProductID,@GoldType,@GoldPrice,@Item," +
+                        cmd3 = new SqlCommand("insert into all_stocks (Date,Time,RegisterVoucher,Enter_Remark,PurVoucher,ProductID,GoldType,GoldPrice,Item," +
+                        "ItemName,Gm,K,P,Y,S,WK,WP,WY,WS,TK,TP,TY,TS,Mcost,Repamt,Totalamt,Remark,Employee,Shop,Form,Counter) values(@Date,@Time,@SaleVoucher,@Enter_Remark,@PurVoucher,@ProductID,@GoldType,@GoldPrice,@Item," +
                         "@ItemName,@Gm,@K,@P,@Y,@S,@WK,@WP,@WY,@WS,@TK,@TP,@TY,@TS,@Mcost,@Repamt,@Totalamt,@Remark,@Employee,@Shop,@Form,@Counter)", con);
 
+                        cmd4=new SqlCommand("insert into Image_TB(ProductID,Image) values(@ProductID,@Image)", con);
+
                         byte[] img = (byte[])dataGridView1.Rows[i].Cells[0].Value;
-                        cmd.Parameters.AddWithValue("@Image", img);
+                        /*cmd.Parameters.AddWithValue("@Image", img);*/
                         cmd.Parameters.AddWithValue("@Date", dataGridView1.Rows[i].Cells[1].Value);
                         cmd.Parameters.AddWithValue("@Time", dataGridView1.Rows[i].Cells[2].Value);
                         cmd.Parameters.AddWithValue("@SaleVoucher", dataGridView1.Rows[i].Cells[3].Value);
@@ -662,7 +667,7 @@ namespace MJS
                         cmd.Parameters.AddWithValue("@Form", dataGridView1.Rows[i].Cells[34].Value);
                         cmd.Parameters.AddWithValue("@Counter", dataGridView1.Rows[i].Cells[35].Value);
 
-                        cmd2.Parameters.AddWithValue("@Image", img);
+                        /*cmd2.Parameters.AddWithValue("@Image", img);*/
                         cmd2.Parameters.AddWithValue("@Date", dataGridView1.Rows[i].Cells[1].Value);
                         cmd2.Parameters.AddWithValue("@Time", dataGridView1.Rows[i].Cells[2].Value);
                         cmd2.Parameters.AddWithValue("@SaleVoucher", dataGridView1.Rows[i].Cells[3].Value);
@@ -699,7 +704,7 @@ namespace MJS
                         cmd2.Parameters.AddWithValue("@Form", dataGridView1.Rows[i].Cells[34].Value);
                         cmd2.Parameters.AddWithValue("@Counter", dataGridView1.Rows[i].Cells[35].Value);
 
-                        cmd3.Parameters.AddWithValue("@Image", img);
+                        /*cmd3.Parameters.AddWithValue("@Image", img);*/
                         cmd3.Parameters.AddWithValue("@Date", dataGridView1.Rows[i].Cells[1].Value.ToString());
                         cmd3.Parameters.AddWithValue("@Time", dataGridView1.Rows[i].Cells[2].Value.ToString());
                         cmd3.Parameters.AddWithValue("@SaleVoucher", dataGridView1.Rows[i].Cells[3].Value.ToString());
@@ -732,9 +737,13 @@ namespace MJS
                         cmd3.Parameters.AddWithValue("@Form", dataGridView1.Rows[i].Cells[34].Value);
                         cmd3.Parameters.AddWithValue("@Counter", dataGridView1.Rows[i].Cells[35].Value);
 
+                        cmd4.Parameters.AddWithValue("@ProductID", dataGridView1.Rows[i].Cells[6].Value.ToString());
+                        cmd4.Parameters.AddWithValue("@Image", img);
+
                         primarykey = Convert.ToInt32(cmd.ExecuteScalar());
                         primarykey = Convert.ToInt32(cmd2.ExecuteScalar());
                         primarykey = Convert.ToInt32(cmd3.ExecuteScalar());
+                        primarykey = Convert.ToInt32(cmd4.ExecuteScalar());
 
                     }
                     con.Close();
@@ -745,9 +754,20 @@ namespace MJS
 
             }
 
+            catch (SqlException ex)
+            {
+                // Log or handle the SQL-specific error
+                Console.WriteLine("SQL Server Error: " + ex.Message);
+            }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                // Log or handle any general error
+                Console.WriteLine("An error occurred: " + ex.Message);
+            }
+            finally
+            {
+                // Ensure the connection is always closed, even if an error occurs
+                con.Close();
             }
 
         }
@@ -1439,16 +1459,25 @@ namespace MJS
             }
             else
             {
-                show_reg_piddata();
-                pid();
-                invoiceid();
-                clearform();
-                txt_pur_no.Enabled = true;
-                cmb_remark.Enabled = true;
-                cmb_gt.Enabled = true;
-                txt_pur_no.Text = "";
-                cmb_remark.Items.Clear();
-                cmb_gt.Items.Clear();
+                try 
+                {
+                    show_reg_piddata();
+                    pid();
+                    invoiceid();
+                    clearform();
+                    txt_pur_no.Enabled = true;
+                    cmb_remark.Enabled = true;
+                    cmb_gt.Enabled = true;
+                    txt_pur_no.Text = "";
+                    cmb_remark.Items.Clear();
+                    cmb_gt.Items.Clear();
+                }
+                catch (Exception ex)
+                {
+                    // Log or handle any general error
+                    Console.WriteLine("An error occurred: " + ex.Message);
+                }
+
             }
         }
 

@@ -182,7 +182,7 @@ namespace MJS
             this.Pan_item.Location = new System.Drawing.Point(19, 79);
             this.Pan_item.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Pan_item.Name = "Pan_item";
-            this.Pan_item.Size = new System.Drawing.Size(436, 285);
+            this.Pan_item.Size = new System.Drawing.Size(436, 287);
             this.Pan_item.TabIndex = 22;
             // 
             // Gb_gp
@@ -362,6 +362,7 @@ namespace MJS
             this.btn_counter_save.TabIndex = 6;
             this.btn_counter_save.Text = "Save";
             this.btn_counter_save.UseVisualStyleBackColor = true;
+            this.btn_counter_save.Click += new System.EventHandler(this.btn_counter_save_Click);
             // 
             // txt_Gem_counter
             // 
@@ -440,6 +441,7 @@ namespace MJS
             // dataGridView1
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -517,6 +519,7 @@ namespace MJS
             this.btn_View.TabIndex = 33;
             this.btn_View.Text = "View";
             this.btn_View.UseVisualStyleBackColor = true;
+            this.btn_View.Click += new System.EventHandler(this.btn_View_Click);
             // 
             // txt_shop_name
             // 
@@ -573,6 +576,7 @@ namespace MJS
             this.btn_shop_save.TabIndex = 30;
             this.btn_shop_save.Text = "Save";
             this.btn_shop_save.UseVisualStyleBackColor = true;
+            this.btn_shop_save.Click += new System.EventHandler(this.btn_shop_save_Click);
             // 
             // tabPage3
             // 

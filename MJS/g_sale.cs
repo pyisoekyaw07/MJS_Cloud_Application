@@ -26,7 +26,7 @@ namespace MJS
         [DllImport("wininet.dll")]
         private extern static bool InternetGetConnectedState(out int Description, int ReservedValue);
 
-        SqlConnection con = new SqlConnection("Data Source=sql.bsite.net\\MSSQL2016;User ID=pyisoekyaw_;Password=pyisoe@#101215");
+        SqlConnection con = new SqlConnection("Data Source=150.95.88.172;Initial Catalog=MJS;User ID=sa;Password=Modernjewellery@5");
 
         SqlCommand cmd, cmd2, cmd3,cmd4;
         SqlDataAdapter adpt;
@@ -53,6 +53,8 @@ namespace MJS
             /*getgoldprice();*/
 
         }
+     
+
         private void timer2_Tick(object sender, EventArgs e)
         {
             if (true)//check new order
@@ -63,9 +65,7 @@ namespace MJS
                 check = (InternetGetConnectedState(out Desc, 0).ToString());
                 if (check == "True")
                 {
-                    invoiceid();
-                    resetpid();
-                    
+                    MessageBox.Show("Internet Connection Success");
                 }
                 else
                 {
@@ -116,28 +116,78 @@ namespace MJS
 
 
         }
+/*-----------------------------------------------------------------------------------------------*/
+        private bool rowadded=false;
         private void adddata_datagriview() 
         {
-            if (double.Parse(txt_salegm.Text) < double.Parse(result_gm.Text)) 
+
+           /* if (double.Parse(txt_salegm.Text) < double.Parse(result_gm.Text)) 
             {
                 MessageBox.Show("Please Check Selling Price");
-            }
-            else 
+            }*/
+            if (!rowadded)
             {
-                MemoryStream mmst = new MemoryStream();
-                pit_show.Image.Save(mmst, pit_show.Image.RawFormat);
-                byte[] img = mmst.ToArray();
 
                 string shop = login.shopvalue;
                 string empolyee = "";
                 empolyee = Form2.setvalueemployee;
-                dgv_show_saledata.Rows.Add(img, txt_date.Text, txt_time.Text, txt_out_no.Text, label_Item.Text, label_itemname.Text, txt_total_qty.Text, txt_total_gm.Text,
-                    txt_goldprice.Text, label_goldtype.Text, txt_k.Text, txt_p.Text, txt_y.Text, txt_s.Text, txt_WK.Text, txt_WP.Text, txt_WY.Text, txt_WS.Text, total_K.Text, total_P.Text, total_Y.Text, total_S.Text,
+                dgv_show_saledata.Rows.Add(txt_date.Text, txt_time.Text, txt_out_no.Text, txt_goldprice.Text, label_Item.Text, label_itemname.Text, txt_total_qty.Text, label_gm.Text, label_goldtype.Text, txt_total_gm.Text,
+                    txt_k.Text, txt_p.Text, txt_y.Text, txt_s.Text, txt_WK.Text, txt_WP.Text, txt_WY.Text, txt_WS.Text, total_K.Text, total_P.Text, total_Y.Text, total_S.Text,
                     txt_mcost.Text, txt_gpd.Text, txt_totalamt.Text, txt_bbamt.Text, txt_include_bbamt.Text, txt_pernumber.Text, txt_percent_amt.Text, txt_include_percent.Text, txt_pro_number.Text,
                     txt_pro_amt.Text, txt_pro_famt.Text, txt_alltotal_amt.Text, txt_discount.Text, txt_totalcost.Text, txt_saleremark.Text, empolyee, shop, txt_form.Text, txt_counter.Text);
+
+                rowadded = true;
             }
-            
+            else
+            {
+                string shop2 = login.shopvalue;
+                string empolyee2 = "";
+                empolyee2 = Form2.setvalueemployee;
+
+                dgv_show_saledata.Rows[0].Cells[0].Value = txt_date.Text;
+                dgv_show_saledata.Rows[0].Cells[1].Value = txt_time.Text;
+                dgv_show_saledata.Rows[0].Cells[2].Value = txt_out_no.Text;
+                dgv_show_saledata.Rows[0].Cells[3].Value = label_Item.Text;
+                dgv_show_saledata.Rows[0].Cells[4].Value = label_itemname.Text;
+                dgv_show_saledata.Rows[0].Cells[5].Value = txt_total_qty.Text;
+                dgv_show_saledata.Rows[0].Cells[6].Value = txt_total_gm.Text;
+                dgv_show_saledata.Rows[0].Cells[7].Value = txt_goldprice.Text;
+                dgv_show_saledata.Rows[0].Cells[8].Value = label_goldtype.Text;
+                dgv_show_saledata.Rows[0].Cells[9].Value = txt_k.Text;
+                dgv_show_saledata.Rows[0].Cells[10].Value = txt_p.Text;
+                dgv_show_saledata.Rows[0].Cells[11].Value = txt_y.Text;
+                dgv_show_saledata.Rows[0].Cells[12].Value = txt_s.Text;
+                dgv_show_saledata.Rows[0].Cells[13].Value = txt_WK.Text;
+                dgv_show_saledata.Rows[0].Cells[14].Value = txt_WP.Text;
+                dgv_show_saledata.Rows[0].Cells[15].Value = txt_WY.Text;
+                dgv_show_saledata.Rows[0].Cells[16].Value = txt_WS.Text;
+                dgv_show_saledata.Rows[0].Cells[17].Value = total_K.Text;
+                dgv_show_saledata.Rows[0].Cells[18].Value = total_P.Text;
+                dgv_show_saledata.Rows[0].Cells[19].Value = total_Y.Text;
+                dgv_show_saledata.Rows[0].Cells[20].Value = total_S.Text;
+                dgv_show_saledata.Rows[0].Cells[21].Value = txt_mcost.Text;
+                dgv_show_saledata.Rows[0].Cells[22].Value = txt_gpd.Text;
+                dgv_show_saledata.Rows[0].Cells[23].Value = txt_totalamt.Text;
+                dgv_show_saledata.Rows[0].Cells[24].Value = txt_bbamt.Text;
+                dgv_show_saledata.Rows[0].Cells[25].Value = txt_include_bbamt.Text;
+                dgv_show_saledata.Rows[0].Cells[26].Value = txt_pernumber.Text;
+                dgv_show_saledata.Rows[0].Cells[27].Value = txt_percent_amt.Text;
+                dgv_show_saledata.Rows[0].Cells[28].Value = txt_include_percent.Text;
+                dgv_show_saledata.Rows[0].Cells[29].Value = txt_pro_number.Text;
+                dgv_show_saledata.Rows[0].Cells[30].Value = txt_pro_amt.Text;
+                dgv_show_saledata.Rows[0].Cells[31].Value = txt_pro_famt.Text;
+                dgv_show_saledata.Rows[0].Cells[32].Value = txt_alltotal_amt.Text;
+                dgv_show_saledata.Rows[0].Cells[33].Value = txt_discount.Text;
+                dgv_show_saledata.Rows[0].Cells[34].Value = txt_totalcost.Text;
+                dgv_show_saledata.Rows[0].Cells[35].Value = txt_saleremark.Text;
+                dgv_show_saledata.Rows[0].Cells[36].Value = empolyee2;
+                dgv_show_saledata.Rows[0].Cells[37].Value = shop2;
+                dgv_show_saledata.Rows[0].Cells[38].Value = txt_form.Text;
+                dgv_show_saledata.Rows[0].Cells[39].Value = txt_counter.Text;
+
+            } 
         }
+/*------------------------------------------------------------------------------------------------*/
 
         private DataTable GetDataTableFromDataGridView(DataGridView dgv)
         {
@@ -181,6 +231,40 @@ namespace MJS
 
                 return dt;
             }
+        private DataTable GetDataTableForTDP(DataGridView dgv)
+        {
+            DataTable dt2 = new DataTable();
+
+            // Add columns to DataTable.
+            foreach (DataGridViewColumn column in dgv.Columns)
+            {
+                Type columnType = column.ValueType ?? typeof(string); // Use string as the default type if ValueType is null
+
+                dt2.Columns.Add(column.HeaderText, columnType);
+            }
+
+            // Add rows to DataTable.
+            foreach (DataGridViewRow row in dgv.Rows)
+            {
+                if (!row.IsNewRow)
+                {
+                    DataRow dr = dt2.NewRow();
+                    for (int i = 0; i < dgv.Columns.Count; i++)
+                    {
+                        object value = row.Cells[i].Value;
+
+                     
+
+                        dr[i] = row.Cells[i].Value ?? DBNull.Value;
+                    }
+                    dt2.Rows.Add(dr);
+                }
+            }
+
+            return dt2;
+        }
+
+
         // Convert Image to byte array
         private byte[] ImageToByteArray(Image img)
         {
@@ -191,9 +275,15 @@ namespace MJS
             }
         }
 
+
+
         private void btn_cash_Click(object sender, EventArgs e)
         {
+            adddata_datagriview();
             DataTable dt = GetDataTableFromDataGridView(dgv_show_saledata);
+            DataTable dt2 = GetDataTableForTDP(dgv_showdata);
+           
+
             if (double.TryParse(txt_totalcost.Text, out double number))
             {
 
@@ -201,7 +291,7 @@ namespace MJS
                 Form formbackground = new Form();
                 try
                 {
-                    using (payment_form pay_Form = new payment_form(dt))
+                    using (payment_form pay_Form = new payment_form(dt, dt2))
                     {
                         formbackground.StartPosition = FormStartPosition.Manual;
                         formbackground.FormBorderStyle = FormBorderStyle.None;
@@ -212,11 +302,11 @@ namespace MJS
                         formbackground.Location = this.Location;
                         formbackground.ShowInTaskbar = false;
                         formbackground.Show();
-                       /* DataTable dt = GetDataTableFromDataGridView(dgv_show_saledata);*/
+                        /* DataTable dt = GetDataTableFromDataGridView(dgv_show_saledata);*/                    
                         pay_Form.SetValue(number);
-                        pay_Form.Owner = formbackground;
+                        pay_Form.Owner = formbackground;                  
                         pay_Form.ShowDialog();
-
+                        
                         formbackground.Dispose();
                     }
 
@@ -234,26 +324,28 @@ namespace MJS
 
            
         }
-       /* private int sumqty = 0;
-        private void totalqty()
-        {
-            if (int.TryParse(label_qty.Text, out int value)) 
-            {
-                sumqty += value;
-                txt_total_qty.Text = sumqty.ToString();
-            
-            }
-        }
-        private decimal sumgm = 0;
-        private void totalgm()
-        {
-            if (decimal.TryParse(label_gm.Text, out decimal gm))
-            {
-                sumgm += gm;
-                txt_total_gm.Text = sumgm.ToString();
 
-            }
-        }*/
+       
+        /* private int sumqty = 0;
+         private void totalqty()
+         {
+             if (int.TryParse(label_qty.Text, out int value)) 
+             {
+                 sumqty += value;
+                 txt_total_qty.Text = sumqty.ToString();
+
+             }
+         }
+         private decimal sumgm = 0;
+         private void totalgm()
+         {
+             if (decimal.TryParse(label_gm.Text, out decimal gm))
+             {
+                 sumgm += gm;
+                 txt_total_gm.Text = sumgm.ToString();
+
+             }
+         }*/
         public void TotalGm()
         {
             /* decimal gm = 0;
@@ -354,74 +446,7 @@ namespace MJS
             mygraphics.ReleaseHdc(dc1);
             memoryGraphics.ReleaseHdc(dc2);
         }
-        public void invoiceid()/*function Invoice Number*/
-        {
-
-            try
-            {
-                /*if (Con1.State == ConnectionState.Closed)
-                {
-                    Con1.Open();
-                }*/
-                string shopvalue = txt_shop.Text;
-                con.Open();
-                sql = $"SELECT Sale_Voucher_No FROM g_sale WHERE Shop = @shoped ORDER BY ID DESC";
-                cmd = new SqlCommand(sql, con);
-                cmd.Parameters.AddWithValue("@shoped", shopvalue);
-                var maxid = cmd.ExecuteScalar() as string;
-
-                if (maxid == null)
-
-                {
-                    string form = "GS";
-                    /*string shop = login.shoptext;*/
-                    string shop = login.shopvalue;
-                    string date = DateTime.Now.ToString("ddMMyy");
-                    string id = "0001";
-                    txt_salevoc_number.Text = form + shop + date + "-" + id;
-
-                }
-                else
-                {
-
-                    SqlCommand cmd = new SqlCommand();
-                    SqlDataReader sr = null;
-                    cmd.Connection = con;
-                    cmd.CommandText = $"SELECT Sale_Voucher_No FROM g_sale WHERE Shop = @shoped ORDER BY ID DESC";
-                    cmd.Parameters.AddWithValue("@shoped", shopvalue);
-                    sr = cmd.ExecuteReader();
-                    if (sr.Read())
-
-                    {
-                        string form = "GS";
-                        /*string num = txt_barcode.Text;*/
-                        string shop = login.shopvalue;
-                        string date = DateTime.Now.ToString("ddMMyy");
-                        string pid = sr.GetValue(0).ToString();
-                        txt_result_id.Text = pid;
-                        string[] temparray = txt_result_id.Text.Split('-');
-                        txt_temparay.Text = form + shop + date;
-                        txt_Dece.Text = temparray[1];
-                        int i = Convert.ToInt32(txt_Dece.Text);
-                        i++;
-                        txt_Dece.Text = i.ToString();
-                        string autoid = txt_temparay.Text + "-" + String.Format("{0:0000}", i);
-                        /* txt_Dece.Text = autoid;*/
-                        txt_salevoc_number.Text = autoid;
-
-                    }
-
-                }
-
-                con.Close();
-
-            }
-            catch (SqlException ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
-        }
+       
         public void counter()/*function counter */
         {
             string sqlquery = "select * from counter";
@@ -445,57 +470,13 @@ namespace MJS
                 con.Close();
             }
         }
-        public void resetpid()/*function Reset Code Invoice and Product ID*/
-        {
-            string date = DateTime.Now.ToString("dd/MMM/yyyy");
-            string serverdate = "0";
-            string shopvalue = txt_shop.Text;
-            string datevalue = "";
-            con.Open();
-            /*sql = "SELECT Date FROM reg_gold WHERE Shop = @shoped ORDER BY DAY(Date),MONTH(Date),YEAR(Date)";*/
-            sql = $"SELECT Date FROM g_sale WHERE Shop = @shoped ORDER BY ID DESC";
-            /*sql = $"SELECT Date FROM reg_gold WHERE Shop = @shoped And Date=@Date ";*/
-
-            cmd = new SqlCommand(sql, con);
-            cmd.Parameters.AddWithValue("@shoped", shopvalue);
-            cmd.Parameters.AddWithValue("@Date", date);
-            SqlDataReader dr = cmd.ExecuteReader();
-
-            if (dr.HasRows && dr.Read())
-            {
-                serverdate = dr.GetValue(0).ToString();
-                datevalue = serverdate.ToString();
-
-
-            }
-            con.Close();
-            if (datevalue == "" || DateTime.Parse(date, CultureInfo.InvariantCulture) != DateTime.Parse(serverdate, CultureInfo.InvariantCulture))
-            {
-               
-                string form = "GR";
-                string ivshop = login.shopvalue;
-                string ivdate = DateTime.Now.ToString("ddMMyy");
-                string ivid = "0001";
-                txt_salevoc_number.Text = form + ivshop + ivdate + "-" + ivid;
-
-                MessageBox.Show("Code Is Reset");
-
-            }
-
-            else
-
-            {
-               /* pid();*/
-
-            }
-
-        }
+    
         private void iconButton1_Click(object sender, EventArgs e)
         {
            /* PrintScreen();
             printPreviewDialog1.ShowDialog();*/
-            timer2.Interval = 200;
-            timer2.Start();
+           /* timer2.Interval = 200;
+            timer2.Start();*/
         }
 
         private void iconButton2_Click_1(object sender, EventArgs e)
@@ -1032,13 +1013,12 @@ namespace MJS
             txt_minimum_per=double.Parse(txt_mini_percent.Text);
            
            
-            result =  Math.Round((((((txtss / 4) + txtsy) / 8 + txtsp) / 16 + txtsk) * gm)*txt_minimum_per);
+            result =  (((((txtss / 4) + txtsy) / 8 + txtsp) / 16 + txtsk) * gm)*txt_minimum_per;
            
-            txt_result_sum.Text = result.ToString();
+            txt_result_sum.Text = result.ToString("F2");
 
 
         }
-
 
         private void minimum_price_check()
         {
@@ -1048,8 +1028,8 @@ namespace MJS
             txtWK = double.Parse(txt_WK.Text); txtWP = double.Parse(txt_WP.Text); txtWY = double.Parse(txt_WY.Text); txtWC = double.Parse(txt_WS.Text);
             txt_minimum_per = double.Parse(txt_mini_percent.Text);
 
-            result2 = Math.Round(((((txtWC / 4) + txtWY) / 8 + txtWP) / 16 + txtWK) * gm);      
-            txt_salegm.Text = result2.ToString();
+            result2 = ((((txtWC / 4) + txtWY) / 8 + txtWP) / 16 + txtWK) * gm;      
+            txt_salegm.Text = result2.ToString("F2");
             if (double.Parse(txt_salegm.Text) < double.Parse(result_gm.Text))
             {
                 txt_mcost.Enabled = false;
@@ -1148,14 +1128,153 @@ namespace MJS
            
         }
 
-        private void txt_saleremark_Leave(object sender, EventArgs e)
-        {
-            adddata_datagriview();
-        }
 
         private void txt_result_sum_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void txt_WK_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_WP_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_WY_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_WS_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_mcost_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_gpd_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_pernumber_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_percent_amt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_pro_number_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_pro_amt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_pro_famt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_discount_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_gm_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_gm_Leave(object sender, EventArgs e)
+        {
+            if (txt_gm.Text == "0" || txt_gm.Text == "") 
+            {
+                MessageBox.Show("Gm ထည့်ရန်လိုအပ်ပါသည်.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txt_gm.Focus();
+            }
+        }
+
+        private void btn_review_Click(object sender, EventArgs e)
+        {
+            Form formbackground = new Form();
+            try
+            {
+                using (preview frm = new preview())
+                {
+                    formbackground.StartPosition = FormStartPosition.Manual;
+                    formbackground.FormBorderStyle = FormBorderStyle.None;
+                    formbackground.Opacity = .70d;
+                    formbackground.BackColor = Color.Black;
+                    formbackground.WindowState = FormWindowState.Maximized;
+                    formbackground.TopMost = true;
+                    formbackground.Location = this.Location;
+                    formbackground.ShowInTaskbar = false;
+                    formbackground.Show();
+                    frm.stdname = txt_form.Text;
+                    frm.Owner = formbackground;
+                    frm.ShowDialog();
+                    formbackground.Dispose();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally { formbackground.Dispose(); }
         }
 
         private void txt_discount_Leave(object sender, EventArgs e)
@@ -1208,7 +1327,11 @@ namespace MJS
                 if (txt_out_no.Text != "")
                 {
                     con.Open();
-                    SqlCommand cmd = new SqlCommand("Select Image,SK,SP,SY,SS,Item,Itemname,Gm,GoldType from closing_stock where ProductID=@ProductID", con);
+
+                    SqlCommand cmd = new SqlCommand("Select Image_TB.Image ,closing_stock.SK," +
+                        "closing_stock.SP,closing_stock.SY,closing_stock.SS,closing_stock.Item," +
+                        "closing_stock.Itemname,closing_stock.Gm,closing_stock.GoldType FROM closing_stock INNER JOIN Image_TB ON closing_stock.ProductID = Image_TB.ProductID where closing_stock.ProductID=@ProductID", con);
+
                     cmd.Parameters.AddWithValue("@ProductID", txt_out_no.Text);
                     using (SqlDataReader da = cmd.ExecuteReader())
                     {
@@ -1254,8 +1377,8 @@ namespace MJS
                             label_goldtype.Text = "";
                             label_qty.Text = "0";
                         }
-
-
+                        /*da.Close();*/
+                        
                         if (imagedata != null)
                         {
                             using (MemoryStream ms = new MemoryStream(imagedata))
@@ -1280,6 +1403,11 @@ namespace MJS
                     label_qty.Text = "0";
                 }
 
+            }
+            catch (SqlException ex)
+            {
+                // Handle SQL exceptions
+                MessageBox.Show("SQL Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex) { MessageBox.Show("An error occurred:" + ex.Message); }
 

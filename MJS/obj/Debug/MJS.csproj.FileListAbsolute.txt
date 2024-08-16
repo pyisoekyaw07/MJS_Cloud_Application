@@ -899,7 +899,6 @@ D:\MJS_Cloud_Application\MJS\bin\Debug\System.Threading.Tasks.Extensions.dll
 D:\MJS_Cloud_Application\MJS\bin\Debug\System.ValueTuple.dll
 D:\MJS_Cloud_Application\MJS\bin\Debug\EnvDTE.dll
 D:\MJS_Cloud_Application\MJS\bin\Debug\stdole.dll
-D:\MJS_Cloud_Application\MJS\bin\Debug\Microsoft.MSXML.dll
 D:\MJS_Cloud_Application\MJS\bin\Debug\Azure.Core.xml
 D:\MJS_Cloud_Application\MJS\bin\Debug\Azure.Identity.xml
 D:\MJS_Cloud_Application\MJS\bin\Debug\EPPlusFree.xml
@@ -987,3 +986,4 @@ D:\MJS_Cloud_Application\MJS\obj\Debug\MJS.application
 D:\MJS_Cloud_Application\MJS\obj\Debug\MJS.csproj.Up2Date
 D:\MJS_Cloud_Application\MJS\obj\Debug\MJS.exe
 D:\MJS_Cloud_Application\MJS\obj\Debug\MJS.pdb
+D:\MJS_Cloud_Application\MJS\bin\Debug\Microsoft.MSXML.dll

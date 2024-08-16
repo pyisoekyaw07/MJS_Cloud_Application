@@ -33,11 +33,11 @@ namespace MJS
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(gform));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_add_photo = new System.Windows.Forms.Button();
             this.cmb_itemname = new System.Windows.Forms.ComboBox();
             this.cmb_item = new System.Windows.Forms.ComboBox();
@@ -210,7 +210,7 @@ namespace MJS
             this.cmb_itemname.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.cmb_itemname.FormattingEnabled = true;
             this.cmb_itemname.IntegralHeight = false;
-            this.cmb_itemname.Location = new System.Drawing.Point(157, 223);
+            this.cmb_itemname.Location = new System.Drawing.Point(164, 223);
             this.cmb_itemname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_itemname.Name = "cmb_itemname";
             this.cmb_itemname.Size = new System.Drawing.Size(330, 30);
@@ -224,7 +224,7 @@ namespace MJS
             this.cmb_item.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.cmb_item.FormattingEnabled = true;
             this.cmb_item.IntegralHeight = false;
-            this.cmb_item.Location = new System.Drawing.Point(157, 178);
+            this.cmb_item.Location = new System.Drawing.Point(164, 178);
             this.cmb_item.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_item.Name = "cmb_item";
             this.cmb_item.Size = new System.Drawing.Size(330, 30);
@@ -238,7 +238,7 @@ namespace MJS
             this.cmb_gt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_gt.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.cmb_gt.FormattingEnabled = true;
-            this.cmb_gt.Location = new System.Drawing.Point(356, 134);
+            this.cmb_gt.Location = new System.Drawing.Point(363, 134);
             this.cmb_gt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_gt.Name = "cmb_gt";
             this.cmb_gt.Size = new System.Drawing.Size(131, 30);
@@ -254,7 +254,7 @@ namespace MJS
             this.cmb_remark.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.cmb_remark.FormattingEnabled = true;
             this.cmb_remark.IntegralHeight = false;
-            this.cmb_remark.Location = new System.Drawing.Point(157, 94);
+            this.cmb_remark.Location = new System.Drawing.Point(164, 94);
             this.cmb_remark.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmb_remark.Name = "cmb_remark";
             this.cmb_remark.Size = new System.Drawing.Size(330, 30);
@@ -471,7 +471,7 @@ namespace MJS
             // txt_pur_no
             // 
             this.txt_pur_no.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_pur_no.Location = new System.Drawing.Point(157, 51);
+            this.txt_pur_no.Location = new System.Drawing.Point(164, 51);
             this.txt_pur_no.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_pur_no.Name = "txt_pur_no";
             this.txt_pur_no.Size = new System.Drawing.Size(175, 30);
@@ -497,7 +497,7 @@ namespace MJS
             this.txt_totalamt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
             this.txt_totalamt.Enabled = false;
             this.txt_totalamt.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_totalamt.Location = new System.Drawing.Point(157, 610);
+            this.txt_totalamt.Location = new System.Drawing.Point(165, 605);
             this.txt_totalamt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_totalamt.Multiline = true;
             this.txt_totalamt.Name = "txt_totalamt";
@@ -508,7 +508,7 @@ namespace MJS
             // txt_rep
             // 
             this.txt_rep.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_rep.Location = new System.Drawing.Point(158, 565);
+            this.txt_rep.Location = new System.Drawing.Point(165, 565);
             this.txt_rep.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_rep.Name = "txt_rep";
             this.txt_rep.Size = new System.Drawing.Size(189, 30);
@@ -520,7 +520,7 @@ namespace MJS
             // txt_mcost
             // 
             this.txt_mcost.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_mcost.Location = new System.Drawing.Point(158, 521);
+            this.txt_mcost.Location = new System.Drawing.Point(165, 523);
             this.txt_mcost.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_mcost.Name = "txt_mcost";
             this.txt_mcost.Size = new System.Drawing.Size(189, 30);
@@ -533,7 +533,7 @@ namespace MJS
             // 
             this.total_S.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
             this.total_S.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.total_S.Location = new System.Drawing.Point(355, 476);
+            this.total_S.Location = new System.Drawing.Point(363, 473);
             this.total_S.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.total_S.Multiline = true;
             this.total_S.Name = "total_S";
@@ -547,7 +547,7 @@ namespace MJS
             // 
             this.total_Y.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
             this.total_Y.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.total_Y.Location = new System.Drawing.Point(290, 475);
+            this.total_Y.Location = new System.Drawing.Point(298, 472);
             this.total_Y.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.total_Y.Multiline = true;
             this.total_Y.Name = "total_Y";
@@ -561,7 +561,7 @@ namespace MJS
             // 
             this.total_P.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
             this.total_P.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.total_P.Location = new System.Drawing.Point(224, 475);
+            this.total_P.Location = new System.Drawing.Point(232, 472);
             this.total_P.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.total_P.Multiline = true;
             this.total_P.Name = "total_P";
@@ -575,7 +575,7 @@ namespace MJS
             // 
             this.total_K.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
             this.total_K.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.total_K.Location = new System.Drawing.Point(158, 475);
+            this.total_K.Location = new System.Drawing.Point(166, 472);
             this.total_K.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.total_K.Multiline = true;
             this.total_K.Name = "total_K";
@@ -588,7 +588,7 @@ namespace MJS
             // txt_WC
             // 
             this.txt_WC.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_WC.Location = new System.Drawing.Point(354, 388);
+            this.txt_WC.Location = new System.Drawing.Point(362, 385);
             this.txt_WC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_WC.Name = "txt_WC";
             this.txt_WC.Size = new System.Drawing.Size(59, 30);
@@ -601,7 +601,7 @@ namespace MJS
             // txt_WY
             // 
             this.txt_WY.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_WY.Location = new System.Drawing.Point(289, 388);
+            this.txt_WY.Location = new System.Drawing.Point(297, 385);
             this.txt_WY.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_WY.Name = "txt_WY";
             this.txt_WY.Size = new System.Drawing.Size(59, 30);
@@ -614,7 +614,7 @@ namespace MJS
             // txt_WP
             // 
             this.txt_WP.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_WP.Location = new System.Drawing.Point(223, 388);
+            this.txt_WP.Location = new System.Drawing.Point(231, 385);
             this.txt_WP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_WP.Name = "txt_WP";
             this.txt_WP.Size = new System.Drawing.Size(59, 30);
@@ -627,7 +627,7 @@ namespace MJS
             // txt_WK
             // 
             this.txt_WK.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_WK.Location = new System.Drawing.Point(157, 388);
+            this.txt_WK.Location = new System.Drawing.Point(165, 385);
             this.txt_WK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_WK.Name = "txt_WK";
             this.txt_WK.Size = new System.Drawing.Size(59, 30);
@@ -641,7 +641,7 @@ namespace MJS
             // 
             this.txt_s.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
             this.txt_s.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_s.Location = new System.Drawing.Point(352, 347);
+            this.txt_s.Location = new System.Drawing.Point(360, 344);
             this.txt_s.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_s.Multiline = true;
             this.txt_s.Name = "txt_s";
@@ -655,7 +655,7 @@ namespace MJS
             // 
             this.txt_y.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
             this.txt_y.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_y.Location = new System.Drawing.Point(288, 347);
+            this.txt_y.Location = new System.Drawing.Point(296, 344);
             this.txt_y.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_y.Multiline = true;
             this.txt_y.Name = "txt_y";
@@ -669,7 +669,7 @@ namespace MJS
             // 
             this.txt_p.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
             this.txt_p.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_p.Location = new System.Drawing.Point(223, 347);
+            this.txt_p.Location = new System.Drawing.Point(231, 344);
             this.txt_p.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_p.Multiline = true;
             this.txt_p.Name = "txt_p";
@@ -694,7 +694,7 @@ namespace MJS
             this.txt_goldprice.BackColor = System.Drawing.SystemColors.Window;
             this.txt_goldprice.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.txt_goldprice.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txt_goldprice.Location = new System.Drawing.Point(157, 134);
+            this.txt_goldprice.Location = new System.Drawing.Point(164, 134);
             this.txt_goldprice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_goldprice.Name = "txt_goldprice";
             this.txt_goldprice.Size = new System.Drawing.Size(126, 30);
@@ -717,7 +717,7 @@ namespace MJS
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label9.Location = new System.Drawing.Point(301, 142);
+            this.label9.Location = new System.Drawing.Point(308, 142);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(47, 22);
             this.label9.TabIndex = 79;
@@ -728,7 +728,7 @@ namespace MJS
             // 
             this.txt_k.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(199)))), ((int)(((byte)(217)))));
             this.txt_k.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_k.Location = new System.Drawing.Point(157, 347);
+            this.txt_k.Location = new System.Drawing.Point(165, 344);
             this.txt_k.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_k.Multiline = true;
             this.txt_k.Name = "txt_k";
@@ -751,7 +751,7 @@ namespace MJS
             // txt_gm
             // 
             this.txt_gm.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_gm.Location = new System.Drawing.Point(157, 268);
+            this.txt_gm.Location = new System.Drawing.Point(164, 268);
             this.txt_gm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_gm.Name = "txt_gm";
             this.txt_gm.Size = new System.Drawing.Size(125, 30);
@@ -796,7 +796,7 @@ namespace MJS
             this.txt_time.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_time.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.txt_time.ForeColor = System.Drawing.Color.Black;
-            this.txt_time.Location = new System.Drawing.Point(353, 9);
+            this.txt_time.Location = new System.Drawing.Point(360, 9);
             this.txt_time.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_time.Multiline = true;
             this.txt_time.Name = "txt_time";
@@ -809,7 +809,7 @@ namespace MJS
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label2.Location = new System.Drawing.Point(301, 17);
+            this.label2.Location = new System.Drawing.Point(308, 17);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 22);
             this.label2.TabIndex = 71;
@@ -821,7 +821,7 @@ namespace MJS
             this.txt_date.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_date.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.txt_date.ForeColor = System.Drawing.Color.Black;
-            this.txt_date.Location = new System.Drawing.Point(157, 9);
+            this.txt_date.Location = new System.Drawing.Point(164, 9);
             this.txt_date.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_date.Multiline = true;
             this.txt_date.Name = "txt_date";
@@ -1009,23 +1009,23 @@ namespace MJS
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
-            dataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.Black;
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(122)))), ((int)(((byte)(173)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle22.Font = new System.Drawing.Font("Pyidaungsu", 9F);
-            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(47)))), ((int)(((byte)(81)))));
-            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Pyidaungsu", 9F);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(47)))), ((int)(((byte)(81)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.image,
@@ -1065,30 +1065,30 @@ namespace MJS
             this.Form,
             this.type,
             this.coledit});
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridView1.Location = new System.Drawing.Point(565, 232);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("Pyidaungsu", 9F);
-            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Pyidaungsu", 9F);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dataGridView1.RowTemplate.Height = 30;
-            this.dataGridView1.Size = new System.Drawing.Size(750, 311);
+            this.dataGridView1.Size = new System.Drawing.Size(851, 267);
             this.dataGridView1.TabIndex = 201;
             this.dataGridView1.TabStop = false;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -1349,10 +1349,10 @@ namespace MJS
             // coledit
             // 
             this.coledit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle23.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle23.NullValue")));
-            this.coledit.DefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle8.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle8.NullValue")));
+            this.coledit.DefaultCellStyle = dataGridViewCellStyle8;
             this.coledit.Description = "Edit";
             this.coledit.HeaderText = "";
             this.coledit.Image = ((System.Drawing.Image)(resources.GetObject("coledit.Image")));
@@ -1366,7 +1366,7 @@ namespace MJS
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label13.Location = new System.Drawing.Point(169, 314);
+            this.label13.Location = new System.Drawing.Point(177, 311);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(34, 22);
             this.label13.TabIndex = 202;
@@ -1377,7 +1377,7 @@ namespace MJS
             this.label29.AutoSize = true;
             this.label29.BackColor = System.Drawing.Color.Transparent;
             this.label29.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label29.Location = new System.Drawing.Point(242, 314);
+            this.label29.Location = new System.Drawing.Point(250, 311);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(18, 22);
             this.label29.TabIndex = 203;
@@ -1388,7 +1388,7 @@ namespace MJS
             this.label30.AutoSize = true;
             this.label30.BackColor = System.Drawing.Color.Transparent;
             this.label30.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label30.Location = new System.Drawing.Point(301, 314);
+            this.label30.Location = new System.Drawing.Point(309, 311);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(30, 22);
             this.label30.TabIndex = 204;
@@ -1399,7 +1399,7 @@ namespace MJS
             this.label31.AutoSize = true;
             this.label31.BackColor = System.Drawing.Color.Transparent;
             this.label31.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label31.Location = new System.Drawing.Point(365, 315);
+            this.label31.Location = new System.Drawing.Point(373, 312);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(32, 22);
             this.label31.TabIndex = 205;
@@ -1504,7 +1504,7 @@ namespace MJS
             // txt_remark
             // 
             this.txt_remark.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_remark.Location = new System.Drawing.Point(156, 759);
+            this.txt_remark.Location = new System.Drawing.Point(162, 762);
             this.txt_remark.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_remark.Multiline = true;
             this.txt_remark.Name = "txt_remark";
@@ -1515,7 +1515,7 @@ namespace MJS
             // 
             this.groupBox2.Controls.Add(this.pictureBox);
             this.groupBox2.ForeColor = System.Drawing.Color.Black;
-            this.groupBox2.Location = new System.Drawing.Point(157, 657);
+            this.groupBox2.Location = new System.Drawing.Point(163, 660);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1595,9 +1595,9 @@ namespace MJS
             // btn_cart
             // 
             this.btn_cart.ButtonStyle = Krypton.Toolkit.ButtonStyle.Alternate;
-            this.btn_cart.Location = new System.Drawing.Point(156, 835);
+            this.btn_cart.Location = new System.Drawing.Point(162, 838);
             this.btn_cart.Name = "btn_cart";
-            this.btn_cart.Size = new System.Drawing.Size(193, 40);
+            this.btn_cart.Size = new System.Drawing.Size(193, 45);
             this.btn_cart.TabIndex = 19;
             this.btn_cart.Values.Text = "Add To Cart";
             this.btn_cart.Click += new System.EventHandler(this.btn_cart_Click);
@@ -1605,9 +1605,9 @@ namespace MJS
             // btn_reg_save
             // 
             this.btn_reg_save.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_reg_save.Location = new System.Drawing.Point(762, 563);
+            this.btn_reg_save.Location = new System.Drawing.Point(859, 523);
             this.btn_reg_save.Name = "btn_reg_save";
-            this.btn_reg_save.Size = new System.Drawing.Size(170, 35);
+            this.btn_reg_save.Size = new System.Drawing.Size(170, 44);
             this.btn_reg_save.TabIndex = 20;
             this.btn_reg_save.Values.Text = "&Save";
             this.btn_reg_save.Click += new System.EventHandler(this.btn_reg_save_Click);
@@ -1615,9 +1615,9 @@ namespace MJS
             // btn_reg_cancel
             // 
             this.btn_reg_cancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_reg_cancel.Location = new System.Drawing.Point(955, 563);
+            this.btn_reg_cancel.Location = new System.Drawing.Point(1052, 523);
             this.btn_reg_cancel.Name = "btn_reg_cancel";
-            this.btn_reg_cancel.Size = new System.Drawing.Size(170, 35);
+            this.btn_reg_cancel.Size = new System.Drawing.Size(170, 44);
             this.btn_reg_cancel.TabIndex = 21;
             this.btn_reg_cancel.Values.Text = "&Cancel";
             this.btn_reg_cancel.Click += new System.EventHandler(this.btn_reg_cancel_Click);
@@ -1625,9 +1625,9 @@ namespace MJS
             // btn_reg_preview
             // 
             this.btn_reg_preview.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_reg_preview.Location = new System.Drawing.Point(1146, 563);
+            this.btn_reg_preview.Location = new System.Drawing.Point(1243, 523);
             this.btn_reg_preview.Name = "btn_reg_preview";
-            this.btn_reg_preview.Size = new System.Drawing.Size(170, 35);
+            this.btn_reg_preview.Size = new System.Drawing.Size(170, 44);
             this.btn_reg_preview.TabIndex = 22;
             this.btn_reg_preview.Values.Text = "&Preview";
             this.btn_reg_preview.Click += new System.EventHandler(this.btn_reg_preview_Click);
@@ -1697,7 +1697,7 @@ namespace MJS
             // txt_sk
             // 
             this.txt_sk.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_sk.Location = new System.Drawing.Point(157, 431);
+            this.txt_sk.Location = new System.Drawing.Point(165, 428);
             this.txt_sk.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_sk.Name = "txt_sk";
             this.txt_sk.Size = new System.Drawing.Size(59, 30);
@@ -1708,7 +1708,7 @@ namespace MJS
             // txt_sp
             // 
             this.txt_sp.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_sp.Location = new System.Drawing.Point(223, 431);
+            this.txt_sp.Location = new System.Drawing.Point(231, 428);
             this.txt_sp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_sp.Name = "txt_sp";
             this.txt_sp.Size = new System.Drawing.Size(59, 30);
@@ -1719,7 +1719,7 @@ namespace MJS
             // txt_sy
             // 
             this.txt_sy.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_sy.Location = new System.Drawing.Point(289, 431);
+            this.txt_sy.Location = new System.Drawing.Point(297, 428);
             this.txt_sy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_sy.Name = "txt_sy";
             this.txt_sy.Size = new System.Drawing.Size(59, 30);
@@ -1730,7 +1730,7 @@ namespace MJS
             // txt_ss
             // 
             this.txt_ss.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.txt_ss.Location = new System.Drawing.Point(354, 431);
+            this.txt_ss.Location = new System.Drawing.Point(362, 428);
             this.txt_ss.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_ss.Name = "txt_ss";
             this.txt_ss.Size = new System.Drawing.Size(59, 30);

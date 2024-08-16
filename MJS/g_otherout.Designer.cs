@@ -91,7 +91,6 @@ namespace MJS
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.show_image = new System.Windows.Forms.PictureBox();
             this.store_data = new System.Windows.Forms.DataGridView();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Voucher = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -180,7 +179,7 @@ namespace MJS
             this.txt_shop.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_shop.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.txt_shop.ForeColor = System.Drawing.Color.Black;
-            this.txt_shop.Location = new System.Drawing.Point(379, 45);
+            this.txt_shop.Location = new System.Drawing.Point(640, 14);
             this.txt_shop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_shop.Multiline = true;
             this.txt_shop.Name = "txt_shop";
@@ -369,7 +368,7 @@ namespace MJS
             this.txt_form.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_form.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.txt_form.ForeColor = System.Drawing.Color.Black;
-            this.txt_form.Location = new System.Drawing.Point(659, 14);
+            this.txt_form.Location = new System.Drawing.Point(382, 14);
             this.txt_form.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_form.Multiline = true;
             this.txt_form.Name = "txt_form";
@@ -383,7 +382,7 @@ namespace MJS
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label32.Location = new System.Drawing.Point(545, 14);
+            this.label32.Location = new System.Drawing.Point(268, 14);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(108, 22);
             this.label32.TabIndex = 277;
@@ -393,7 +392,7 @@ namespace MJS
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label22.Location = new System.Drawing.Point(253, 49);
+            this.label22.Location = new System.Drawing.Point(552, 18);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(65, 22);
             this.label22.TabIndex = 276;
@@ -456,11 +455,12 @@ namespace MJS
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label23.Location = new System.Drawing.Point(252, 14);
+            this.label23.Location = new System.Drawing.Point(987, 31);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(121, 22);
             this.label23.TabIndex = 267;
             this.label23.Text = "စက်ဘောက်ချာနံပါတ်";
+            this.label23.Visible = false;
             // 
             // btn_cancel
             // 
@@ -508,7 +508,7 @@ namespace MJS
             this.txt_outvoucher.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_outvoucher.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.txt_outvoucher.ForeColor = System.Drawing.Color.Black;
-            this.txt_outvoucher.Location = new System.Drawing.Point(379, 14);
+            this.txt_outvoucher.Location = new System.Drawing.Point(1114, 31);
             this.txt_outvoucher.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_outvoucher.Multiline = true;
             this.txt_outvoucher.Name = "txt_outvoucher";
@@ -516,6 +516,7 @@ namespace MJS
             this.txt_outvoucher.Size = new System.Drawing.Size(142, 27);
             this.txt_outvoucher.TabIndex = 250;
             this.txt_outvoucher.TabStop = false;
+            this.txt_outvoucher.Visible = false;
             // 
             // label1
             // 
@@ -613,7 +614,7 @@ namespace MJS
             this.txt_counter.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_counter.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.txt_counter.ForeColor = System.Drawing.Color.Black;
-            this.txt_counter.Location = new System.Drawing.Point(659, 45);
+            this.txt_counter.Location = new System.Drawing.Point(382, 45);
             this.txt_counter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_counter.Multiline = true;
             this.txt_counter.Name = "txt_counter";
@@ -627,7 +628,7 @@ namespace MJS
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label6.Location = new System.Drawing.Point(545, 49);
+            this.label6.Location = new System.Drawing.Point(268, 49);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(66, 22);
             this.label6.TabIndex = 284;
@@ -737,7 +738,6 @@ namespace MJS
             this.store_data.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.store_data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.store_data.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewImageColumn1,
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.Voucher,
@@ -789,14 +789,6 @@ namespace MJS
             this.store_data.TabIndex = 291;
             this.store_data.TabStop = false;
             this.store_data.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.store_data_CellContentClick);
-            // 
-            // dataGridViewImageColumn1
-            // 
-            this.dataGridViewImageColumn1.HeaderText = "ဓါတ်ပုံ";
-            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dataGridViewImageColumn1.MinimumWidth = 6;
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.Width = 125;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -1241,7 +1233,11 @@ namespace MJS
         private DataGridViewTextBoxColumn Form;
         private DataGridViewTextBoxColumn Counter;
         private System.Windows.Forms.Timer timer3;
-        private DataGridViewImageColumn dataGridViewImageColumn1;
+        private Krypton.Toolkit.KryptonButton btnadd;
+        private Krypton.Toolkit.KryptonButton outproduct_btn;
+        private Krypton.Toolkit.KryptonButton cancel_btn;
+        private Krypton.Toolkit.KryptonButton preview_btn;
+        private TextBox textBox1;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private DataGridViewTextBoxColumn Voucher;
@@ -1274,10 +1270,5 @@ namespace MJS
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
         private DataGridViewTextBoxColumn type;
         private DataGridViewButtonColumn Action;
-        private Krypton.Toolkit.KryptonButton btnadd;
-        private Krypton.Toolkit.KryptonButton outproduct_btn;
-        private Krypton.Toolkit.KryptonButton cancel_btn;
-        private Krypton.Toolkit.KryptonButton preview_btn;
-        private TextBox textBox1;
     }
 }

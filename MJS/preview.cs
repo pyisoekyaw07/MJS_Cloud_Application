@@ -19,7 +19,7 @@ namespace MJS
     public partial class preview : Form
     {
        
-        SqlConnection con = new SqlConnection("Data Source=sql.bsite.net\\MSSQL2016;User ID=pyisoekyaw_;Password=pyisoe@#101215");
+        SqlConnection con = new SqlConnection("Data Source=150.95.88.172;Initial Catalog=MJS;User ID=sa;Password=Modernjewellery@5");
 
 
         public preview()
@@ -46,7 +46,11 @@ namespace MJS
             {
                 goldregister_datefilter();
             }
-           
+            else if (txt_form_perview.Text == "Gold Sale")
+            {
+                goldsale_datefilter();
+            }
+
         }
 
         public void goldotherout_datefilter()
@@ -77,6 +81,20 @@ namespace MJS
             dataGridView1.DataSource = dt;
             con.Close();
         }
+        public void goldsale_datefilter()
+        {
+            string shopvalue = txt_shop_preview.Text;
+            con.Open();
+            string sql = "SELECT * FROM g_sale Where Shop=@shop AND Date BETWEEN @date1 and @date2";
+            System.Data.DataTable dt = new System.Data.DataTable();
+            SqlDataAdapter adp = new SqlDataAdapter(sql, con);
+            adp.SelectCommand.Parameters.AddWithValue("@date1", startdate.Value);
+            adp.SelectCommand.Parameters.AddWithValue("@date2", enddate.Value);
+            adp.SelectCommand.Parameters.AddWithValue("@shop", shopvalue);
+            adp.Fill(dt);
+            dataGridView1.DataSource = dt;
+            con.Close();
+        }
 
         private void txt_searchbox_TextChanged(object sender, EventArgs e)
         {
@@ -87,6 +105,10 @@ namespace MJS
             else if (txt_form_perview.Text == "Gold Register")
             {
                 goldregister_search();
+            }
+            else if (txt_form_perview.Text == "Gold Sale")
+            {
+                goldsale_search();
             }
         }
 
@@ -109,6 +131,21 @@ namespace MJS
         {
             con.Open();
             string sql = "SELECT * FROM other_out Where ProductID='" + txt_searchbox.Text.ToString() + "'";
+            SqlDataAdapter adp = new SqlDataAdapter(sql, con);
+            System.Data.DataTable dt = new System.Data.DataTable();
+            adp.Fill(dt);
+            dataGridView1.DataSource = dt;
+            /*            if (dataGridView1.Rows.Count <1)
+                        {wh
+                            MessageBox.Show("Product မရှိပါ");
+                        }*/
+            con.Close();
+        }
+
+        public void goldsale_search()
+        {
+            con.Open();
+            string sql = "SELECT * FROM g_sale Where Product_ID='" + txt_searchbox.Text.ToString() + "'";
             SqlDataAdapter adp = new SqlDataAdapter(sql, con);
             System.Data.DataTable dt = new System.Data.DataTable();
             adp.Fill(dt);

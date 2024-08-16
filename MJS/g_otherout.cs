@@ -14,6 +14,7 @@ using System.Globalization;
 using OfficeOpenXml.ConditionalFormatting;
 using OfficeOpenXml.FormulaParsing.Excel.Functions.Text;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using System.Diagnostics.Eventing.Reader;
 
 namespace MJS
 {
@@ -25,7 +26,7 @@ namespace MJS
         private extern static bool InternetGetConnectedState(out int Description, int ReservedValue);
 
 
-        SqlConnection con = new SqlConnection("Data Source=sql.bsite.net\\MSSQL2016;User ID=pyisoekyaw_;Password=pyisoe@#101215");
+        SqlConnection con = new SqlConnection("Data Source=150.95.88.172;Initial Catalog=MJS;User ID=sa;Password=Modernjewellery@5");
         public g_otherout()
         {
             InitializeComponent();
@@ -39,13 +40,101 @@ namespace MJS
             timer3.Start();
 
         }
+        string OutVoucher = "";
+        public void adddata()
+        {
+            con.Close();
+            try
+            {
+                con.Open();
 
+                for (int i = 0; i < store_data.Rows.Count; i++)
+                {
+
+                    /*-------------------------------------------------------------------------------------------------*/
+                    cmd = new SqlCommand("insert into other_out (Date,Time,OutVoucher_No,Out_Remark,PurVoucher,ProductID,GoldType,GoldPrice,Item," +
+                   "ItemName,Gm,K,P,Y,S,WK,WP,WY,WS,TK,TP,TY,TS,Mcost,Repamt,Totalamt,Remark,Employee,Shop,Form,Counter) values(@Date,@Time,@OutVoucher_No,@Out_Remark,@PurVoucher,@ProductID,@GoldType,@GoldPrice,@Item," +
+                   "@ItemName,@Gm,@K,@P,@Y,@S,@WK,@WP,@WY,@WS,@TK,@TP,@TY,@TS,@Mcost,@Repamt,@Totalamt,@Remark,@Employee,@Shop,@Form,@Counter)", con);
+
+                    cmd.Parameters.AddWithValue("@Date", store_data.Rows[i].Cells[0].Value);
+                    cmd.Parameters.AddWithValue("@Time", store_data.Rows[i].Cells[1].Value);
+                    cmd.Parameters.AddWithValue("@OutVoucher_No", OutVoucher);
+                    cmd.Parameters.AddWithValue("@Out_Remark", store_data.Rows[i].Cells[3].Value);
+                    cmd.Parameters.AddWithValue("@PurVoucher", store_data.Rows[i].Cells[4].Value);
+                    cmd.Parameters.AddWithValue("@ProductID", store_data.Rows[i].Cells[5].Value);
+                    cmd.Parameters.AddWithValue("@GoldType", store_data.Rows[i].Cells[6].Value);
+                    cmd.Parameters.AddWithValue("@GoldPrice", store_data.Rows[i].Cells[7].Value);
+                    cmd.Parameters.AddWithValue("@Item", store_data.Rows[i].Cells[8].Value);
+                    cmd.Parameters.AddWithValue("@ItemName", store_data.Rows[i].Cells[9].Value);
+                    cmd.Parameters.AddWithValue("@Gm", store_data.Rows[i].Cells[10].Value);
+                    cmd.Parameters.AddWithValue("@K", store_data.Rows[i].Cells[11].Value);
+                    cmd.Parameters.AddWithValue("@P", store_data.Rows[i].Cells[12].Value);
+                    cmd.Parameters.AddWithValue("@Y", store_data.Rows[i].Cells[13].Value);
+                    cmd.Parameters.AddWithValue("@S", store_data.Rows[i].Cells[14].Value);
+                    cmd.Parameters.AddWithValue("@WK", store_data.Rows[i].Cells[15].Value);
+                    cmd.Parameters.AddWithValue("@WP", store_data.Rows[i].Cells[16].Value);
+                    cmd.Parameters.AddWithValue("@WY", store_data.Rows[i].Cells[17].Value);
+                    cmd.Parameters.AddWithValue("@WS", store_data.Rows[i].Cells[18].Value);
+                    cmd.Parameters.AddWithValue("@TK", store_data.Rows[i].Cells[19].Value);
+                    cmd.Parameters.AddWithValue("@TP", store_data.Rows[i].Cells[20].Value);
+                    cmd.Parameters.AddWithValue("@TY", store_data.Rows[i].Cells[21].Value);
+                    cmd.Parameters.AddWithValue("@TS", store_data.Rows[i].Cells[22].Value);
+                    cmd.Parameters.AddWithValue("@Mcost", store_data.Rows[i].Cells[23].Value);
+                    cmd.Parameters.AddWithValue("@Repamt", store_data.Rows[i].Cells[24].Value);
+                    cmd.Parameters.AddWithValue("@Totalamt", store_data.Rows[i].Cells[25].Value);
+                    cmd.Parameters.AddWithValue("@Remark", store_data.Rows[i].Cells[26].Value);
+                    cmd.Parameters.AddWithValue("@Employee", store_data.Rows[i].Cells[27].Value);
+                    cmd.Parameters.AddWithValue("@Shop", store_data.Rows[i].Cells[28].Value);
+                    cmd.Parameters.AddWithValue("@Form", store_data.Rows[i].Cells[29].Value);
+                    cmd.Parameters.AddWithValue("@Counter", store_data.Rows[i].Cells[30].Value);
+
+
+                    cmd.ExecuteNonQuery();
+
+
+                }
+                // Iterate through all rows in the DataGridView
+                for (int t = store_data.Rows.Count - 1; t >= 0; t--)
+                {
+                    // Extract the value from cell at column index 2 (assuming 0-based index)
+                    string valueToCheck = store_data.Rows[t].Cells[5].Value.ToString();
+
+                    // Delete the row if the value matches
+                    if (!string.IsNullOrEmpty(valueToCheck))
+                    {
+                        // Delete from database
+                        DeleteRowFromDatabase(valueToCheck);
+
+                        // Remove row from DataGridView
+                        store_data.Rows.RemoveAt(t);
+
+
+                        /*invoiceid();*/
+
+
+
+                        lbl_totalamt.Text = "0";
+                        lbl_gm.Text = "0";
+                        lbl_qty.Text = "0";
+
+                    }
+                }
+
+               
+            }
+            catch 
+            {
+                MessageBox.Show("Please Content Our MJS Customer Team");
+            }
+
+        }
         public void resetpid()/*function Reset Code Invoice and Product ID*/
         {
             string date = DateTime.Now.ToString("dd/MMM/yyyy");
             string serverdate = "0";
             string shopvalue = txt_shop.Text;
             string datevalue = "";
+            
             con.Open();
             /*sql = "SELECT Date FROM reg_gold ORDER BY Date DESC";*/
             sql = $"SELECT Date FROM other_out WHERE Shop = @shoped ORDER BY ID DESC";
@@ -68,9 +157,11 @@ namespace MJS
                 string ivshop = login.shopvalue;
                 string ivdate = DateTime.Now.ToString("ddMMyy");
                 string ivid = "0001";
-                txt_outvoucher.Text = form + ivshop + ivdate + "-" + ivid;
+                /*txt_outvoucher.Text = form + ivshop + ivdate + "-" + ivid;*/
+                OutVoucher = form + ivshop + ivdate + "-" + ivid; 
 
-                MessageBox.Show("Code Is Reset");
+                /*MessageBox.Show("Code Is Reset");*/
+                adddata();
 
             }
 
@@ -82,50 +173,122 @@ namespace MJS
             }
 
         }
-
-        private void timer2_Tick(object sender, EventArgs e)
+        public void invoiceid()/*function Invoice Number*/
         {
-            if (true)//check new order
+            con.Close();
+            try
             {
-                timer2.Stop();
-                int Desc;
-                string check = "";
-                check = (InternetGetConnectedState(out Desc, 0).ToString());
-                if (check == "True")
+                /*if (Con1.State == ConnectionState.Closed)
                 {
+                    Con1.Open();
+                }*/
+                string shopvalue = txt_shop.Text;
+                con.Open();
+                sql = $"SELECT OutVoucher_No FROM other_out WHERE Shop = @shoped ORDER BY ID DESC";
+                cmd = new SqlCommand(sql, con);
+                cmd.Parameters.AddWithValue("@shoped", shopvalue);
+                var maxid = cmd.ExecuteScalar() as string;
+
+                if (maxid == null)
+
+                {
+                    string form = "GO";
+                    /*string shop = login.shoptext;*/
+                    string shop = login.shopvalue;
+                    string date = DateTime.Now.ToString("ddMMyy");
+                    string id = "0001";
+                   /* txt_outvoucher.Text = form + shop + date + "-" + id;*/
+                    OutVoucher= form + shop + date + "-" + id;
                     adddata();
 
-                    // Iterate through all rows in the DataGridView
-                    for (int t = store_data.Rows.Count - 1; t >= 0; t--)
-                    {
-                        // Extract the value from cell at column index 2 (assuming 0-based index)
-                        string valueToCheck = store_data.Rows[t].Cells[6].Value.ToString();
-
-                        // Delete the row if the value matches
-                        if (!string.IsNullOrEmpty(valueToCheck))
-                        {
-                            // Delete from database
-                            DeleteRowFromDatabase(valueToCheck);
-
-                            // Remove row from DataGridView
-                            store_data.Rows.RemoveAt(t);
-
-                            invoiceid();
-
-                            lbl_totalamt.Text = "0";
-                            lbl_gm.Text = "0";
-                            lbl_qty.Text = "0";
-
-                        }
-                    }
                 }
                 else
                 {
-                    MessageBox.Show("Check Your Internet Connection");
-                    /*this.Enabled = false;
-                    this.BackColor = System.Drawing.Color.GhostWhite;*/
+
+                    SqlCommand cmd = new SqlCommand();
+                    SqlDataReader sr = null;
+                    cmd.Connection = con;
+                    cmd.CommandText = $"SELECT OutVoucher_No FROM other_out WHERE Shop = @shoped ORDER BY ID DESC";
+                    cmd.Parameters.AddWithValue("@shoped", shopvalue);
+                    sr = cmd.ExecuteReader();
+                    if (sr.Read())
+
+                    {
+                        string form = "GO";
+                        /*string num = txt_barcode.Text;*/
+                        string shop = login.shopvalue;
+                        string date = DateTime.Now.ToString("ddMMyy");
+                        string pid = sr.GetValue(0).ToString();
+                        txt_result_id.Text = pid;
+                        string[] temparray = txt_result_id.Text.Split('-');
+                        txt_temparay.Text = form + shop + date;
+                        txt_Dece.Text = temparray[1];
+                        int i = Convert.ToInt32(txt_Dece.Text);
+                        i++;
+                        txt_Dece.Text = i.ToString();
+                        string autoid = txt_temparay.Text + "-" + String.Format("{0:0000}", i);
+                        /* txt_Dece.Text = autoid;*/
+                       /* txt_outvoucher.Text = autoid;*/
+                        OutVoucher = autoid;
+                        adddata();
+
+                    }
+
+                }
+
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void outproduct_btn_Click(object sender, EventArgs e)
+        {
+            timer2.Interval = 100;
+            timer2.Start();
+
+            if (store_data.Rows.Count > 0 && store_data.Rows[0].IsNewRow == false)
+            {
+                MessageBox.Show("success");
+            }
+            else { MessageBox.Show("ပယ်မည့်ပစ္စည်းထည့်ရန်လိုအပ်ပါသည်။"); }
+
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            try 
+            {
+                if (true)//check new order
+                {
+                    timer2.Stop();
+                    int Desc;
+                    string check = "";
+                    check = (InternetGetConnectedState(out Desc, 0).ToString());
+                    if (check == "True")
+                    {
+                        
+                        /*adddata();*/
+                        resetpid();
+
+                        
+                    }
+                    else
+                    {
+                        MessageBox.Show("Check Your Internet Connection");
+                        /*this.Enabled = false;
+                        this.BackColor = System.Drawing.Color.GhostWhite;*/
+                    }
                 }
             }
+            catch (SqlException ex) when (ex.Number == 2627) // Unique constraint error number
+            {
+                Console.WriteLine("Error: Voucher No is already exists.");
+            }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
+            
         }
         private void timer3_Tick(object sender, EventArgs e)
         {
@@ -137,7 +300,7 @@ namespace MJS
                 check = (InternetGetConnectedState(out Desc, 0).ToString());
                 if (check == "True")
                 {
-                    resetpid();
+                    /*resetpid();*/
                 }
                 else
                 {
@@ -211,64 +374,7 @@ namespace MJS
 
         }
 
-        public void adddata()
-        {
-            con.Close();
-            try
-            {
-                con.Open();
-                for (int i = 0; i < store_data.Rows.Count; i++)
-                {
-                    cmd = new SqlCommand("insert into other_out (Date,Time,OutVoucher_No,Out_Remark,PurVoucher,ProductID,GoldType,GoldPrice,Item," +
-               "ItemName,Gm,K,P,Y,S,WK,WP,WY,WS,TK,TP,TY,TS,Mcost,Repamt,Totalamt,Remark,Employee,Shop,Form,Counter) values(@Date,@Time,@OutVoucher_No,@Out_Remark,@PurVoucher,@ProductID,@GoldType,@GoldPrice,@Item," +
-               "@ItemName,@Gm,@K,@P,@Y,@S,@WK,@WP,@WY,@WS,@TK,@TP,@TY,@TS,@Mcost,@Repamt,@Totalamt,@Remark,@Employee,@Shop,@Form,@Counter)", con);
-
-                    cmd.Parameters.AddWithValue("@Date", store_data.Rows[i].Cells[1].Value);
-                    cmd.Parameters.AddWithValue("@Time", store_data.Rows[i].Cells[2].Value);
-                    cmd.Parameters.AddWithValue("@OutVoucher_No", store_data.Rows[i].Cells[3].Value);
-                    cmd.Parameters.AddWithValue("@Out_Remark", store_data.Rows[i].Cells[4].Value);
-                    cmd.Parameters.AddWithValue("@PurVoucher", store_data.Rows[i].Cells[5].Value);
-                    cmd.Parameters.AddWithValue("@ProductID", store_data.Rows[i].Cells[6].Value);
-                    cmd.Parameters.AddWithValue("@GoldType", store_data.Rows[i].Cells[7].Value);
-                    cmd.Parameters.AddWithValue("@GoldPrice", store_data.Rows[i].Cells[8].Value);
-                    cmd.Parameters.AddWithValue("@Item", store_data.Rows[i].Cells[9].Value);
-                    cmd.Parameters.AddWithValue("@ItemName", store_data.Rows[i].Cells[10].Value);
-                    cmd.Parameters.AddWithValue("@Gm", store_data.Rows[i].Cells[11].Value);
-                    cmd.Parameters.AddWithValue("@K", store_data.Rows[i].Cells[12].Value);
-                    cmd.Parameters.AddWithValue("@P", store_data.Rows[i].Cells[13].Value);
-                    cmd.Parameters.AddWithValue("@Y", store_data.Rows[i].Cells[14].Value);
-                    cmd.Parameters.AddWithValue("@S", store_data.Rows[i].Cells[15].Value);
-                    cmd.Parameters.AddWithValue("@WK", store_data.Rows[i].Cells[16].Value);
-                    cmd.Parameters.AddWithValue("@WP", store_data.Rows[i].Cells[17].Value);
-                    cmd.Parameters.AddWithValue("@WY", store_data.Rows[i].Cells[18].Value);
-                    cmd.Parameters.AddWithValue("@WS", store_data.Rows[i].Cells[19].Value);
-                    cmd.Parameters.AddWithValue("@TK", store_data.Rows[i].Cells[20].Value);
-                    cmd.Parameters.AddWithValue("@TP", store_data.Rows[i].Cells[21].Value);
-                    cmd.Parameters.AddWithValue("@TY", store_data.Rows[i].Cells[22].Value);
-                    cmd.Parameters.AddWithValue("@TS", store_data.Rows[i].Cells[23].Value);
-                    cmd.Parameters.AddWithValue("@Mcost", store_data.Rows[i].Cells[24].Value);
-                    cmd.Parameters.AddWithValue("@Repamt", store_data.Rows[i].Cells[25].Value);
-                    cmd.Parameters.AddWithValue("@Totalamt", store_data.Rows[i].Cells[26].Value);
-                    cmd.Parameters.AddWithValue("@Remark", store_data.Rows[i].Cells[27].Value);
-                    cmd.Parameters.AddWithValue("@Employee", store_data.Rows[i].Cells[28].Value);
-                    cmd.Parameters.AddWithValue("@Shop", store_data.Rows[i].Cells[29].Value);
-                    cmd.Parameters.AddWithValue("@Form", store_data.Rows[i].Cells[30].Value);
-                    cmd.Parameters.AddWithValue("@Counter", store_data.Rows[i].Cells[31].Value);
-
-
-                    cmd.ExecuteNonQuery();
-                    /*MessageBox.Show("success");*/
-
-                }
-
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            MessageBox.Show("success");
-        }
+    
 
         public void show()
         {
@@ -276,9 +382,10 @@ namespace MJS
             try
             {
                 con.Open();
-                string sql = "SELECT * FROM closing_stock Where ProductID='" + txt_out_no.Text.ToString() + "'";
+                string sql = "SELECT closing_stock.* , Image_TB.Image FROM closing_stock INNER JOIN Image_TB ON closing_stock.ProductID = Image_TB.ProductID Where closing_stock.ProductID='" + txt_out_no.Text.ToString() + "'";
                 SqlDataAdapter adp = new SqlDataAdapter(sql, con);
-                System.Data.DataTable dt = new System.Data.DataTable();
+                DataTable dt = new DataTable();
+               /* System.Data.DataTable dt = new System.Data.DataTable();*/
                 adp.Fill(dt);
                 if (dt.Rows.Count > 0)
                 {
@@ -328,72 +435,7 @@ namespace MJS
         SqlCommand cmd;
         private int primarykey;
 
-        public void invoiceid()/*function Invoice Number*/
-        {
-            con.Close();
-            try
-            {
-                /*if (Con1.State == ConnectionState.Closed)
-                {
-                    Con1.Open();
-                }*/
-                string shopvalue = txt_shop.Text;
-                con.Open();
-                sql = $"SELECT OutVoucher_No FROM other_out WHERE Shop = @shoped ORDER BY ID DESC";
-                cmd = new SqlCommand(sql, con);
-                cmd.Parameters.AddWithValue("@shoped", shopvalue);
-                var maxid = cmd.ExecuteScalar() as string;
-
-                if (maxid == null)
-
-                {
-                    string form = "GO";
-                    /*string shop = login.shoptext;*/
-                    string shop = login.shopvalue;
-                    string date = DateTime.Now.ToString("ddMMyy");
-                    string id = "0001";
-                    txt_outvoucher.Text = form + shop + date + "-" + id;
-
-                }
-                else
-                {
-
-                    SqlCommand cmd = new SqlCommand();
-                    SqlDataReader sr = null;
-                    cmd.Connection = con;
-                    cmd.CommandText = $"SELECT OutVoucher_No FROM other_out WHERE Shop = @shoped ORDER BY ID DESC";
-                    cmd.Parameters.AddWithValue("@shoped", shopvalue);
-                    sr = cmd.ExecuteReader();
-                    if (sr.Read())
-
-                    {
-                        string form = "GO";
-                        /*string num = txt_barcode.Text;*/
-                        string shop = login.shopvalue;
-                        string date = DateTime.Now.ToString("ddMMyy");
-                        string pid = sr.GetValue(0).ToString();
-                        txt_result_id.Text = pid;
-                        string[] temparray = txt_result_id.Text.Split('-');
-                        txt_temparay.Text = form + shop + date;
-                        txt_Dece.Text = temparray[1];
-                        int i = Convert.ToInt32(txt_Dece.Text);
-                        i++;
-                        txt_Dece.Text = i.ToString();
-                        string autoid = txt_temparay.Text + "-" + String.Format("{0:0000}", i);
-                        /* txt_Dece.Text = autoid;*/
-                        txt_outvoucher.Text = autoid;
-
-                    }
-
-                }
-
-            }
-            catch (SqlException ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
-        }
+      
         private void timer1_Tick(object sender, EventArgs e)
         {
             DateTime d = new DateTime();
@@ -536,10 +578,11 @@ namespace MJS
                 newRow.CreateCells(store_data);
 
 
-                newRow.Cells[1].Value = date;
-                newRow.Cells[2].Value = time;
-                newRow.Cells[3].Value = OutVoucher;
-                newRow.Cells[4].Value = Outremark;
+                newRow.Cells[0].Value = date;
+                newRow.Cells[1].Value = time;
+                newRow.Cells[2].Value = OutVoucher;
+                newRow.Cells[3].Value = Outremark;
+                newRow.Cells[4].Value = showdata.Rows[0].Cells[4].Value.ToString();
                 newRow.Cells[5].Value = showdata.Rows[0].Cells[5].Value.ToString();
                 newRow.Cells[6].Value = showdata.Rows[0].Cells[6].Value.ToString();
                 newRow.Cells[7].Value = showdata.Rows[0].Cells[7].Value.ToString();
@@ -562,11 +605,10 @@ namespace MJS
                 newRow.Cells[24].Value = showdata.Rows[0].Cells[24].Value.ToString();
                 newRow.Cells[25].Value = showdata.Rows[0].Cells[25].Value.ToString();
                 newRow.Cells[26].Value = showdata.Rows[0].Cells[26].Value.ToString();
-                newRow.Cells[27].Value = showdata.Rows[0].Cells[27].Value.ToString();
-                newRow.Cells[28].Value = employee;
-                newRow.Cells[29].Value = shop;
-                newRow.Cells[30].Value = form;
-                newRow.Cells[31].Value = type;
+                newRow.Cells[27].Value = employee;
+                newRow.Cells[28].Value = shop;
+                newRow.Cells[29].Value = form;
+                newRow.Cells[30].Value = type;
 
                 store_data.Rows.Add(newRow);
 
@@ -577,13 +619,13 @@ namespace MJS
                 Totalqty2();
                 show_image.Image = null;
 
-                if (show_image.Image != null)
+               /* if (show_image.Image != null)
                 {
 
                     Image image = show_image.Image;
                     newRow.Cells[0].Value = image;
 
-                }
+                }*/
             }
 
             catch
@@ -592,12 +634,6 @@ namespace MJS
             }
         }
 
-        private void outproduct_btn_Click(object sender, EventArgs e)
-        {
-            timer2.Interval = 100;
-            timer2.Start();
-
-        }
 
         private void cancel_btn_Click(object sender, EventArgs e)
         {

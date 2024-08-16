@@ -11,6 +11,7 @@ using System.Data.SqlClient;
 using System.Runtime.InteropServices;
 using System.Net;
 using System.Net.Sockets;
+using System.Configuration;
 
 namespace MJS
 {
@@ -19,13 +20,15 @@ namespace MJS
         [DllImport("wininet.dll")]
         private extern static bool InternetGetConnectedState(out int Description, int ReservedValue);
 
-        SqlConnection con = new SqlConnection("Data Source=sql.bsite.net\\MSSQL2016;User ID=pyisoekyaw_;Password=pyisoe@#101215");
+
+        SqlConnection con = new SqlConnection("Data Source=150.95.88.172;Initial Catalog=MJS;User ID=sa;Password=Modernjewellery@5");
+     
         public login()
         {
             InitializeComponent();
 
         }
-
+      
         private void login_Load(object sender, EventArgs e)
         {
 
@@ -110,6 +113,8 @@ namespace MJS
             Application.Exit();
         }
         public static string shopvalue = "";
+     
+
         private void combo_shop_SelectedIndexChanged(object sender, EventArgs e)
         {
             shopvalue = combo_shop.SelectedItem.ToString();
@@ -172,5 +177,6 @@ namespace MJS
             }
             
         }
+
     }
 }
