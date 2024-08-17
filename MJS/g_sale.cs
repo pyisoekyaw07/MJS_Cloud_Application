@@ -555,7 +555,13 @@ namespace MJS
                 txt_discount.SelectionStart = 0;
                 txt_discount.SelectionLength = txt_discount.Text.Length;
             }
-            
+
+            if (txt_gm.Text == "0" || txt_gm.Text == "")
+            {
+                MessageBox.Show("Gm ထည့်ရန်လိုအပ်ပါသည်.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txt_gm.Focus();
+            }
+
             intk = Math.Floor(double.Parse(txt_gm.Text) / double.Parse("16.6"));
             tk = double.Parse(txt_gm.Text) / double.Parse("16.6");
             txt_k.Text = intk.ToString();
@@ -1238,14 +1244,7 @@ namespace MJS
             }
         }
 
-        private void txt_gm_Leave(object sender, EventArgs e)
-        {
-            if (txt_gm.Text == "0" || txt_gm.Text == "") 
-            {
-                MessageBox.Show("Gm ထည့်ရန်လိုအပ်ပါသည်.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txt_gm.Focus();
-            }
-        }
+
 
         private void btn_review_Click(object sender, EventArgs e)
         {

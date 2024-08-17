@@ -1520,6 +1520,57 @@ namespace MJS
             }
         }
 
+        private void txt_sp_TextChanged(object sender, EventArgs e)
+        {
+            double p = 16;
+            if (txt_sp.Text == "")
+            {
+                txt_sp.Text = "";
+
+            }
+            else if (double.Parse(txt_sp.Text) > p)
+            {
+                MessageBox.Show(" အလျော့တွက် 16 \"ပဲ\" နှင့်အထက် ဖြစ်နေပါသည်");
+                txt_sp.Text = "0";
+                txt_sp.SelectionStart = 0;
+                txt_sp.SelectionLength = txt_sp.Text.Length;
+            }
+        }
+
+        private void txt_sy_TextChanged(object sender, EventArgs e)
+        {
+            double p = 8;
+            if (txt_sy.Text == "")
+            {
+                txt_sy.Text = "";
+
+            }
+            else if (double.Parse(txt_sy.Text) > p)
+            {
+                MessageBox.Show(" အလျော့တွက် 8 \"ရွေး\" နှင့်အထက် ဖြစ်နေပါသည်");
+                txt_sy.Text = "0";
+                txt_sy.SelectionStart = 0;
+                txt_sy.SelectionLength = txt_sy.Text.Length;
+            }
+        }
+
+        private void txt_ss_TextChanged(object sender, EventArgs e)
+        {
+            double p = 4;
+            if (txt_ss.Text == "")
+            {
+                txt_ss.Text = "";
+
+            }
+            else if (double.Parse(txt_ss.Text) > p)
+            {
+                MessageBox.Show("အလျော့တွက် 4 \"စိတ်\" နှင့်အထက် ဖြစ်နေပါသည်");
+                txt_ss.Text = "0";
+                txt_ss.SelectionStart = 0;
+                txt_ss.SelectionLength = txt_ss.Text.Length;
+            }
+        }
+
         private void txt_sy_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')

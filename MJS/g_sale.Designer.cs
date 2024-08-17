@@ -33,51 +33,51 @@ namespace MJS
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(g_sale));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle91 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle92 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle93 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle94 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle95 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle96 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle97 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle98 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle99 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle100 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle101 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle102 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle103 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle104 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle105 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle106 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle107 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle108 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle109 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle110 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle111 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle112 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle113 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle114 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle115 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle116 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle117 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle118 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle119 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle120 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle121 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle122 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle123 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle124 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle125 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle126 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle127 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle128 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle129 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle130 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle131 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle132 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle133 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle134 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle135 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txt_date = new System.Windows.Forms.TextBox();
             this.txt_time = new System.Windows.Forms.TextBox();
             this.txt_salevoc_number = new System.Windows.Forms.TextBox();
@@ -251,12 +251,11 @@ namespace MJS
             this.txt_date.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_date.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.txt_date.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.txt_date.Location = new System.Drawing.Point(12, 14);
-            this.txt_date.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_date.Location = new System.Drawing.Point(10, 11);
             this.txt_date.Multiline = true;
             this.txt_date.Name = "txt_date";
             this.txt_date.ReadOnly = true;
-            this.txt_date.Size = new System.Drawing.Size(132, 35);
+            this.txt_date.Size = new System.Drawing.Size(106, 28);
             this.txt_date.TabIndex = 300;
             this.txt_date.TabStop = false;
             this.txt_date.Text = "date";
@@ -267,12 +266,11 @@ namespace MJS
             this.txt_time.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_time.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.txt_time.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.txt_time.Location = new System.Drawing.Point(141, 14);
-            this.txt_time.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_time.Location = new System.Drawing.Point(113, 11);
             this.txt_time.Multiline = true;
             this.txt_time.Name = "txt_time";
             this.txt_time.ReadOnly = true;
-            this.txt_time.Size = new System.Drawing.Size(116, 35);
+            this.txt_time.Size = new System.Drawing.Size(93, 28);
             this.txt_time.TabIndex = 300;
             this.txt_time.TabStop = false;
             this.txt_time.Text = "time";
@@ -283,12 +281,11 @@ namespace MJS
             this.txt_salevoc_number.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_salevoc_number.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_salevoc_number.ForeColor = System.Drawing.Color.Black;
-            this.txt_salevoc_number.Location = new System.Drawing.Point(12, 52);
-            this.txt_salevoc_number.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_salevoc_number.Location = new System.Drawing.Point(10, 42);
             this.txt_salevoc_number.Multiline = true;
             this.txt_salevoc_number.Name = "txt_salevoc_number";
             this.txt_salevoc_number.ReadOnly = true;
-            this.txt_salevoc_number.Size = new System.Drawing.Size(296, 35);
+            this.txt_salevoc_number.Size = new System.Drawing.Size(237, 28);
             this.txt_salevoc_number.TabIndex = 300;
             this.txt_salevoc_number.TabStop = false;
             this.txt_salevoc_number.Text = "Voucher-No";
@@ -299,11 +296,10 @@ namespace MJS
             this.txt_form.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_form.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_form.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.txt_form.Location = new System.Drawing.Point(374, 14);
-            this.txt_form.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_form.Location = new System.Drawing.Point(299, 11);
             this.txt_form.Name = "txt_form";
             this.txt_form.ReadOnly = true;
-            this.txt_form.Size = new System.Drawing.Size(115, 27);
+            this.txt_form.Size = new System.Drawing.Size(92, 23);
             this.txt_form.TabIndex = 300;
             this.txt_form.TabStop = false;
             this.txt_form.Text = "Gold Sale";
@@ -315,11 +311,10 @@ namespace MJS
             this.txt_counter.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_counter.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_counter.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.txt_counter.Location = new System.Drawing.Point(260, 14);
-            this.txt_counter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_counter.Location = new System.Drawing.Point(208, 11);
             this.txt_counter.Name = "txt_counter";
             this.txt_counter.ReadOnly = true;
-            this.txt_counter.Size = new System.Drawing.Size(111, 27);
+            this.txt_counter.Size = new System.Drawing.Size(89, 23);
             this.txt_counter.TabIndex = 300;
             this.txt_counter.TabStop = false;
             this.txt_counter.Text = "A Counter";
@@ -334,20 +329,18 @@ namespace MJS
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label12.Location = new System.Drawing.Point(16, 95);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Location = new System.Drawing.Point(13, 76);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(120, 29);
+            this.label12.Size = new System.Drawing.Size(87, 22);
             this.label12.TabIndex = 310;
             this.label12.Text = "ဘားကုဒ်နံပါတ်";
             // 
             // txt_out_no
             // 
             this.txt_out_no.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_out_no.Location = new System.Drawing.Point(16, 126);
-            this.txt_out_no.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_out_no.Location = new System.Drawing.Point(13, 101);
             this.txt_out_no.Name = "txt_out_no";
-            this.txt_out_no.Size = new System.Drawing.Size(240, 41);
+            this.txt_out_no.Size = new System.Drawing.Size(193, 35);
             this.txt_out_no.TabIndex = 1;
             this.txt_out_no.Leave += new System.EventHandler(this.txt_out_no_Leave);
             // 
@@ -355,10 +348,9 @@ namespace MJS
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label7.Location = new System.Drawing.Point(690, 335);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(552, 268);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(175, 29);
+            this.label7.Size = new System.Drawing.Size(130, 22);
             this.label7.TabIndex = 316;
             this.label7.Text = "အရောင်း အလျော့တွက်";
             // 
@@ -366,20 +358,18 @@ namespace MJS
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label6.Location = new System.Drawing.Point(690, 266);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(552, 213);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 29);
+            this.label6.Size = new System.Drawing.Size(44, 22);
             this.label6.TabIndex = 315;
             this.label6.Text = "ရွှေချိန်";
             // 
             // txt_WK
             // 
             this.txt_WK.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_WK.Location = new System.Drawing.Point(4, 5);
-            this.txt_WK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_WK.Location = new System.Drawing.Point(3, 4);
             this.txt_WK.Name = "txt_WK";
-            this.txt_WK.Size = new System.Drawing.Size(73, 41);
+            this.txt_WK.Size = new System.Drawing.Size(59, 35);
             this.txt_WK.TabIndex = 3;
             this.txt_WK.Text = "0";
             this.txt_WK.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -389,10 +379,9 @@ namespace MJS
             // txt_WP
             // 
             this.txt_WP.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_WP.Location = new System.Drawing.Point(84, 5);
-            this.txt_WP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_WP.Location = new System.Drawing.Point(67, 4);
             this.txt_WP.Name = "txt_WP";
-            this.txt_WP.Size = new System.Drawing.Size(73, 41);
+            this.txt_WP.Size = new System.Drawing.Size(59, 35);
             this.txt_WP.TabIndex = 4;
             this.txt_WP.Text = "0";
             this.txt_WP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -402,10 +391,9 @@ namespace MJS
             // txt_WY
             // 
             this.txt_WY.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_WY.Location = new System.Drawing.Point(162, 5);
-            this.txt_WY.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_WY.Location = new System.Drawing.Point(130, 4);
             this.txt_WY.Name = "txt_WY";
-            this.txt_WY.Size = new System.Drawing.Size(73, 41);
+            this.txt_WY.Size = new System.Drawing.Size(59, 35);
             this.txt_WY.TabIndex = 5;
             this.txt_WY.Text = "0";
             this.txt_WY.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -415,10 +403,9 @@ namespace MJS
             // txt_WS
             // 
             this.txt_WS.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_WS.Location = new System.Drawing.Point(241, 5);
-            this.txt_WS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_WS.Location = new System.Drawing.Point(193, 4);
             this.txt_WS.Name = "txt_WS";
-            this.txt_WS.Size = new System.Drawing.Size(73, 41);
+            this.txt_WS.Size = new System.Drawing.Size(59, 35);
             this.txt_WS.TabIndex = 6;
             this.txt_WS.Text = "0";
             this.txt_WS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -430,10 +417,9 @@ namespace MJS
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label13.Location = new System.Drawing.Point(894, 221);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Location = new System.Drawing.Point(715, 177);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(45, 29);
+            this.label13.Size = new System.Drawing.Size(34, 22);
             this.label13.TabIndex = 326;
             this.label13.Text = "ကျပ်";
             // 
@@ -442,10 +428,9 @@ namespace MJS
             this.label29.AutoSize = true;
             this.label29.BackColor = System.Drawing.Color.Transparent;
             this.label29.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label29.Location = new System.Drawing.Point(985, 221);
-            this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label29.Location = new System.Drawing.Point(788, 177);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(24, 29);
+            this.label29.Size = new System.Drawing.Size(18, 22);
             this.label29.TabIndex = 327;
             this.label29.Text = "ပဲ";
             // 
@@ -454,10 +439,9 @@ namespace MJS
             this.label30.AutoSize = true;
             this.label30.BackColor = System.Drawing.Color.Transparent;
             this.label30.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label30.Location = new System.Drawing.Point(1059, 220);
-            this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label30.Location = new System.Drawing.Point(847, 176);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(40, 29);
+            this.label30.Size = new System.Drawing.Size(30, 22);
             this.label30.TabIndex = 328;
             this.label30.Text = "ရွေး";
             // 
@@ -466,10 +450,9 @@ namespace MJS
             this.label31.AutoSize = true;
             this.label31.BackColor = System.Drawing.Color.Transparent;
             this.label31.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label31.Location = new System.Drawing.Point(1140, 220);
-            this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label31.Location = new System.Drawing.Point(912, 176);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(43, 29);
+            this.label31.Size = new System.Drawing.Size(32, 22);
             this.label31.TabIndex = 329;
             this.label31.Text = "စိတ်";
             // 
@@ -477,10 +460,9 @@ namespace MJS
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label19.Location = new System.Drawing.Point(10, 229);
-            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label19.Location = new System.Drawing.Point(8, 183);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(153, 29);
+            this.label19.Size = new System.Drawing.Size(113, 22);
             this.label19.TabIndex = 340;
             this.label19.Text = "စုစုပေါင်း ကျသင့်ငွေ";
             // 
@@ -488,10 +470,9 @@ namespace MJS
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label18.Location = new System.Drawing.Point(1300, 561);
-            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Location = new System.Drawing.Point(1040, 449);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(75, 29);
+            this.label18.Size = new System.Drawing.Size(56, 22);
             this.label18.TabIndex = 339;
             this.label18.Text = "မှတ်ချက်";
             // 
@@ -499,10 +480,9 @@ namespace MJS
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label17.Location = new System.Drawing.Point(690, 456);
-            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label17.Location = new System.Drawing.Point(552, 365);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(62, 29);
+            this.label17.Size = new System.Drawing.Size(46, 22);
             this.label17.TabIndex = 338;
             this.label17.Text = "လက်ခ";
             // 
@@ -514,10 +494,9 @@ namespace MJS
             this.Btn_BB.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.Btn_BB.IconSize = 40;
             this.Btn_BB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btn_BB.Location = new System.Drawing.Point(1612, 819);
-            this.Btn_BB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_BB.Location = new System.Drawing.Point(1290, 655);
             this.Btn_BB.Name = "Btn_BB";
-            this.Btn_BB.Size = new System.Drawing.Size(170, 59);
+            this.Btn_BB.Size = new System.Drawing.Size(136, 47);
             this.Btn_BB.TabIndex = 10;
             this.Btn_BB.Text = "Add BB";
             this.Btn_BB.UseVisualStyleBackColor = true;
@@ -532,10 +511,9 @@ namespace MJS
             this.btn_cash.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_cash.IconSize = 40;
             this.btn_cash.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_cash.Location = new System.Drawing.Point(949, 714);
-            this.btn_cash.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_cash.Location = new System.Drawing.Point(759, 571);
             this.btn_cash.Name = "btn_cash";
-            this.btn_cash.Size = new System.Drawing.Size(239, 59);
+            this.btn_cash.Size = new System.Drawing.Size(191, 47);
             this.btn_cash.TabIndex = 18;
             this.btn_cash.Text = "Payment";
             this.btn_cash.UseVisualStyleBackColor = true;
@@ -545,10 +523,9 @@ namespace MJS
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label1.Location = new System.Drawing.Point(690, 392);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(552, 314);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(162, 29);
+            this.label1.Size = new System.Drawing.Size(121, 22);
             this.label1.TabIndex = 334;
             this.label1.Text = "ကျသင့် အလျော့တွက်";
             // 
@@ -556,10 +533,9 @@ namespace MJS
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label5.Location = new System.Drawing.Point(1306, 159);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(1045, 127);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 29);
+            this.label5.Size = new System.Drawing.Size(38, 22);
             this.label5.TabIndex = 346;
             this.label5.Text = "အခွန်";
             // 
@@ -661,10 +637,9 @@ namespace MJS
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label7);
             this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(47)))), ((int)(((byte)(78)))));
-            this.panel1.Location = new System.Drawing.Point(14, 1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(11, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1832, 954);
+            this.panel1.Size = new System.Drawing.Size(1466, 763);
             this.panel1.TabIndex = 348;
             // 
             // dataGridView2
@@ -673,11 +648,10 @@ namespace MJS
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.total});
-            this.dataGridView2.Location = new System.Drawing.Point(1444, 752);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView2.Location = new System.Drawing.Point(1155, 602);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.Size = new System.Drawing.Size(235, 59);
+            this.dataGridView2.Size = new System.Drawing.Size(188, 47);
             this.dataGridView2.TabIndex = 458;
             this.dataGridView2.Visible = false;
             // 
@@ -694,66 +668,59 @@ namespace MJS
             this.wastage_panel.Controls.Add(this.txt_WP);
             this.wastage_panel.Controls.Add(this.txt_WS);
             this.wastage_panel.Controls.Add(this.txt_WY);
-            this.wastage_panel.Location = new System.Drawing.Point(874, 329);
-            this.wastage_panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.wastage_panel.Location = new System.Drawing.Point(699, 263);
             this.wastage_panel.Name = "wastage_panel";
-            this.wastage_panel.Size = new System.Drawing.Size(322, 55);
+            this.wastage_panel.Size = new System.Drawing.Size(258, 44);
             this.wastage_panel.TabIndex = 7;
             this.wastage_panel.Leave += new System.EventHandler(this.wastage_panel_Leave);
             // 
             // txt_salegm
             // 
             this.txt_salegm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_salegm.Location = new System.Drawing.Point(1202, 335);
-            this.txt_salegm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_salegm.Location = new System.Drawing.Point(962, 268);
             this.txt_salegm.Name = "txt_salegm";
-            this.txt_salegm.Size = new System.Drawing.Size(82, 26);
+            this.txt_salegm.Size = new System.Drawing.Size(66, 22);
             this.txt_salegm.TabIndex = 457;
             // 
             // txt_result_sum
             // 
-            this.txt_result_sum.Location = new System.Drawing.Point(369, 389);
-            this.txt_result_sum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_result_sum.Location = new System.Drawing.Point(295, 311);
             this.txt_result_sum.Name = "txt_result_sum";
-            this.txt_result_sum.Size = new System.Drawing.Size(79, 22);
+            this.txt_result_sum.Size = new System.Drawing.Size(64, 20);
             this.txt_result_sum.TabIndex = 29;
             this.txt_result_sum.Text = "0";
             this.txt_result_sum.TextChanged += new System.EventHandler(this.txt_result_sum_TextChanged);
             // 
             // result_gm
             // 
-            this.result_gm.Location = new System.Drawing.Point(469, 389);
-            this.result_gm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.result_gm.Location = new System.Drawing.Point(375, 311);
             this.result_gm.Name = "result_gm";
-            this.result_gm.Size = new System.Drawing.Size(86, 22);
+            this.result_gm.Size = new System.Drawing.Size(70, 20);
             this.result_gm.TabIndex = 31;
             this.result_gm.Text = "0";
             // 
             // txt_mini_percent
             // 
-            this.txt_mini_percent.Location = new System.Drawing.Point(275, 389);
-            this.txt_mini_percent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_mini_percent.Location = new System.Drawing.Point(220, 311);
             this.txt_mini_percent.Name = "txt_mini_percent";
-            this.txt_mini_percent.Size = new System.Drawing.Size(85, 22);
+            this.txt_mini_percent.Size = new System.Drawing.Size(69, 20);
             this.txt_mini_percent.TabIndex = 30;
             this.txt_mini_percent.Text = "0";
             // 
             // txt_ss
             // 
-            this.txt_ss.Location = new System.Drawing.Point(419, 356);
-            this.txt_ss.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_ss.Location = new System.Drawing.Point(335, 285);
             this.txt_ss.Name = "txt_ss";
-            this.txt_ss.Size = new System.Drawing.Size(36, 22);
+            this.txt_ss.Size = new System.Drawing.Size(30, 20);
             this.txt_ss.TabIndex = 28;
             this.txt_ss.Text = "0";
             this.txt_ss.TextChanged += new System.EventHandler(this.txt_ss_TextChanged);
             // 
             // txt_sy
             // 
-            this.txt_sy.Location = new System.Drawing.Point(369, 356);
-            this.txt_sy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_sy.Location = new System.Drawing.Point(295, 285);
             this.txt_sy.Name = "txt_sy";
-            this.txt_sy.Size = new System.Drawing.Size(36, 22);
+            this.txt_sy.Size = new System.Drawing.Size(30, 20);
             this.txt_sy.TabIndex = 27;
             this.txt_sy.Text = "0";
             this.txt_sy.TextChanged += new System.EventHandler(this.txt_sy_TextChanged);
@@ -767,10 +734,9 @@ namespace MJS
             this.btn_cancel.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_cancel.IconSize = 40;
             this.btn_cancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_cancel.Location = new System.Drawing.Point(1215, 714);
-            this.btn_cancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_cancel.Location = new System.Drawing.Point(972, 571);
             this.btn_cancel.Name = "btn_cancel";
-            this.btn_cancel.Size = new System.Drawing.Size(225, 60);
+            this.btn_cancel.Size = new System.Drawing.Size(180, 48);
             this.btn_cancel.TabIndex = 21;
             this.btn_cancel.Text = "Cancel";
             this.btn_cancel.UseVisualStyleBackColor = true;
@@ -784,10 +750,9 @@ namespace MJS
             this.btn_review.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_review.IconSize = 40;
             this.btn_review.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_review.Location = new System.Drawing.Point(694, 714);
-            this.btn_review.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_review.Location = new System.Drawing.Point(555, 571);
             this.btn_review.Name = "btn_review";
-            this.btn_review.Size = new System.Drawing.Size(225, 61);
+            this.btn_review.Size = new System.Drawing.Size(180, 49);
             this.btn_review.TabIndex = 20;
             this.btn_review.Text = "Review";
             this.btn_review.UseVisualStyleBackColor = true;
@@ -795,20 +760,18 @@ namespace MJS
             // 
             // txt_sp
             // 
-            this.txt_sp.Location = new System.Drawing.Point(324, 356);
-            this.txt_sp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_sp.Location = new System.Drawing.Point(259, 285);
             this.txt_sp.Name = "txt_sp";
-            this.txt_sp.Size = new System.Drawing.Size(36, 22);
+            this.txt_sp.Size = new System.Drawing.Size(30, 20);
             this.txt_sp.TabIndex = 26;
             this.txt_sp.Text = "0";
             this.txt_sp.TextChanged += new System.EventHandler(this.txt_sp_TextChanged);
             // 
             // txt_sk
             // 
-            this.txt_sk.Location = new System.Drawing.Point(275, 356);
-            this.txt_sk.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_sk.Location = new System.Drawing.Point(220, 285);
             this.txt_sk.Name = "txt_sk";
-            this.txt_sk.Size = new System.Drawing.Size(36, 22);
+            this.txt_sk.Size = new System.Drawing.Size(30, 20);
             this.txt_sk.TabIndex = 25;
             this.txt_sk.Text = "0";
             this.txt_sk.TextChanged += new System.EventHandler(this.txt_sk_TextChanged);
@@ -824,18 +787,17 @@ namespace MJS
             this.panel3.Controls.Add(this.label37);
             this.panel3.Controls.Add(this.label38);
             this.panel3.Controls.Add(this.iconButton2);
-            this.panel3.Location = new System.Drawing.Point(16, 490);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Location = new System.Drawing.Point(13, 361);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(621, 428);
+            this.panel3.Size = new System.Drawing.Size(497, 342);
             this.panel3.TabIndex = 449;
             // 
             // pit_show
             // 
-            this.pit_show.Location = new System.Drawing.Point(174, 15);
-            this.pit_show.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pit_show.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pit_show.Location = new System.Drawing.Point(139, 12);
             this.pit_show.Name = "pit_show";
-            this.pit_show.Size = new System.Drawing.Size(251, 170);
+            this.pit_show.Size = new System.Drawing.Size(201, 136);
             this.pit_show.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pit_show.TabIndex = 410;
             this.pit_show.TabStop = false;
@@ -844,10 +806,9 @@ namespace MJS
             // 
             this.txt_showamt.AutoSize = true;
             this.txt_showamt.Font = new System.Drawing.Font("Pyidaungsu", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_showamt.Location = new System.Drawing.Point(191, 214);
-            this.txt_showamt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.txt_showamt.Location = new System.Drawing.Point(153, 171);
             this.txt_showamt.Name = "txt_showamt";
-            this.txt_showamt.Size = new System.Drawing.Size(36, 50);
+            this.txt_showamt.Size = new System.Drawing.Size(30, 41);
             this.txt_showamt.TabIndex = 411;
             this.txt_showamt.Text = "0";
             // 
@@ -855,19 +816,17 @@ namespace MJS
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label33.Location = new System.Drawing.Point(10, 290);
-            this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label33.Location = new System.Drawing.Point(8, 232);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(131, 29);
+            this.label33.Size = new System.Drawing.Size(96, 22);
             this.label33.TabIndex = 436;
             this.label33.Text = "စုစုပေါင်း ရှင်းငွေ";
             // 
             // txt_shop
             // 
-            this.txt_shop.Location = new System.Drawing.Point(521, 205);
-            this.txt_shop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_shop.Location = new System.Drawing.Point(417, 164);
             this.txt_shop.Name = "txt_shop";
-            this.txt_shop.Size = new System.Drawing.Size(76, 22);
+            this.txt_shop.Size = new System.Drawing.Size(62, 20);
             this.txt_shop.TabIndex = 445;
             this.txt_shop.Visible = false;
             // 
@@ -875,10 +834,9 @@ namespace MJS
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Pyidaungsu", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(191, 278);
-            this.label36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label36.Location = new System.Drawing.Point(153, 222);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(36, 50);
+            this.label36.Size = new System.Drawing.Size(30, 41);
             this.label36.TabIndex = 437;
             this.label36.Text = "0";
             // 
@@ -886,10 +844,9 @@ namespace MJS
             // 
             this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label37.Location = new System.Drawing.Point(10, 354);
-            this.label37.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label37.Location = new System.Drawing.Point(8, 283);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(135, 29);
+            this.label37.Size = new System.Drawing.Size(100, 22);
             this.label37.TabIndex = 438;
             this.label37.Text = "စုစုပေါင်း ကျန်ငွေ";
             // 
@@ -897,10 +854,9 @@ namespace MJS
             // 
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("Pyidaungsu", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(191, 339);
-            this.label38.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label38.Location = new System.Drawing.Point(153, 271);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(36, 50);
+            this.label38.Size = new System.Drawing.Size(30, 41);
             this.label38.TabIndex = 439;
             this.label38.Text = "0";
             // 
@@ -911,10 +867,9 @@ namespace MJS
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.IconSize = 25;
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(521, 249);
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconButton2.Location = new System.Drawing.Point(417, 199);
             this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(96, 55);
+            this.iconButton2.Size = new System.Drawing.Size(77, 44);
             this.iconButton2.TabIndex = 420;
             this.iconButton2.Text = "crystal print";
             this.iconButton2.UseVisualStyleBackColor = true;
@@ -929,10 +884,9 @@ namespace MJS
             this.btn_gsale_save.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_gsale_save.IconSize = 40;
             this.btn_gsale_save.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_gsale_save.Location = new System.Drawing.Point(1612, 884);
-            this.btn_gsale_save.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_gsale_save.Location = new System.Drawing.Point(1290, 707);
             this.btn_gsale_save.Name = "btn_gsale_save";
-            this.btn_gsale_save.Size = new System.Drawing.Size(170, 59);
+            this.btn_gsale_save.Size = new System.Drawing.Size(136, 47);
             this.btn_gsale_save.TabIndex = 19;
             this.btn_gsale_save.Text = "Save";
             this.btn_gsale_save.UseVisualStyleBackColor = true;
@@ -948,10 +902,9 @@ namespace MJS
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(595, 419);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Location = new System.Drawing.Point(476, 335);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(38, 30);
+            this.button2.Size = new System.Drawing.Size(30, 24);
             this.button2.TabIndex = 32;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -959,10 +912,9 @@ namespace MJS
             // panel2
             // 
             this.panel2.Controls.Add(this.dgv_showdata);
-            this.panel2.Location = new System.Drawing.Point(16, 465);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Location = new System.Drawing.Point(13, 372);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(621, 165);
+            this.panel2.Size = new System.Drawing.Size(497, 132);
             this.panel2.TabIndex = 447;
             this.panel2.Visible = false;
             // 
@@ -977,18 +929,17 @@ namespace MJS
             this.qty,
             this.gm,
             this.delete});
-            this.dgv_showdata.Location = new System.Drawing.Point(4, 0);
-            this.dgv_showdata.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgv_showdata.Location = new System.Drawing.Point(3, 0);
             this.dgv_showdata.Name = "dgv_showdata";
             this.dgv_showdata.RowHeadersWidth = 51;
-            this.dgv_showdata.Size = new System.Drawing.Size(616, 159);
+            this.dgv_showdata.Size = new System.Drawing.Size(493, 127);
             this.dgv_showdata.TabIndex = 0;
             this.dgv_showdata.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_showdata_CellContentClick);
             // 
             // Pid
             // 
-            dataGridViewCellStyle91.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Pid.DefaultCellStyle = dataGridViewCellStyle91;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pid.DefaultCellStyle = dataGridViewCellStyle1;
             this.Pid.HeaderText = "Product ID";
             this.Pid.MinimumWidth = 6;
             this.Pid.Name = "Pid";
@@ -996,8 +947,8 @@ namespace MJS
             // 
             // Item
             // 
-            dataGridViewCellStyle92.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Item.DefaultCellStyle = dataGridViewCellStyle92;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Item.DefaultCellStyle = dataGridViewCellStyle2;
             this.Item.HeaderText = "Item";
             this.Item.MinimumWidth = 6;
             this.Item.Name = "Item";
@@ -1005,8 +956,8 @@ namespace MJS
             // 
             // Itemname
             // 
-            dataGridViewCellStyle93.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Itemname.DefaultCellStyle = dataGridViewCellStyle93;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Itemname.DefaultCellStyle = dataGridViewCellStyle3;
             this.Itemname.HeaderText = "Itemname";
             this.Itemname.MinimumWidth = 6;
             this.Itemname.Name = "Itemname";
@@ -1014,8 +965,8 @@ namespace MJS
             // 
             // qty
             // 
-            dataGridViewCellStyle94.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.qty.DefaultCellStyle = dataGridViewCellStyle94;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.qty.DefaultCellStyle = dataGridViewCellStyle4;
             this.qty.HeaderText = "Quantity";
             this.qty.MinimumWidth = 6;
             this.qty.Name = "qty";
@@ -1023,8 +974,8 @@ namespace MJS
             // 
             // gm
             // 
-            dataGridViewCellStyle95.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gm.DefaultCellStyle = dataGridViewCellStyle95;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gm.DefaultCellStyle = dataGridViewCellStyle5;
             this.gm.HeaderText = "Gm";
             this.gm.MinimumWidth = 6;
             this.gm.Name = "gm";
@@ -1033,11 +984,11 @@ namespace MJS
             // delete
             // 
             this.delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle96.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle96.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle96.NullValue")));
-            dataGridViewCellStyle96.SelectionBackColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle96.SelectionForeColor = System.Drawing.Color.Black;
-            this.delete.DefaultCellStyle = dataGridViewCellStyle96;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle6.NullValue")));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            this.delete.DefaultCellStyle = dataGridViewCellStyle6;
             this.delete.HeaderText = "";
             this.delete.Image = ((System.Drawing.Image)(resources.GetObject("delete.Image")));
             this.delete.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
@@ -1049,10 +1000,9 @@ namespace MJS
             // 
             this.txt_total_gm.Enabled = false;
             this.txt_total_gm.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_total_gm.Location = new System.Drawing.Point(879, 109);
-            this.txt_total_gm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_total_gm.Location = new System.Drawing.Point(703, 87);
             this.txt_total_gm.Name = "txt_total_gm";
-            this.txt_total_gm.Size = new System.Drawing.Size(242, 41);
+            this.txt_total_gm.Size = new System.Drawing.Size(194, 35);
             this.txt_total_gm.TabIndex = 444;
             this.txt_total_gm.Text = "0";
             // 
@@ -1060,10 +1010,9 @@ namespace MJS
             // 
             this.txt_total_qty.Enabled = false;
             this.txt_total_qty.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_total_qty.Location = new System.Drawing.Point(879, 49);
-            this.txt_total_qty.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_total_qty.Location = new System.Drawing.Point(703, 39);
             this.txt_total_qty.Name = "txt_total_qty";
-            this.txt_total_qty.Size = new System.Drawing.Size(242, 41);
+            this.txt_total_qty.Size = new System.Drawing.Size(194, 35);
             this.txt_total_qty.TabIndex = 443;
             this.txt_total_qty.Text = "0";
             // 
@@ -1071,10 +1020,9 @@ namespace MJS
             // 
             this.label41.AutoSize = true;
             this.label41.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label41.Location = new System.Drawing.Point(682, 118);
-            this.label41.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label41.Location = new System.Drawing.Point(546, 94);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(144, 29);
+            this.label41.Size = new System.Drawing.Size(106, 22);
             this.label41.TabIndex = 442;
             this.label41.Text = "စုစုပေါင်း  ဂရမ်ချိန်";
             // 
@@ -1082,10 +1030,10 @@ namespace MJS
             // 
             this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("Pyidaungsu", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(682, 52);
+            this.label39.Location = new System.Drawing.Point(546, 42);
             this.label39.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(131, 29);
+            this.label39.Size = new System.Drawing.Size(100, 24);
             this.label39.TabIndex = 440;
             this.label39.Text = "စုစုပေါင်း အခုရေ";
             // 
@@ -1093,10 +1041,9 @@ namespace MJS
             // 
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(1306, 395);
-            this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label35.Location = new System.Drawing.Point(1045, 316);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(49, 29);
+            this.label35.Size = new System.Drawing.Size(38, 22);
             this.label35.TabIndex = 433;
             this.label35.Text = "Total";
             // 
@@ -1106,10 +1053,9 @@ namespace MJS
             this.txt_alltotal_amt.Enabled = false;
             this.txt_alltotal_amt.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_alltotal_amt.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.txt_alltotal_amt.Location = new System.Drawing.Point(1484, 388);
-            this.txt_alltotal_amt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_alltotal_amt.Location = new System.Drawing.Point(1187, 310);
             this.txt_alltotal_amt.Name = "txt_alltotal_amt";
-            this.txt_alltotal_amt.Size = new System.Drawing.Size(235, 41);
+            this.txt_alltotal_amt.Size = new System.Drawing.Size(189, 35);
             this.txt_alltotal_amt.TabIndex = 432;
             this.txt_alltotal_amt.Text = "0";
             this.txt_alltotal_amt.TextChanged += new System.EventHandler(this.txt_alltotal_amt_TextChanged);
@@ -1118,20 +1064,20 @@ namespace MJS
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Pyidaungsu", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(1306, 329);
+            this.label34.Location = new System.Drawing.Point(1045, 263);
             this.label34.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(126, 29);
+            this.label34.Size = new System.Drawing.Size(108, 24);
             this.label34.TabIndex = 431;
             this.label34.Text = "Promotion(Flat)";
             // 
             // txt_pro_famt
             // 
             this.txt_pro_famt.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_pro_famt.Location = new System.Drawing.Point(1484, 329);
+            this.txt_pro_famt.Location = new System.Drawing.Point(1187, 263);
             this.txt_pro_famt.Margin = new System.Windows.Forms.Padding(2);
             this.txt_pro_famt.Name = "txt_pro_famt";
-            this.txt_pro_famt.Size = new System.Drawing.Size(238, 41);
+            this.txt_pro_famt.Size = new System.Drawing.Size(191, 35);
             this.txt_pro_famt.TabIndex = 15;
             this.txt_pro_famt.Text = "0";
             this.txt_pro_famt.TextChanged += new System.EventHandler(this.txt_pro_famt_TextChanged);
@@ -1141,10 +1087,10 @@ namespace MJS
             // txt_pro_amt
             // 
             this.txt_pro_amt.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_pro_amt.Location = new System.Drawing.Point(1574, 265);
+            this.txt_pro_amt.Location = new System.Drawing.Point(1259, 212);
             this.txt_pro_amt.Margin = new System.Windows.Forms.Padding(2);
             this.txt_pro_amt.Name = "txt_pro_amt";
-            this.txt_pro_amt.Size = new System.Drawing.Size(145, 41);
+            this.txt_pro_amt.Size = new System.Drawing.Size(117, 35);
             this.txt_pro_amt.TabIndex = 14;
             this.txt_pro_amt.Text = "0";
             this.txt_pro_amt.TextChanged += new System.EventHandler(this.txt_pro_amt_TextChanged);
@@ -1155,20 +1101,18 @@ namespace MJS
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label14.Location = new System.Drawing.Point(1306, 265);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Location = new System.Drawing.Point(1045, 212);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(119, 29);
+            this.label14.Size = new System.Drawing.Size(93, 22);
             this.label14.TabIndex = 427;
             this.label14.Text = "Promotion (%)";
             // 
             // txt_pro_number
             // 
             this.txt_pro_number.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_pro_number.Location = new System.Drawing.Point(1484, 266);
-            this.txt_pro_number.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_pro_number.Location = new System.Drawing.Point(1187, 213);
             this.txt_pro_number.Name = "txt_pro_number";
-            this.txt_pro_number.Size = new System.Drawing.Size(68, 41);
+            this.txt_pro_number.Size = new System.Drawing.Size(55, 35);
             this.txt_pro_number.TabIndex = 13;
             this.txt_pro_number.Text = "0";
             this.txt_pro_number.TextChanged += new System.EventHandler(this.txt_pro_number_TextChanged);
@@ -1177,10 +1121,10 @@ namespace MJS
             // txt_pernumber
             // 
             this.txt_pernumber.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_pernumber.Location = new System.Drawing.Point(1484, 156);
+            this.txt_pernumber.Location = new System.Drawing.Point(1187, 125);
             this.txt_pernumber.Margin = new System.Windows.Forms.Padding(2);
             this.txt_pernumber.Name = "txt_pernumber";
-            this.txt_pernumber.Size = new System.Drawing.Size(68, 41);
+            this.txt_pernumber.Size = new System.Drawing.Size(55, 35);
             this.txt_pernumber.TabIndex = 11;
             this.txt_pernumber.Text = "0";
             this.txt_pernumber.TextChanged += new System.EventHandler(this.txt_pernumber_TextChanged);
@@ -1189,10 +1133,9 @@ namespace MJS
             // txt_percent_amt
             // 
             this.txt_percent_amt.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_percent_amt.Location = new System.Drawing.Point(1574, 155);
-            this.txt_percent_amt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_percent_amt.Location = new System.Drawing.Point(1259, 124);
             this.txt_percent_amt.Name = "txt_percent_amt";
-            this.txt_percent_amt.Size = new System.Drawing.Size(145, 41);
+            this.txt_percent_amt.Size = new System.Drawing.Size(117, 35);
             this.txt_percent_amt.TabIndex = 12;
             this.txt_percent_amt.Text = "0";
             this.txt_percent_amt.TextChanged += new System.EventHandler(this.txt_percent_amt_TextChanged);
@@ -1202,10 +1145,9 @@ namespace MJS
             // txt_gpd
             // 
             this.txt_gpd.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_gpd.Location = new System.Drawing.Point(875, 512);
-            this.txt_gpd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_gpd.Location = new System.Drawing.Point(700, 410);
             this.txt_gpd.Name = "txt_gpd";
-            this.txt_gpd.Size = new System.Drawing.Size(230, 41);
+            this.txt_gpd.Size = new System.Drawing.Size(185, 35);
             this.txt_gpd.TabIndex = 9;
             this.txt_gpd.Text = "0";
             this.txt_gpd.TextChanged += new System.EventHandler(this.txt_rep_TextChanged);
@@ -1216,10 +1158,9 @@ namespace MJS
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label2.Location = new System.Drawing.Point(690, 516);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(552, 413);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 29);
+            this.label2.Size = new System.Drawing.Size(71, 22);
             this.label2.TabIndex = 421;
             this.label2.Text = "GPD တန်ဖိုး";
             // 
@@ -1227,34 +1168,30 @@ namespace MJS
             // 
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Location = new System.Drawing.Point(1076, 172);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(861, 138);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(36, 29);
+            this.button1.Size = new System.Drawing.Size(29, 23);
             this.button1.TabIndex = 23;
             this.button1.UseVisualStyleBackColor = true;
             // 
             // txt_gm
             // 
             this.txt_gm.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_gm.Location = new System.Drawing.Point(879, 169);
-            this.txt_gm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_gm.Location = new System.Drawing.Point(703, 135);
             this.txt_gm.Name = "txt_gm";
-            this.txt_gm.Size = new System.Drawing.Size(242, 41);
+            this.txt_gm.Size = new System.Drawing.Size(194, 35);
             this.txt_gm.TabIndex = 2;
             this.txt_gm.Text = "0";
             this.txt_gm.TextChanged += new System.EventHandler(this.txt_gm_TextChanged);
             this.txt_gm.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_gm_KeyPress);
-            this.txt_gm.Leave += new System.EventHandler(this.txt_gm_Leave);
             // 
             // edit_goldprice_btn
             // 
             this.edit_goldprice_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("edit_goldprice_btn.BackgroundImage")));
             this.edit_goldprice_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.edit_goldprice_btn.Location = new System.Drawing.Point(469, 130);
-            this.edit_goldprice_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.edit_goldprice_btn.Location = new System.Drawing.Point(375, 104);
             this.edit_goldprice_btn.Name = "edit_goldprice_btn";
-            this.edit_goldprice_btn.Size = new System.Drawing.Size(36, 29);
+            this.edit_goldprice_btn.Size = new System.Drawing.Size(29, 23);
             this.edit_goldprice_btn.TabIndex = 22;
             this.edit_goldprice_btn.UseVisualStyleBackColor = true;
             this.edit_goldprice_btn.Click += new System.EventHandler(this.edit_goldprice_btn_Click);
@@ -1263,29 +1200,26 @@ namespace MJS
             // 
             this.txt_goldprice.Enabled = false;
             this.txt_goldprice.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_goldprice.Location = new System.Drawing.Point(271, 126);
-            this.txt_goldprice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_goldprice.Location = new System.Drawing.Point(217, 101);
             this.txt_goldprice.Name = "txt_goldprice";
-            this.txt_goldprice.Size = new System.Drawing.Size(242, 41);
+            this.txt_goldprice.Size = new System.Drawing.Size(194, 35);
             this.txt_goldprice.TabIndex = 415;
             // 
             // txt_saleremark
             // 
             this.txt_saleremark.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_saleremark.Location = new System.Drawing.Point(1482, 560);
-            this.txt_saleremark.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_saleremark.Location = new System.Drawing.Point(1186, 448);
             this.txt_saleremark.Multiline = true;
             this.txt_saleremark.Name = "txt_saleremark";
-            this.txt_saleremark.Size = new System.Drawing.Size(299, 88);
+            this.txt_saleremark.Size = new System.Drawing.Size(240, 71);
             this.txt_saleremark.TabIndex = 17;
             // 
             // txt_mcost
             // 
             this.txt_mcost.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_mcost.Location = new System.Drawing.Point(875, 452);
-            this.txt_mcost.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_mcost.Location = new System.Drawing.Point(700, 362);
             this.txt_mcost.Name = "txt_mcost";
-            this.txt_mcost.Size = new System.Drawing.Size(230, 41);
+            this.txt_mcost.Size = new System.Drawing.Size(185, 35);
             this.txt_mcost.TabIndex = 8;
             this.txt_mcost.Text = "0";
             this.txt_mcost.TextChanged += new System.EventHandler(this.txt_mcost_TextChanged);
@@ -1297,10 +1231,9 @@ namespace MJS
             this.label_gm.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label_gm.Font = new System.Drawing.Font("Pyidaungsu", 12F);
             this.label_gm.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label_gm.Location = new System.Drawing.Point(271, 300);
-            this.label_gm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_gm.Location = new System.Drawing.Point(217, 240);
             this.label_gm.Name = "label_gm";
-            this.label_gm.Size = new System.Drawing.Size(241, 42);
+            this.label_gm.Size = new System.Drawing.Size(193, 34);
             this.label_gm.TabIndex = 409;
             this.label_gm.Text = "0";
             this.label_gm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1310,10 +1243,9 @@ namespace MJS
             this.label_qty.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label_qty.Font = new System.Drawing.Font("Pyidaungsu", 12F);
             this.label_qty.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label_qty.Location = new System.Drawing.Point(16, 300);
-            this.label_qty.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_qty.Location = new System.Drawing.Point(13, 240);
             this.label_qty.Name = "label_qty";
-            this.label_qty.Size = new System.Drawing.Size(241, 42);
+            this.label_qty.Size = new System.Drawing.Size(193, 34);
             this.label_qty.TabIndex = 408;
             this.label_qty.Text = "0";
             this.label_qty.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1323,10 +1255,9 @@ namespace MJS
             this.label_goldtype.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label_goldtype.Font = new System.Drawing.Font("Pyidaungsu", 12F);
             this.label_goldtype.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label_goldtype.Location = new System.Drawing.Point(16, 396);
-            this.label_goldtype.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_goldtype.Location = new System.Drawing.Point(13, 317);
             this.label_goldtype.Name = "label_goldtype";
-            this.label_goldtype.Size = new System.Drawing.Size(241, 42);
+            this.label_goldtype.Size = new System.Drawing.Size(193, 34);
             this.label_goldtype.TabIndex = 407;
             this.label_goldtype.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label_goldtype.TextChanged += new System.EventHandler(this.label_goldtype_TextChanged);
@@ -1337,10 +1268,9 @@ namespace MJS
             this.label_itemname.Font = new System.Drawing.Font("Pyidaungsu", 12F);
             this.label_itemname.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label_itemname.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label_itemname.Location = new System.Drawing.Point(271, 212);
-            this.label_itemname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_itemname.Location = new System.Drawing.Point(217, 170);
             this.label_itemname.Name = "label_itemname";
-            this.label_itemname.Size = new System.Drawing.Size(241, 42);
+            this.label_itemname.Size = new System.Drawing.Size(193, 34);
             this.label_itemname.TabIndex = 406;
             this.label_itemname.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -1349,10 +1279,9 @@ namespace MJS
             this.label_Item.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label_Item.Font = new System.Drawing.Font("Pyidaungsu", 12F);
             this.label_Item.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label_Item.Location = new System.Drawing.Point(16, 212);
-            this.label_Item.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_Item.Location = new System.Drawing.Point(13, 170);
             this.label_Item.Name = "label_Item";
-            this.label_Item.Size = new System.Drawing.Size(241, 42);
+            this.label_Item.Size = new System.Drawing.Size(193, 34);
             this.label_Item.TabIndex = 405;
             this.label_Item.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -1361,10 +1290,9 @@ namespace MJS
             this.total_S.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.total_S.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.total_S.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.total_S.Location = new System.Drawing.Point(1115, 395);
-            this.total_S.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.total_S.Location = new System.Drawing.Point(892, 316);
             this.total_S.Name = "total_S";
-            this.total_S.Size = new System.Drawing.Size(71, 41);
+            this.total_S.Size = new System.Drawing.Size(57, 33);
             this.total_S.TabIndex = 404;
             this.total_S.Text = "0";
             this.total_S.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1374,10 +1302,9 @@ namespace MJS
             this.total_Y.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.total_Y.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.total_Y.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.total_Y.Location = new System.Drawing.Point(1036, 395);
-            this.total_Y.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.total_Y.Location = new System.Drawing.Point(829, 316);
             this.total_Y.Name = "total_Y";
-            this.total_Y.Size = new System.Drawing.Size(71, 41);
+            this.total_Y.Size = new System.Drawing.Size(57, 33);
             this.total_Y.TabIndex = 403;
             this.total_Y.Text = "0";
             this.total_Y.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1387,10 +1314,9 @@ namespace MJS
             this.total_P.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.total_P.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.total_P.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.total_P.Location = new System.Drawing.Point(958, 395);
-            this.total_P.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.total_P.Location = new System.Drawing.Point(766, 316);
             this.total_P.Name = "total_P";
-            this.total_P.Size = new System.Drawing.Size(71, 41);
+            this.total_P.Size = new System.Drawing.Size(57, 33);
             this.total_P.TabIndex = 402;
             this.total_P.Text = "0";
             this.total_P.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1400,10 +1326,9 @@ namespace MJS
             this.total_K.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.total_K.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.total_K.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.total_K.Location = new System.Drawing.Point(879, 395);
-            this.total_K.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.total_K.Location = new System.Drawing.Point(703, 316);
             this.total_K.Name = "total_K";
-            this.total_K.Size = new System.Drawing.Size(71, 41);
+            this.total_K.Size = new System.Drawing.Size(57, 33);
             this.total_K.TabIndex = 401;
             this.total_K.Text = "0";
             this.total_K.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1413,10 +1338,9 @@ namespace MJS
             this.txt_s.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.txt_s.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_s.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.txt_s.Location = new System.Drawing.Point(1115, 266);
-            this.txt_s.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.txt_s.Location = new System.Drawing.Point(892, 213);
             this.txt_s.Name = "txt_s";
-            this.txt_s.Size = new System.Drawing.Size(71, 41);
+            this.txt_s.Size = new System.Drawing.Size(57, 33);
             this.txt_s.TabIndex = 400;
             this.txt_s.Text = "0";
             this.txt_s.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1426,10 +1350,9 @@ namespace MJS
             this.txt_y.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.txt_y.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_y.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.txt_y.Location = new System.Drawing.Point(1036, 266);
-            this.txt_y.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.txt_y.Location = new System.Drawing.Point(829, 213);
             this.txt_y.Name = "txt_y";
-            this.txt_y.Size = new System.Drawing.Size(71, 41);
+            this.txt_y.Size = new System.Drawing.Size(57, 33);
             this.txt_y.TabIndex = 399;
             this.txt_y.Text = "0";
             this.txt_y.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1439,10 +1362,9 @@ namespace MJS
             this.txt_p.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.txt_p.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_p.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.txt_p.Location = new System.Drawing.Point(958, 266);
-            this.txt_p.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.txt_p.Location = new System.Drawing.Point(766, 213);
             this.txt_p.Name = "txt_p";
-            this.txt_p.Size = new System.Drawing.Size(71, 41);
+            this.txt_p.Size = new System.Drawing.Size(57, 33);
             this.txt_p.TabIndex = 398;
             this.txt_p.Text = "0";
             this.txt_p.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1452,10 +1374,9 @@ namespace MJS
             this.txt_k.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.txt_k.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_k.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.txt_k.Location = new System.Drawing.Point(879, 266);
-            this.txt_k.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.txt_k.Location = new System.Drawing.Point(703, 213);
             this.txt_k.Name = "txt_k";
-            this.txt_k.Size = new System.Drawing.Size(71, 41);
+            this.txt_k.Size = new System.Drawing.Size(57, 33);
             this.txt_k.TabIndex = 397;
             this.txt_k.Text = "0";
             this.txt_k.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1464,10 +1385,9 @@ namespace MJS
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label32.Location = new System.Drawing.Point(16, 358);
-            this.label32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label32.Location = new System.Drawing.Point(13, 286);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(131, 29);
+            this.label32.Size = new System.Drawing.Size(97, 22);
             this.label32.TabIndex = 376;
             this.label32.Text = "အရောင်း ‌ရွှေရည်";
             // 
@@ -1475,10 +1395,9 @@ namespace MJS
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label28.Location = new System.Drawing.Point(689, 576);
-            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label28.Location = new System.Drawing.Point(551, 461);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(182, 29);
+            this.label28.Size = new System.Drawing.Size(134, 22);
             this.label28.TabIndex = 374;
             this.label28.Text = "ပစ္စည်းတန်ဖိုး ကျသင့်ငွေ";
             // 
@@ -1488,10 +1407,9 @@ namespace MJS
             this.txt_totalamt.Enabled = false;
             this.txt_totalamt.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_totalamt.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.txt_totalamt.Location = new System.Drawing.Point(875, 572);
-            this.txt_totalamt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_totalamt.Location = new System.Drawing.Point(700, 458);
             this.txt_totalamt.Name = "txt_totalamt";
-            this.txt_totalamt.Size = new System.Drawing.Size(230, 41);
+            this.txt_totalamt.Size = new System.Drawing.Size(185, 35);
             this.txt_totalamt.TabIndex = 373;
             this.txt_totalamt.TabStop = false;
             this.txt_totalamt.Text = "0";
@@ -1501,10 +1419,9 @@ namespace MJS
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label27.Location = new System.Drawing.Point(1305, 510);
-            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label27.Location = new System.Drawing.Point(1044, 408);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(153, 29);
+            this.label27.Size = new System.Drawing.Size(113, 22);
             this.label27.TabIndex = 372;
             this.label27.Text = "စုစုပေါင်း ကျသင့်ငွေ";
             // 
@@ -1512,10 +1429,9 @@ namespace MJS
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label26.Location = new System.Drawing.Point(1305, 452);
-            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label26.Location = new System.Drawing.Point(1044, 362);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(100, 29);
+            this.label26.Size = new System.Drawing.Size(76, 22);
             this.label26.TabIndex = 371;
             this.label26.Text = "လျှော့ပေးငွေ";
             // 
@@ -1523,10 +1439,9 @@ namespace MJS
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label25.Location = new System.Drawing.Point(1306, 104);
-            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label25.Location = new System.Drawing.Point(1045, 83);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(175, 29);
+            this.label25.Size = new System.Drawing.Size(129, 22);
             this.label25.TabIndex = 370;
             this.label25.Text = "အလဲနုတ်ပြီး ကျသင့်ငွေ";
             // 
@@ -1534,10 +1449,9 @@ namespace MJS
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label24.Location = new System.Drawing.Point(1306, 49);
-            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label24.Location = new System.Drawing.Point(1045, 39);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(172, 29);
+            this.label24.Size = new System.Drawing.Size(127, 22);
             this.label24.TabIndex = 369;
             this.label24.Text = "အလဲတန်ဖိုး ကျသင့်ငွေ";
             // 
@@ -1547,10 +1461,9 @@ namespace MJS
             this.txt_totalcost.Enabled = false;
             this.txt_totalcost.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_totalcost.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.txt_totalcost.Location = new System.Drawing.Point(1482, 506);
-            this.txt_totalcost.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_totalcost.Location = new System.Drawing.Point(1186, 405);
             this.txt_totalcost.Name = "txt_totalcost";
-            this.txt_totalcost.Size = new System.Drawing.Size(238, 41);
+            this.txt_totalcost.Size = new System.Drawing.Size(191, 35);
             this.txt_totalcost.TabIndex = 368;
             this.txt_totalcost.TabStop = false;
             this.txt_totalcost.Text = "0";
@@ -1562,10 +1475,9 @@ namespace MJS
             this.txt_include_percent.Enabled = false;
             this.txt_include_percent.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_include_percent.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.txt_include_percent.Location = new System.Drawing.Point(1484, 208);
-            this.txt_include_percent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_include_percent.Location = new System.Drawing.Point(1187, 166);
             this.txt_include_percent.Name = "txt_include_percent";
-            this.txt_include_percent.Size = new System.Drawing.Size(238, 41);
+            this.txt_include_percent.Size = new System.Drawing.Size(191, 35);
             this.txt_include_percent.TabIndex = 367;
             this.txt_include_percent.TabStop = false;
             this.txt_include_percent.Text = "0";
@@ -1574,10 +1486,9 @@ namespace MJS
             // txt_discount
             // 
             this.txt_discount.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_discount.Location = new System.Drawing.Point(1482, 450);
-            this.txt_discount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_discount.Location = new System.Drawing.Point(1186, 360);
             this.txt_discount.Name = "txt_discount";
-            this.txt_discount.Size = new System.Drawing.Size(235, 41);
+            this.txt_discount.Size = new System.Drawing.Size(189, 35);
             this.txt_discount.TabIndex = 16;
             this.txt_discount.Text = "0";
             this.txt_discount.TextChanged += new System.EventHandler(this.txt_discount_TextChanged);
@@ -1588,10 +1499,9 @@ namespace MJS
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label23.Location = new System.Drawing.Point(1306, 211);
-            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label23.Location = new System.Drawing.Point(1045, 169);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(163, 29);
+            this.label23.Size = new System.Drawing.Size(119, 22);
             this.label23.TabIndex = 365;
             this.label23.Text = "အခွန်ပါပြီး ကျသင့်ငွေ";
             // 
@@ -1601,10 +1511,9 @@ namespace MJS
             this.txt_bbamt.Enabled = false;
             this.txt_bbamt.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_bbamt.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.txt_bbamt.Location = new System.Drawing.Point(1484, 45);
-            this.txt_bbamt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_bbamt.Location = new System.Drawing.Point(1187, 36);
             this.txt_bbamt.Name = "txt_bbamt";
-            this.txt_bbamt.Size = new System.Drawing.Size(238, 41);
+            this.txt_bbamt.Size = new System.Drawing.Size(191, 35);
             this.txt_bbamt.TabIndex = 364;
             this.txt_bbamt.TabStop = false;
             this.txt_bbamt.Text = "0";
@@ -1616,10 +1525,9 @@ namespace MJS
             this.txt_include_bbamt.Enabled = false;
             this.txt_include_bbamt.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_include_bbamt.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.txt_include_bbamt.Location = new System.Drawing.Point(1484, 100);
-            this.txt_include_bbamt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_include_bbamt.Location = new System.Drawing.Point(1187, 80);
             this.txt_include_bbamt.Name = "txt_include_bbamt";
-            this.txt_include_bbamt.Size = new System.Drawing.Size(238, 41);
+            this.txt_include_bbamt.Size = new System.Drawing.Size(191, 35);
             this.txt_include_bbamt.TabIndex = 363;
             this.txt_include_bbamt.TabStop = false;
             this.txt_include_bbamt.Text = "0";
@@ -1630,10 +1538,9 @@ namespace MJS
             this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label21.BackColor = System.Drawing.Color.Gainsboro;
-            this.label21.Location = new System.Drawing.Point(645, 0);
-            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label21.Location = new System.Drawing.Point(516, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(2, 954);
+            this.label21.Size = new System.Drawing.Size(2, 763);
             this.label21.TabIndex = 361;
             // 
             // dgv_show_saledata
@@ -1686,19 +1593,18 @@ namespace MJS
             this.txtshop,
             this.txtform,
             this.txtcounter});
-            this.dgv_show_saledata.Location = new System.Drawing.Point(1444, 819);
-            this.dgv_show_saledata.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgv_show_saledata.Location = new System.Drawing.Point(1155, 655);
             this.dgv_show_saledata.Name = "dgv_show_saledata";
             this.dgv_show_saledata.RowHeadersWidth = 51;
             this.dgv_show_saledata.RowTemplate.Height = 30;
-            this.dgv_show_saledata.Size = new System.Drawing.Size(150, 121);
+            this.dgv_show_saledata.Size = new System.Drawing.Size(120, 97);
             this.dgv_show_saledata.TabIndex = 33;
             this.dgv_show_saledata.Visible = false;
             // 
             // date
             // 
-            dataGridViewCellStyle97.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.date.DefaultCellStyle = dataGridViewCellStyle97;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date.DefaultCellStyle = dataGridViewCellStyle7;
             this.date.HeaderText = "Date";
             this.date.MinimumWidth = 6;
             this.date.Name = "date";
@@ -1706,8 +1612,8 @@ namespace MJS
             // 
             // time
             // 
-            dataGridViewCellStyle98.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.time.DefaultCellStyle = dataGridViewCellStyle98;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.time.DefaultCellStyle = dataGridViewCellStyle8;
             this.time.HeaderText = "Time";
             this.time.MinimumWidth = 6;
             this.time.Name = "time";
@@ -1715,8 +1621,8 @@ namespace MJS
             // 
             // productid
             // 
-            dataGridViewCellStyle99.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.productid.DefaultCellStyle = dataGridViewCellStyle99;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productid.DefaultCellStyle = dataGridViewCellStyle9;
             this.productid.HeaderText = "Product ID";
             this.productid.MinimumWidth = 6;
             this.productid.Name = "productid";
@@ -1724,8 +1630,8 @@ namespace MJS
             // 
             // txtgoldprice
             // 
-            dataGridViewCellStyle100.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtgoldprice.DefaultCellStyle = dataGridViewCellStyle100;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtgoldprice.DefaultCellStyle = dataGridViewCellStyle10;
             this.txtgoldprice.HeaderText = "GoldPrice";
             this.txtgoldprice.MinimumWidth = 6;
             this.txtgoldprice.Name = "txtgoldprice";
@@ -1733,8 +1639,8 @@ namespace MJS
             // 
             // txtitem
             // 
-            dataGridViewCellStyle101.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtitem.DefaultCellStyle = dataGridViewCellStyle101;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtitem.DefaultCellStyle = dataGridViewCellStyle11;
             this.txtitem.HeaderText = "Item";
             this.txtitem.MinimumWidth = 6;
             this.txtitem.Name = "txtitem";
@@ -1742,8 +1648,8 @@ namespace MJS
             // 
             // txtitemname
             // 
-            dataGridViewCellStyle102.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtitemname.DefaultCellStyle = dataGridViewCellStyle102;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtitemname.DefaultCellStyle = dataGridViewCellStyle12;
             this.txtitemname.HeaderText = "Itemname";
             this.txtitemname.MinimumWidth = 6;
             this.txtitemname.Name = "txtitemname";
@@ -1751,8 +1657,8 @@ namespace MJS
             // 
             // txtqty
             // 
-            dataGridViewCellStyle103.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtqty.DefaultCellStyle = dataGridViewCellStyle103;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtqty.DefaultCellStyle = dataGridViewCellStyle13;
             this.txtqty.HeaderText = "Quantity";
             this.txtqty.MinimumWidth = 6;
             this.txtqty.Name = "txtqty";
@@ -1767,8 +1673,8 @@ namespace MJS
             // 
             // txtgoldtype
             // 
-            dataGridViewCellStyle104.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtgoldtype.DefaultCellStyle = dataGridViewCellStyle104;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtgoldtype.DefaultCellStyle = dataGridViewCellStyle14;
             this.txtgoldtype.HeaderText = "GoldType";
             this.txtgoldtype.MinimumWidth = 6;
             this.txtgoldtype.Name = "txtgoldtype";
@@ -1776,8 +1682,8 @@ namespace MJS
             // 
             // txtgm
             // 
-            dataGridViewCellStyle105.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtgm.DefaultCellStyle = dataGridViewCellStyle105;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtgm.DefaultCellStyle = dataGridViewCellStyle15;
             this.txtgm.HeaderText = "Gm";
             this.txtgm.MinimumWidth = 6;
             this.txtgm.Name = "txtgm";
@@ -1785,8 +1691,8 @@ namespace MJS
             // 
             // txtk
             // 
-            dataGridViewCellStyle106.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtk.DefaultCellStyle = dataGridViewCellStyle106;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtk.DefaultCellStyle = dataGridViewCellStyle16;
             this.txtk.HeaderText = "K";
             this.txtk.MinimumWidth = 6;
             this.txtk.Name = "txtk";
@@ -1794,8 +1700,8 @@ namespace MJS
             // 
             // txtP
             // 
-            dataGridViewCellStyle107.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtP.DefaultCellStyle = dataGridViewCellStyle107;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtP.DefaultCellStyle = dataGridViewCellStyle17;
             this.txtP.HeaderText = "P";
             this.txtP.MinimumWidth = 6;
             this.txtP.Name = "txtP";
@@ -1803,8 +1709,8 @@ namespace MJS
             // 
             // txty
             // 
-            dataGridViewCellStyle108.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txty.DefaultCellStyle = dataGridViewCellStyle108;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txty.DefaultCellStyle = dataGridViewCellStyle18;
             this.txty.HeaderText = "Y";
             this.txty.MinimumWidth = 6;
             this.txty.Name = "txty";
@@ -1812,8 +1718,8 @@ namespace MJS
             // 
             // txts
             // 
-            dataGridViewCellStyle109.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txts.DefaultCellStyle = dataGridViewCellStyle109;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txts.DefaultCellStyle = dataGridViewCellStyle19;
             this.txts.HeaderText = "S";
             this.txts.MinimumWidth = 6;
             this.txts.Name = "txts";
@@ -1821,8 +1727,8 @@ namespace MJS
             // 
             // txtwk
             // 
-            dataGridViewCellStyle110.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtwk.DefaultCellStyle = dataGridViewCellStyle110;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtwk.DefaultCellStyle = dataGridViewCellStyle20;
             this.txtwk.HeaderText = "WK";
             this.txtwk.MinimumWidth = 6;
             this.txtwk.Name = "txtwk";
@@ -1837,8 +1743,8 @@ namespace MJS
             // 
             // txtwy
             // 
-            dataGridViewCellStyle111.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtwy.DefaultCellStyle = dataGridViewCellStyle111;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtwy.DefaultCellStyle = dataGridViewCellStyle21;
             this.txtwy.HeaderText = "WY";
             this.txtwy.MinimumWidth = 6;
             this.txtwy.Name = "txtwy";
@@ -1846,8 +1752,8 @@ namespace MJS
             // 
             // txtws
             // 
-            dataGridViewCellStyle112.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtws.DefaultCellStyle = dataGridViewCellStyle112;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtws.DefaultCellStyle = dataGridViewCellStyle22;
             this.txtws.HeaderText = "WS";
             this.txtws.MinimumWidth = 6;
             this.txtws.Name = "txtws";
@@ -1855,8 +1761,8 @@ namespace MJS
             // 
             // txttk
             // 
-            dataGridViewCellStyle113.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttk.DefaultCellStyle = dataGridViewCellStyle113;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttk.DefaultCellStyle = dataGridViewCellStyle23;
             this.txttk.HeaderText = "TK";
             this.txttk.MinimumWidth = 6;
             this.txttk.Name = "txttk";
@@ -1864,8 +1770,8 @@ namespace MJS
             // 
             // txttp
             // 
-            dataGridViewCellStyle114.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttp.DefaultCellStyle = dataGridViewCellStyle114;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttp.DefaultCellStyle = dataGridViewCellStyle24;
             this.txttp.HeaderText = "TP";
             this.txttp.MinimumWidth = 6;
             this.txttp.Name = "txttp";
@@ -1873,8 +1779,8 @@ namespace MJS
             // 
             // txtty
             // 
-            dataGridViewCellStyle115.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtty.DefaultCellStyle = dataGridViewCellStyle115;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtty.DefaultCellStyle = dataGridViewCellStyle25;
             this.txtty.HeaderText = "TY";
             this.txtty.MinimumWidth = 6;
             this.txtty.Name = "txtty";
@@ -1882,8 +1788,8 @@ namespace MJS
             // 
             // txtts
             // 
-            dataGridViewCellStyle116.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtts.DefaultCellStyle = dataGridViewCellStyle116;
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtts.DefaultCellStyle = dataGridViewCellStyle26;
             this.txtts.HeaderText = "TS";
             this.txtts.MinimumWidth = 6;
             this.txtts.Name = "txtts";
@@ -1891,8 +1797,8 @@ namespace MJS
             // 
             // txtmcost
             // 
-            dataGridViewCellStyle117.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmcost.DefaultCellStyle = dataGridViewCellStyle117;
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtmcost.DefaultCellStyle = dataGridViewCellStyle27;
             this.txtmcost.HeaderText = "Making Charges";
             this.txtmcost.MinimumWidth = 6;
             this.txtmcost.Name = "txtmcost";
@@ -1900,8 +1806,8 @@ namespace MJS
             // 
             // txtrep
             // 
-            dataGridViewCellStyle118.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtrep.DefaultCellStyle = dataGridViewCellStyle118;
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtrep.DefaultCellStyle = dataGridViewCellStyle28;
             this.txtrep.HeaderText = "GPD Amount";
             this.txtrep.MinimumWidth = 6;
             this.txtrep.Name = "txtrep";
@@ -1909,8 +1815,8 @@ namespace MJS
             // 
             // txtsaleamt
             // 
-            dataGridViewCellStyle119.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsaleamt.DefaultCellStyle = dataGridViewCellStyle119;
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtsaleamt.DefaultCellStyle = dataGridViewCellStyle29;
             this.txtsaleamt.HeaderText = "Sale Amount";
             this.txtsaleamt.MinimumWidth = 6;
             this.txtsaleamt.Name = "txtsaleamt";
@@ -1918,8 +1824,8 @@ namespace MJS
             // 
             // txtbb
             // 
-            dataGridViewCellStyle120.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbb.DefaultCellStyle = dataGridViewCellStyle120;
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbb.DefaultCellStyle = dataGridViewCellStyle30;
             this.txtbb.HeaderText = "BB Amount";
             this.txtbb.MinimumWidth = 6;
             this.txtbb.Name = "txtbb";
@@ -1927,8 +1833,8 @@ namespace MJS
             // 
             // txtincludebb
             // 
-            dataGridViewCellStyle121.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtincludebb.DefaultCellStyle = dataGridViewCellStyle121;
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtincludebb.DefaultCellStyle = dataGridViewCellStyle31;
             this.txtincludebb.HeaderText = "In BB Amount";
             this.txtincludebb.MinimumWidth = 6;
             this.txtincludebb.Name = "txtincludebb";
@@ -1936,8 +1842,8 @@ namespace MJS
             // 
             // txttax
             // 
-            dataGridViewCellStyle122.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttax.DefaultCellStyle = dataGridViewCellStyle122;
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttax.DefaultCellStyle = dataGridViewCellStyle32;
             this.txttax.HeaderText = "Tax";
             this.txttax.MinimumWidth = 6;
             this.txttax.Name = "txttax";
@@ -1945,8 +1851,8 @@ namespace MJS
             // 
             // txttaxamt
             // 
-            dataGridViewCellStyle123.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttaxamt.DefaultCellStyle = dataGridViewCellStyle123;
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttaxamt.DefaultCellStyle = dataGridViewCellStyle33;
             this.txttaxamt.HeaderText = "Tax Amount";
             this.txttaxamt.MinimumWidth = 6;
             this.txttaxamt.Name = "txttaxamt";
@@ -1954,8 +1860,8 @@ namespace MJS
             // 
             // txtinludetax
             // 
-            dataGridViewCellStyle124.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtinludetax.DefaultCellStyle = dataGridViewCellStyle124;
+            dataGridViewCellStyle34.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtinludetax.DefaultCellStyle = dataGridViewCellStyle34;
             this.txtinludetax.HeaderText = "In Tax Amount";
             this.txtinludetax.MinimumWidth = 6;
             this.txtinludetax.Name = "txtinludetax";
@@ -1963,8 +1869,8 @@ namespace MJS
             // 
             // txtproper
             // 
-            dataGridViewCellStyle125.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtproper.DefaultCellStyle = dataGridViewCellStyle125;
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtproper.DefaultCellStyle = dataGridViewCellStyle35;
             this.txtproper.HeaderText = "Promotion %";
             this.txtproper.MinimumWidth = 6;
             this.txtproper.Name = "txtproper";
@@ -1972,8 +1878,8 @@ namespace MJS
             // 
             // txtproperamt
             // 
-            dataGridViewCellStyle126.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtproperamt.DefaultCellStyle = dataGridViewCellStyle126;
+            dataGridViewCellStyle36.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtproperamt.DefaultCellStyle = dataGridViewCellStyle36;
             this.txtproperamt.HeaderText = "Promotion Amount (%)";
             this.txtproperamt.MinimumWidth = 6;
             this.txtproperamt.Name = "txtproperamt";
@@ -1981,8 +1887,8 @@ namespace MJS
             // 
             // txtproflat
             // 
-            dataGridViewCellStyle127.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtproflat.DefaultCellStyle = dataGridViewCellStyle127;
+            dataGridViewCellStyle37.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtproflat.DefaultCellStyle = dataGridViewCellStyle37;
             this.txtproflat.HeaderText = "Promotion Amount (Flat)";
             this.txtproflat.MinimumWidth = 6;
             this.txtproflat.Name = "txtproflat";
@@ -1990,8 +1896,8 @@ namespace MJS
             // 
             // txttotal
             // 
-            dataGridViewCellStyle128.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttotal.DefaultCellStyle = dataGridViewCellStyle128;
+            dataGridViewCellStyle38.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttotal.DefaultCellStyle = dataGridViewCellStyle38;
             this.txttotal.HeaderText = "Total Amount";
             this.txttotal.MinimumWidth = 6;
             this.txttotal.Name = "txttotal";
@@ -1999,8 +1905,8 @@ namespace MJS
             // 
             // txtdis
             // 
-            dataGridViewCellStyle129.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtdis.DefaultCellStyle = dataGridViewCellStyle129;
+            dataGridViewCellStyle39.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtdis.DefaultCellStyle = dataGridViewCellStyle39;
             this.txtdis.HeaderText = "Discount Amount";
             this.txtdis.MinimumWidth = 6;
             this.txtdis.Name = "txtdis";
@@ -2008,8 +1914,8 @@ namespace MJS
             // 
             // txtfinalamt
             // 
-            dataGridViewCellStyle130.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtfinalamt.DefaultCellStyle = dataGridViewCellStyle130;
+            dataGridViewCellStyle40.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtfinalamt.DefaultCellStyle = dataGridViewCellStyle40;
             this.txtfinalamt.HeaderText = "Final Amount";
             this.txtfinalamt.MinimumWidth = 6;
             this.txtfinalamt.Name = "txtfinalamt";
@@ -2017,8 +1923,8 @@ namespace MJS
             // 
             // txtrmk
             // 
-            dataGridViewCellStyle131.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtrmk.DefaultCellStyle = dataGridViewCellStyle131;
+            dataGridViewCellStyle41.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtrmk.DefaultCellStyle = dataGridViewCellStyle41;
             this.txtrmk.HeaderText = "Remark";
             this.txtrmk.MinimumWidth = 6;
             this.txtrmk.Name = "txtrmk";
@@ -2026,8 +1932,8 @@ namespace MJS
             // 
             // txtemp
             // 
-            dataGridViewCellStyle132.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtemp.DefaultCellStyle = dataGridViewCellStyle132;
+            dataGridViewCellStyle42.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtemp.DefaultCellStyle = dataGridViewCellStyle42;
             this.txtemp.HeaderText = "Empolyee";
             this.txtemp.MinimumWidth = 6;
             this.txtemp.Name = "txtemp";
@@ -2035,8 +1941,8 @@ namespace MJS
             // 
             // txtshop
             // 
-            dataGridViewCellStyle133.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtshop.DefaultCellStyle = dataGridViewCellStyle133;
+            dataGridViewCellStyle43.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtshop.DefaultCellStyle = dataGridViewCellStyle43;
             this.txtshop.HeaderText = "Shop";
             this.txtshop.MinimumWidth = 6;
             this.txtshop.Name = "txtshop";
@@ -2044,8 +1950,8 @@ namespace MJS
             // 
             // txtform
             // 
-            dataGridViewCellStyle134.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtform.DefaultCellStyle = dataGridViewCellStyle134;
+            dataGridViewCellStyle44.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtform.DefaultCellStyle = dataGridViewCellStyle44;
             this.txtform.HeaderText = "Form";
             this.txtform.MinimumWidth = 6;
             this.txtform.Name = "txtform";
@@ -2053,8 +1959,8 @@ namespace MJS
             // 
             // txtcounter
             // 
-            dataGridViewCellStyle135.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcounter.DefaultCellStyle = dataGridViewCellStyle135;
+            dataGridViewCellStyle45.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcounter.DefaultCellStyle = dataGridViewCellStyle45;
             this.txtcounter.HeaderText = "Counter";
             this.txtcounter.MinimumWidth = 6;
             this.txtcounter.Name = "txtcounter";
@@ -2064,10 +1970,9 @@ namespace MJS
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label11.Location = new System.Drawing.Point(274, 266);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Location = new System.Drawing.Point(219, 213);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(70, 29);
+            this.label11.Size = new System.Drawing.Size(52, 22);
             this.label11.TabIndex = 358;
             this.label11.Text = "ဂရမ်ချိန်";
             // 
@@ -2075,10 +1980,9 @@ namespace MJS
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label15.Location = new System.Drawing.Point(682, 176);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Location = new System.Drawing.Point(546, 141);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(143, 29);
+            this.label15.Size = new System.Drawing.Size(106, 22);
             this.label15.TabIndex = 352;
             this.label15.Text = "အရောင်း  ဂရမ်ချိန်";
             // 
@@ -2086,10 +1990,9 @@ namespace MJS
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label10.Location = new System.Drawing.Point(19, 262);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(15, 210);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(62, 29);
+            this.label10.Size = new System.Drawing.Size(46, 22);
             this.label10.TabIndex = 356;
             this.label10.Text = "အခုရေ";
             // 
@@ -2097,10 +2000,9 @@ namespace MJS
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label3.Location = new System.Drawing.Point(271, 96);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(217, 77);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(131, 29);
+            this.label3.Size = new System.Drawing.Size(98, 22);
             this.label3.TabIndex = 349;
             this.label3.Text = "အရောင်း ရွှေစျေး";
             // 
@@ -2108,10 +2010,9 @@ namespace MJS
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label9.Location = new System.Drawing.Point(270, 179);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(216, 143);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(105, 29);
+            this.label9.Size = new System.Drawing.Size(76, 22);
             this.label9.TabIndex = 354;
             this.label9.Text = "ပစ္စည်းအမည်";
             // 
@@ -2119,10 +2020,9 @@ namespace MJS
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label8.Location = new System.Drawing.Point(19, 179);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(15, 143);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(59, 29);
+            this.label8.Size = new System.Drawing.Size(43, 22);
             this.label8.TabIndex = 352;
             this.label8.Text = "ပစ္စည်း";
             // 
@@ -2143,14 +2043,13 @@ namespace MJS
             // 
             // g_sale
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(1846, 970);
+            this.ClientSize = new System.Drawing.Size(1477, 776);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "g_sale";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "g_sale";

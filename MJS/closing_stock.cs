@@ -12,6 +12,8 @@ using System.Collections;
 using System.Configuration;
 using System.Dynamic;
 using System.IO;
+using OfficeOpenXml.FormulaParsing.Excel.Functions.Math;
+using OfficeOpenXml.FormulaParsing.Excel.Functions.RefAndLookup;
 
 
 namespace MJS
@@ -101,54 +103,41 @@ namespace MJS
                 lblgm.Text = $"Gm: {gm}";
                 lblamt.Text = $"Amount: {amt}";
 
-                show();
+                DataGridViewRow row = dgv_cs.Rows[e.RowIndex];
+                string productId = row.Cells["ProductID"].Value.ToString();
+
+                FetchAndDisplayImage(productId);
+
             }
         }
-
-        public void show()
+        private void FetchAndDisplayImage(string productId)
         {
-            con.Close();
-            try
-            {
-                con.Open();
-                string sql = "SELECT Image FROM Image_TB WHERE ProductID = '" + lblProductID.Text.ToString() +"'";
-                SqlDataAdapter adp = new SqlDataAdapter(sql, con);
-                DataTable dt = new DataTable();
-                /* System.Data.DataTable dt = new System.Data.DataTable();*/
-                adp.Fill(dt);
-                if (dt.Rows.Count > 0)
+            con.Open();
+
+          
+                string query = "SELECT Image FROM Image_TB WHERE productid = @ProductId"; // Replace ImageColumnName with your actual image column name
+
+                using (SqlCommand command = new SqlCommand(query, con))
                 {
-                   
-                        byte[] imagedata = null;
-                        SqlCommand cmd = new SqlCommand(sql, con);
-                        using (SqlDataReader reader = cmd.ExecuteReader())
+                    command.Parameters.AddWithValue("@ProductId", productId);
+
+                    byte[] imageBytes = (byte[])command.ExecuteScalar();
+
+                    if (imageBytes != null)
+                    {
+                        using (MemoryStream ms = new MemoryStream(imageBytes))
                         {
-                            if (reader.Read())
-                            {
-                                imagedata = (byte[])reader["Image"];
-                            }
+                            Show_Img.Image = Image.FromStream(ms); // Display the image in PictureBox
                         }
-                        if (imagedata != null)
-                        {
-                            using (MemoryStream ms = new MemoryStream(imagedata))
-                            {
-                                Image image = Image.FromStream(ms);
-
-                                PictureBox pictureBox = new PictureBox();
-                                Show_Img.Image = image;
-                            }
-                        }
-
-                   
-                }
-
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message);
-            }
-            finally { con.Close(); }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Image not found for the selected product.");
+                    }
+                }con.Close();
+            
         }
+
+       
     }
 }
