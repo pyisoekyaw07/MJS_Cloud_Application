@@ -551,7 +551,7 @@ namespace MJS
         {
             for (int i = 0; i < store_data.Rows.Count; i++)
             {
-                if (txt_out_no.Text == store_data.Rows[i].Cells[6].Value.ToString())
+                if (txt_out_no.Text == store_data.Rows[i].Cells[5].Value.ToString())
                 {
                     MessageBox.Show("Already have data insert!");
                     return;
