@@ -29,7 +29,7 @@
     <InstallUrl>https://raw.githubusercontent.com/pyisoekyaw07/MJS_Cloud_Application/main/published/</InstallUrl>
     <UpdateUrl>https://raw.githubusercontent.com/pyisoekyaw07/MJS_Cloud_Application/main/published/</UpdateUrl>
     <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
-    <ApplicationRevision>16</ApplicationRevision>
+    <ApplicationRevision>17</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -56,7 +56,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>05F33E279915FF4BEF3DC618A80352299ACA75BF</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>165E04FF4A990E83DF0720A68810BFCA28134F5A</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestKeyFile>
