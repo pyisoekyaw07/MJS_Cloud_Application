@@ -33,51 +33,51 @@ namespace MJS
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(g_sale));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle57 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle58 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle59 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle60 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle61 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle62 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle63 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle64 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle65 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle66 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle67 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle68 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle69 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle70 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle71 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle72 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle73 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle74 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle75 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle76 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle77 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle78 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle79 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle80 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle81 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle82 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle83 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle84 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle85 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle86 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle87 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle88 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle89 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle90 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txt_date = new System.Windows.Forms.TextBox();
             this.txt_time = new System.Windows.Forms.TextBox();
             this.txt_salevoc_number = new System.Windows.Forms.TextBox();
@@ -787,7 +787,7 @@ namespace MJS
             this.panel3.Controls.Add(this.label37);
             this.panel3.Controls.Add(this.label38);
             this.panel3.Controls.Add(this.iconButton2);
-            this.panel3.Location = new System.Drawing.Point(13, 361);
+            this.panel3.Location = new System.Drawing.Point(13, 358);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(497, 342);
             this.panel3.TabIndex = 449;
@@ -938,8 +938,8 @@ namespace MJS
             // 
             // Pid
             // 
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Pid.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle46.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pid.DefaultCellStyle = dataGridViewCellStyle46;
             this.Pid.HeaderText = "Product ID";
             this.Pid.MinimumWidth = 6;
             this.Pid.Name = "Pid";
@@ -947,8 +947,8 @@ namespace MJS
             // 
             // Item
             // 
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Item.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle47.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Item.DefaultCellStyle = dataGridViewCellStyle47;
             this.Item.HeaderText = "Item";
             this.Item.MinimumWidth = 6;
             this.Item.Name = "Item";
@@ -956,8 +956,8 @@ namespace MJS
             // 
             // Itemname
             // 
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Itemname.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle48.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Itemname.DefaultCellStyle = dataGridViewCellStyle48;
             this.Itemname.HeaderText = "Itemname";
             this.Itemname.MinimumWidth = 6;
             this.Itemname.Name = "Itemname";
@@ -965,8 +965,8 @@ namespace MJS
             // 
             // qty
             // 
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.qty.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle49.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.qty.DefaultCellStyle = dataGridViewCellStyle49;
             this.qty.HeaderText = "Quantity";
             this.qty.MinimumWidth = 6;
             this.qty.Name = "qty";
@@ -974,8 +974,8 @@ namespace MJS
             // 
             // gm
             // 
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gm.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle50.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gm.DefaultCellStyle = dataGridViewCellStyle50;
             this.gm.HeaderText = "Gm";
             this.gm.MinimumWidth = 6;
             this.gm.Name = "gm";
@@ -984,11 +984,11 @@ namespace MJS
             // delete
             // 
             this.delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle6.NullValue")));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            this.delete.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle51.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle51.NullValue")));
+            dataGridViewCellStyle51.SelectionBackColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle51.SelectionForeColor = System.Drawing.Color.Black;
+            this.delete.DefaultCellStyle = dataGridViewCellStyle51;
             this.delete.HeaderText = "";
             this.delete.Image = ((System.Drawing.Image)(resources.GetObject("delete.Image")));
             this.delete.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
@@ -1603,8 +1603,8 @@ namespace MJS
             // 
             // date
             // 
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.date.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle52.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date.DefaultCellStyle = dataGridViewCellStyle52;
             this.date.HeaderText = "Date";
             this.date.MinimumWidth = 6;
             this.date.Name = "date";
@@ -1612,8 +1612,8 @@ namespace MJS
             // 
             // time
             // 
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.time.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle53.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.time.DefaultCellStyle = dataGridViewCellStyle53;
             this.time.HeaderText = "Time";
             this.time.MinimumWidth = 6;
             this.time.Name = "time";
@@ -1621,8 +1621,8 @@ namespace MJS
             // 
             // productid
             // 
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.productid.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle54.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productid.DefaultCellStyle = dataGridViewCellStyle54;
             this.productid.HeaderText = "Product ID";
             this.productid.MinimumWidth = 6;
             this.productid.Name = "productid";
@@ -1630,8 +1630,8 @@ namespace MJS
             // 
             // txtgoldprice
             // 
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtgoldprice.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle55.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtgoldprice.DefaultCellStyle = dataGridViewCellStyle55;
             this.txtgoldprice.HeaderText = "GoldPrice";
             this.txtgoldprice.MinimumWidth = 6;
             this.txtgoldprice.Name = "txtgoldprice";
@@ -1639,8 +1639,8 @@ namespace MJS
             // 
             // txtitem
             // 
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtitem.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle56.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtitem.DefaultCellStyle = dataGridViewCellStyle56;
             this.txtitem.HeaderText = "Item";
             this.txtitem.MinimumWidth = 6;
             this.txtitem.Name = "txtitem";
@@ -1648,8 +1648,8 @@ namespace MJS
             // 
             // txtitemname
             // 
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtitemname.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle57.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtitemname.DefaultCellStyle = dataGridViewCellStyle57;
             this.txtitemname.HeaderText = "Itemname";
             this.txtitemname.MinimumWidth = 6;
             this.txtitemname.Name = "txtitemname";
@@ -1657,8 +1657,8 @@ namespace MJS
             // 
             // txtqty
             // 
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtqty.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle58.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtqty.DefaultCellStyle = dataGridViewCellStyle58;
             this.txtqty.HeaderText = "Quantity";
             this.txtqty.MinimumWidth = 6;
             this.txtqty.Name = "txtqty";
@@ -1673,8 +1673,8 @@ namespace MJS
             // 
             // txtgoldtype
             // 
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtgoldtype.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle59.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtgoldtype.DefaultCellStyle = dataGridViewCellStyle59;
             this.txtgoldtype.HeaderText = "GoldType";
             this.txtgoldtype.MinimumWidth = 6;
             this.txtgoldtype.Name = "txtgoldtype";
@@ -1682,8 +1682,8 @@ namespace MJS
             // 
             // txtgm
             // 
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtgm.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle60.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtgm.DefaultCellStyle = dataGridViewCellStyle60;
             this.txtgm.HeaderText = "Gm";
             this.txtgm.MinimumWidth = 6;
             this.txtgm.Name = "txtgm";
@@ -1691,8 +1691,8 @@ namespace MJS
             // 
             // txtk
             // 
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtk.DefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle61.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtk.DefaultCellStyle = dataGridViewCellStyle61;
             this.txtk.HeaderText = "K";
             this.txtk.MinimumWidth = 6;
             this.txtk.Name = "txtk";
@@ -1700,8 +1700,8 @@ namespace MJS
             // 
             // txtP
             // 
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtP.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle62.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtP.DefaultCellStyle = dataGridViewCellStyle62;
             this.txtP.HeaderText = "P";
             this.txtP.MinimumWidth = 6;
             this.txtP.Name = "txtP";
@@ -1709,8 +1709,8 @@ namespace MJS
             // 
             // txty
             // 
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txty.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle63.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txty.DefaultCellStyle = dataGridViewCellStyle63;
             this.txty.HeaderText = "Y";
             this.txty.MinimumWidth = 6;
             this.txty.Name = "txty";
@@ -1718,8 +1718,8 @@ namespace MJS
             // 
             // txts
             // 
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txts.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle64.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txts.DefaultCellStyle = dataGridViewCellStyle64;
             this.txts.HeaderText = "S";
             this.txts.MinimumWidth = 6;
             this.txts.Name = "txts";
@@ -1727,8 +1727,8 @@ namespace MJS
             // 
             // txtwk
             // 
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtwk.DefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle65.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtwk.DefaultCellStyle = dataGridViewCellStyle65;
             this.txtwk.HeaderText = "WK";
             this.txtwk.MinimumWidth = 6;
             this.txtwk.Name = "txtwk";
@@ -1743,8 +1743,8 @@ namespace MJS
             // 
             // txtwy
             // 
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtwy.DefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle66.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtwy.DefaultCellStyle = dataGridViewCellStyle66;
             this.txtwy.HeaderText = "WY";
             this.txtwy.MinimumWidth = 6;
             this.txtwy.Name = "txtwy";
@@ -1752,8 +1752,8 @@ namespace MJS
             // 
             // txtws
             // 
-            dataGridViewCellStyle22.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtws.DefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle67.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtws.DefaultCellStyle = dataGridViewCellStyle67;
             this.txtws.HeaderText = "WS";
             this.txtws.MinimumWidth = 6;
             this.txtws.Name = "txtws";
@@ -1761,8 +1761,8 @@ namespace MJS
             // 
             // txttk
             // 
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttk.DefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle68.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttk.DefaultCellStyle = dataGridViewCellStyle68;
             this.txttk.HeaderText = "TK";
             this.txttk.MinimumWidth = 6;
             this.txttk.Name = "txttk";
@@ -1770,8 +1770,8 @@ namespace MJS
             // 
             // txttp
             // 
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttp.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle69.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttp.DefaultCellStyle = dataGridViewCellStyle69;
             this.txttp.HeaderText = "TP";
             this.txttp.MinimumWidth = 6;
             this.txttp.Name = "txttp";
@@ -1779,8 +1779,8 @@ namespace MJS
             // 
             // txtty
             // 
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtty.DefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle70.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtty.DefaultCellStyle = dataGridViewCellStyle70;
             this.txtty.HeaderText = "TY";
             this.txtty.MinimumWidth = 6;
             this.txtty.Name = "txtty";
@@ -1788,8 +1788,8 @@ namespace MJS
             // 
             // txtts
             // 
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtts.DefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle71.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtts.DefaultCellStyle = dataGridViewCellStyle71;
             this.txtts.HeaderText = "TS";
             this.txtts.MinimumWidth = 6;
             this.txtts.Name = "txtts";
@@ -1797,8 +1797,8 @@ namespace MJS
             // 
             // txtmcost
             // 
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmcost.DefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle72.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtmcost.DefaultCellStyle = dataGridViewCellStyle72;
             this.txtmcost.HeaderText = "Making Charges";
             this.txtmcost.MinimumWidth = 6;
             this.txtmcost.Name = "txtmcost";
@@ -1806,8 +1806,8 @@ namespace MJS
             // 
             // txtrep
             // 
-            dataGridViewCellStyle28.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtrep.DefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle73.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtrep.DefaultCellStyle = dataGridViewCellStyle73;
             this.txtrep.HeaderText = "GPD Amount";
             this.txtrep.MinimumWidth = 6;
             this.txtrep.Name = "txtrep";
@@ -1815,8 +1815,8 @@ namespace MJS
             // 
             // txtsaleamt
             // 
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsaleamt.DefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle74.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtsaleamt.DefaultCellStyle = dataGridViewCellStyle74;
             this.txtsaleamt.HeaderText = "Sale Amount";
             this.txtsaleamt.MinimumWidth = 6;
             this.txtsaleamt.Name = "txtsaleamt";
@@ -1824,8 +1824,8 @@ namespace MJS
             // 
             // txtbb
             // 
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbb.DefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle75.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbb.DefaultCellStyle = dataGridViewCellStyle75;
             this.txtbb.HeaderText = "BB Amount";
             this.txtbb.MinimumWidth = 6;
             this.txtbb.Name = "txtbb";
@@ -1833,8 +1833,8 @@ namespace MJS
             // 
             // txtincludebb
             // 
-            dataGridViewCellStyle31.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtincludebb.DefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle76.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtincludebb.DefaultCellStyle = dataGridViewCellStyle76;
             this.txtincludebb.HeaderText = "In BB Amount";
             this.txtincludebb.MinimumWidth = 6;
             this.txtincludebb.Name = "txtincludebb";
@@ -1842,8 +1842,8 @@ namespace MJS
             // 
             // txttax
             // 
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttax.DefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle77.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttax.DefaultCellStyle = dataGridViewCellStyle77;
             this.txttax.HeaderText = "Tax";
             this.txttax.MinimumWidth = 6;
             this.txttax.Name = "txttax";
@@ -1851,8 +1851,8 @@ namespace MJS
             // 
             // txttaxamt
             // 
-            dataGridViewCellStyle33.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttaxamt.DefaultCellStyle = dataGridViewCellStyle33;
+            dataGridViewCellStyle78.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttaxamt.DefaultCellStyle = dataGridViewCellStyle78;
             this.txttaxamt.HeaderText = "Tax Amount";
             this.txttaxamt.MinimumWidth = 6;
             this.txttaxamt.Name = "txttaxamt";
@@ -1860,8 +1860,8 @@ namespace MJS
             // 
             // txtinludetax
             // 
-            dataGridViewCellStyle34.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtinludetax.DefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle79.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtinludetax.DefaultCellStyle = dataGridViewCellStyle79;
             this.txtinludetax.HeaderText = "In Tax Amount";
             this.txtinludetax.MinimumWidth = 6;
             this.txtinludetax.Name = "txtinludetax";
@@ -1869,8 +1869,8 @@ namespace MJS
             // 
             // txtproper
             // 
-            dataGridViewCellStyle35.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtproper.DefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle80.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtproper.DefaultCellStyle = dataGridViewCellStyle80;
             this.txtproper.HeaderText = "Promotion %";
             this.txtproper.MinimumWidth = 6;
             this.txtproper.Name = "txtproper";
@@ -1878,8 +1878,8 @@ namespace MJS
             // 
             // txtproperamt
             // 
-            dataGridViewCellStyle36.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtproperamt.DefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle81.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtproperamt.DefaultCellStyle = dataGridViewCellStyle81;
             this.txtproperamt.HeaderText = "Promotion Amount (%)";
             this.txtproperamt.MinimumWidth = 6;
             this.txtproperamt.Name = "txtproperamt";
@@ -1887,8 +1887,8 @@ namespace MJS
             // 
             // txtproflat
             // 
-            dataGridViewCellStyle37.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtproflat.DefaultCellStyle = dataGridViewCellStyle37;
+            dataGridViewCellStyle82.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtproflat.DefaultCellStyle = dataGridViewCellStyle82;
             this.txtproflat.HeaderText = "Promotion Amount (Flat)";
             this.txtproflat.MinimumWidth = 6;
             this.txtproflat.Name = "txtproflat";
@@ -1896,8 +1896,8 @@ namespace MJS
             // 
             // txttotal
             // 
-            dataGridViewCellStyle38.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttotal.DefaultCellStyle = dataGridViewCellStyle38;
+            dataGridViewCellStyle83.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttotal.DefaultCellStyle = dataGridViewCellStyle83;
             this.txttotal.HeaderText = "Total Amount";
             this.txttotal.MinimumWidth = 6;
             this.txttotal.Name = "txttotal";
@@ -1905,8 +1905,8 @@ namespace MJS
             // 
             // txtdis
             // 
-            dataGridViewCellStyle39.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtdis.DefaultCellStyle = dataGridViewCellStyle39;
+            dataGridViewCellStyle84.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtdis.DefaultCellStyle = dataGridViewCellStyle84;
             this.txtdis.HeaderText = "Discount Amount";
             this.txtdis.MinimumWidth = 6;
             this.txtdis.Name = "txtdis";
@@ -1914,8 +1914,8 @@ namespace MJS
             // 
             // txtfinalamt
             // 
-            dataGridViewCellStyle40.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtfinalamt.DefaultCellStyle = dataGridViewCellStyle40;
+            dataGridViewCellStyle85.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtfinalamt.DefaultCellStyle = dataGridViewCellStyle85;
             this.txtfinalamt.HeaderText = "Final Amount";
             this.txtfinalamt.MinimumWidth = 6;
             this.txtfinalamt.Name = "txtfinalamt";
@@ -1923,8 +1923,8 @@ namespace MJS
             // 
             // txtrmk
             // 
-            dataGridViewCellStyle41.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtrmk.DefaultCellStyle = dataGridViewCellStyle41;
+            dataGridViewCellStyle86.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtrmk.DefaultCellStyle = dataGridViewCellStyle86;
             this.txtrmk.HeaderText = "Remark";
             this.txtrmk.MinimumWidth = 6;
             this.txtrmk.Name = "txtrmk";
@@ -1932,8 +1932,8 @@ namespace MJS
             // 
             // txtemp
             // 
-            dataGridViewCellStyle42.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtemp.DefaultCellStyle = dataGridViewCellStyle42;
+            dataGridViewCellStyle87.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtemp.DefaultCellStyle = dataGridViewCellStyle87;
             this.txtemp.HeaderText = "Empolyee";
             this.txtemp.MinimumWidth = 6;
             this.txtemp.Name = "txtemp";
@@ -1941,8 +1941,8 @@ namespace MJS
             // 
             // txtshop
             // 
-            dataGridViewCellStyle43.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtshop.DefaultCellStyle = dataGridViewCellStyle43;
+            dataGridViewCellStyle88.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtshop.DefaultCellStyle = dataGridViewCellStyle88;
             this.txtshop.HeaderText = "Shop";
             this.txtshop.MinimumWidth = 6;
             this.txtshop.Name = "txtshop";
@@ -1950,8 +1950,8 @@ namespace MJS
             // 
             // txtform
             // 
-            dataGridViewCellStyle44.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtform.DefaultCellStyle = dataGridViewCellStyle44;
+            dataGridViewCellStyle89.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtform.DefaultCellStyle = dataGridViewCellStyle89;
             this.txtform.HeaderText = "Form";
             this.txtform.MinimumWidth = 6;
             this.txtform.Name = "txtform";
@@ -1959,8 +1959,8 @@ namespace MJS
             // 
             // txtcounter
             // 
-            dataGridViewCellStyle45.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcounter.DefaultCellStyle = dataGridViewCellStyle45;
+            dataGridViewCellStyle90.Font = new System.Drawing.Font("Pyidaungsu", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcounter.DefaultCellStyle = dataGridViewCellStyle90;
             this.txtcounter.HeaderText = "Counter";
             this.txtcounter.MinimumWidth = 6;
             this.txtcounter.Name = "txtcounter";

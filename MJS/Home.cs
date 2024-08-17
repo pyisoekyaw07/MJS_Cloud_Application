@@ -226,6 +226,11 @@ namespace MJS
 
         }
 
+        private void todayProductToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            formload(new Today_product());
+        }
+
         /*-----------------------------------------------------------------------------*/
     }
 }

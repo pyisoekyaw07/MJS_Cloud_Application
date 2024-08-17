@@ -987,3 +987,4 @@ D:\MJS_Cloud_Application\MJS\obj\Debug\MJS.csproj.Up2Date
 D:\MJS_Cloud_Application\MJS\obj\Debug\MJS.exe
 D:\MJS_Cloud_Application\MJS\obj\Debug\MJS.pdb
 D:\MJS_Cloud_Application\MJS\bin\Debug\Microsoft.MSXML.dll
+D:\MJS_Cloud_Application\MJS\obj\Debug\MJS.Today_product.resources

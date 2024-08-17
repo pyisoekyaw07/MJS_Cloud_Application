@@ -29,9 +29,10 @@
     <InstallUrl>https://raw.githubusercontent.com/pyisoekyaw07/MJS_Cloud_Application/main/published/</InstallUrl>
     <UpdateUrl>https://raw.githubusercontent.com/pyisoekyaw07/MJS_Cloud_Application/main/published/</UpdateUrl>
     <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
-    <ApplicationRevision>18</ApplicationRevision>
+    <ApplicationRevision>19</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -339,6 +340,12 @@
       <DependentUpon>shop_login.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Today_product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Today_product.Designer.cs">
+      <DependentUpon>Today_product.cs</DependentUpon>
+    </Compile>
     <Compile Include="wallpaper.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -391,6 +398,9 @@
     </Compile>
     <EmbeddedResource Include="shop_login.resx">
       <DependentUpon>shop_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Today_product.resx">
+      <DependentUpon>Today_product.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="wallpaper.resx">
       <DependentUpon>wallpaper.cs</DependentUpon>

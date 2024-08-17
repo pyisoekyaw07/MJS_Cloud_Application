@@ -142,7 +142,10 @@ namespace MJS
             txt_show.Text = "Cash";         
             txt_currency_rate.Text = "Currency Rate";
             txt_currency_rate.ForeColor = Color.LightGray;
-           
+            Cash_group.Visible = true;
+            foreign_group.Visible = false;
+            Bank_group.Visible = false;
+            Mobile_group.Visible = false;
         }
 
         private void cash_rdo_btn_Click(object sender, EventArgs e)
@@ -389,10 +392,12 @@ namespace MJS
                     
                     con.Open();
                     sql = "SELECT Product_ID FROM g_sale";
-                   
+                  
+
 
                     cmd = new SqlCommand(sql, con);
-                    
+                 
+
 
                     var maxid = cmd.ExecuteScalar() as string;
                     
@@ -412,6 +417,7 @@ namespace MJS
                          "@Tax,@Tax_Amt,@In_Tax_Amt,@Pro_Percent,@Pro_Percent_Amt,@Pro_Flat_Amt,@Amount,@Dis_Amt,@Total_Amt,@Remark,@Empolyee,@Shop,@Form,@Counter)", con);
 
                        
+
                         cmd.Parameters.AddWithValue("@Date", add_data.Rows[i].Cells[0].Value);
                         cmd.Parameters.AddWithValue("@Time", add_data.Rows[i].Cells[1].Value);
                         cmd.Parameters.AddWithValue("@Sale_Voucher_No",txt_Voucher_no.Text.ToString());
@@ -454,10 +460,16 @@ namespace MJS
                         cmd.Parameters.AddWithValue("@Shop", add_data.Rows[i].Cells[38].Value);
                         cmd.Parameters.AddWithValue("@Form", add_data.Rows[i].Cells[39].Value);
                         cmd.Parameters.AddWithValue("@Counter", add_data.Rows[i].Cells[40].Value);
-                       
+
+                        /*------------------------------------------- Today Product ______________________________________________________________*/
+                        /*SaveVouchertodayproduct();*/
+                        /*______________________________________________________________*/
+
                         primarykey = Convert.ToInt32(cmd.ExecuteScalar());
+                      
 
                         addpaymentmethod();
+                        
 
                     }
                     // Iterate through all rows in the DataGridView
@@ -518,6 +530,43 @@ namespace MJS
             }
 
         }
+
+        private void SaveVouchertodayproduct()
+        {
+           
+            string voucherNumber = txt_Voucher_no.Text;
+
+            con.Open();
+
+            foreach (DataGridViewRow row in dgv_TDP.Rows)
+                {
+                    
+                    if (row.IsNewRow)
+                        continue;
+
+                   
+                    string query = "insert into todayproduct (Voucher_No,Product_ID,Item,Itemname,Qty,Gm)values(@Voucher_No,@Product_ID,@Item,@Itemname,@Qty,@Gm)";
+
+                    using (SqlCommand command = new SqlCommand(query, con))
+                    {
+                       
+                    command.Parameters.AddWithValue("@Voucher_No", voucherNumber);
+                    command.Parameters.AddWithValue("@Product_ID", row.Cells[0].Value ?? DBNull.Value); 
+                    command.Parameters.AddWithValue("@Item", row.Cells[1].Value ?? DBNull.Value);
+                    command.Parameters.AddWithValue("@Itemname", row.Cells[2].Value ?? DBNull.Value);
+                    command.Parameters.AddWithValue("@Qty", row.Cells[3].Value ?? DBNull.Value);
+                    command.Parameters.AddWithValue("@Gm", row.Cells[4].Value ?? DBNull.Value);
+
+
+                    
+                    command.ExecuteNonQuery();
+                    }
+                }
+
+                /*System.Windows.Forms.MessageBox.Show("Voucher data saved successfully!");*/
+            
+        }
+
 
         private void DeleteRowFromDatabase(string value)
         {
