@@ -15,6 +15,10 @@ using OfficeOpenXml.ConditionalFormatting;
 using OfficeOpenXml.FormulaParsing.Excel.Functions.Text;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using System.Diagnostics.Eventing.Reader;
+using CrystalDecisions.CrystalReports.Engine;
+using System.Net;
+using CrystalDecisions.Shared;
+
 
 namespace MJS
 {
@@ -159,6 +163,7 @@ namespace MJS
                 string ivid = "0001";
                 /*txt_outvoucher.Text = form + ivshop + ivdate + "-" + ivid;*/
                 OutVoucher = form + ivshop + ivdate + "-" + ivid; 
+                outnumber.Text= OutVoucher;
 
                 /*MessageBox.Show("Code Is Reset");*/
                 adddata();
@@ -199,6 +204,7 @@ namespace MJS
                     string id = "0001";
                    /* txt_outvoucher.Text = form + shop + date + "-" + id;*/
                     OutVoucher= form + shop + date + "-" + id;
+                    outnumber.Text= OutVoucher;
                     adddata();
 
                 }
@@ -230,6 +236,7 @@ namespace MJS
                         /* txt_Dece.Text = autoid;*/
                        /* txt_outvoucher.Text = autoid;*/
                         OutVoucher = autoid;
+                        outnumber.Text = OutVoucher;
                         adddata();
 
                     }
@@ -244,19 +251,7 @@ namespace MJS
 
         }
 
-        private void outproduct_btn_Click(object sender, EventArgs e)
-        {
-            timer2.Interval = 100;
-            timer2.Start();
-
-            if (store_data.Rows.Count > 0 && store_data.Rows[0].IsNewRow == false)
-            {
-                MessageBox.Show("success");
-            }
-            else { MessageBox.Show("ပယ်မည့်ပစ္စည်းထည့်ရန်လိုအပ်ပါသည်။"); }
-
-        }
-
+    
         private void timer2_Tick(object sender, EventArgs e)
         {
             try 
@@ -320,30 +315,14 @@ namespace MJS
 
         private void btn_out_Click(object sender, EventArgs e)
         {
-            /* if (showdata.Rows.Count > 0)
-             {
-                 try
-                 {
-                     con.Close();
-                     con.Open();
-                     string sql = "delete from closing_stock where ProductID='" + showdata.Rows[0].Cells[6].Value.ToString() + "'";
-                     SqlCommand cmd = new SqlCommand(sql, con);
-                     cmd.ExecuteNonQuery();
-                     con.Close();
-                     txt_out_no.Text = "";
-                     MessageBox.Show("Product Out Successfully");
-                 }
-                 catch (Exception ex)
-                 {
-                     MessageBox.Show(ex.Message);
-                 }
-             }
-             else
-             {
-                 MessageBox.Show("Something Went Wrong");
-             }*/
             timer2.Interval = 100;
             timer2.Start();
+
+            if (store_data.Rows.Count > 0 && store_data.Rows[0].IsNewRow == false)
+            {
+                MessageBox.Show("success");
+            }
+            else { MessageBox.Show("ပယ်မည့်ပစ္စည်းထည့်ရန်လိုအပ်ပါသည်။"); }
 
 
         }
@@ -446,12 +425,7 @@ namespace MJS
 
 
 
-        private void ico_add_btn_Click(object sender, EventArgs e)
-        {
-            string texttosent = txt_date.Text;
-            textBox1.Text= texttosent;
-
-        }
+  
 
         public void Totalamt2()
         {
@@ -486,10 +460,11 @@ namespace MJS
         private void btn_review_Click(object sender, EventArgs e)
         {
 
-           /* Form formbackground = new Form();
+            Form formbackground = new Form();
             try
             {
-                using (preview frm = new preview(txt_form.Text))
+
+                using (preview frm = new preview())
                 {
                     formbackground.StartPosition = FormStartPosition.Manual;
                     formbackground.FormBorderStyle = FormBorderStyle.None;
@@ -500,11 +475,9 @@ namespace MJS
                     formbackground.Location = this.Location;
                     formbackground.ShowInTaskbar = false;
                     formbackground.Show();
-                   
+                    frm.stdname = txt_form.Text;
                     frm.Owner = formbackground;
-
                     frm.ShowDialog();
-
                     formbackground.Dispose();
                 }
 
@@ -513,7 +486,7 @@ namespace MJS
             {
                 MessageBox.Show(ex.Message);
             }
-            finally { formbackground.Dispose(); }*/
+            finally { formbackground.Dispose(); }
 
         }
 
@@ -546,8 +519,9 @@ namespace MJS
             g_otherout g_Otherout = new g_otherout();
             g_Otherout.show();
         }
+        
 
-        private void btnadd_Click(object sender, EventArgs e)
+        private void Btn_Add_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < store_data.Rows.Count; i++)
             {
@@ -619,13 +593,13 @@ namespace MJS
                 Totalqty2();
                 show_image.Image = null;
 
-               /* if (show_image.Image != null)
-                {
+                /* if (show_image.Image != null)
+                 {
 
-                    Image image = show_image.Image;
-                    newRow.Cells[0].Value = image;
+                     Image image = show_image.Image;
+                     newRow.Cells[0].Value = image;
 
-                }*/
+                 }*/
             }
 
             catch
@@ -634,48 +608,68 @@ namespace MJS
             }
         }
 
-
-        private void cancel_btn_Click(object sender, EventArgs e)
+        private void btn_print_Click(object sender, EventArgs e)
         {
-            g_otherout g_Otherout = new g_otherout();
-            g_Otherout.show();
+            string voucherNumber = outnumber.Text.ToString();
+            string connectionString = "Server=150.95.88.172;Database=MJS;User Id=sa;Password=Modernjewellery@5;";
+            string query = "SELECT * FROM other_out WHERE OutVoucher_No =@VoucherNumber";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@VoucherNumber", voucherNumber);
+
+                try
+                {
+                    connection.Open();
+                    SqlDataReader reader = command.ExecuteReader();
+
+                    if (reader.HasRows)
+                    {
+                        // Voucher exists; proceed to load and show the report
+                        ShowReport(voucherNumber);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Voucher number not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Database error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                
+            }
+            
+
         }
-        
-
-        
-        private void preview_btn_Click(object sender, EventArgs e)
+        private void ShowReport(string voucherNumber)
         {
-            
-            
-            Form formbackground = new Form();
+            string reportPath = @"\\150.95.88.172\Report\Gold_Otherout.rpt"; // Network path to the report file
+
             try
             {
+                // Load the report
+                ReportDocument reportDocument = new ReportDocument();
+                reportDocument.Load(reportPath);
+                reportDocument.SetParameterValue("VoucherNumber",outnumber.Text);
+                reportDocument.SetDatabaseLogon("sa", "Modernjewellery@5", "150.95.88.172", "MJS");
 
-                using (preview frm = new preview())
-                {
-                    formbackground.StartPosition = FormStartPosition.Manual;
-                    formbackground.FormBorderStyle = FormBorderStyle.None;
-                    formbackground.Opacity = .70d;
-                    formbackground.BackColor = Color.Black;
-                    formbackground.WindowState = FormWindowState.Maximized;
-                    formbackground.TopMost = true;
-                    formbackground.Location = this.Location;
-                    formbackground.ShowInTaskbar = false;
-                    formbackground.Show();
-                    frm.stdname = txt_form.Text;
-                    frm.Owner = formbackground;                
-                    frm.ShowDialog();
-                    formbackground.Dispose();
-                }
 
+                // Set report parameters if needed
+                // reportDocument.SetParameterValue("VoucherNumber", voucherNumber);
+
+                // Display the report in CrystalReportViewer
+                Print_Voucher form2 = new Print_Voucher();
+                form2.ShowReport(reportDocument);
+                form2.ShowDialog(); // Display Form2 as a dialog
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show($"Error loading report: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            finally { formbackground.Dispose(); }
         }
-    }
 
+    }
 
 }

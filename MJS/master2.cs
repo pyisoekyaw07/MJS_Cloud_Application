@@ -1,4 +1,4 @@
-﻿using FontAwesome.Sharp;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -65,7 +65,7 @@ namespace MJS
                 /* groupBox1.Show();*/
                 Pan_item.Show();
                 Parentitem_combo.Hide();
-               
+
                 label1.Text = "Item";
                 txt_master_item.Text = null;
                 chk_parent.Show();
@@ -186,7 +186,7 @@ namespace MJS
             adpt.Fill(dt);
             dataGridView1.DataSource = dt;
 
-          
+
         }
         public void showsourceremark()/*Show GoldPrice To Table Function*/
         {
@@ -437,7 +437,7 @@ namespace MJS
                 MessageBox.Show("No Internet Connection", "Check Internet Connect", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-  
+
 
         private void CheckComboBoxIndexInDatabase()/*check goldtype is have in sqlserver*/
         {
@@ -460,19 +460,19 @@ namespace MJS
 
                     using (SqlCommand command = new SqlCommand(query, con))
                     {
-                        command.Parameters.AddWithValue("@selectedIndex", selectedIndex );
+                        command.Parameters.AddWithValue("@selectedIndex", selectedIndex);
 
                         int count = (int)command.ExecuteScalar();
 
                         if (count > 0)
                         {
-                           /* SqlCommand itemcmd = new SqlCommand("update goldprice set Date=@Date,Time=@Time,Gold_Type=@Goldtype,Purchase_Gold_price=@Goldprice where Gold_Type=N'" + txt_master_item + "'", con);
-                            itemcmd.Parameters.AddWithValue("@Date", txt_Date.Text);
-                            itemcmd.Parameters.AddWithValue("@Time", txt_Time.Text);
-                            itemcmd.Parameters.AddWithValue("@Goldtype", Parentitem_combo.Text);
-                            itemcmd.Parameters.AddWithValue("@Goldprice", txt_master_item.Text);
-                            *//*con.Open();*//*
-                            itemcmd.ExecuteNonQuery();*/
+                            /* SqlCommand itemcmd = new SqlCommand("update goldprice set Date=@Date,Time=@Time,Gold_Type=@Goldtype,Purchase_Gold_price=@Goldprice where Gold_Type=N'" + txt_master_item + "'", con);
+                             itemcmd.Parameters.AddWithValue("@Date", txt_Date.Text);
+                             itemcmd.Parameters.AddWithValue("@Time", txt_Time.Text);
+                             itemcmd.Parameters.AddWithValue("@Goldtype", Parentitem_combo.Text);
+                             itemcmd.Parameters.AddWithValue("@Goldprice", txt_master_item.Text);
+                             *//*con.Open();*//*
+                             itemcmd.ExecuteNonQuery();*/
                             /*con.Close();*/
                             SqlCommand itemnamecmd = new SqlCommand("update goldprice set Date=@Date,Time=@Time,Gold_Type=@Goldtype,Purchase_Gold_Price=@Goldprice,Sale_Gold_Price=@salegp where Gold_Type=N'" + Parentitem_combo.Text + "'", con);
                             itemnamecmd.Parameters.AddWithValue("@Date", txt_Date.Text);
@@ -723,14 +723,14 @@ namespace MJS
         /*-----------------------------------------------------------Choose Item For Itemname----------------------------------------------------*/
         private void Parentitem_combo_Click_2(object sender, EventArgs e)
         {
-            if (itemtype_combo.Text == "") 
+            if (itemtype_combo.Text == "")
             {
                 MessageBox.Show("Please Select Type First");
             }
-            if (comboBox1.SelectedIndex==0 && itemtype_combo.SelectedIndex == 0)/*Gold itmename*/
+            if (comboBox1.SelectedIndex == 0 && itemtype_combo.SelectedIndex == 0)/*Gold itmename*/
             {
-                try 
-                
+                try
+
                 {
                     con.Open();
                     SqlCommand itemcmd = new SqlCommand("Select Golditem from golditem", con);
@@ -748,17 +748,17 @@ namespace MJS
                     }
                     con.Close();
 
-                } 
-                
+                }
+
                 catch (Exception ex)
-                
+
                 {
                     MessageBox.Show(ex.Message);
                 }
-                
+
 
             }
-           
+
             /*-------------------------------------------------------------------------------------------*/
             else if (itemtype_combo.SelectedIndex == 1)/*WhiteGold*/
             {
@@ -837,17 +837,17 @@ namespace MJS
 
             if (comboBox1.SelectedIndex == 0 && itemtype_combo.SelectedIndex == 0 && chk_parent.Checked == false)/*UpdateItem*/
             {
-                int i, j;
+                int i;
                 i = dataGridView1.CurrentCell.RowIndex;
-                /*j = dataGridView1.CurrentCell.ColumnIndex;*/
+               
 
                 txt_update.Text = dataGridView1.Rows[i].Cells[2].Value.ToString();
             }
             else if (comboBox1.SelectedIndex == 0 && itemtype_combo.SelectedIndex == 0 && chk_parent.Checked == true)
             {
-                int i, j;
+                int i;
                 i = dataGridView1.CurrentCell.RowIndex;
-                /*j = dataGridView1.CurrentCell.ColumnIndex;*/
+              
                 txt_item.Text = dataGridView1.Rows[i].Cells[2].Value.ToString();
                 txt_update.Text = dataGridView1.Rows[i].Cells[3].Value.ToString();
 
@@ -855,16 +855,16 @@ namespace MJS
             }
             else if (comboBox1.SelectedIndex == 1 && itemtype_combo.SelectedIndex == 0 && chk_parent.Checked == false)
             {
-                int i, j;
+                int i;
                 i = dataGridView1.CurrentCell.RowIndex;
-                /*j = dataGridView1.CurrentCell.ColumnIndex;*/
+            
                 txt_update.Text = dataGridView1.Rows[i].Cells[2].Value.ToString();
             }
             else if (comboBox1.SelectedIndex == 3 && chk_parent.Checked == false)
             {
-                int i, j;
+                int i;
                 i = dataGridView1.CurrentCell.RowIndex;
-                /*j = dataGridView1.CurrentCell.ColumnIndex;*/
+             
                 txt_update.Text = dataGridView1.Rows[i].Cells[2].Value.ToString();
             }
         }
@@ -941,18 +941,6 @@ namespace MJS
             }
         }
 
-        private void btn_product_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectedIndex = 0;
-        }
-        private void btn_shop_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectedIndex = 1;
-        }
-        private void btn_setting_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectedIndex = 2;
-        }
 
         private void chk_parent_CheckedChanged(object sender, EventArgs e)
         {
@@ -970,14 +958,15 @@ namespace MJS
                 label1.Text = "Item";
                 Parentitem_combo.SelectedIndex = -1;
             }
- 
+
         }
 
         private void btn_sellingprice_Click(object sender, EventArgs e)
         {
-           
-            if (txt_sellingPrice.Text != "") 
+
+            if (txt_sellingPrice.Text != "")
             {
+                con.Close();
                 try
                 {
                     con.Open();
@@ -990,16 +979,21 @@ namespace MJS
                     {
                         MessageBox.Show("success");
                         txt_sellingPrice.Text = "";
+
+                        adpt = new SqlDataAdapter("select * from setting", con);
+                        dt = new DataTable();
+                        adpt.Fill(dt);
+                        dgv_show.DataSource = dt;
                     }
                     con.Close();
                 }
                 catch (Exception ex) { MessageBox.Show(ex.Message); }
             }
-            else 
+            else
             {
                 MessageBox.Show("Please Insert Selling Price");
             }
-                     
+
         }
 
         private void txt_sellingPrice_KeyPress(object sender, KeyPressEventArgs e)
@@ -1010,8 +1004,164 @@ namespace MJS
             }
         }
 
+        private void Btn_Pd_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 0;
+        }
+
+        private void Btn_Shop2_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 1;
+        }
+
+        private void Btn_Set_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 2;
+        }
+
+        private void btn_fct_Click(object sender, EventArgs e)
+        {
+            
+            if (txt_fct.Text != "")
+            {
+                con.Close();
+                try
+                {
+                    con.Open();
+                    SqlCommand goldcmd = new SqlCommand("insert into foreign_currency_type values(@Date,@Time,@Foreign_Currency)", con);
+                    goldcmd.Parameters.AddWithValue("@Date", txt_Date.Text);
+                    goldcmd.Parameters.AddWithValue("@Time", txt_Time.Text);
+                    goldcmd.Parameters.AddWithValue("@Foreign_Currency", txt_fct.Text);
+
+                    goldcmd.ExecuteNonQuery();
+
+                    MessageBox.Show("success");
+                    txt_fct.Text = "";
+
+                    adpt = new SqlDataAdapter("select * from foreign_currency_type", con);
+                    dt = new DataTable();
+                    adpt.Fill(dt);
+                    dgv_show.DataSource = dt;
 
 
-        /*---------------------------------------------------------------------------------------------------------------------*/
+                }
+                catch (Exception ex) { MessageBox.Show(ex.Message); }
+            }
+            else
+            {
+                MessageBox.Show("Please Insert Foreign Currency Type");
+            }
+        }
+
+        private void btn_bankcard_Click(object sender, EventArgs e)
+        {
+            con.Close();
+
+            try
+
+            {
+
+                con.Open();
+
+                SqlCommand goldcmd = new SqlCommand("insert into bank_card_type values(@Date,@Time,@Bank_Card,@POS)", con);
+
+                goldcmd.Parameters.AddWithValue("@Date", txt_Date.Text);
+                goldcmd.Parameters.AddWithValue("@Time", txt_Time.Text);
+                goldcmd.Parameters.AddWithValue("@Bank_Card", txt_bankcard.Text);
+                goldcmd.Parameters.AddWithValue("@POS", txt_pos.Text);
+                goldcmd.ExecuteNonQuery();
+
+                MessageBox.Show("success");
+
+                txt_bankcard.Text = "";
+                txt_pos.Text = "";
+
+                adpt = new SqlDataAdapter("select * from bank_card_type", con);
+                dt = new DataTable();
+                adpt.Fill(dt);
+                dgv_show.DataSource = dt;
+
+            }
+
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
+
+        }
+
+        private void btn_mobilebanking_Click(object sender, EventArgs e)
+        {
+            
+            if (txt_mobilebanking.Text != "")
+            {
+                con.Close();
+                try
+                {
+                    con.Open();
+                    SqlCommand goldcmd = new SqlCommand("insert into mobile_banking_type values(@Date,@Time,@Mobile_Banking)", con);
+                    goldcmd.Parameters.AddWithValue("@Date", txt_Date.Text);
+                    goldcmd.Parameters.AddWithValue("@Time", txt_Time.Text);
+                    goldcmd.Parameters.AddWithValue("@Mobile_Banking", txt_mobilebanking.Text);
+
+                    goldcmd.ExecuteNonQuery();
+
+                    MessageBox.Show("success");
+                    txt_mobilebanking.Text = "";
+
+                    adpt = new SqlDataAdapter("select * from mobile_banking_type", con);
+                    dt = new DataTable();
+                    adpt.Fill(dt);
+                    dgv_show.DataSource = dt;
+
+
+                }
+                catch (Exception ex) { MessageBox.Show(ex.Message); }
+            }
+            else
+            {
+                MessageBox.Show("Please Insert Mobile Banking Type");
+            }
+        }
+
+        private void setting_tab_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int selectedIndex = setting_tab.SelectedIndex;
+
+            // Check which tab is selected and show a message accordingly
+            switch (selectedIndex)
+            {
+                case 0:
+
+                    adpt = new SqlDataAdapter("select * from setting", con);
+                    dt = new DataTable();
+                    adpt.Fill(dt);
+                    dgv_show.DataSource = dt;
+
+                    break;
+                case 1:
+
+                    adpt = new SqlDataAdapter("select * from foreign_currency_type", con);
+                    dt = new DataTable();
+                    adpt.Fill(dt);
+                    dgv_show.DataSource = dt;
+
+                    break;
+                case 2:
+
+                    adpt = new SqlDataAdapter("select * from bank_card_type", con);
+                    dt = new DataTable();
+                    adpt.Fill(dt);
+                    dgv_show.DataSource = dt;
+
+                    break;
+                case 3:
+
+                    adpt = new SqlDataAdapter("select * from mobile_banking_type", con);
+                    dt = new DataTable();
+                    adpt.Fill(dt);
+                    dgv_show.DataSource = dt;
+
+                    break;
+            }
+            /*---------------------------------------------------------------------------------------------------------------------*/
+        }
     }
 }

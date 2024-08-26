@@ -168,10 +168,6 @@ namespace MJS
             this.label35 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
-            this.btn_cart = new Krypton.Toolkit.KryptonButton();
-            this.btn_reg_save = new Krypton.Toolkit.KryptonButton();
-            this.btn_reg_cancel = new Krypton.Toolkit.KryptonButton();
-            this.btn_reg_preview = new Krypton.Toolkit.KryptonButton();
             this.label21 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
@@ -183,6 +179,8 @@ namespace MJS
             this.txt_sp = new System.Windows.Forms.TextBox();
             this.txt_sy = new System.Windows.Forms.TextBox();
             this.txt_ss = new System.Windows.Forms.TextBox();
+            this.Btn_AddGirdview = new System.Windows.Forms.Button();
+            this.txt_qty = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -352,7 +350,7 @@ namespace MJS
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.label11.Location = new System.Drawing.Point(-570, 22);
+            this.label11.Location = new System.Drawing.Point(-603, 22);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(0, 22);
             this.label11.TabIndex = 107;
@@ -365,14 +363,14 @@ namespace MJS
             this.btn_review.ForeColor = System.Drawing.Color.White;
             this.btn_review.Image = ((System.Drawing.Image)(resources.GetObject("btn_review.Image")));
             this.btn_review.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_review.Location = new System.Drawing.Point(882, 781);
+            this.btn_review.Location = new System.Drawing.Point(1226, 523);
             this.btn_review.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_review.Name = "btn_review";
             this.btn_review.Size = new System.Drawing.Size(156, 47);
             this.btn_review.TabIndex = 106;
             this.btn_review.Text = "&Preview";
             this.btn_review.UseVisualStyleBackColor = false;
-            this.btn_review.Visible = false;
+            this.btn_review.Click += new System.EventHandler(this.btn_review_Click);
             // 
             // label23
             // 
@@ -401,14 +399,14 @@ namespace MJS
             this.btn_cancel.ForeColor = System.Drawing.Color.White;
             this.btn_cancel.Image = ((System.Drawing.Image)(resources.GetObject("btn_cancel.Image")));
             this.btn_cancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_cancel.Location = new System.Drawing.Point(720, 781);
+            this.btn_cancel.Location = new System.Drawing.Point(1065, 523);
             this.btn_cancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(156, 47);
             this.btn_cancel.TabIndex = 105;
             this.btn_cancel.Text = "&Cancel";
             this.btn_cancel.UseVisualStyleBackColor = false;
-            this.btn_cancel.Visible = false;
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
             // btn_save
             // 
@@ -419,14 +417,14 @@ namespace MJS
             this.btn_save.ForeColor = System.Drawing.Color.White;
             this.btn_save.Image = ((System.Drawing.Image)(resources.GetObject("btn_save.Image")));
             this.btn_save.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_save.Location = new System.Drawing.Point(558, 781);
+            this.btn_save.Location = new System.Drawing.Point(903, 523);
             this.btn_save.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(156, 47);
             this.btn_save.TabIndex = 104;
             this.btn_save.Text = "&Save";
             this.btn_save.UseVisualStyleBackColor = false;
-            this.btn_save.Visible = false;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
             // label10
             // 
@@ -1088,7 +1086,7 @@ namespace MJS
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dataGridView1.RowTemplate.Height = 30;
-            this.dataGridView1.Size = new System.Drawing.Size(851, 267);
+            this.dataGridView1.Size = new System.Drawing.Size(818, 267);
             this.dataGridView1.TabIndex = 201;
             this.dataGridView1.TabStop = false;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -1592,46 +1590,6 @@ namespace MJS
             this.label38.TabIndex = 287;
             this.label38.Text = "TOTAL GM";
             // 
-            // btn_cart
-            // 
-            this.btn_cart.ButtonStyle = Krypton.Toolkit.ButtonStyle.Alternate;
-            this.btn_cart.Location = new System.Drawing.Point(162, 838);
-            this.btn_cart.Name = "btn_cart";
-            this.btn_cart.Size = new System.Drawing.Size(193, 45);
-            this.btn_cart.TabIndex = 19;
-            this.btn_cart.Values.Text = "Add To Cart";
-            this.btn_cart.Click += new System.EventHandler(this.btn_cart_Click);
-            // 
-            // btn_reg_save
-            // 
-            this.btn_reg_save.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_reg_save.Location = new System.Drawing.Point(859, 523);
-            this.btn_reg_save.Name = "btn_reg_save";
-            this.btn_reg_save.Size = new System.Drawing.Size(170, 44);
-            this.btn_reg_save.TabIndex = 20;
-            this.btn_reg_save.Values.Text = "&Save";
-            this.btn_reg_save.Click += new System.EventHandler(this.btn_reg_save_Click);
-            // 
-            // btn_reg_cancel
-            // 
-            this.btn_reg_cancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_reg_cancel.Location = new System.Drawing.Point(1052, 523);
-            this.btn_reg_cancel.Name = "btn_reg_cancel";
-            this.btn_reg_cancel.Size = new System.Drawing.Size(170, 44);
-            this.btn_reg_cancel.TabIndex = 21;
-            this.btn_reg_cancel.Values.Text = "&Cancel";
-            this.btn_reg_cancel.Click += new System.EventHandler(this.btn_reg_cancel_Click);
-            // 
-            // btn_reg_preview
-            // 
-            this.btn_reg_preview.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_reg_preview.Location = new System.Drawing.Point(1243, 523);
-            this.btn_reg_preview.Name = "btn_reg_preview";
-            this.btn_reg_preview.Size = new System.Drawing.Size(170, 44);
-            this.btn_reg_preview.TabIndex = 22;
-            this.btn_reg_preview.Values.Text = "&Preview";
-            this.btn_reg_preview.Click += new System.EventHandler(this.btn_reg_preview_Click);
-            // 
             // label21
             // 
             this.label21.Location = new System.Drawing.Point(1095, 704);
@@ -1741,6 +1699,27 @@ namespace MJS
             this.txt_ss.TextChanged += new System.EventHandler(this.txt_ss_TextChanged);
             this.txt_ss.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_ss_KeyPress);
             // 
+            // Btn_AddGirdview
+            // 
+            this.Btn_AddGirdview.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_AddGirdview.Location = new System.Drawing.Point(182, 826);
+            this.Btn_AddGirdview.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Btn_AddGirdview.Name = "Btn_AddGirdview";
+            this.Btn_AddGirdview.Size = new System.Drawing.Size(140, 46);
+            this.Btn_AddGirdview.TabIndex = 19;
+            this.Btn_AddGirdview.Text = "Add GridView";
+            this.Btn_AddGirdview.UseVisualStyleBackColor = true;
+            this.Btn_AddGirdview.Click += new System.EventHandler(this.Btn_AddGirdview_Click);
+            // 
+            // txt_qty
+            // 
+            this.txt_qty.Location = new System.Drawing.Point(665, 591);
+            this.txt_qty.Name = "txt_qty";
+            this.txt_qty.Size = new System.Drawing.Size(100, 20);
+            this.txt_qty.TabIndex = 308;
+            this.txt_qty.Text = "1";
+            this.txt_qty.Visible = false;
+            // 
             // gform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -1748,7 +1727,9 @@ namespace MJS
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1428, 929);
+            this.ClientSize = new System.Drawing.Size(1428, 931);
+            this.Controls.Add(this.txt_qty);
+            this.Controls.Add(this.Btn_AddGirdview);
             this.Controls.Add(this.label42);
             this.Controls.Add(this.txt_sk);
             this.Controls.Add(this.txt_sp);
@@ -1760,10 +1741,6 @@ namespace MJS
             this.Controls.Add(this.label36);
             this.Controls.Add(this.label33);
             this.Controls.Add(this.label21);
-            this.Controls.Add(this.btn_reg_preview);
-            this.Controls.Add(this.btn_reg_cancel);
-            this.Controls.Add(this.btn_reg_save);
-            this.Controls.Add(this.btn_cart);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.label34);
             this.Controls.Add(this.groupBox2);
@@ -1944,10 +1921,6 @@ namespace MJS
         private Label label35;
         private Label label37;
         private Label label38;
-        private Krypton.Toolkit.KryptonButton btn_cart;
-        private Krypton.Toolkit.KryptonButton btn_reg_preview;
-        private Krypton.Toolkit.KryptonButton btn_reg_cancel;
-        private Krypton.Toolkit.KryptonButton btn_reg_save;
         private Label label21;
         private Label label33;
         private Label label41;
@@ -1996,5 +1969,7 @@ namespace MJS
         private DataGridViewTextBoxColumn Form;
         private DataGridViewTextBoxColumn type;
         private DataGridViewImageColumn coledit;
+        private Button Btn_AddGirdview;
+        private TextBox txt_qty;
     }
 }

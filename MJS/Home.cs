@@ -155,9 +155,7 @@ namespace MJS
             lbl_Home.ForeColor = Color.White;
             pan_line_home.BackColor = Color.White;
             pan_line_home.Visible = true;
-            ico_home.ForeColor = Color.White;
-            ico_master.ForeColor = Color.FromArgb(167, 167, 167);
-            ico_rep.ForeColor = Color.FromArgb(167, 167, 167);
+            
         }
         public void masterclick()
         {
@@ -171,9 +169,7 @@ namespace MJS
             lbl_Home.ForeColor = Color.FromArgb(167, 167, 167);
             pan_line_home.BackColor = Color.FromArgb(167, 167, 167);
             pan_line_home.Visible = false;
-            ico_home.ForeColor = Color.FromArgb(167, 167, 167);
-            ico_master.ForeColor = Color.White;
-            ico_rep.ForeColor = Color.FromArgb(167, 167, 167);
+   
         }
         private void pan_home_Click(object sender, EventArgs e)
         {
@@ -204,12 +200,6 @@ namespace MJS
             formload(new closing_stock());
         }
 
-        private void iconPictureBox1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            login showlogin = new login();
-            showlogin.Show();
-        }
 
         private void registerToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
@@ -229,6 +219,13 @@ namespace MJS
         private void todayProductToolStripMenuItem_Click(object sender, EventArgs e)
         {
             formload(new Today_product());
+        }
+
+        private void pit_exit_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            login showlogin = new login();
+            showlogin.Show();
         }
 
         /*-----------------------------------------------------------------------------*/

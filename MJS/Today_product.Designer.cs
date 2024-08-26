@@ -30,6 +30,7 @@
         {
             this.btn_TPD_out = new System.Windows.Forms.Button();
             this.dgv_show = new System.Windows.Forms.DataGridView();
+            this.btn_TPD_in = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_show)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,6 +47,7 @@
             // 
             // dgv_show
             // 
+            this.dgv_show.AllowUserToAddRows = false;
             this.dgv_show.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -57,12 +59,24 @@
             this.dgv_show.Size = new System.Drawing.Size(817, 181);
             this.dgv_show.TabIndex = 1;
             // 
+            // btn_TPD_in
+            // 
+            this.btn_TPD_in.Location = new System.Drawing.Point(262, 32);
+            this.btn_TPD_in.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_TPD_in.Name = "btn_TPD_in";
+            this.btn_TPD_in.Size = new System.Drawing.Size(175, 49);
+            this.btn_TPD_in.TabIndex = 2;
+            this.btn_TPD_in.Text = "Today Product In";
+            this.btn_TPD_in.UseVisualStyleBackColor = true;
+            this.btn_TPD_in.Click += new System.EventHandler(this.btn_TPD_in_Click);
+            // 
             // Today_product
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(933, 320);
+            this.Controls.Add(this.btn_TPD_in);
             this.Controls.Add(this.dgv_show);
             this.Controls.Add(this.btn_TPD_out);
             this.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -81,5 +95,6 @@
 
         private System.Windows.Forms.Button btn_TPD_out;
         private System.Windows.Forms.DataGridView dgv_show;
+        private System.Windows.Forms.Button btn_TPD_in;
     }
 }

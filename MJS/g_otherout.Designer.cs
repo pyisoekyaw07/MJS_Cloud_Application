@@ -62,7 +62,6 @@ namespace MJS
             this.label32 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.ico_add_btn = new FontAwesome.Sharp.IconButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.label12 = new System.Windows.Forms.Label();
@@ -89,7 +88,6 @@ namespace MJS
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.show_image = new System.Windows.Forms.PictureBox();
             this.store_data = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -124,16 +122,17 @@ namespace MJS
             this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Action = new System.Windows.Forms.DataGridViewButtonColumn();
             this.timer3 = new System.Windows.Forms.Timer(this.components);
-            this.btnadd = new Krypton.Toolkit.KryptonButton();
-            this.outproduct_btn = new Krypton.Toolkit.KryptonButton();
-            this.cancel_btn = new Krypton.Toolkit.KryptonButton();
-            this.preview_btn = new Krypton.Toolkit.KryptonButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Btn_Add = new System.Windows.Forms.Button();
+            this.btn_print = new System.Windows.Forms.Button();
+            this.voucherno = new System.Windows.Forms.TextBox();
+            this.outnumber = new System.Windows.Forms.TextBox();
+            this.show_image = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.showdata)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.show_image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.store_data)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.show_image)).BeginInit();
             this.SuspendLayout();
             // 
             // showdata
@@ -402,21 +401,6 @@ namespace MJS
             // 
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
-            // ico_add_btn
-            // 
-            this.ico_add_btn.IconChar = FontAwesome.Sharp.IconChar.Add;
-            this.ico_add_btn.IconColor = System.Drawing.Color.Black;
-            this.ico_add_btn.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ico_add_btn.IconSize = 35;
-            this.ico_add_btn.Location = new System.Drawing.Point(507, 678);
-            this.ico_add_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ico_add_btn.Name = "ico_add_btn";
-            this.ico_add_btn.Size = new System.Drawing.Size(94, 46);
-            this.ico_add_btn.TabIndex = 3;
-            this.ico_add_btn.UseVisualStyleBackColor = true;
-            this.ico_add_btn.Visible = false;
-            this.ico_add_btn.Click += new System.EventHandler(this.ico_add_btn_Click);
-            // 
             // timer1
             // 
             this.timer1.Enabled = true;
@@ -440,15 +424,14 @@ namespace MJS
             // 
             this.btn_review.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_review.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.btn_review.Location = new System.Drawing.Point(881, 680);
+            this.btn_review.Location = new System.Drawing.Point(180, 621);
             this.btn_review.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_review.Name = "btn_review";
-            this.btn_review.Size = new System.Drawing.Size(126, 44);
+            this.btn_review.Size = new System.Drawing.Size(131, 44);
             this.btn_review.TabIndex = 256;
             this.btn_review.TabStop = false;
             this.btn_review.Text = "&Preview";
             this.btn_review.UseVisualStyleBackColor = true;
-            this.btn_review.Visible = false;
             this.btn_review.Click += new System.EventHandler(this.btn_review_Click);
             // 
             // label23
@@ -466,30 +449,28 @@ namespace MJS
             // 
             this.btn_cancel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_cancel.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.btn_cancel.Location = new System.Drawing.Point(749, 680);
+            this.btn_cancel.Location = new System.Drawing.Point(326, 621);
             this.btn_cancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_cancel.Name = "btn_cancel";
-            this.btn_cancel.Size = new System.Drawing.Size(126, 44);
+            this.btn_cancel.Size = new System.Drawing.Size(131, 44);
             this.btn_cancel.TabIndex = 255;
             this.btn_cancel.TabStop = false;
             this.btn_cancel.Text = "&Cancel";
             this.btn_cancel.UseVisualStyleBackColor = true;
-            this.btn_cancel.Visible = false;
             this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
             // btn_out
             // 
             this.btn_out.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_out.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
-            this.btn_out.Location = new System.Drawing.Point(617, 681);
+            this.btn_out.Location = new System.Drawing.Point(36, 621);
             this.btn_out.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_out.Name = "btn_out";
-            this.btn_out.Size = new System.Drawing.Size(126, 44);
+            this.btn_out.Size = new System.Drawing.Size(131, 44);
             this.btn_out.TabIndex = 254;
             this.btn_out.TabStop = false;
             this.btn_out.Text = "&Out Product";
             this.btn_out.UseVisualStyleBackColor = true;
-            this.btn_out.Visible = false;
             this.btn_out.Click += new System.EventHandler(this.btn_out_Click);
             // 
             // txt_out_no
@@ -709,16 +690,6 @@ namespace MJS
             this.groupBox2.Size = new System.Drawing.Size(271, 107);
             this.groupBox2.TabIndex = 289;
             this.groupBox2.TabStop = false;
-            // 
-            // show_image
-            // 
-            this.show_image.Location = new System.Drawing.Point(594, 130);
-            this.show_image.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.show_image.Name = "show_image";
-            this.show_image.Size = new System.Drawing.Size(207, 99);
-            this.show_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.show_image.TabIndex = 290;
-            this.show_image.TabStop = false;
             // 
             // store_data
             // 
@@ -989,17 +960,23 @@ namespace MJS
             // dataGridViewTextBoxColumn21
             // 
             this.dataGridViewTextBoxColumn21.HeaderText = "ဆိုင်အမှတ်";
+            this.dataGridViewTextBoxColumn21.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
+            this.dataGridViewTextBoxColumn21.Width = 125;
             // 
             // dataGridViewTextBoxColumn22
             // 
             this.dataGridViewTextBoxColumn22.HeaderText = "အသုံးပြုသည့်ဖောင်";
+            this.dataGridViewTextBoxColumn22.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
+            this.dataGridViewTextBoxColumn22.Width = 125;
             // 
             // type
             // 
             this.type.HeaderText = "အရောင်းကောင်တာ";
+            this.type.MinimumWidth = 6;
             this.type.Name = "type";
+            this.type.Width = 125;
             // 
             // Action
             // 
@@ -1008,6 +985,7 @@ namespace MJS
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Action.DefaultCellStyle = dataGridViewCellStyle4;
             this.Action.HeaderText = "Action";
+            this.Action.MinimumWidth = 6;
             this.Action.Name = "Action";
             this.Action.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Action.Text = "Remove";
@@ -1018,66 +996,6 @@ namespace MJS
             // 
             this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
             // 
-            // btnadd
-            // 
-            this.btnadd.ButtonStyle = Krypton.Toolkit.ButtonStyle.Alternate;
-            this.btnadd.CornerRoundingRadius = 3F;
-            this.btnadd.Location = new System.Drawing.Point(332, 188);
-            this.btnadd.Name = "btnadd";
-            this.btnadd.Size = new System.Drawing.Size(146, 41);
-            this.btnadd.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnadd.StateCommon.Border.Rounding = 3F;
-            this.btnadd.TabIndex = 292;
-            this.btnadd.Values.Text = "&ADD";
-            this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
-            // 
-            // outproduct_btn
-            // 
-            this.outproduct_btn.ButtonStyle = Krypton.Toolkit.ButtonStyle.Alternate;
-            this.outproduct_btn.CornerRoundingRadius = 3F;
-            this.outproduct_btn.Location = new System.Drawing.Point(36, 621);
-            this.outproduct_btn.Name = "outproduct_btn";
-            this.outproduct_btn.Size = new System.Drawing.Size(155, 43);
-            this.outproduct_btn.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.outproduct_btn.StateCommon.Border.Rounding = 3F;
-            this.outproduct_btn.TabIndex = 293;
-            this.outproduct_btn.Values.Text = "&Out Product";
-            this.outproduct_btn.Click += new System.EventHandler(this.outproduct_btn_Click);
-            // 
-            // cancel_btn
-            // 
-            this.cancel_btn.ButtonStyle = Krypton.Toolkit.ButtonStyle.Alternate;
-            this.cancel_btn.CornerRoundingRadius = 3F;
-            this.cancel_btn.Location = new System.Drawing.Point(197, 621);
-            this.cancel_btn.Name = "cancel_btn";
-            this.cancel_btn.Size = new System.Drawing.Size(155, 43);
-            this.cancel_btn.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.cancel_btn.StateCommon.Border.Rounding = 3F;
-            this.cancel_btn.TabIndex = 294;
-            this.cancel_btn.Values.Text = "&Cancel";
-            this.cancel_btn.Click += new System.EventHandler(this.cancel_btn_Click);
-            // 
-            // preview_btn
-            // 
-            this.preview_btn.ButtonStyle = Krypton.Toolkit.ButtonStyle.Alternate;
-            this.preview_btn.CornerRoundingRadius = 3F;
-            this.preview_btn.Location = new System.Drawing.Point(358, 621);
-            this.preview_btn.Name = "preview_btn";
-            this.preview_btn.Size = new System.Drawing.Size(155, 43);
-            this.preview_btn.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.preview_btn.StateCommon.Border.Rounding = 3F;
-            this.preview_btn.TabIndex = 295;
-            this.preview_btn.Values.Text = "&Preview";
-            this.preview_btn.Click += new System.EventHandler(this.preview_btn_Click);
-            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(870, 33);
@@ -1085,6 +1003,52 @@ namespace MJS
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 296;
             this.textBox1.Visible = false;
+            // 
+            // Btn_Add
+            // 
+            this.Btn_Add.Font = new System.Drawing.Font("Pyidaungsu", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Add.Location = new System.Drawing.Point(330, 196);
+            this.Btn_Add.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Btn_Add.Name = "Btn_Add";
+            this.Btn_Add.Size = new System.Drawing.Size(136, 37);
+            this.Btn_Add.TabIndex = 297;
+            this.Btn_Add.Text = "&Add";
+            this.Btn_Add.UseVisualStyleBackColor = true;
+            this.Btn_Add.Click += new System.EventHandler(this.Btn_Add_Click);
+            // 
+            // btn_print
+            // 
+            this.btn_print.Location = new System.Drawing.Point(489, 621);
+            this.btn_print.Name = "btn_print";
+            this.btn_print.Size = new System.Drawing.Size(162, 44);
+            this.btn_print.TabIndex = 298;
+            this.btn_print.Text = "Print";
+            this.btn_print.UseVisualStyleBackColor = true;
+            this.btn_print.Click += new System.EventHandler(this.btn_print_Click);
+            // 
+            // voucherno
+            // 
+            this.voucherno.Location = new System.Drawing.Point(811, 650);
+            this.voucherno.Name = "voucherno";
+            this.voucherno.Size = new System.Drawing.Size(100, 20);
+            this.voucherno.TabIndex = 299;
+            // 
+            // outnumber
+            // 
+            this.outnumber.Location = new System.Drawing.Point(811, 650);
+            this.outnumber.Name = "outnumber";
+            this.outnumber.Size = new System.Drawing.Size(100, 20);
+            this.outnumber.TabIndex = 299;
+            // 
+            // show_image
+            // 
+            this.show_image.Location = new System.Drawing.Point(594, 130);
+            this.show_image.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.show_image.Name = "show_image";
+            this.show_image.Size = new System.Drawing.Size(207, 99);
+            this.show_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.show_image.TabIndex = 290;
+            this.show_image.TabStop = false;
             // 
             // g_otherout
             // 
@@ -1094,11 +1058,10 @@ namespace MJS
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1428, 743);
+            this.Controls.Add(this.outnumber);
+            this.Controls.Add(this.btn_print);
+            this.Controls.Add(this.Btn_Add);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.preview_btn);
-            this.Controls.Add(this.cancel_btn);
-            this.Controls.Add(this.outproduct_btn);
-            this.Controls.Add(this.btnadd);
             this.Controls.Add(this.store_data);
             this.Controls.Add(this.show_image);
             this.Controls.Add(this.groupBox2);
@@ -1106,7 +1069,6 @@ namespace MJS
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.ico_add_btn);
             this.Controls.Add(this.txt_outremark);
             this.Controls.Add(this.showdata);
             this.Controls.Add(this.label3);
@@ -1139,8 +1101,8 @@ namespace MJS
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.show_image)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.store_data)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.show_image)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1184,7 +1146,6 @@ namespace MJS
         private System.Windows.Forms.Timer timer1;
         private OpenFileDialog openFileDialog1;
         private TextBox check_shop;
-        private FontAwesome.Sharp.IconButton ico_add_btn;
         private DataGridView store_data;
         private TextBox txt_outremark;
         private Label label3;
@@ -1233,10 +1194,6 @@ namespace MJS
         private DataGridViewTextBoxColumn Form;
         private DataGridViewTextBoxColumn Counter;
         private System.Windows.Forms.Timer timer3;
-        private Krypton.Toolkit.KryptonButton btnadd;
-        private Krypton.Toolkit.KryptonButton outproduct_btn;
-        private Krypton.Toolkit.KryptonButton cancel_btn;
-        private Krypton.Toolkit.KryptonButton preview_btn;
         private TextBox textBox1;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
@@ -1270,5 +1227,9 @@ namespace MJS
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
         private DataGridViewTextBoxColumn type;
         private DataGridViewButtonColumn Action;
+        private Button Btn_Add;
+        private Button btn_print;
+        private TextBox outnumber;
+        private TextBox voucherno;
     }
 }

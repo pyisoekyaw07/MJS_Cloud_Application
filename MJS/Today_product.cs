@@ -31,7 +31,31 @@ namespace MJS
 
                 con.Open();
 
-                string query = ("select * from todayproduct");
+                string query = "SELECT * FROM todayproduct WHERE Form IN ('Gold Sale', 'Otherout')";
+                SqlDataAdapter da = new SqlDataAdapter(query, con);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dgv_show.DataSource = dt;
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                con.Close();
+
+            }
+        }
+
+        private void btn_TPD_in_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                con.Open();
+
+                string query = "SELECT * FROM todayproduct WHERE Form = 'Gold Register'";
                 SqlDataAdapter da = new SqlDataAdapter(query, con);
                 DataTable dt = new DataTable();
                 da.Fill(dt);

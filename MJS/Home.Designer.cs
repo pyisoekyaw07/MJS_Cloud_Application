@@ -34,21 +34,17 @@ namespace MJS
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.panel2 = new System.Windows.Forms.Panel();
             this.pan_rep = new System.Windows.Forms.Panel();
-            this.ico_rep = new FontAwesome.Sharp.IconPictureBox();
             this.lbl_report = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pan_master = new System.Windows.Forms.Panel();
-            this.ico_master = new FontAwesome.Sharp.IconPictureBox();
             this.lbl_master = new System.Windows.Forms.Label();
             this.pan_line_master = new System.Windows.Forms.Panel();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.pan_home = new System.Windows.Forms.Panel();
-            this.ico_home = new FontAwesome.Sharp.IconPictureBox();
             this.lbl_Home = new System.Windows.Forms.Label();
             this.pan_line_home = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.pit_exit = new System.Windows.Forms.PictureBox();
             this.lbl_username = new System.Windows.Forms.Label();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
@@ -68,18 +64,14 @@ namespace MJS
             this.cashierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closingStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mainpanel = new System.Windows.Forms.Panel();
             this.todayProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mainpanel = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.pan_rep.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ico_rep)).BeginInit();
             this.pan_master.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ico_master)).BeginInit();
             this.pan_home.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ico_home)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pit_exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.menuStrip2.SuspendLayout();
@@ -107,99 +99,69 @@ namespace MJS
             // 
             // pan_rep
             // 
-            this.pan_rep.Controls.Add(this.ico_rep);
             this.pan_rep.Controls.Add(this.lbl_report);
             this.pan_rep.Controls.Add(this.panel6);
-            this.pan_rep.Location = new System.Drawing.Point(694, 11);
+            this.pan_rep.Location = new System.Drawing.Point(630, 11);
             this.pan_rep.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pan_rep.Name = "pan_rep";
             this.pan_rep.Size = new System.Drawing.Size(122, 42);
             this.pan_rep.TabIndex = 31;
             // 
-            // ico_rep
-            // 
-            this.ico_rep.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(47)))), ((int)(((byte)(81)))));
-            this.ico_rep.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(167)))), ((int)(((byte)(167)))));
-            this.ico_rep.IconChar = FontAwesome.Sharp.IconChar.File;
-            this.ico_rep.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(167)))), ((int)(((byte)(167)))));
-            this.ico_rep.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ico_rep.IconSize = 28;
-            this.ico_rep.Location = new System.Drawing.Point(3, 3);
-            this.ico_rep.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ico_rep.Name = "ico_rep";
-            this.ico_rep.Size = new System.Drawing.Size(38, 28);
-            this.ico_rep.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ico_rep.TabIndex = 28;
-            this.ico_rep.TabStop = false;
-            // 
             // lbl_report
             // 
             this.lbl_report.AutoSize = true;
             this.lbl_report.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_report.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.lbl_report.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_report.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(167)))), ((int)(((byte)(167)))));
-            this.lbl_report.Location = new System.Drawing.Point(42, 6);
+            this.lbl_report.Location = new System.Drawing.Point(32, 6);
             this.lbl_report.Name = "lbl_report";
-            this.lbl_report.Size = new System.Drawing.Size(47, 22);
+            this.lbl_report.Size = new System.Drawing.Size(58, 27);
             this.lbl_report.TabIndex = 21;
             this.lbl_report.Text = "Report";
             // 
             // panel6
             // 
+            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(167)))), ((int)(((byte)(167)))));
             this.panel6.Location = new System.Drawing.Point(1, 34);
             this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(120, 2);
+            this.panel6.Size = new System.Drawing.Size(118, 2);
             this.panel6.TabIndex = 24;
             this.panel6.Visible = false;
             // 
             // pan_master
             // 
-            this.pan_master.Controls.Add(this.ico_master);
             this.pan_master.Controls.Add(this.lbl_master);
             this.pan_master.Controls.Add(this.pan_line_master);
-            this.pan_master.Location = new System.Drawing.Point(569, 11);
+            this.pan_master.Location = new System.Drawing.Point(506, 11);
             this.pan_master.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pan_master.Name = "pan_master";
             this.pan_master.Size = new System.Drawing.Size(118, 42);
             this.pan_master.TabIndex = 30;
             // 
-            // ico_master
-            // 
-            this.ico_master.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(47)))), ((int)(((byte)(81)))));
-            this.ico_master.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(167)))), ((int)(((byte)(167)))));
-            this.ico_master.IconChar = FontAwesome.Sharp.IconChar.Database;
-            this.ico_master.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(167)))), ((int)(((byte)(167)))));
-            this.ico_master.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ico_master.IconSize = 29;
-            this.ico_master.Location = new System.Drawing.Point(1, 2);
-            this.ico_master.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ico_master.Name = "ico_master";
-            this.ico_master.Size = new System.Drawing.Size(40, 29);
-            this.ico_master.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ico_master.TabIndex = 27;
-            this.ico_master.TabStop = false;
-            // 
             // lbl_master
             // 
             this.lbl_master.AutoSize = true;
-            this.lbl_master.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.lbl_master.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_master.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(167)))), ((int)(((byte)(167)))));
-            this.lbl_master.Location = new System.Drawing.Point(39, 6);
+            this.lbl_master.Location = new System.Drawing.Point(14, 6);
             this.lbl_master.Name = "lbl_master";
-            this.lbl_master.Size = new System.Drawing.Size(76, 22);
+            this.lbl_master.Size = new System.Drawing.Size(93, 27);
             this.lbl_master.TabIndex = 20;
             this.lbl_master.Text = "Data Master";
             this.lbl_master.Click += new System.EventHandler(this.lbl_master_Click);
             // 
             // pan_line_master
             // 
+            this.pan_line_master.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pan_line_master.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(167)))), ((int)(((byte)(167)))));
             this.pan_line_master.Location = new System.Drawing.Point(0, 34);
             this.pan_line_master.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pan_line_master.Name = "pan_line_master";
-            this.pan_line_master.Size = new System.Drawing.Size(116, 2);
+            this.pan_line_master.Size = new System.Drawing.Size(118, 2);
             this.pan_line_master.TabIndex = 23;
             this.pan_line_master.Visible = false;
             // 
@@ -216,54 +178,44 @@ namespace MJS
             this.radioButton1.Size = new System.Drawing.Size(38, 24);
             this.radioButton1.TabIndex = 9;
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.Visible = false;
+            this.radioButton1.Click += new System.EventHandler(this.radioButton1_Click);
             // 
             // pan_home
             // 
-            this.pan_home.Controls.Add(this.ico_home);
+            this.pan_home.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pan_home.Controls.Add(this.lbl_Home);
             this.pan_home.Controls.Add(this.pan_line_home);
-            this.pan_home.Location = new System.Drawing.Point(460, 11);
+            this.pan_home.Location = new System.Drawing.Point(380, 11);
             this.pan_home.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pan_home.Name = "pan_home";
-            this.pan_home.Size = new System.Drawing.Size(103, 42);
+            this.pan_home.Size = new System.Drawing.Size(118, 42);
             this.pan_home.TabIndex = 29;
-            // 
-            // ico_home
-            // 
-            this.ico_home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(47)))), ((int)(((byte)(81)))));
-            this.ico_home.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ico_home.IconChar = FontAwesome.Sharp.IconChar.HomeLg;
-            this.ico_home.IconColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ico_home.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ico_home.IconSize = 28;
-            this.ico_home.Location = new System.Drawing.Point(5, 2);
-            this.ico_home.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ico_home.Name = "ico_home";
-            this.ico_home.Size = new System.Drawing.Size(42, 28);
-            this.ico_home.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ico_home.TabIndex = 26;
-            this.ico_home.TabStop = false;
             // 
             // lbl_Home
             // 
             this.lbl_Home.AutoSize = true;
-            this.lbl_Home.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
+            this.lbl_Home.Font = new System.Drawing.Font("Pyidaungsu", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Home.ForeColor = System.Drawing.Color.White;
-            this.lbl_Home.Location = new System.Drawing.Point(48, 6);
+            this.lbl_Home.Location = new System.Drawing.Point(35, 6);
             this.lbl_Home.Name = "lbl_Home";
-            this.lbl_Home.Size = new System.Drawing.Size(42, 22);
+            this.lbl_Home.Size = new System.Drawing.Size(52, 27);
             this.lbl_Home.TabIndex = 0;
             this.lbl_Home.Text = "Home";
             this.lbl_Home.Click += new System.EventHandler(this.lbl_Home_Click);
             // 
             // pan_line_home
             // 
+            this.pan_line_home.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pan_line_home.BackColor = System.Drawing.Color.White;
             this.pan_line_home.ForeColor = System.Drawing.Color.White;
             this.pan_line_home.Location = new System.Drawing.Point(0, 34);
             this.pan_line_home.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pan_line_home.Name = "pan_line_home";
-            this.pan_line_home.Size = new System.Drawing.Size(104, 2);
+            this.pan_line_home.Size = new System.Drawing.Size(118, 2);
             this.pan_line_home.TabIndex = 24;
             // 
             // panel3
@@ -271,54 +223,33 @@ namespace MJS
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.iconPictureBox5);
-            this.panel3.Controls.Add(this.iconPictureBox1);
+            this.panel3.Controls.Add(this.pit_exit);
             this.panel3.Controls.Add(this.lbl_username);
             this.panel3.ForeColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(1242, 0);
+            this.panel3.Location = new System.Drawing.Point(1219, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(201, 63);
+            this.panel3.Size = new System.Drawing.Size(225, 63);
             this.panel3.TabIndex = 16;
             // 
-            // iconPictureBox5
+            // pit_exit
             // 
-            this.iconPictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(47)))), ((int)(((byte)(81)))));
-            this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
-            this.iconPictureBox5.IconColor = System.Drawing.Color.White;
-            this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox5.IconSize = 23;
-            this.iconPictureBox5.Location = new System.Drawing.Point(62, 8);
-            this.iconPictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconPictureBox5.Name = "iconPictureBox5";
-            this.iconPictureBox5.Size = new System.Drawing.Size(28, 23);
-            this.iconPictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.iconPictureBox5.TabIndex = 29;
-            this.iconPictureBox5.TabStop = false;
-            // 
-            // iconPictureBox1
-            // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(47)))), ((int)(((byte)(81)))));
-            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
-            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 36;
-            this.iconPictureBox1.Location = new System.Drawing.Point(145, 10);
-            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(42, 36);
-            this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.iconPictureBox1.TabIndex = 17;
-            this.iconPictureBox1.TabStop = false;
-            this.iconPictureBox1.Click += new System.EventHandler(this.iconPictureBox1_Click);
+            this.pit_exit.Image = ((System.Drawing.Image)(resources.GetObject("pit_exit.Image")));
+            this.pit_exit.Location = new System.Drawing.Point(140, 4);
+            this.pit_exit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pit_exit.Name = "pit_exit";
+            this.pit_exit.Size = new System.Drawing.Size(81, 55);
+            this.pit_exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pit_exit.TabIndex = 32;
+            this.pit_exit.TabStop = false;
+            this.pit_exit.Click += new System.EventHandler(this.pit_exit_Click);
             // 
             // lbl_username
             // 
             this.lbl_username.AutoSize = true;
             this.lbl_username.Font = new System.Drawing.Font("Pyidaungsu", 9.75F);
             this.lbl_username.ForeColor = System.Drawing.Color.White;
-            this.lbl_username.Location = new System.Drawing.Point(35, 33);
+            this.lbl_username.Location = new System.Drawing.Point(40, 20);
             this.lbl_username.Name = "lbl_username";
             this.lbl_username.Size = new System.Drawing.Size(84, 22);
             this.lbl_username.TabIndex = 13;
@@ -338,13 +269,18 @@ namespace MJS
             this.radioButton2.Size = new System.Drawing.Size(38, 24);
             this.radioButton2.TabIndex = 10;
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.Visible = false;
+            this.radioButton2.Click += new System.EventHandler(this.radioButton2_Click);
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Pyidaungsu", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(151, 28);
+            this.label2.Location = new System.Drawing.Point(185, 26);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(158, 22);
             this.label2.TabIndex = 2;
@@ -352,9 +288,12 @@ namespace MJS
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Pyidaungsu", 27.6F, System.Drawing.FontStyle.Bold);
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.Font = new System.Drawing.Font("Rockwell", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(69, 2);
+            this.label1.Location = new System.Drawing.Point(86, 6);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 51);
             this.label1.TabIndex = 0;
@@ -362,11 +301,13 @@ namespace MJS
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 6);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(82, 45);
+            this.pictureBox1.Size = new System.Drawing.Size(82, 60);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -399,7 +340,7 @@ namespace MJS
             this.menuStrip2.Location = new System.Drawing.Point(8, 1);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.Padding = new System.Windows.Forms.Padding(6, 1, 0, 1);
-            this.menuStrip2.Size = new System.Drawing.Size(460, 28);
+            this.menuStrip2.Size = new System.Drawing.Size(340, 28);
             this.menuStrip2.TabIndex = 1;
             this.menuStrip2.Text = "menuStrip2";
             this.menuStrip2.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip2_ItemClicked);
@@ -491,9 +432,16 @@ namespace MJS
             // closingStockToolStripMenuItem
             // 
             this.closingStockToolStripMenuItem.Name = "closingStockToolStripMenuItem";
-            this.closingStockToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.closingStockToolStripMenuItem.Size = new System.Drawing.Size(161, 26);
             this.closingStockToolStripMenuItem.Text = "Closing Stock";
             this.closingStockToolStripMenuItem.Click += new System.EventHandler(this.closingStockToolStripMenuItem_Click);
+            // 
+            // todayProductToolStripMenuItem
+            // 
+            this.todayProductToolStripMenuItem.Name = "todayProductToolStripMenuItem";
+            this.todayProductToolStripMenuItem.Size = new System.Drawing.Size(161, 26);
+            this.todayProductToolStripMenuItem.Text = "Today Product";
+            this.todayProductToolStripMenuItem.Click += new System.EventHandler(this.todayProductToolStripMenuItem_Click);
             // 
             // mainpanel
             // 
@@ -506,13 +454,6 @@ namespace MJS
             this.mainpanel.Name = "mainpanel";
             this.mainpanel.Size = new System.Drawing.Size(1443, 357);
             this.mainpanel.TabIndex = 4;
-            // 
-            // todayProductToolStripMenuItem
-            // 
-            this.todayProductToolStripMenuItem.Name = "todayProductToolStripMenuItem";
-            this.todayProductToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
-            this.todayProductToolStripMenuItem.Text = "Today Product";
-            this.todayProductToolStripMenuItem.Click += new System.EventHandler(this.todayProductToolStripMenuItem_Click);
             // 
             // Form2
             // 
@@ -533,17 +474,13 @@ namespace MJS
             this.panel2.PerformLayout();
             this.pan_rep.ResumeLayout(false);
             this.pan_rep.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ico_rep)).EndInit();
             this.pan_master.ResumeLayout(false);
             this.pan_master.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ico_master)).EndInit();
             this.pan_home.ResumeLayout(false);
             this.pan_home.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ico_home)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pit_exit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -574,17 +511,12 @@ namespace MJS
         private RadioButton radioButton1;
         private Label lbl_username;
         private Panel panel3;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Label lbl_Home;
         private Label lbl_report;
         private Label lbl_master;
         private Panel panel6;
         private Panel pan_line_home;
         private Panel pan_line_master;
-        private FontAwesome.Sharp.IconPictureBox ico_home;
-        private FontAwesome.Sharp.IconPictureBox ico_rep;
-        private FontAwesome.Sharp.IconPictureBox ico_master;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox5;
         private Panel pan_home;
         private Panel pan_rep;
         private Panel pan_master;
@@ -593,5 +525,6 @@ namespace MJS
         private ToolStripMenuItem otherOutToolStripMenuItem;
         private ToolStripMenuItem saleToolStripMenuItem;
         private ToolStripMenuItem todayProductToolStripMenuItem;
+        private PictureBox pit_exit;
     }
 }

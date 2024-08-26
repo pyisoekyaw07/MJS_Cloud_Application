@@ -12,6 +12,11 @@ using System.Runtime.InteropServices;
 using System.Net;
 using System.Net.Sockets;
 using System.Configuration;
+using System.Diagnostics;
+using System.IO;
+using System.IO.Compression;
+using System.Net;
+
 
 namespace MJS
 {
@@ -22,11 +27,36 @@ namespace MJS
 
 
         SqlConnection con = new SqlConnection("Data Source=150.95.88.172;Initial Catalog=MJS;User ID=sa;Password=Modernjewellery@5");
-     
+
         public login()
         {
             InitializeComponent();
 
+            WebClient webClient = new WebClient();
+            var client = new WebClient();
+            if (!webClient.DownloadString("https://www.dropbox.com/scl/fi/ow5ugr7g75zgh56yz1brs/Update.txt.txt?rlkey=sisg6u8gr504h53ez19ctyojc&st=gvb4g97t&dl=1").Contains("1.0.0"))
+            {
+                if (MessageBox.Show("A new update is available! Do you want to download it?", "MJS Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    try
+                    {
+                        if (File.Exists(@".\MyAppSetup.msi")) { File.Delete(@".\MyAppSetup.msi"); }
+                        client.DownloadFile("https://www.dropbox.com/scl/fi/lwyqdgq9vrzx4wpebcris/MyAppSetup.zip?rlkey=v0mhqey7pn4q7jp574aig11e0&st=h7brk74s&dl=1", @"MyAppSetup.zip");
+                        string zipPath = @".\MyAppSetup.zip";
+                        string extractPath = @".\";
+                        ZipFile.ExtractToDirectory(zipPath, extractPath);
+                        Process process = new Process();
+                        process.StartInfo.FileName = "msiexec.exe";
+                        process.StartInfo.Arguments = string.Format("/i MyAppSetup.msi");
+                        this.Close();
+                        process.Start();
+                    }
+                    catch
+                    {
+                    }
+                }
+
+            }
         }
       
         private void login_Load(object sender, EventArgs e)

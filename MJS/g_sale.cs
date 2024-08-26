@@ -38,9 +38,11 @@ namespace MJS
             InitializeComponent();
             
         }
+        public static string setvalueform = "";
         private void g_sale_Load(object sender, EventArgs e)
         {
             txt_shop.Text = login.shopvalue;
+            setvalueform = txt_form.Text;
             counter();
             getselling_percent();
             if (txt_goldprice.Text == "")
@@ -53,7 +55,9 @@ namespace MJS
             /*getgoldprice();*/
 
         }
-     
+
+      
+        
 
         private void timer2_Tick(object sender, EventArgs e)
         {
@@ -84,38 +88,7 @@ namespace MJS
             txt_time.Text = DateTime.Now.ToLongTimeString();
         }
 
-        private void Btn_BB_Click(object sender, EventArgs e)
-        {
-            Form formbackground = new Form();
-            try
-            {
-                using (BB_Form bB_Form = new BB_Form())
-                {
-                    formbackground.StartPosition = FormStartPosition.Manual;
-                    formbackground.FormBorderStyle = FormBorderStyle.None;
-                    formbackground.Opacity = .70d;
-                    formbackground.BackColor = Color.Black;
-                    formbackground.WindowState = FormWindowState.Maximized;
-                    formbackground.TopMost = true;
-                    formbackground.Location = this.Location;
-                    formbackground.ShowInTaskbar = false;
-                    formbackground.Show();
-
-                    bB_Form.Owner = formbackground;
-                    bB_Form.ShowDialog();
-
-                    formbackground.Dispose();
-                }
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally { formbackground.Dispose(); }
-
-
-        }
+ 
 /*-----------------------------------------------------------------------------------------------*/
         private bool rowadded=false;
         private void adddata_datagriview() 
@@ -277,53 +250,6 @@ namespace MJS
 
 
 
-        private void btn_cash_Click(object sender, EventArgs e)
-        {
-            adddata_datagriview();
-            DataTable dt = GetDataTableFromDataGridView(dgv_show_saledata);
-            DataTable dt2 = GetDataTableForTDP(dgv_showdata);
-           
-
-            if (double.TryParse(txt_totalcost.Text, out double number))
-            {
-
-
-                Form formbackground = new Form();
-                try
-                {
-                    using (payment_form pay_Form = new payment_form(dt, dt2))
-                    {
-                        formbackground.StartPosition = FormStartPosition.Manual;
-                        formbackground.FormBorderStyle = FormBorderStyle.None;
-                        formbackground.Opacity = .70d;
-                        formbackground.BackColor = Color.Black;
-                        formbackground.WindowState = FormWindowState.Maximized;
-                        formbackground.TopMost = true;
-                        formbackground.Location = this.Location;
-                        formbackground.ShowInTaskbar = false;
-                        formbackground.Show();
-                        /* DataTable dt = GetDataTableFromDataGridView(dgv_show_saledata);*/                    
-                        pay_Form.SetValue(number);
-                        pay_Form.Owner = formbackground;                  
-                        pay_Form.ShowDialog();
-                        
-                        formbackground.Dispose();
-                    }
-
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-                finally { formbackground.Dispose(); }
-            }
-            else
-            {
-                MessageBox.Show("မှားယွင်းနေပါသည်။");
-            }
-
-           
-        }
 
        
         /* private int sumqty = 0;
@@ -385,7 +311,7 @@ namespace MJS
                 {
                     con.Open();
                     string goldpricevalue = label_goldtype.Text;
-                    string query = "SELECT Top(1) Purchase_Gold_Price FROM goldprice where Gold_Type=@goldtype ORDER BY ID DESC";
+                    string query = "SELECT Top(1) Sale_Gold_Price FROM goldprice where Gold_Type=@goldtype ORDER BY ID DESC";
                     SqlCommand cmd = new SqlCommand(query, con);
 
                     cmd.Parameters.AddWithValue("@goldtype", goldpricevalue);
@@ -471,19 +397,7 @@ namespace MJS
             }
         }
     
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-           /* PrintScreen();
-            printPreviewDialog1.ShowDialog();*/
-           /* timer2.Interval = 200;
-            timer2.Start();*/
-        }
 
-        private void iconButton2_Click_1(object sender, EventArgs e)
-        {
-            outvoucher outvoucher = new outvoucher();
-            outvoucher.ShowDialog();
-        }
         public void calculategm()/*function claculation TOTAL AMOUNT*/
         {
             double intk, intp, inty, ints, tk, tp, ty, ts, totalK, totalP, totalY, totalS, resultP, resultP2, resultP3, resultP4,
@@ -1047,10 +961,10 @@ namespace MJS
                 txt_pro_famt.Enabled = false;
                 txt_discount.Enabled = false;
                 txt_saleremark.Enabled = false;
-                btn_gsale_save.Enabled = false;
-                btn_review.Enabled = false;
-                Btn_BB.Enabled = false;
-                btn_cash.Enabled = false;
+               
+                Btn_Preview.Enabled = false;
+                BB.Enabled = false;
+                Btn_Payment.Enabled = false;
 
 
                 MessageBox.Show("‌ေရောင်းစျေးလျော့နည်းနေပါသည်။ခွင့်ပြုချက်လိုအပ်ပါသည်။");
@@ -1068,10 +982,10 @@ namespace MJS
                 txt_pro_famt.Enabled = true;
                 txt_discount.Enabled = true;
                 txt_saleremark.Enabled = true;
-                btn_gsale_save.Enabled = true;
-                btn_review.Enabled = true;
-                Btn_BB.Enabled = true;
-                btn_cash.Enabled = true;
+           
+                Btn_Preview.Enabled = true;
+                BB.Enabled = true;
+                Btn_Payment.Enabled = true;
 
             }
 
@@ -1124,10 +1038,7 @@ namespace MJS
             minimum_price_check();
         }
 
-        private void btn_cancel_Click(object sender, EventArgs e)
-        {
-        
-        }
+
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -1245,8 +1156,57 @@ namespace MJS
         }
 
 
+     
 
-        private void btn_review_Click(object sender, EventArgs e)
+
+        private void Btn_Payment_Click(object sender, EventArgs e)
+        {
+            
+            adddata_datagriview();
+            DataTable dt = GetDataTableFromDataGridView(dgv_show_saledata);
+            DataTable dt2 = GetDataTableForTDP(dgv_showdata);
+
+
+            if (double.TryParse(txt_totalcost.Text, out double number))
+            {
+
+
+                Form formbackground = new Form();
+                try
+                {
+                    using (payment_form pay_Form = new payment_form(dt, dt2))
+                    {
+                        formbackground.StartPosition = FormStartPosition.Manual;
+                        formbackground.FormBorderStyle = FormBorderStyle.None;
+                        formbackground.Opacity = .70d;
+                        formbackground.BackColor = Color.Black;
+                        formbackground.WindowState = FormWindowState.Maximized;
+                        formbackground.TopMost = true;
+                        formbackground.Location = this.Location;
+                        formbackground.ShowInTaskbar = false;
+                        formbackground.Show();
+                        /* DataTable dt = GetDataTableFromDataGridView(dgv_show_saledata);*/
+                        pay_Form.SetValue(number);
+                        pay_Form.Owner = formbackground;
+                        pay_Form.ShowDialog();
+                        formbackground.Dispose();
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally { formbackground.Dispose(); }
+            }
+            else
+            {
+                MessageBox.Show("မှားယွင်းနေပါသည်။");
+            }
+
+        }
+
+        private void Btn_Preview_Click(object sender, EventArgs e)
         {
             Form formbackground = new Form();
             try
@@ -1274,6 +1234,43 @@ namespace MJS
                 MessageBox.Show(ex.Message);
             }
             finally { formbackground.Dispose(); }
+        }
+
+        private void BB_Click(object sender, EventArgs e)
+        {
+            Form formbackground = new Form();
+            try
+            {
+                using (BB_Form bB_Form = new BB_Form())
+                {
+                    formbackground.StartPosition = FormStartPosition.Manual;
+                    formbackground.FormBorderStyle = FormBorderStyle.None;
+                    formbackground.Opacity = .70d;
+                    formbackground.BackColor = Color.Black;
+                    formbackground.WindowState = FormWindowState.Maximized;
+                    formbackground.TopMost = true;
+                    formbackground.Location = this.Location;
+                    formbackground.ShowInTaskbar = false;
+                    formbackground.Show();
+
+                    bB_Form.Owner = formbackground;
+                    bB_Form.ShowDialog();
+
+                    formbackground.Dispose();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally { formbackground.Dispose(); }
+        }
+
+        private void report_Click(object sender, EventArgs e)
+        {
+            outvoucher outvoucher = new outvoucher();
+            outvoucher.ShowDialog();
         }
 
         private void txt_discount_Leave(object sender, EventArgs e)
@@ -1311,6 +1308,7 @@ namespace MJS
         }
         private void txt_out_no_Leave(object sender, EventArgs e)
         {
+            string checkshop = "";
             for (int i = 0; i < dgv_showdata.Rows.Count; i++)
             {
                 if (txt_out_no.Text == dgv_showdata.Rows[i].Cells[0].Value.ToString())
@@ -1329,7 +1327,7 @@ namespace MJS
 
                     SqlCommand cmd = new SqlCommand("Select Image_TB.Image ,closing_stock.SK," +
                         "closing_stock.SP,closing_stock.SY,closing_stock.SS,closing_stock.Item," +
-                        "closing_stock.Itemname,closing_stock.Gm,closing_stock.GoldType FROM closing_stock INNER JOIN Image_TB ON closing_stock.ProductID = Image_TB.ProductID where closing_stock.ProductID=@ProductID", con);
+                        "closing_stock.Itemname,closing_stock.Gm,closing_stock.GoldType,closing_stock.Shop FROM closing_stock INNER JOIN Image_TB ON closing_stock.ProductID = Image_TB.ProductID where closing_stock.ProductID=@ProductID", con);
 
                     cmd.Parameters.AddWithValue("@ProductID", txt_out_no.Text);
                     using (SqlDataReader da = cmd.ExecuteReader())
@@ -1338,32 +1336,38 @@ namespace MJS
 
                         if (da.Read())
                         {
-
-                            imagedata = (byte[])da.GetValue(0);
-                            txt_sk.Text = da.GetValue(1).ToString();
-                            txt_sp.Text = da.GetValue(2).ToString();
-                            txt_sy.Text = da.GetValue(3).ToString();
-                            txt_ss.Text = da.GetValue(4).ToString();
-                            label_Item.Text = da.GetValue(5).ToString();
-                            label_itemname.Text = da.GetValue(6).ToString();
-                            label_gm.Text = da.GetValue(7).ToString();
-                            label_goldtype.Text = da.GetValue(8).ToString();
-                            label_qty.Text = "1";
-                            addRow(txt_out_no.Text, label_Item.Text, label_itemname.Text, label_qty.Text, label_gm.Text);
-                            /*totalqty();
-                            totalgm();*/
-                            TotalGm();
-                            TotalQty();
-
-
-                            dataGridView2.Rows.Add(txt_result_sum.Text);
-                            decimal amt = 0;
-                            for (int i = 0; i < dataGridView2.Rows.Count; ++i)
+                            checkshop=da.GetValue(9).ToString();
+                            if (txt_shop.Text == checkshop) 
                             {
-                                amt += Convert.ToDecimal(dataGridView2.Rows[i].Cells[0].Value);
-                                result_gm.Text = amt.ToString();
-                            }
+                                imagedata = (byte[])da.GetValue(0);
+                                txt_sk.Text = da.GetValue(1).ToString();
+                                txt_sp.Text = da.GetValue(2).ToString();
+                                txt_sy.Text = da.GetValue(3).ToString();
+                                txt_ss.Text = da.GetValue(4).ToString();
+                                label_Item.Text = da.GetValue(5).ToString();
+                                label_itemname.Text = da.GetValue(6).ToString();
+                                label_gm.Text = da.GetValue(7).ToString();
+                                label_goldtype.Text = da.GetValue(8).ToString();
+                                label_qty.Text = "1";
+                                addRow(txt_out_no.Text, label_Item.Text, label_itemname.Text, label_qty.Text, label_gm.Text);
+                                /*totalqty();
+                                totalgm();*/
+                                TotalGm();
+                                TotalQty();
 
+
+                                dataGridView2.Rows.Add(txt_result_sum.Text);
+                                decimal amt = 0;
+                                for (int i = 0; i < dataGridView2.Rows.Count; ++i)
+                                {
+                                    amt += Convert.ToDecimal(dataGridView2.Rows[i].Cells[0].Value);
+                                    result_gm.Text = amt.ToString();
+                                }
+                            }
+                            else
+                            {
+                               System.Windows.Forms.MessageBox.Show("This Product is from Other Shop.If you want to sale you need the permission from admin.","Information",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                            }
 
                         }
                         else

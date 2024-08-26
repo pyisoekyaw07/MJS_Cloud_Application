@@ -1,4 +1,4 @@
-﻿using FontAwesome.Sharp;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -42,11 +42,11 @@ namespace MJS
         SqlConnection con = new SqlConnection("Data Source=150.95.88.172;Initial Catalog=MJS;User ID=sa;Password=Modernjewellery@5");
 
 
-        SqlCommand cmd, cmd2, cmd3,cmd4;
+        SqlCommand cmd, cmd2, cmd3,cmd4,cmd5;
         SqlDataAdapter adpt;
         DataTable dt;
         System.Data.DataSet ds;
-        string sql, sql2, sql3,sql4;
+        string sql, sql2, sql3,sql4,sql5;
 
         public gform()
         {
@@ -601,10 +601,13 @@ namespace MJS
                     sql2 = "SELECT ProductID FROM closing_stock";
                     sql3 = "SELECT ProductID FROM all_stocks";
                     sql4= "SELECT ProductID FROM Image_TB";
+                    sql5 = "SELECT Product_ID FROM todayproduct";
+
                     cmd = new SqlCommand(sql, con);
                     cmd2 = new SqlCommand(sql2, con);
                     cmd3 = new SqlCommand(sql3, con);
                     cmd4= new SqlCommand(sql4, con);
+                    cmd5 = new SqlCommand(sql5, con);
                     var maxid = cmd.ExecuteScalar() as string;
 
 
@@ -627,7 +630,8 @@ namespace MJS
                         "ItemName,Gm,K,P,Y,S,WK,WP,WY,WS,TK,TP,TY,TS,Mcost,Repamt,Totalamt,Remark,Employee,Shop,Form,Counter) values(@Date,@Time,@SaleVoucher,@Enter_Remark,@PurVoucher,@ProductID,@GoldType,@GoldPrice,@Item," +
                         "@ItemName,@Gm,@K,@P,@Y,@S,@WK,@WP,@WY,@WS,@TK,@TP,@TY,@TS,@Mcost,@Repamt,@Totalamt,@Remark,@Employee,@Shop,@Form,@Counter)", con);
 
-                        cmd4=new SqlCommand("insert into Image_TB(ProductID,Image) values(@ProductID,@Image)", con);
+                        
+                       
 
                         byte[] img = (byte[])dataGridView1.Rows[i].Cells[0].Value;
                         /*cmd.Parameters.AddWithValue("@Image", img);*/
@@ -737,13 +741,28 @@ namespace MJS
                         cmd3.Parameters.AddWithValue("@Form", dataGridView1.Rows[i].Cells[34].Value);
                         cmd3.Parameters.AddWithValue("@Counter", dataGridView1.Rows[i].Cells[35].Value);
 
+                        cmd4 = new SqlCommand("insert into Image_TB(ProductID,Image) values(@ProductID,@Image)", con);
                         cmd4.Parameters.AddWithValue("@ProductID", dataGridView1.Rows[i].Cells[6].Value.ToString());
                         cmd4.Parameters.AddWithValue("@Image", img);
+
+                        cmd5 = new SqlCommand("insert into todayproduct (Date,Time,Voucher_No,Product_ID,Item,Itemname,Qty,Gm,Empolyee,Shop,Form) values(@Date,@Time,@Voucher_No,@Product_ID,@Item,@Itemname,@Qty,@Gm,@Empolyee,@Shop,@Form)", con);
+                        cmd5.Parameters.AddWithValue("@Date", dataGridView1.Rows[i].Cells[1].Value.ToString());
+                        cmd5.Parameters.AddWithValue("@Time", dataGridView1.Rows[i].Cells[2].Value.ToString());
+                        cmd5.Parameters.AddWithValue("@Voucher_No", dataGridView1.Rows[i].Cells[3].Value.ToString());
+                        cmd5.Parameters.AddWithValue("@Product_ID", dataGridView1.Rows[i].Cells[6].Value.ToString());
+                        cmd5.Parameters.AddWithValue("@Item", dataGridView1.Rows[i].Cells[9].Value);
+                        cmd5.Parameters.AddWithValue("@ItemName", dataGridView1.Rows[i].Cells[10].Value);
+                        cmd5.Parameters.AddWithValue("@Qty", txt_qty.Text.ToString());
+                        cmd5.Parameters.AddWithValue("@Gm", dataGridView1.Rows[i].Cells[11].Value);
+                        cmd5.Parameters.AddWithValue("@Empolyee", dataGridView1.Rows[i].Cells[32].Value);
+                        cmd5.Parameters.AddWithValue("@Shop", dataGridView1.Rows[i].Cells[33].Value);
+                        cmd5.Parameters.AddWithValue("@Form", dataGridView1.Rows[i].Cells[34].Value);
 
                         primarykey = Convert.ToInt32(cmd.ExecuteScalar());
                         primarykey = Convert.ToInt32(cmd2.ExecuteScalar());
                         primarykey = Convert.ToInt32(cmd3.ExecuteScalar());
                         primarykey = Convert.ToInt32(cmd4.ExecuteScalar());
+                        primarykey = Convert.ToInt32(cmd5.ExecuteScalar());
 
                     }
                     con.Close();
@@ -771,6 +790,7 @@ namespace MJS
             }
 
         }
+  
         private void validatefunction()
         {
             bool ok = true;
@@ -859,7 +879,6 @@ namespace MJS
         {
             lbl_qty.Text = dataGridView1.Rows.Count.ToString();
         }
-
         public void totalamt()
         {
             decimal amt = 0;
@@ -1450,51 +1469,6 @@ namespace MJS
 
 
 
-        private void btn_reg_save_Click(object sender, EventArgs e)
-        {
-            if (dataGridView1.Rows.Count == 0)
-            {
-                MessageBox.Show("Check You Data Input");
-                validatefunction();
-            }
-            else
-            {
-                try 
-                {
-                    show_reg_piddata();
-                    pid();
-                    invoiceid();
-                    clearform();
-                    txt_pur_no.Enabled = true;
-                    cmb_remark.Enabled = true;
-                    cmb_gt.Enabled = true;
-                    txt_pur_no.Text = "";
-                    cmb_remark.Items.Clear();
-                    cmb_gt.Items.Clear();
-                }
-                catch (Exception ex)
-                {
-                    // Log or handle any general error
-                    Console.WriteLine("An error occurred: " + ex.Message);
-                }
-
-            }
-        }
-
-        private void btn_reg_cancel_Click(object sender, EventArgs e)
-        {
-
-            pid();
-            invoiceid();
-            dataGridView1.Rows.Clear();
-            lbl_totalamt.Text = "0";
-            lbl_totalgm.Text = "0";
-            lbl_qty.Text = "0";
-            txt_pur_no.Enabled = true;
-            txt_pur_no.Text = "";
-            cmb_remark.Enabled = true;
-            cmb_gt.Enabled = true;
-        }
 
         private void txt_goldprice_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -1554,71 +1528,7 @@ namespace MJS
             }
         }
 
-        private void txt_ss_TextChanged(object sender, EventArgs e)
-        {
-            double p = 4;
-            if (txt_ss.Text == "")
-            {
-                txt_ss.Text = "";
-
-            }
-            else if (double.Parse(txt_ss.Text) > p)
-            {
-                MessageBox.Show("အလျော့တွက် 4 \"စိတ်\" နှင့်အထက် ဖြစ်နေပါသည်");
-                txt_ss.Text = "0";
-                txt_ss.SelectionStart = 0;
-                txt_ss.SelectionLength = txt_ss.Text.Length;
-            }
-        }
-
-        private void txt_sy_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void txt_ss_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void btn_reg_preview_Click(object sender, EventArgs e)
-        {
-
-            Form formbackground = new Form();
-            try
-            {
-                using (preview frm = new preview())
-                {
-                    formbackground.StartPosition = FormStartPosition.Manual;
-                    formbackground.FormBorderStyle = FormBorderStyle.None;
-                    formbackground.Opacity = .70d;
-                    formbackground.BackColor = Color.Black;
-                    formbackground.WindowState = FormWindowState.Maximized;
-                    formbackground.TopMost = true;
-                    formbackground.Location = this.Location;
-                    formbackground.ShowInTaskbar = false;
-                    formbackground.Show();
-                    frm.stdname = textBox2.Text;
-                    frm.Owner = formbackground;
-                    frm.ShowDialog();
-                    formbackground.Dispose();
-                }
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally { formbackground.Dispose(); }
-        }
-
-        private void btn_cart_Click(object sender, EventArgs e)
+        private void Btn_AddGirdview_Click(object sender, EventArgs e)
         {
             if (txt_edit_check.Text == "0")
             {
@@ -1635,7 +1545,7 @@ namespace MJS
 
                     History_addGrid(txt_date.Text, txt_time.Text, txt_voucher.Text, cmb_remark.Text, txt_pur_no.Text, txt_barcode.Text, cmb_gt.Text, txt_goldprice.Text,
                         cmb_item.Text, cmb_itemname.Text, txt_gm.Text, txt_k.Text, txt_p.Text, txt_y.Text, txt_s.Text, txt_WK.Text, txt_WP.Text, txt_WY.Text, txt_WC.Text,
-                        total_K.Text, total_P.Text, total_Y.Text, total_S.Text,txt_sk.Text,txt_sp.Text,txt_sy.Text,txt_ss.Text, txt_mcost.Text, txt_rep.Text, txt_totalamt.Text, txt_remark.Text, empolyee, txt_shop.Text, textBox2.Text, txt_counter.Text);
+                        total_K.Text, total_P.Text, total_Y.Text, total_S.Text, txt_sk.Text, txt_sp.Text, txt_sy.Text, txt_ss.Text, txt_mcost.Text, txt_rep.Text, txt_totalamt.Text, txt_remark.Text, empolyee, txt_shop.Text, textBox2.Text, txt_counter.Text);
 
                     cmb_item.Focus();
                     clearform();
@@ -1731,6 +1641,117 @@ namespace MJS
                 }
             }
         }
+
+        private void btn_save_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.Rows.Count == 0)
+            {
+                MessageBox.Show("Check You Data Input");
+                validatefunction();
+            }
+            else
+            {
+                try
+                {
+                    show_reg_piddata();
+                    pid();
+                    invoiceid();
+                    clearform();
+                    txt_pur_no.Enabled = true;
+                    cmb_remark.Enabled = true;
+                    cmb_gt.Enabled = true;
+                    txt_pur_no.Text = "";
+                    cmb_remark.Items.Clear();
+                    cmb_gt.Items.Clear();
+                }
+                catch (Exception ex)
+                {
+                    // Log or handle any general error
+                    Console.WriteLine("An error occurred: " + ex.Message);
+                }
+
+            }
+        }
+
+        private void btn_cancel_Click(object sender, EventArgs e)
+        {
+            pid();
+            invoiceid();
+            dataGridView1.Rows.Clear();
+            lbl_totalamt.Text = "0";
+            lbl_totalgm.Text = "0";
+            lbl_qty.Text = "0";
+            txt_pur_no.Enabled = true;
+            txt_pur_no.Text = "";
+            cmb_remark.Enabled = true;
+            cmb_gt.Enabled = true;
+        }
+
+        private void btn_review_Click(object sender, EventArgs e)
+        {
+            Form formbackground = new Form();
+            try
+            {
+                using (preview frm = new preview())
+                {
+                    formbackground.StartPosition = FormStartPosition.Manual;
+                    formbackground.FormBorderStyle = FormBorderStyle.None;
+                    formbackground.Opacity = .70d;
+                    formbackground.BackColor = Color.Black;
+                    formbackground.WindowState = FormWindowState.Maximized;
+                    formbackground.TopMost = true;
+                    formbackground.Location = this.Location;
+                    formbackground.ShowInTaskbar = false;
+                    formbackground.Show();
+                    frm.stdname = textBox2.Text;
+                    frm.Owner = formbackground;
+                    frm.ShowDialog();
+                    formbackground.Dispose();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally { formbackground.Dispose(); }
+        }
+
+        private void txt_ss_TextChanged(object sender, EventArgs e)
+        {
+            double p = 4;
+            if (txt_ss.Text == "")
+            {
+                txt_ss.Text = "";
+
+            }
+            else if (double.Parse(txt_ss.Text) > p)
+            {
+                MessageBox.Show("အလျော့တွက် 4 \"စိတ်\" နှင့်အထက် ဖြစ်နေပါသည်");
+                txt_ss.Text = "0";
+                txt_ss.SelectionStart = 0;
+                txt_ss.SelectionLength = txt_ss.Text.Length;
+            }
+        }
+
+        private void txt_sy_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txt_ss_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+        }
+
+ 
+        
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {

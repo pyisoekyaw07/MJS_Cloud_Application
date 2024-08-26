@@ -1,4 +1,4 @@
-﻿using Krypton.Toolkit;
+﻿
 using OfficeOpenXml.FormulaParsing.Excel.Functions.Text;
 using System;
 using System.Collections.Generic;
@@ -142,28 +142,21 @@ namespace MJS
             txt_show.Text = "Cash";         
             txt_currency_rate.Text = "Currency Rate";
             txt_currency_rate.ForeColor = Color.LightGray;
-            Cash_group.Visible = true;
-            foreign_group.Visible = false;
-            Bank_group.Visible = false;
-            Mobile_group.Visible = false;
+            payment.SelectedIndex = 0;
+            timer2.Start();
+            
         }
 
         private void cash_rdo_btn_Click(object sender, EventArgs e)
         {
-            Cash_group.Visible = true;
-            foreign_group.Visible = false;
-            Bank_group.Visible = false;
-            Mobile_group.Visible = false;
+            payment.SelectedIndex = 0;
             txt_show.Text = "Cash";
 
         }
 
         private void bank_rdo_btn_Click(object sender, EventArgs e)
         {
-            Cash_group.Visible = false;
-            foreign_group.Visible = false;
-            Bank_group.Visible = true;
-            Mobile_group.Visible = false;
+            payment.SelectedIndex = 2;
             txt_show.Text = "Bank Card";
 
             txt_bankcard_amt.Text = "0";
@@ -173,10 +166,7 @@ namespace MJS
 
         private void foreign_rdo_btn_Click(object sender, EventArgs e)
         {
-            Cash_group.Visible = false;
-            foreign_group.Visible = true;
-            Bank_group.Visible = false;
-            Mobile_group.Visible = false;
+            payment.SelectedIndex = 1;
             txt_show.Text = "Foreign Currency";
 
             txt_exchange_amt.Text = "0";
@@ -187,10 +177,7 @@ namespace MJS
 
         private void MB_rdo_btn_Click(object sender, EventArgs e)
         {
-            Cash_group.Visible = false;
-            foreign_group.Visible = false;
-            Bank_group.Visible = false;
-            Mobile_group.Visible = true;
+            payment.SelectedIndex = 3;
             txt_show.Text = "Mobile Banking";
 
             txt_mobilebanking_amt.Text = "0";
@@ -333,29 +320,70 @@ namespace MJS
 
         public void addpaymentmethod() 
         {
+
             con.Close();
             try
             {
+                string voucherNumber = txt_Voucher_no.Text;
+
                 con.Open();
 
-                for (int i = 0; i < dgv_show_paymethod.Rows.Count; i++)
+
+                foreach (DataGridViewRow row in dgv_show_paymethod.Rows)
                 {
-                    cmd2 = new SqlCommand("insert into payment_method (Sale_Voucher_No,Payment_Method,Payment_Type,Amount,Currency_Rate,POS) values(@Sale_Voucher_No,@Payment_Method,@Payment_Type,@Amount,@Currency_Rate,@POS)", con);
 
-                    cmd2.Parameters.AddWithValue("@Sale_Voucher_No", txt_Voucher_no.Text.ToString());
-                    cmd2.Parameters.AddWithValue("@Payment_Method", dgv_show_paymethod.Rows[i].Cells[0].Value ?? DBNull.Value);
-                    cmd2.Parameters.AddWithValue("@Payment_Type", dgv_show_paymethod.Rows[i].Cells[1].Value ?? DBNull.Value);
-                    cmd2.Parameters.AddWithValue("@Amount", dgv_show_paymethod.Rows[i].Cells[2].Value ?? DBNull.Value);
-                    cmd2.Parameters.AddWithValue("@Currency_Rate", dgv_show_paymethod.Rows[i].Cells[3].Value ?? DBNull.Value);
-                    cmd2.Parameters.AddWithValue("@POS", dgv_show_paymethod.Rows[i].Cells[4].Value ?? DBNull.Value);
+                    if (row.IsNewRow)
+                        continue;
 
 
-                    cmd2.ExecuteNonQuery();
+                    string query = "insert into payment_method (Date,Time,Sale_Voucher_No,Payment_Method,Payment_Type,Amount,Currency_Rate,POS) values(@Date,@Time,@Sale_Voucher_No,@Payment_Method,@Payment_Type,@Amount,@Currency_Rate,@POS)";
 
-                    dgv_show_paymethod.Rows.Clear();
+                    using (SqlCommand cmd2 = new SqlCommand(query, con))
+                    {
+                        
+                        cmd2.Parameters.AddWithValue("@Date", txt_date.Text.ToString());
+                        cmd2.Parameters.AddWithValue("@Time", txt_time.Text.ToString());
+                        cmd2.Parameters.AddWithValue("@Sale_Voucher_No", voucherNumber);
+                        cmd2.Parameters.AddWithValue("@Payment_Method", row.Cells[0].Value ?? DBNull.Value);
+                        cmd2.Parameters.AddWithValue("@Payment_Type", row.Cells[1].Value ?? DBNull.Value);
+                        cmd2.Parameters.AddWithValue("@Amount", row.Cells[2].Value ?? DBNull.Value);
+                        cmd2.Parameters.AddWithValue("@Currency_Rate", row.Cells[3].Value ?? DBNull.Value);
+                        cmd2.Parameters.AddWithValue("@POS", row.Cells[4].Value ?? DBNull.Value);
+
+                        cmd2.ExecuteNonQuery();
+                        
+                    }
+                    
                 }
+                dgv_show_paymethod.Rows.Clear();
             }
-            catch(Exception ex) { System.Windows.Forms.MessageBox.Show(ex.Message); }
+            catch (Exception ex) { System.Windows.Forms.MessageBox.Show($"An error occurred: {ex.Message}"); }
+
+            /* con.Close();
+             try
+             {
+                 con.Open();
+
+                 for  (int i = 0; i < dgv_show_paymethod.Rows.Count; i++)
+                 {
+                     cmd2 = new SqlCommand("insert into payment_method (Date,Time,Sale_Voucher_No,Payment_Method,Payment_Type,Amount,Currency_Rate,POS) values(@Date,@Time,@Sale_Voucher_No,@Payment_Method,@Payment_Type,@Amount,@Currency_Rate,@POS)", con);
+
+                     cmd2.Parameters.AddWithValue("@Date", txt_date.Text.ToString());
+                     cmd2.Parameters.AddWithValue("@Time", txt_time.Text.ToString());
+                     cmd2.Parameters.AddWithValue("@Sale_Voucher_No", txt_Voucher_no.Text.ToString());
+                     cmd2.Parameters.AddWithValue("@Payment_Method", dgv_show_paymethod.Rows[i].Cells[0].Value ?? DBNull.Value);
+                     cmd2.Parameters.AddWithValue("@Payment_Type", dgv_show_paymethod.Rows[i].Cells[1].Value ?? DBNull.Value);
+                     cmd2.Parameters.AddWithValue("@Amount", dgv_show_paymethod.Rows[i].Cells[2].Value ?? DBNull.Value);
+                     cmd2.Parameters.AddWithValue("@Currency_Rate", dgv_show_paymethod.Rows[i].Cells[3].Value ?? DBNull.Value);
+                     cmd2.Parameters.AddWithValue("@POS", dgv_show_paymethod.Rows[i].Cells[4].Value ?? DBNull.Value);
+
+
+                     cmd2.ExecuteNonQuery();
+
+                     dgv_show_paymethod.Rows.Clear();
+                 }
+             }
+             catch(Exception ex) { System.Windows.Forms.MessageBox.Show(ex.Message); }*/
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -418,8 +446,8 @@ namespace MJS
 
                        
 
-                        cmd.Parameters.AddWithValue("@Date", add_data.Rows[i].Cells[0].Value);
-                        cmd.Parameters.AddWithValue("@Time", add_data.Rows[i].Cells[1].Value);
+                        cmd.Parameters.AddWithValue("@Date", txt_date.Text.ToString());
+                        cmd.Parameters.AddWithValue("@Time", txt_time.Text.ToString());
                         cmd.Parameters.AddWithValue("@Sale_Voucher_No",txt_Voucher_no.Text.ToString());
                         cmd.Parameters.AddWithValue("@Product_ID", add_data.Rows[i].Cells[2].Value);
                         cmd.Parameters.AddWithValue("@Gold_Price", add_data.Rows[i].Cells[3].Value);
@@ -462,7 +490,7 @@ namespace MJS
                         cmd.Parameters.AddWithValue("@Counter", add_data.Rows[i].Cells[40].Value);
 
                         /*------------------------------------------- Today Product ______________________________________________________________*/
-                        /*SaveVouchertodayproduct();*/
+                        SaveVouchertodayproduct();
                         /*______________________________________________________________*/
 
                         primarykey = Convert.ToInt32(cmd.ExecuteScalar());
@@ -533,36 +561,50 @@ namespace MJS
 
         private void SaveVouchertodayproduct()
         {
-           
-            string voucherNumber = txt_Voucher_no.Text;
+            con.Close();
+            try
+            {
+                string voucherNumber = txt_Voucher_no.Text;
 
-            con.Open();
+                con.Open();
+              
 
-            foreach (DataGridViewRow row in dgv_TDP.Rows)
+                foreach (DataGridViewRow row in dgv_TDP.Rows)
                 {
-                    
+
                     if (row.IsNewRow)
                         continue;
 
-                   
-                    string query = "insert into todayproduct (Voucher_No,Product_ID,Item,Itemname,Qty,Gm)values(@Voucher_No,@Product_ID,@Item,@Itemname,@Qty,@Gm)";
+
+                    string query = "insert into todayproduct (Date,Time,Voucher_No,Product_ID,Item,Itemname,Qty,Gm,Empolyee,Shop,Form)values(@Date,@Time,@Voucher_No,@Product_ID,@Item,@Itemname,@Qty,@Gm,@Empolyee,@Shop,@Form)";
 
                     using (SqlCommand command = new SqlCommand(query, con))
                     {
-                       
-                    command.Parameters.AddWithValue("@Voucher_No", voucherNumber);
-                    command.Parameters.AddWithValue("@Product_ID", row.Cells[0].Value ?? DBNull.Value); 
-                    command.Parameters.AddWithValue("@Item", row.Cells[1].Value ?? DBNull.Value);
-                    command.Parameters.AddWithValue("@Itemname", row.Cells[2].Value ?? DBNull.Value);
-                    command.Parameters.AddWithValue("@Qty", row.Cells[3].Value ?? DBNull.Value);
-                    command.Parameters.AddWithValue("@Gm", row.Cells[4].Value ?? DBNull.Value);
+                        string shopvalue = login.shopvalue;
+                        string empolyee=  Form2.setvalueemployee;
+                        string form = g_sale.setvalueform;
+
+                        command.Parameters.AddWithValue("@Date", txt_date.Text.ToString());
+                        command.Parameters.AddWithValue("@Time", txt_time.Text.ToString());
+                        command.Parameters.AddWithValue("@Voucher_No", voucherNumber);
+                        command.Parameters.AddWithValue("@Product_ID", row.Cells[0].Value ?? DBNull.Value);
+                        command.Parameters.AddWithValue("@Item", row.Cells[1].Value ?? DBNull.Value);
+                        command.Parameters.AddWithValue("@Itemname", row.Cells[2].Value ?? DBNull.Value);
+                        command.Parameters.AddWithValue("@Qty", row.Cells[3].Value ?? DBNull.Value);
+                        command.Parameters.AddWithValue("@Gm", row.Cells[4].Value ?? DBNull.Value);
+                        command.Parameters.AddWithValue("@Empolyee", empolyee);
+                        command.Parameters.AddWithValue("@Shop", shopvalue);
+                        command.Parameters.AddWithValue("@Form", form);
 
 
-                    
-                    command.ExecuteNonQuery();
+
+                        command.ExecuteNonQuery();
                     }
-                }
-
+                }            
+               
+            }
+            catch (Exception ex) { System.Windows.Forms.MessageBox.Show($"An error occurred: {ex.Message}"); }
+      
                 /*System.Windows.Forms.MessageBox.Show("Voucher data saved successfully!");*/
             
         }
@@ -685,70 +727,14 @@ namespace MJS
 
 
 
-        private void btn_gsale_save_Click(object sender, EventArgs e)
+
+        private void Btn_Pay_Click(object sender, EventArgs e)
         {
-            if (lbl_show_payment.Text == lbl_show_saleamt.Text) 
-            {
-                timer1.Interval = 100;
-                timer1.Start();
-                
-            }
-  
-        }
-
-
-        private void txt_dollar_rate_Enter(object sender, EventArgs e)
-        {
-            /*if (txt_currency_rate.Text == "Currency Rate")
-            {
-                txt_currency_rate.Text = "";
-                txt_currency_rate.ForeColor = Color.Black;
-            }*/
-        }
-
-        private void txt_currency_amt_TextChanged(object sender, EventArgs e)
-        {
-            if (txt_currency_amt.Text == "")
-            {
-                txt_currency_amt.Text = "0";             
-                txt_currency_amt.SelectionStart = 0;
-                txt_currency_amt.SelectionLength = txt_currency_amt.Text.Length;
-
-            }
-            else if (txt_currency_rate.Text == "") 
-            {
-                txt_currency_rate.Text = "0";
-                txt_currency_rate.SelectionStart = 0;
-                txt_currency_rate.SelectionLength = txt_currency_amt.Text.Length;
-            }
-            else 
-            {
-                double rate = double.Parse(txt_currency_rate.Text); double cuc_amt = double.Parse(txt_currency_amt.Text); double value = 0;
-                value = rate * cuc_amt;
-                txt_exchange_amt.Text = value.ToString();
-            }         
-        }
-
-        private void txt_currency_amt_Leave(object sender, EventArgs e)
-        {
-            if (txt_currency_amt.Text == "")
-            {
-                txt_currency_amt.Text = "0";
-            }
-            else
-            {
-                double rate = double.Parse(txt_currency_rate.Text); double cuc_amt = double.Parse(txt_currency_amt.Text); double value = 0;
-                value = Math.Round(rate * cuc_amt);
-                txt_exchange_amt.Text = value.ToString();
-            }
-        }
-
-        private void icobtn_payment_Click(object sender, EventArgs e)
-        {
+            
             if (txt_show.Text == "Cash")
             {
-               
-                if (txt_cash_amt.Text == "0" || txt_cash_amt.Text=="")
+
+                if (txt_cash_amt.Text == "0" || txt_cash_amt.Text == "")
                 {
                     System.Windows.Forms.MessageBox.Show("Please Check Again");
                 }
@@ -757,32 +743,32 @@ namespace MJS
                     double.TryParse(txt_sale_amt.Text, out double number1); double.TryParse(txt_cash_amt.Text, out double number2); double.TryParse(lbl_payment_amt.Text, out double number3);
 
                     double minus = 0;
-                    double checkamt = number1-(number2+number3);
+                    double checkamt = number1 - (number2 + number3);
 
                     string newAmount = txt_cash_amt.Text; // TextBox for new amount input
                     bool cashFound = false;
-                    double amt = 0;  
-                    
+                    double amt = 0;
+
                     if (checkamt < 0)
-                        
+
                     {
-                            System.Windows.MessageBox.Show("ပစ္စည်းတန်ဖိုးကျသင့်ငွေထက်များနေပါသည်။");                      
-                    }                     
-                    else 
-                        
+                        System.Windows.MessageBox.Show("ပစ္စည်းတန်ဖိုးကျသင့်ငွေထက်များနေပါသည်။");
+                    }
+                    else
+
                     {
-                            // Check if any cell in column 1 has the value "cash"    
+                        // Check if any cell in column 1 has the value "cash"    
                         foreach (DataGridViewRow row in dgv_show_paymethod.Rows)
-                            
-                        {                               
+
+                        {
                             if (row.Cells[1].Value != null && row.Cells[1].Value.ToString() == "Cash")
-                                
+
                             {
-                                    // Update the amount cell                                   
+                                // Update the amount cell                                   
                                 row.Cells[2].Value = newAmount;
-                                   
+
                                 for (int i = 0; i < dgv_show_paymethod.Rows.Count; ++i)
-                                    
+
                                 {
                                     amt += Convert.ToDouble(dgv_show_paymethod.Rows[i].Cells[2].Value);
                                     lbl_payment_amt.Text = amt.ToString();
@@ -794,9 +780,9 @@ namespace MJS
                                     txt_cash_amt.Text = "0";
                                     cashFound = true;
                                     break;
-                                   
+
                                 }
-                            }                         
+                            }
                         }
                         // If "cash" was not found in column 1, add a new row
                         if (!cashFound)
@@ -826,7 +812,7 @@ namespace MJS
 
                             }
                         }
-                    }                                       
+                    }
                 }
             }
             else if (txt_show.Text == "Foreign Currency")
@@ -844,15 +830,15 @@ namespace MJS
                 else
                 {
 
-                        string newAmount = txt_exchange_amt.Text; // TextBox for new amount input
-                        bool cashFound = false;
-                        double amt = 0;
+                    string newAmount = txt_exchange_amt.Text; // TextBox for new amount input
+                    bool cashFound = false;
+                    double amt = 0;
                     if (checkamt < 0)
                     {
 
                         System.Windows.MessageBox.Show("ပစ္စည်းတန်ဖိုးကျသင့်ငွေထက်များနေပါသည်။");
                     }
-                    else 
+                    else
                     {
                         // Check if any cell in column 1 has the value "cash"
                         foreach (DataGridViewRow row in dgv_show_paymethod.Rows)
@@ -890,7 +876,7 @@ namespace MJS
 
                                 System.Windows.MessageBox.Show("ပစ္စည်းတန်ဖိုးကျသင့်ငွေထက်များနေပါသည်။");
                             }
-                            else 
+                            else
                             {
                                 dgv_show_paymethod.Rows.Add(txt_show.Text, cmb_currenty_type.Text, txt_exchange_amt.Text, txt_currency_rate.Text);
 
@@ -909,9 +895,9 @@ namespace MJS
                                 txt_currency_amt.Text = "0";
                                 cmb_currenty_type.SelectedIndex = -1;
                             }
-                            
+
                         }
-                    }                  
+                    }
                 }
             }
             else if (txt_show.Text == "Bank Card")
@@ -926,14 +912,14 @@ namespace MJS
                 if (cmb_cardtype.SelectedIndex == -1 || txt_POS.Text == "" || txt_bankcard_amt.Text == "0")
                 {
                     System.Windows.MessageBox.Show("Please Check");
-                }                 
-                 
-                else                   
+                }
+
+                else
                 {
-                        string pos = txt_POS.Text;
-                        string newAmount = txt_bankcard_amt.Text; // TextBox for new amount input
-                        bool cashFound = false;
-                        double amt = 0;
+                    string pos = txt_POS.Text;
+                    string newAmount = txt_bankcard_amt.Text; // TextBox for new amount input
+                    bool cashFound = false;
+                    double amt = 0;
                     if (checkamt < 0)
 
                     {
@@ -941,7 +927,7 @@ namespace MJS
                         System.Windows.MessageBox.Show("ပစ္စည်းတန်ဖိုးကျသင့်ငွေထက်များနေပါသည်။");
 
                     }
-                    else 
+                    else
                     {
                         // Check if any cell in column 1 has the value "cash"
 
@@ -1013,9 +999,9 @@ namespace MJS
                                 cmb_cardtype.SelectedIndex = -1;
                             }
                         }
-                    }                 
+                    }
                 }
-                
+
             }
             else if (txt_show.Text == "Mobile Banking")
             {
@@ -1031,15 +1017,15 @@ namespace MJS
                 }
                 else
                 {
-                        string newAmount = txt_mobilebanking_amt.Text; // TextBox for new amount input
-                        bool cashFound = false;
-                        double amt = 0;
-                        
+                    string newAmount = txt_mobilebanking_amt.Text; // TextBox for new amount input
+                    bool cashFound = false;
+                    double amt = 0;
+
                     if (checkamt < 0)
-                        
+
                     {
 
-                            System.Windows.MessageBox.Show("ပစ္စည်းတန်ဖိုးကျသင့်ငွေထက်များနေပါသည်။");
+                        System.Windows.MessageBox.Show("ပစ္စည်းတန်ဖိုးကျသင့်ငွေထက်များနေပါသည်။");
 
 
                     }
@@ -1082,7 +1068,7 @@ namespace MJS
 
 
                             }
-                            else 
+                            else
                             {
                                 dgv_show_paymethod.Rows.Add(txt_show.Text, cmb_bankname.Text, txt_mobilebanking_amt.Text);
 
@@ -1098,9 +1084,9 @@ namespace MJS
 
                                 txt_mobilebanking_amt.Text = "0";
                                 cmb_bankname.SelectedIndex = -1;
-                            }                           
+                            }
                         }
-                    }                  
+                    }
                 }
             }
             else
@@ -1109,6 +1095,119 @@ namespace MJS
             }
 
         }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            
+                DateTime d = new DateTime();
+                d = DateTime.Now;
+                txt_date.Text = d.ToString("dd/MMM/yyyy");
+                txt_time.Text = DateTime.Now.ToLongTimeString();
+            
+        }
+
+
+        private void payment_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int selectedIndex = payment.SelectedIndex;
+
+            // Check which tab is selected and show a message accordingly
+            switch (selectedIndex)
+            {
+                case 0:
+
+                    txt_show.Text = "Cash";
+                  
+                    break;
+                case 1:
+
+                    txt_show.Text = "Foreign Currency";
+
+                    txt_exchange_amt.Text = "0";
+                    txt_currency_rate.Text = "0";
+                    txt_currency_amt.Text = "0";
+                    cmb_currenty_type.SelectedIndex = -1;
+            
+                    break;
+                case 2:
+
+                    txt_show.Text = "Bank Card";
+
+                    txt_bankcard_amt.Text = "0";
+                    txt_POS.Text = "";
+                    cmb_cardtype.SelectedIndex = -1;
+                   
+                    break;
+            
+                case 3:
+
+                    txt_show.Text = "Mobile Banking";
+
+                    txt_mobilebanking_amt.Text = "0";
+                    cmb_bankname.SelectedIndex = -1; 
+                    break;
+                default:
+           
+                    break;
+            }
+        }
+
+        private void Btn_Save_Click(object sender, EventArgs e)
+        {
+            if (lbl_show_payment.Text == lbl_show_saleamt.Text)
+            {
+                timer1.Interval = 100;
+                timer1.Start();
+
+            }
+        }
+
+        private void txt_dollar_rate_Enter(object sender, EventArgs e)
+        {
+            /*if (txt_currency_rate.Text == "Currency Rate")
+            {
+                txt_currency_rate.Text = "";
+                txt_currency_rate.ForeColor = Color.Black;
+            }*/
+        }
+
+        private void txt_currency_amt_TextChanged(object sender, EventArgs e)
+        {
+            if (txt_currency_amt.Text == "")
+            {
+                txt_currency_amt.Text = "0";             
+                txt_currency_amt.SelectionStart = 0;
+                txt_currency_amt.SelectionLength = txt_currency_amt.Text.Length;
+
+            }
+            else if (txt_currency_rate.Text == "") 
+            {
+                txt_currency_rate.Text = "0";
+                txt_currency_rate.SelectionStart = 0;
+                txt_currency_rate.SelectionLength = txt_currency_amt.Text.Length;
+            }
+            else 
+            {
+                double rate = double.Parse(txt_currency_rate.Text); double cuc_amt = double.Parse(txt_currency_amt.Text); double value = 0;
+                value = rate * cuc_amt;
+                txt_exchange_amt.Text = value.ToString();
+            }         
+        }
+
+        private void txt_currency_amt_Leave(object sender, EventArgs e)
+        {
+            if (txt_currency_amt.Text == "")
+            {
+                txt_currency_amt.Text = "0";
+            }
+            else
+            {
+                double rate = double.Parse(txt_currency_rate.Text); double cuc_amt = double.Parse(txt_currency_amt.Text); double value = 0;
+                value = Math.Round(rate * cuc_amt);
+                txt_exchange_amt.Text = value.ToString();
+            }
+        }
+
 
         private void txt_bankcard_amt_TextChanged(object sender, EventArgs e)
         {

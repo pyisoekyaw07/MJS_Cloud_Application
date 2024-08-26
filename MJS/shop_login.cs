@@ -17,14 +17,16 @@ namespace GHF
             InitializeComponent();
         }
 
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-        }
+     
 
         private void shop_login_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Btn_ok_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }
